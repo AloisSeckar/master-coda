@@ -9,6 +9,7 @@
     header {
         height: 140px;
         border-bottom: 2px var(--color-mark) solid;
+        margin-bottom: 0.5em;
     }
 
     img {

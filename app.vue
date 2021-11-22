@@ -1,10 +1,10 @@
 <template>
   <div id="page">
-    <CodaHeader/>
+    <CodaHeader />
     <main>
-      <router-view></router-view>
+      <NuxtPage />
     </main>
-    <CodaFooter/>
+    <CodaFooter />
   </div>
 </template>
 
@@ -42,5 +42,10 @@
   #page {
     max-width: 1000px;
     margin: 0 auto;
+  }
+
+  .code {
+    font-family: 'Courier New', monospace;
+    background-color: gray;
   }
 </style>
