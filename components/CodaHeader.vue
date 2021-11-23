@@ -1,7 +1,7 @@
 <template>
     <header>
         <a href="/" title="Master Coda"><img src="~/assets/master-coda.webp" alt="Master Coda"></a>
-        <h1><strong>Master Coda</strong><span id="long-text"> - a website about programming</span></h1>
+        <h1><strong>Master Coda</strong><span id="long-text"> - the light side of the code</span></h1>
     </header>
 </template>
 
@@ -24,7 +24,7 @@
         font-size: 0.9em;
     }
 
-    @media only screen and (max-width: 835px) {
+    @media only screen and (max-width: 865px) {
         #long-text {
             display: none;
         }
