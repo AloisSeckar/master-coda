@@ -11,19 +11,21 @@
 <style>
   :root {
     --color-bg: black;
-    --color-text: white;
+    --color-text: #708090;
     --color-mark: #FFCC00;
     --color-mark-v2: #FFAA00;
   }
 
   html {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: Arial, sans-serif;
+    text-align: justify;
+    line-height: 1.3;
   }
 
   a:link, a:visited, a:active {
@@ -46,6 +48,26 @@
 
   .code {
     font-family: 'Courier New', monospace;
-    background-color: gray;
+    text-align: left;
+    background-color: #c8c8af;
+    color: black;
+  }
+  div.code {
+    padding: 0.5rem 1rem;
+  }
+  span.code {
+    padding: 0 0.2rem;
+  }
+  .j-key {
+    color: blue;
+  }
+  .j-var {
+    color: green;
+  }
+  .j-lit {
+    color: purple;
+  }
+  .j-com {
+    color: darkgray;
   }
 </style>
