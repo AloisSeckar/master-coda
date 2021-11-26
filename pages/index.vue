@@ -12,7 +12,7 @@
       <p>{{ category.dscr }}</p>
       <ul>
         <li v-for="article in category.articles" :key="article.id">
-          <NuxtLink :to="{ path: '/' + category.cat + '/' + article.id }">{{ article.title }}</NuxtLink>
+          <NuxtLink :to="{ path: '/' + category.cat + '/' + article.id}">{{ article.title }}</NuxtLink>
         </li>
       </ul>
     </div>

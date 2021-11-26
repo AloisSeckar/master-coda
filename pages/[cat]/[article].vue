@@ -1,5 +1,6 @@
 <script setup>
-  const { data: article } = await useFetch(`/api/article/java/null-safe-if`);
+  const route = useRoute();
+  const { data: article } = await useFetch('/api/article/' + route.params.cat + '/' + route.params.article);
 </script>
 
 <template>

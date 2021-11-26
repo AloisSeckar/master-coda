@@ -13,7 +13,12 @@ export default () => {
         {
             'cat' : 'web',
             'dscr': 'HTML, CSS, JS a spol.',
-            'articles' : []
+            'articles' : [
+                {
+                    "id": "test",
+                    "title": "Just test..."
+                }
+            ]
         },
         {
             'cat' : 'debugging',
