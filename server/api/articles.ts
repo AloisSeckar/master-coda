@@ -23,7 +23,12 @@ export default () => {
         {
             'cat' : 'debugging',
             'dscr': '(Ne)veselé příhody z <del>natáčení</del> <ins>debuggingu</del>',
-            'articles' : []
+            'articles' : [
+                {
+                    "id": "neni-js-jako-js",
+                    "title": "Není JavaScript jako JavaScript"
+                }
+            ]
         },
         {
             'cat' : 'misc',
