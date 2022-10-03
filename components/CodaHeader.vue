@@ -2,6 +2,7 @@
     <header>
         <a href="/" title="Master Coda"><img src="~/assets/master-coda.webp" alt="Master Coda"></a>
         <h1><strong>Master Coda</strong><span id="long-text"> - the light side of the code</span></h1>
+        <div id="subtitle">Nepravidelný blog o programování</div>
         <div id="menu-bar">
             <div class="menu"><a href="/">JAVA</a></div>
             <div class="menu"><a href="/">WEB</a></div>
@@ -37,6 +38,13 @@
     h1 {
         margin-left: 5px;
     }
+
+    #subtitle {
+        color: var(--color-mark);
+        font-family: 'Courier New', monospace;
+        padding-bottom: 10px;
+    }
+
     div.menu {
         width: 111px;
         display: inline-block;
