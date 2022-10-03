@@ -1,6 +1,6 @@
 <template>
     <footer>
-        &copy; 2021 <a href="http://alois-seckar.cz/">Alois Sečkár</a>
+        &copy; 2022 <a href="http://alois-seckar.cz/">Alois Sečkár</a>
     </footer>
 </template>
 
