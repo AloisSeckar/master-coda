@@ -1,106 +1,43 @@
 <template>
-    <header>
-        <a href="/" title="Master Coda"><img src="~/assets/master-coda.webp" alt="Master Coda"></a>
-        <h1><strong>Master Coda</strong><span id="long-text"> - the light side of the code</span></h1>
-        <div id="subtitle">Nepravidelný blog o programování</div>
-        <div id="menu-bar">
-            <div class="menu"><a href="/">JAVA</a></div>
-            <div class="menu"><a href="/">WEB</a></div>
-            <div class="menu"><a href="/">DEBUGGING</a></div>
-            <div class="menu"><a href="/">OSTATNÍ</a></div>
-            <div class="menu"><a href="/">HUMOR</a></div>
+    <div class="m-1 h-36">
+        <NuxtLink :to="{ path: '/' }">
+            <img style="width: 115px; float: left;" src="~/assets/master-coda.webp" alt="Master Coda" />
+        </NuxtLink>
+        <div class="ml-32 h-32 pt-2 border-b-2 border-amber-400">
+            <div class="ml-1 font-header text-amber-400 text-2xl"><span class="text-3xl font-bold">Master Coda</span> - The light side of the code</div>
+            <div class="ml-1 font-header text-amber-400 text-xl">Nepravidelný blog o programování</div>
+            <ul class="flex">
+                <li :class="menuButton">
+                    <NuxtLink :to="{ path: '/' }">
+                        <div :class="menuFont">JAVA</div>
+                    </NuxtLink>
+                </li>
+                <li :class="menuButton">
+                    <NuxtLink :to="{ path: '/' }">
+                        <div :class="menuFont">WEB</div>
+                    </NuxtLink>
+                </li>
+                <li :class="menuButton">
+                    <NuxtLink :to="{ path: '/' }">
+                        <div :class="menuFont">DEBUGGING</div>
+                    </NuxtLink>
+                </li>
+                <li :class="menuButton">
+                    <NuxtLink :to="{ path: '/' }">
+                        <div :class="menuFont">OSTATNÍ</div>
+                    </NuxtLink>
+                </li>
+                <li :class="menuButton">
+                    <NuxtLink :to="{ path: '/' }">
+                        <div :class="menuFont">HUMOR</div>
+                    </NuxtLink>
+                </li>
+            </ul>
         </div>
-        <div id="menu-collapsed">
-            <div class="menu"><a href="/">ARTICLES</a></div>
-        </div>
-    </header>
+    </div>
 </template>
 
-<style scoped>
-    header {
-        height: 140px;
-        border-bottom: 2px var(--color-mark) solid;
-        margin-bottom: 0.5rem;
-    }
-
-    img {
-        width: 120px;
-        height: auto;
-        float: left;
-        margin-right: 1rem;
-    }
-
-    #long-text {
-        font-weight: 100;
-        font-size: 0.9rem;
-    }
-
-    h1 {
-        margin-left: 5px;
-    }
-
-    #subtitle {
-        color: var(--color-mark);
-        font-family: 'Courier New', monospace;
-        padding-bottom: 10px;
-    }
-
-    div.menu {
-        width: 111px;
-        display: inline-block;
-        margin-right: 5px;
-        margin-top: 5px;
-        padding: 3px;
-        border: 1px var(--color-mark) solid;
-        border-radius: 5px;
-        background-color: #c8c8af;
-        text-align: center;
-    }
-    div.menu:hover {
-        background-color: var(--color-mark-v2);
-        cursor: pointer;
-    }
-
-    a:link, a:visited, a:active {
-        color: black;
-        text-decoration: none;
-    }
-
-    @media only screen and (max-width: 865px) {
-        #long-text {
-            display: none;
-        }
-        h1 {
-            margin-bottom: 10px;
-        }
-    }
-
-    @media only screen and (max-width: 525px) {
-        #menu-bar {
-            display: none;
-        }
-    }
-    @media only screen and (min-width: 525px) {
-        #menu-collapsed {
-            display: none;
-        }
-    }@media only screen and (max-width: 280px) {
-        #menu-collapsed {
-            display: none;
-        }
-    }
-    
-    @media only screen and (max-width: 260px) {
-        header {
-            height: 50px;
-        }
-        img {
-            display: none;
-        }
-    }
-    @media only screen and (max-width: 214px) {
-        header {
-            height: 80px;
-        }
-    }
-</style>
+<script setup lang="ts">
+const menuButton = "ml-1 mt-2 p-1 w-1/5 bg-amber-50 hover:bg-amber-400 border border-amber-400 shadow rounded text-center"
+const menuFont = "text-zinc-900 hover:text-teal-700 font-bold"
+</script>
