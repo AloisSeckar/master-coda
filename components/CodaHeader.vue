@@ -1,9 +1,9 @@
 <template>
     <div class="m-1 h-36">
         <NuxtLink :to="{ path: '/' }">
-            <img style="width: 115px; float: left;" src="~/assets/master-coda.webp" alt="Master Coda" />
+            <img class="border-2 border-emerald-600 hover:border-amber-300" style="width: 115px; float: left;" src="~/assets/master-coda.webp" alt="Master Coda" />
         </NuxtLink>
-        <div class="ml-32 h-32 pt-2 border-b-2 border-amber-300">
+        <div class="ml-32 h-32 pt-2 border-b-2 border-emerald-600">
             <div class="ml-1 font-header text-amber-300 text-2xl"><span class="text-3xl font-bold">Master Coda</span> - The light side of the code</div>
             <div class="ml-1 font-header text-amber-300 text-xl">Nepravidelný blog o programování</div>
             <ul class="flex">
@@ -38,6 +38,6 @@
 </template>
 
 <script setup lang="ts">
-const menuButton = "ml-1 mt-2 p-1 w-1/5 bg-amber-50 hover:bg-amber-500 border border-amber-500 shadow rounded text-center"
-const menuFont = "text-zinc-900 hover:text-amber-200 font-bold"
+const menuButton = "ml-1 mt-2 p-1 w-1/5 bg-amber-50 hover:bg-amber-500 border border-amber-500 hover:border-emerald-600 shadow rounded text-center"
+const menuFont = "text-zinc-900 hover:text-emerald-600 font-bold"
 </script>
