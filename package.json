@@ -16,7 +16,6 @@
     "@pinia/nuxt": "^0.4.3"
   },
   "overrides": {
-    "vue": 3,
-    "@vueuse/head": "v1.0.0-rc.14"
+    "vue": 3
   }
 }
