@@ -4,7 +4,8 @@
 
 <template>
   <div>
-    <h2 class="text-3xl font-bold underline">Home page?</h2>
+    <h1>Home page?</h1>
+    <h3>tailwind</h3>
     <p>Text shall there be, think you?</p>
     <h3>Articles</h3>
     <div v-for="category in content" :key="category.cat">
