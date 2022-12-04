@@ -12,13 +12,15 @@ export const useArticleStore = defineStore({
     actions: {
         async fill() {
             this.items = articles
-            console.log(articles)
             this.loaded = true
         }
     },
     getters: {
         getByCategory: (state) => {
             return (category: string) => state.items.filter(i => i.cat === category)
+        },
+        getById: (state) => {
+            return (id: string) => state.items.find(i => i.id === id)
         }
     }
 })
