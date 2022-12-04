@@ -10,6 +10,10 @@
   </div>
 </template>
 
+<script setup lang="ts">
+useArticleStore().fill()
+</script>
+
 <style>
 .code {
   font-family: 'Courier New', monospace;

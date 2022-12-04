@@ -8,27 +8,27 @@
             <div class="ml-1 font-header text-amber-300 text-xl">Nepravidelný blog o programování</div>
             <ul class="flex">
                 <li :class="menuButton">
-                    <NuxtLink :to="{ path: '/' }">
+                    <NuxtLink :to="{ path: '/category/java' }">
                         <div :class="menuFont">JAVA</div>
                     </NuxtLink>
                 </li>
                 <li :class="menuButton">
-                    <NuxtLink :to="{ path: '/' }">
+                    <NuxtLink :to="{ path: '/category/web' }">
                         <div :class="menuFont">WEB</div>
                     </NuxtLink>
                 </li>
                 <li :class="menuButton">
-                    <NuxtLink :to="{ path: '/' }">
+                    <NuxtLink :to="{ path: '/category/debugging' }">
                         <div :class="menuFont">DEBUGGING</div>
                     </NuxtLink>
                 </li>
                 <li :class="menuButton">
-                    <NuxtLink :to="{ path: '/' }">
+                    <NuxtLink :to="{ path: '/category/misc' }">
                         <div :class="menuFont">OSTATNÍ</div>
                     </NuxtLink>
                 </li>
                 <li :class="menuButton">
-                    <NuxtLink :to="{ path: '/' }">
+                    <NuxtLink :to="{ path: '/category/fun' }">
                         <div :class="menuFont">HUMOR</div>
                     </NuxtLink>
                 </li>
