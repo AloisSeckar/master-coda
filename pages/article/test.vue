@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ArticleHeader id="test" />
+        <ArticleHeader />
         <div>
             Here will be article-specific content
         </div>

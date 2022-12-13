@@ -6,8 +6,7 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-    id: { type: String, required: true }
-})
-const article = computed(() => useArticleStore().getById(props.id))
+const path = useRoute().path
+const id = path.substring(path.lastIndexOf('/') + 1)
+const article = computed(() => useArticleStore().getById(id))
 </script>
