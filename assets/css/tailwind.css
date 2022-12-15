@@ -24,4 +24,25 @@
     div {
         @apply text-emerald-600
     }
+
+    .code {
+        @apply px-1 py-px text-left bg-amber-100 text-black
+    }
+
+    .j-key {
+        @apply text-blue-700
+    }
+
+    .j-var {
+        @apply text-emerald-600
+    }
+
+    .j-lit {
+        @apply text-purple-500
+    }
+
+    .j-com {
+        @apply text-gray-700
+    }
+
   }
