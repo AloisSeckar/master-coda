@@ -2,7 +2,7 @@
     <div>
         <ArticleHeader />
         <div>
-            <h3>Null safe equals</h3>
+            <h2>Null safe equals</h2>
             <p>Často potřebujeme porovnat aktuální hodnotu proměnné s&nbsp;nějakou konstantou a&nbsp;podle toho určit
                 další průchod kódem. Pokud je to v&nbsp;Javě textový řetězec, použijeme metodu <span
                     class="code">.equals()</span>. Tedy něco jako:</p>
@@ -36,7 +36,7 @@
                 třídu <span class="code">XYZConstants</span>, která obsahuje pouze <span class="code">public static
                     final</span> definice konstant (a&nbsp;<span class="code">private</span> konstruktor, aby nikoho
                 nenapadlo plevelit aplikaci jejími instancemi) použitelných podle potřeby kdekoliv jinde.</p>
-            <h3>Optional?</h3>
+            <h2>Optional?</h2>
             <p>Java&nbsp;8 přinesla novinku v podobě třídy <span class="code">Optional</span>, která je navržena právě
                 pro snazší práci s&nbsp;objekty, které mohou být null. Zrovna tento use-case však příliš nezjednodušuje.
                 Psát bychom museli:</p>
