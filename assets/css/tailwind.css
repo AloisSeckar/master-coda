@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
     body {
         @apply bg-neutral-900
     }
@@ -27,9 +28,18 @@
     div {
         @apply text-emerald-600
     }
+}
+
+@layer components {
 
     .code {
-        @apply px-1 py-px text-left bg-amber-100 text-black
+        @apply bg-amber-100 text-black font-code
+    }
+    span.code {
+        @apply px-px py-0
+    }
+    div.code {
+        @apply my-1 px-2 py-1 text-left
     }
 
     .j-key {
@@ -48,4 +58,4 @@
         @apply text-gray-700
     }
 
-  }
+}

@@ -3,6 +3,7 @@ module.exports = {
         fontFamily: {
             'header': ['"Courier New"'],
             'body': ['"Open Sans"'],
+            'code': ['"Courier New"'],
         }
     }
 }
