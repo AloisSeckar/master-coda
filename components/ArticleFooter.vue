@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-4 text-xs">
+    <div class="pt-1 text-xs">
         <div class="text-amber-300">----------------------------------</div>
         <div class="font-bold">Master Coda by Alois Sečkár</div>
         <a class="block" :href="link.replace('##','blob')">Zobrazit zdrojový kód článku</a>

@@ -32,6 +32,13 @@
 
 @layer components {
 
+    .article {
+        @apply px-2
+    }
+    .article p {
+        @apply mt-2 mb-4 text-justify leading-5
+    }
+
     .code {
         @apply bg-amber-100 text-black font-code
     }

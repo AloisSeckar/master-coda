@@ -30,4 +30,6 @@ export type Article = {
     cat: string,
     title: string,
     dscr: string,
+    created: string,
+    edited: string,
 }

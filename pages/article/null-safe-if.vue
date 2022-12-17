@@ -1,7 +1,7 @@
 <template>
     <div>
         <ArticleHeader />
-        <div>
+        <div class="article">
             <h2>Null safe equals</h2>
             <p>Často potřebujeme porovnat aktuální hodnotu proměnné s&nbsp;nějakou konstantou a&nbsp;podle toho určit
                 další průchod kódem. Pokud je to v&nbsp;Javě textový řetězec, použijeme metodu <span
