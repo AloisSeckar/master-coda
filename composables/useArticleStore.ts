@@ -1,4 +1,3 @@
-import { defineStore } from 'pinia'
 import { articles } from '@/data/articles'
 
 export const useArticleStore = defineStore({
