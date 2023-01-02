@@ -1,6 +1,5 @@
-node_modules
-*.log
 .nuxt
-nuxt.d.ts
 .output
-.firebase
+node_modules
+nuxt.d.ts
+*.log
