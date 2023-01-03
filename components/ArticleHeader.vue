@@ -14,5 +14,5 @@
 const path = useRoute().path
 const id = path.substring(path.lastIndexOf('/') + 1)
 const article = computed(() => useArticleStore().getById(id))
-const edited = article.value?.created != article.value?.edited
+const edited = computed(() => article.value?.created != article.value?.edited)
 </script>

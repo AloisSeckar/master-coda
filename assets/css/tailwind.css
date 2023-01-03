@@ -5,7 +5,7 @@
 @layer base {
 
     body {
-        @apply bg-neutral-900
+        @apply bg-slate-900
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -26,7 +26,7 @@
     }
 
     div {
-        @apply text-emerald-600
+        @apply text-green-700
     }
 }
 
@@ -40,25 +40,25 @@
     }
 
     .code {
-        @apply bg-amber-100 text-black font-code
+        @apply bg-transparent text-white font-code
     }
     span.code {
-        @apply px-px py-0
+        @apply text-amber-300 px-px py-0
     }
     div.code {
-        @apply my-1 px-2 py-1 text-left
+        @apply border border-amber-300 bg-slate-700 mx-4 my-1 px-2 py-1 text-left
     }
 
     .j-key {
-        @apply text-blue-700
+        @apply text-blue-500 font-bold
     }
 
     .j-var {
-        @apply text-emerald-600
+        @apply text-fuchsia-500
     }
 
     .j-lit {
-        @apply text-purple-500
+        @apply text-orange-400
     }
 
     .j-com {
