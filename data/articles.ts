@@ -4,16 +4,16 @@ const articles = [
         "cat": "debugging",
         "title": "Není JavaScript jako JavaScript",
         "dscr": "Když obvyklá JS metoda nechce fungovat...",
-        "created": "15.12.2022",
-        "edited": "17.12.2022",
+        "created": "10.01.2023",
+        "edited": "10.01.2023",
     },
     {
         "id": "null-safe-if",
         "cat": "java",
         "title": "Null-safe porovnání",
         "dscr": "Jak se vyhnout problémům s NULL hodnotou při porovnávání aktuální hodnoty promněnné?",
-        "created": "17.12.2022",
-        "edited": "17.12.2022",
+        "created": "04.01.2023",
+        "edited": "04.01.2023",
     }
 ]
 

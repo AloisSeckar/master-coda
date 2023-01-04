@@ -4,6 +4,10 @@
         <div class="article">
             <h2>Null safe equals</h2>
             <p>
+                Původně mi přišlo, že tento článek je zbytečný, protože to přeci každý zná. Ale nedávno jsem přesně na tuto
+                situaci narazil při řešení provozní chyby v&nbsp;našem produkčním kódu. Takže se zdá, že to smysl má.
+            </p>
+            <p>
                 Často potřebujeme porovnat aktuální hodnotu proměnné s&nbsp;nějakou konstantou a&nbsp;podle toho určit
                 další průchod kódem. Pokud je to v&nbsp;Javě textový řetězec, použijeme metodu <span class="code">.equals()</span>. 
                 Tedy něco jako:
