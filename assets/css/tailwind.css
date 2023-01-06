@@ -62,7 +62,7 @@
     }
 
     .j-com {
-        @apply text-gray-700
+        @apply text-gray-400
     }
 
 }
