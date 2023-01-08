@@ -32,6 +32,13 @@
 
 @layer components {
 
+    .actionButton {
+        @apply m-1 mt-2 bg-slate-700 hover:bg-green-900 border border-amber-300 rounded text-center
+    } 
+    .actionButtonText {
+        @apply text-amber-300 hover:text-amber-100
+    }
+
     .article {
         @apply px-2
     }

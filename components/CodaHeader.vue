@@ -38,6 +38,6 @@
 </template>
 
 <script setup lang="ts">
-const menuButton = "ml-1 mt-2 p-1 w-1/5 bg-slate-700 hover:bg-green-900 border border-amber-300 shadow rounded text-center"
-const menuFont = "text-amber-300 hover:text-amber-100 font-bold"
+const menuButton = "actionButton p-1 w-1/5"
+const menuFont = "actionButtonText font-bold"
 </script>

@@ -20,6 +20,9 @@ export const useArticleStore = defineStore({
         },
         getById: (state) => {
             return (id: string) => state.items.find(i => i.id === id)
+        },
+        getByTag: (state) => {
+            return (tag: string) => state.items.filter(i => i.tags?.includes(tag))
         }
     }
 })
@@ -29,6 +32,7 @@ export type Article = {
     cat: string,
     title: string,
     dscr: string,
+    tags: string[],
     created: string,
     edited: string,
 }
