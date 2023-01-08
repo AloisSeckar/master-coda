@@ -27,9 +27,17 @@ const articles = [
         "id": "skryte-znaky",
         "cat": "debugging",
         "title": "Skryté (pa)znaky",
-        "dscr": "Fonty jsou nečím jiným, než se zdají být",
+        "dscr": "Fonty nejsou tím, čím se zdají být",
         "created": "07.01.2023",
         "edited": "07.01.2023",
+    },
+    {
+        "id": "return-v-metode",
+        "cat": "misc",
+        "title": "Kolikrát má být v metodě return?",
+        "dscr": "Vždycky pouze jednou nebo to může být i jinak?",
+        "created": "08.01.2023",
+        "edited": "08.01.2023",
     },
 ]
 

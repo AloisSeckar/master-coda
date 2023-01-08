@@ -6,7 +6,7 @@
             <span v-if="edited">(aktualizováno {{ article?.edited }})</span>
         </div>
         <div>{{ article?.dscr }}</div>
-        <div class="text-xs text-amber-300">----------------------------------</div>
+        <div class="my-1 text-xs text-amber-300">----------------------------------------</div>
     </div>
 </template>
 

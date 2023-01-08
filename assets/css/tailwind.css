@@ -38,6 +38,12 @@
     .article p {
         @apply mt-2 mb-4 text-justify leading-5
     }
+    .article a {
+        @apply text-fuchsia-600 hover:text-fuchsia-400
+    }
+    .article ul {
+        @apply ml-6 text-justify marker:text-amber-300
+    }
 
     .code {
         @apply bg-transparent text-white font-code
