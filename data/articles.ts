@@ -44,6 +44,15 @@ const articles = [
         "created": "08.01.2023",
         "edited": "08.01.2023",
     },
+    {
+        "id": "switch-java17",
+        "cat": "java",
+        "title": "Vylepšený switch v Java 17",
+        "dscr": "Příjemné syntaktické novinky v (zatím) poslední LTS verzi Javy",
+        "tags": ["Java", "tipy", "tutorial", "syntaxe"],
+        "created": "12.01.2023",
+        "edited": "12.01.2023",
+    },
 ]
 
 export { articles }
