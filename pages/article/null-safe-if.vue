@@ -15,7 +15,7 @@
             <div class="code">
                 <span class="j-key">if</span> 
                     (<span class="j-var">variable</span>.equals(<span class="j-lit">"hodnota"</span>) 
-                {…}
+                {<span class="j-com">…</span>}
             </div>
 
             <p>
@@ -32,7 +32,7 @@
                     (<span class="j-var">variable</span> != 
                     <span class="j-key">null</span> && 
                     <span class="j-var">variable</span>.equals(<span class="j-lit">"hodnota"</span>) 
-                {…}
+                {<span class="j-com">…</span>}
             </div>
 
             <p>
@@ -42,7 +42,7 @@
             <div class="code">
                 <span class="j-key">if</span> 
                     (<span class="j-lit">"hodnota"</span>.equals(<span class="j-var">variable</span>)) 
-                {…}
+                {<span class="j-com">…</span>}
             </div>
 
             <p>
@@ -61,9 +61,9 @@
             <div class="code">
                 <span class="j-key">private static final</span> String <span class="j-var">HODNOTA</span>
                 = <span class="j-lit">"hodnota"</span>;<br />
-                …<br />
-                if (<span class="j-var">HODNOTA</span>.equals(<span class="j-var">variable</span>)) 
-                {…}
+                <span class="j-com">…</span><br />
+                <span class="j-key">if</span> (<span class="j-var">HODNOTA</span>.equals(<span class="j-var">variable</span>)) 
+                {<span class="j-com">…</span>}
             </div>
 
             <p>
@@ -84,7 +84,7 @@
                 <span class="j-key">if</span> 
                     (Optional.ofNullable(<span class="j-var">variable</span>).orElse(<span class="j-lit">""</span>).equals(<span
                     class="j-lit">"hodnota"</span>)) 
-                {…}
+                {<span class="j-com">…</span>}
             </div>
 
             <p>
@@ -96,10 +96,10 @@
             <div class="code">
                 Optional <span class="j-var">optVar</span> = Optional.ofNullable(<span
                     class="j-var">variable</span>);<br />
-                    …<br />
+                    <span class="j-com">…</span><br />
                 <span class="j-key">if</span> (<span class="j-var">optVar</span>.orElse(<span
                     class="j-lit">""</span>).equals(<span class="j-lit">"hodnota"</span>)) 
-                {…}
+                {<span class="j-com">…</span>}
             </div>
 
             <p>

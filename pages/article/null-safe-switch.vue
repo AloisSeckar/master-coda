@@ -32,7 +32,7 @@
             </p>
             <div class="code">
                 <span class="j-key">switch</span> (<span class="j-var">variable</span> != <span class="j-key">null</span>
-                    ? <span class="j-var">variable</span> : <span class="j-com">&lt;default&gt;</span> ) {…}
+                    ? <span class="j-var">variable</span> : <span class="j-com">&lt;default&gt;</span> ) {<span class="j-com">…</span>}
             </div>
             <p>
                 Krom úspory místa se to může hodit třeba v&nbsp;případě, že chcete mít stejnou default akci (například 
@@ -46,7 +46,7 @@
             </p>
             <div class="code">
                 <span class="j-key">switch</span> (Optional.ofNullable(<span class="j-var">variable</span>).orElse(
-                    <span class="j-com">&lt;default&gt;</span> )) {…}
+                    <span class="j-com">&lt;default&gt;</span> )) {<span class="j-com">…</span>}
             </div>
             <p>
                 Je to o malinko delší, ale třeba pro někoho srozumitelnější a čitelnější než ternární operátor. 
@@ -57,7 +57,7 @@
                 Optional&lt;String&gt; <span class="j-var">optVar</span> = Optional.ofNullable(<span class="j-var">variable</span>);<br />
                 <span class="j-com">…</span><br />
                 <span class="j-key">switch</span> (<span class="j-var">optVar</span>.orElse(
-                    <span class="j-com">&lt;default&gt;</span> )) {…}
+                    <span class="j-com">&lt;default&gt;</span> )) {<span class="j-com">…</span>}
             </div>
 
         </div>

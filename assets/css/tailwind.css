@@ -78,6 +78,10 @@
         @apply text-orange-400
     }
 
+    .j-val {
+        @apply text-teal-300
+    }
+
     .j-com {
         @apply text-gray-400
     }
