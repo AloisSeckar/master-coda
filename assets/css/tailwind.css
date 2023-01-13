@@ -38,6 +38,10 @@
     .actionButtonText {
         @apply text-amber-300 hover:text-amber-100
     }
+    
+    .articleList {
+        @apply mt-2 ml-6 text-justify marker:text-fuchsia-500
+    }
 
     .article {
         @apply px-2
@@ -59,7 +63,7 @@
         @apply text-amber-300 px-px py-0
     }
     div.code {
-        @apply border border-amber-300 bg-slate-700 mx-4 my-1 px-2 py-1 text-left
+        @apply border border-amber-300 bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 text-left
     }
 
     .j-key {
