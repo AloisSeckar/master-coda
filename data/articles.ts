@@ -24,7 +24,7 @@ const articles = [
         "dscr": "Když obvyklá JS metoda nechce fungovat...",
         "tags": ["debugging", "JavaScript"],
         "created": "07.01.2023",
-        "edited": "07.01.2023",
+        "edited": "13.01.2023",
     },
     {
         "id": "skryte-znaky",

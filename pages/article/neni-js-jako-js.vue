@@ -30,8 +30,24 @@
                 dobrému <span class="code">if (…) then {</span> s&nbsp;kombinací <span class="code">||</span> řetězení
                 podmínek.
             </p>
+
+            <h2>Web Can I use…</h2>
             <p>
-                <strong>Poučení</strong>: Vždy si dobře rozmyslet, zda mi bude věc fungovat i&nbsp;na cílové platformě.
+                Užitečným pomocníkem pro plánování kompatibility vašeho kódu může být například webová stránka 
+                <a href="https://caniuse.com/">https://caniuse.com/</a>, která je zaměřena přesně na tuto problematiku.
+                V&nbsp;přehledné grafice ihned uvidíte, zda a&nbsp;od které verze prohlížeče tu kterou funkcionalitu 
+                podporují. Různých prohlížečů je v&nbsp;nabídce hned <strong>sedmnáct</strong>! S&nbsp;tím už vás jen 
+                tak něco nepřekvapí.
+            </p>
+            <p>
+                Například pro mnou zmiňovanou metodu <span class="code">.includes()</span> to s&nbsp;podporou 
+                v&nbsp;prohlížečích vypadá <a href="https://caniuse.com/?search=includes">TAKTO</a>.
+            </p>
+
+            <h2>Poučení</h2>
+            <p>
+                Vždy si dobře rozmyslet, zda mi bude věc fungovat i&nbsp;na cílové platformě. Existují on-line nástroje,
+                jak to zjistit.
             </p>
         </div>
         <ArticleFooter />
