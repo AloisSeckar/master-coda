@@ -19,6 +19,26 @@ const fun = [
         title: 'Join',
         added: '2023-01-14',
     },
+    {
+        id: 'programmers-then-and-now',
+        title: 'Then & now',
+        added: '2023-01-14',
+    },
+    {
+        id: 'developer-vs-tester',
+        title: 'Developer vs. Tester',
+        added: '2023-01-14',
+    },
+    {
+        id: 'intern',
+        title: 'Intern & Legacy code',
+        added: '2023-01-14',
+    },
+    {
+        id: 'task-failed-successfully',
+        title: 'Task Failed Successfully',
+        added: '2023-01-14',
+    },
 ]
 
 export { fun }
