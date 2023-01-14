@@ -7,6 +7,7 @@ export const useFunStore = defineStore({
             loaded: false,
             items: [] as Fun[],
             random: {} as Fun,
+            previous: '',
         }
     },
     actions: {
@@ -16,7 +17,13 @@ export const useFunStore = defineStore({
             this.getRandom()
         },
         getRandom() {
-            this.random = this.items[Math.floor(Math.random() * this.items.length)]
+            let randomItem;
+            do {
+                randomItem = this.items[Math.floor(Math.random() * this.items.length)]
+            } while (randomItem.id === this.previous)
+                
+            this.previous = randomItem.id
+            this.random = randomItem
         }
     },
     getters: {
