@@ -53,6 +53,15 @@ const articles = [
         "created": "12.01.2023",
         "edited": "12.01.2023",
     },
+    {
+        "id": "redukce-velikosti-fontu",
+        "cat": "web",
+        "title": "Redukce objemu dat při práci s webovými fonty",
+        "dscr": "Jak se vyhnout posílání zbytečnýh dat při použití netradičního fontu na webu",
+        "tags": ["web", "css", "fonty", "optimalizace", "tipy", "tutorial", "python"],
+        "created": "14.01.2023",
+        "edited": "14.01.2023",
+    },
 ]
 
 export { articles }
