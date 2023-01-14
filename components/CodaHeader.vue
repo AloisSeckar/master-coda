@@ -28,7 +28,7 @@
                     </NuxtLink>
                 </li>
                 <li :class="menuButton">
-                    <NuxtLink :to="{ path: '/category/fun' }">
+                    <NuxtLink :to="{ path: '/fun' }">
                         <div :class="menuFont">HUMOR</div>
                     </NuxtLink>
                 </li>
