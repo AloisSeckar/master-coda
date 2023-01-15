@@ -58,7 +58,7 @@ const articles = [
         "cat": "web",
         "title": "Redukce objemu dat při práci s webovými fonty",
         "dscr": "Jak se vyhnout posílání zbytečnýh dat při použití netradičního fontu na webu",
-        "tags": ["web", "css", "fonty", "optimalizace", "tipy", "tutorial", "python"],
+        "tags": ["web", "css", "tipy", "fonty", "optimalizace", "tutorial", "python"],
         "created": "14.01.2023",
         "edited": "14.01.2023",
     },

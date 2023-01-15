@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center">
-        <div class="w-4/5">
+        <div class="w-full md:w-4/5">
             <CodaHeader />
             <main>
                 <NuxtPage />

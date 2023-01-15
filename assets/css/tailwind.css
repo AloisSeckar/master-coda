@@ -47,7 +47,7 @@
         @apply px-2;
     }
     .article p {
-        @apply mt-2 mb-4 text-justify leading-5;
+        @apply mt-2 mb-4 text-left sm:text-justify leading-5;
     }
     .article a {
         @apply text-fuchsia-600 hover:text-fuchsia-400;
@@ -63,7 +63,7 @@
         @apply text-amber-300 px-px py-0;
     }
     div.code {
-        @apply border border-amber-300 bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 text-left;
+        @apply border border-amber-300 bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 text-left overflow-x-scroll whitespace-nowrap;
     }
 
     .j-key {
