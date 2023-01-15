@@ -4,7 +4,7 @@
         <div class="article">
             <p>
                 Hlavní databáze našeho projektu je IBM Informix. Kódování má nastavené ISO 8859-2, takže občas narážíme 
-                na problémy s&nbsp;nepodporovanými UTF-8 znaky, které se do ní nedaří uložit. Nejčastěji k tomu dochází při 
+                na problémy s&nbsp;nepodporovanými UTF-8 znaky, které se do ní nedaří uložit. Nejčastěji k&nbsp;tomu dochází při 
                 kopírování textů z&nbsp;Wordu či odjinud. Spolehlivým řešením by byla migrace textů, u&nbsp;kterých to hrozí, 
                 do jiné databáze (postupně zavádíme MongoDB), ale to je běh na dlouhou trať. Snažíme se to tedy řešit alespoň 
                 automatizovaným nahrazováním problémových znaků, se kterými se opakovaně setkáváme. Ovšem stále nás něco 
@@ -22,7 +22,7 @@
             </p>
             <p>
                 Zmíněný problém s&nbsp;nepovolenými znaky je obvykle na první pohled vidět. Tady ovšem ne, takže to byl 
-                chvíli boj. Zákazníkovi se zdálo, že to není možné a problém musí být v něčem jiném. Ale nebyl.
+                chvíli boj. Zákazníkovi se zdálo, že to není možné a&nbsp;problém musí být v&nbsp;něčem jiném. Ale nebyl.
             </p>
             <p>
                 Nebudu vás napínat -&nbsp;zakopaný pes je ve slovech „inﬁltráty“ a&nbsp;„eozinoﬁlních“. Když si je 

@@ -76,7 +76,7 @@
 
             <h2>Optional?</h2>
             <p>
-                Java&nbsp;8 přinesla novinku v podobě třídy <span class="code">Optional</span>, která je navržena právě
+                Java&nbsp;8 přinesla novinku v&nbsp;podobě třídy <span class="code">Optional</span>, která je navržena právě
                 pro snazší práci s&nbsp;objekty, které mohou být null. Zrovna tento use-case však příliš nezjednodušuje.
                 Psát bychom museli:
             </p>
@@ -88,7 +88,7 @@
             </div>
 
             <p>
-                A&nbsp;to je ještě delší než původní varianta s explicitním porovnáním s&nbsp;
+                A&nbsp;to je ještě delší než původní varianta s&nbsp;explicitním porovnáním s&nbsp;
                 <span class="code">null</span>. Pokud bychom už optional instanci měli k&nbsp;dispozici, bylo by to
                 o&nbsp;něco lepší, ale pořád ne ideální.
             </p>
@@ -103,8 +103,8 @@
             </div>
 
             <p>
-                Síla Optional objektů se víc projeví až v&nbsp;kombinaci s&nbsp;Lambda výrazy a&nbsp;Streamy, ale o tom
-                až někdy příště.
+                Síla <span class="code">Optional</span> objektů se víc projeví až v&nbsp;kombinaci s&nbsp;Lambda 
+                výrazy a&nbsp;Streamy, ale o&nbsp;tom až někdy příště.
             </p>
 
         </div>

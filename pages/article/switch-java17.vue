@@ -3,13 +3,14 @@
         <ArticleHeader />
         <div class="article">
             <p>
-                Nedávno jsem to psal do jedné FB diskuse a několika uživatelům se to líbilo. Pak ale autor vlákna
-                celou diskusi najednou smazal. Tak jsem rozhodl sepsat to rovnou jako trvalý článek.
+                Nedávno jsem to psal do jedné FB diskuse a&nbsp;několika uživatelům se to líbilo. Pak ale autor 
+                vlákna celou diskusi najednou smazal. Tak jsem rozhodl sepsat to rovnou jako trvalý článek.
             </p>
             <p>
-                Java se postupně mění a podle mě se většinou mění k lepšímu. Jedním z příkladů vývoje v nejnovější
-                LTS verzi Java 17 ze září 2021 evoluce příkazu <span class="code">switch</span>. Jako ukázkový příklad
-                mám jednoduchý úkol - vezmi náhodné číslo 1-7 a vypiš počet písmen v anglickém názvu příslušného dne v týdnu.
+                Java se postupně mění a&nbsp;podle mě se většinou mění k&nbsp;lepšímu. Jedním z&nbsp;příkladů 
+                vývoje v&nbsp;nejnovější LTS verzi Java&nbsp;17 ze září 2021 evoluce příkazu 
+                <span class="code">switch</span>. Jako ukázkový příklad mám jednoduchý úkol - vezmi náhodné číslo 
+                1-7 a&nbsp;vypiš počet písmen v&nbsp;anglickém názvu příslušného dne v&nbsp;týdnu.
             </p>
             <p>
                 Ve "staré" verzi <span class="code">switch</span> by to hlavní vypadalo třeba takto:
@@ -37,8 +38,8 @@
             </div>
 
             <p>
-                Vylepšený <span class="code">switch</span> umí dvě věci - spojit větve se stejnou obsluhou na jeden řádek s využtím 
-                nového symbolu <span class="code">-></span> a tím ušetřit místo. Tedy např.:
+                Vylepšený <span class="code">switch</span> umí dvě věci - spojit větve se stejnou obsluhou na jeden řádek 
+                s&nbsp;využtím nového symbolu <span class="code">-></span> a&nbsp;tím ušetřit místo. Tedy např.:
             </p>
             <div class="code">
                 <span class="j-key">case</span> <span class="j-var">MONDAY</span>, <span class="j-var">FRIDAY</span>, <span class="j-var">SUNDAY</span> -> System.<span class="j-var">out</span>.println(<span class="j-val">6</span>);
@@ -55,7 +56,7 @@
                 <span class="code"><span class="j-key">var</span> variable = <span class="j-key">switch</span> {<span class="j-com">…</span>}</span>. Je třeba myslet 
                 na tři věci:
                 <ul class="list-decimal">
-                    <li>Je-li kód větve v bloku, návratová hodnota se uvozuje kličovým slovem <span class="code">yield</span></li>
+                    <li>Je-li kód větve v&nbsp;bloku, návratová hodnota se uvozuje kličovým slovem <span class="code">yield</span></li>
                     <li>Návratové typy všech větví musí být všechny stejné</li>
                     <li>Musí být pokryty všechny varianty vstupu (většinou řešitelné přes <span class="code">default</span>)</li>
                 </ul>
@@ -78,14 +79,14 @@
                 System.<span class="j-var">out</span>.println(<span class="j-lit">"Result is: "</span> + numLetters);<br />
             </div>
             <p>
-                Za mě mnohem kratší, kompatknější a hezčí.
+                Za mě mnohem kratší, kompatknější a&nbsp;hezčí.
             </p>
             <p></p>
             <p>
                 <NuxtLink to="https://github.com/AloisSeckar/demos-java/blob/master/src/main/java/cz/aloisseckar/java/javademos/java17/newswitch/SwitchDemo.java" :external="true">
                     Demo kód
                 </NuxtLink>
-                v rámci mého projektu
+                v&nbsp;rámci mého projektu
                 <NuxtLink to="https://github.com/AloisSeckar/demos-java" :external="true">
                     Java Demos
                 </NuxtLink>

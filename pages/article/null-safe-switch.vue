@@ -9,7 +9,7 @@
                 přichází s&nbsp;pattern matchingem, který okruh možností dále rozšiřuje. To je však téma na samostatný článek.
             </p>
             <p>
-                Stejně jako v případě <NuxtLink to="">.equals()</NuxtLink> se i&nbsp;v&nbsp;příkazu 
+                Stejně jako v&nbsp;případě <NuxtLink to="">.equals()</NuxtLink> se i&nbsp;v&nbsp;příkazu 
                 <span class="code">switch</span> skrývá hrozba. Nemůžete do něj poslat <span class="code">null</span>, 
                 aniž by se urazil a&nbsp;nevyplivl <span class="code">NullPointerException</span>.
             </p>
@@ -49,8 +49,8 @@
                     <span class="j-com">&lt;default&gt;</span> )) {<span class="j-com">…</span>}
             </div>
             <p>
-                Je to o malinko delší, ale třeba pro někoho srozumitelnější a čitelnější než ternární operátor. 
-                Navíc pokud instanci třídy Optional už máte v kódu k dispozici, pak už hraje srovnání čitelnosti 
+                Je to o&nbsp;malinko delší, ale třeba pro někoho srozumitelnější a&nbsp;čitelnější než ternární operátor. 
+                Navíc pokud instanci třídy Optional už máte v&nbsp;kódu k&nbsp;dispozici, pak už hraje srovnání čitelnosti 
                 jednoznačně pro tuto variantu:
             </p>
             <div class="code">

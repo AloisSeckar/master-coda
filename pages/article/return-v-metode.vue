@@ -4,7 +4,7 @@
         <div class="article">
 
             <p class="font-italic">
-                <strong>Pozn.:</strong> S ohledem na mé zaměření mám zkušenosti převážně v&nbsp;Javě a &nbsp;JavaScriptu). 
+                <strong>Pozn.:</strong> S ohledem na mé zaměření mám zkušenosti převážně v&nbsp;Javě a&nbsp;JavaScriptu). 
                 Je možné, že v&nbsp;jiných jazycích mohou platit trochu jiná pravidla a&nbsp;jiná pro a&nbsp;proti.
             </p>
             <p>
@@ -22,15 +22,15 @@
             </p>
             <p>
                 V&nbsp;jedné se svých technik pro refaktoring nazvané <em>„Replace Nested Conditional with Guard Clauses“</em>
-                dělá pravý opak a&nbsp;kód se čtyřmi přiřazeními výsledku a &nbsp;jedním returnem bourá a&nbsp;předělává do 
+                dělá pravý opak a&nbsp;kód se čtyřmi přiřazeními výsledku a&nbsp;jedním returnem bourá a&nbsp;předělává do 
                 čtyř řádků, každý s&nbsp;vlastním returnem. Argumentuje přitom tím, že čitelnost a&nbsp;srozumitelnost je 
                 důležitější. A&nbsp;jeho úprava je vskutku kompaktnější než <span class="code">if-else hell</span>, 
                 se kterým začínal.
             </p>
             <p>
-                Jedno klišovité moudro říká, že <em>„když máš v ruce kladivo, všechno začne vypadat jako hřebík“</em>. 
-                Jenže svět se samozřejmě neskládá pouze z hřebíků, tudíž je třeba znát i&nbsp;jiné nástroje a&nbsp;vědět, 
-                kdy použít který. Podle mě se to úplně stejně platí v případě uplatňování pravidel (nejen) pro programování.
+                Jedno klišovité moudro říká, že <em>„když máš v&nbsp;ruce kladivo, všechno začne vypadat jako hřebík“</em>. 
+                Jenže svět se samozřejmě neskládá pouze z&nbsp;hřebíků, tudíž je třeba znát i&nbsp;jiné nástroje a&nbsp;vědět, 
+                kdy použít který. Podle mě se to úplně stejně platí v&nbsp;případě uplatňování pravidel (nejen) pro programování.
             </p>
 
             <h2>Argumenty pro a&nbsp;proti</h2>
@@ -41,7 +41,7 @@
             <ul class="list-disc">
                 <li>
                     Důležitý argument pro single return byl obsluha memory leaků. Předčasný return mohl způsobit, 
-                    že se nevykonal kód pro uvolnění paměti. To v Javě není až tak velké téma (naučte se ale pracovat 
+                    že se nevykonal kód pro uvolnění paměti. To v&nbsp;Javě není až tak velké téma (naučte se ale pracovat 
                     s&nbsp;<span class="code">try-with-resources</span>, protože s&nbsp;I/O prostředky a&nbsp;DB konektory 
                     vám automatická správa paměti pomoct nemůže), tedy můžeme dát spíše přednost obecné čitelnosti kódu.
                 </li>

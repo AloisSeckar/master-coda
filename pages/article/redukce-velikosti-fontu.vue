@@ -53,7 +53,7 @@
                 vám dřív nebo později určitě vyplatí.
             </p>
             <p>
-                Co kdybychom tedy dokázali z definice fontu vypárat subset právě jen těch potřebných jedenácti znaků? 
+                Co kdybychom tedy dokázali z&nbsp;definice fontu vypárat subset právě jen těch potřebných jedenácti znaků? 
             </p>
             <p>
                 Uhodli jste, jde to!
@@ -136,7 +136,7 @@
                 už je podpora dost dobrá.
             </p>
             <p>
-                Dobrá zpráva je, že i&nbsp;to umí <span class="code">pyftsubset</span>. Jen k tomu potřebuje 
+                Dobrá zpráva je, že i&nbsp;to umí <span class="code">pyftsubset</span>. Jen k&nbsp;tomu potřebuje 
                 zapnout volbu <span class="code">--flavor="woff2"</span> a&nbsp;doinstalovat Python modul 
                 kompresního Google nástroje <span class="code">brotli</span>, což je ale s&nbsp;pomocí 
                 <span class="code">pip</span> také hračka - jednoduše:
