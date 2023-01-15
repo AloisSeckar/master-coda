@@ -5,85 +5,85 @@
 @layer base {
 
     body {
-        @apply bg-slate-900
+        @apply bg-slate-900;
     }
 
     h1, h2, h3, h4, h5, h6 {
-        @apply text-amber-300 font-header font-bold
+        @apply text-amber-300 font-header font-bold;
     }
     h1 {
-        @apply text-4xl
+        @apply text-4xl;
     }
     h2 {
-        @apply pt-4 text-2xl
+        @apply pt-4 text-2xl;
     }
 
     a, a:visited {
-        @apply text-amber-300
+        @apply text-amber-300;
     }
     a:hover, a:active {
-        @apply text-amber-100
+        @apply text-amber-100;
     }
 
     div {
-        @apply text-green-700
+        @apply text-green-700;
     }
 }
 
 @layer components {
 
     .actionButton {
-        @apply m-1 mt-2 bg-slate-700 hover:bg-green-900 border border-amber-300 rounded text-center
+        @apply m-1 mt-2 bg-slate-700 hover:bg-green-900 border border-amber-300 rounded text-center;
     } 
     .actionButtonText {
-        @apply text-amber-300 hover:text-amber-100
+        @apply text-amber-300 hover:text-amber-100;
     }
     
     .articleList {
-        @apply mt-2 ml-6 text-justify marker:text-fuchsia-500
+        @apply mt-2 ml-6 text-justify marker:text-fuchsia-500;
     }
 
     .article {
-        @apply px-2
+        @apply px-2;
     }
     .article p {
-        @apply mt-2 mb-4 text-justify leading-5
+        @apply mt-2 mb-4 text-justify leading-5;
     }
     .article a {
-        @apply text-fuchsia-600 hover:text-fuchsia-400
+        @apply text-fuchsia-600 hover:text-fuchsia-400;
     }
     .article ul {
-        @apply ml-6 text-justify marker:text-amber-300
+        @apply ml-6 text-justify marker:text-amber-300;
     }
 
     .code {
-        @apply bg-transparent text-white font-code
+        @apply bg-transparent text-white font-code;
     }
     span.code {
-        @apply text-amber-300 px-px py-0
+        @apply text-amber-300 px-px py-0;
     }
     div.code {
-        @apply border border-amber-300 bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 text-left
+        @apply border border-amber-300 bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 text-left;
     }
 
     .j-key {
-        @apply text-blue-500 font-bold
+        @apply text-blue-500 font-bold;
     }
 
     .j-var {
-        @apply text-fuchsia-500
+        @apply text-fuchsia-500;
     }
 
     .j-lit {
-        @apply text-orange-400
+        @apply text-orange-400;
     }
 
     .j-val {
-        @apply text-teal-300
+        @apply text-teal-300;
     }
 
     .j-com {
-        @apply text-gray-400
+        @apply text-gray-400;
     }
 
 }
