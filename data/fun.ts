@@ -21,7 +21,7 @@ const fun = [
     },
     {
         id: 'programmers-then-and-now',
-        title: 'Then & now',
+        title: 'Dříve a dnes',
         added: '2023-01-14',
     },
     {
@@ -31,7 +31,7 @@ const fun = [
     },
     {
         id: 'intern',
-        title: 'Intern & Legacy code',
+        title: 'Junior a Legacy kód',
         added: '2023-01-14',
     },
     {
@@ -46,8 +46,13 @@ const fun = [
     },
     {
         id: 'pointers',
-        title: 'Pointers explained',
+        title: 'Jak funguje pointer',
         added: '2023-01-18',
+    },
+    {
+        id: 'networking',
+        title: 'Jak funguje internet',
+        added: '2023-01-25',
     },
 ]
 
