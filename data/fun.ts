@@ -54,6 +54,16 @@ const fun = [
         title: 'Jak funguje internet',
         added: '2023-01-25',
     },
+    {
+        id: 'toggl-princess',
+        title: 'Jak zachránit princeznu s programovacími jazyky (by Toggl)',
+        added: '2023-01-26',
+    },
+    {
+        id: 'toggl-dragon',
+        title: 'Jak zabít draka s programovacími jazyky (by Toggl)',
+        added: '2023-01-26',
+    },
 ]
 
 export { fun }
