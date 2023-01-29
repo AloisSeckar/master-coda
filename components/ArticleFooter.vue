@@ -1,10 +1,14 @@
 <template>
-    <div class="pt-1 text-xs">
-        <div class="my-1 text-amber-300">----------------------------------------</div>
-        <div class="font-bold">{{ article?.title }} @ Master Coda</div>
-        <a class="block" :href="link.replace('##','blob')">Zobrazit zdrojový kód článku</a>
-        <a class="block" :href="link.replace('##','edit')">Navrhnout úpravu</a>
+  <div class="pt-1 text-xs">
+    <div class="my-1 text-amber-300">
+      ----------------------------------------
     </div>
+    <div class="font-bold">
+      {{ article?.title }} @ Master Coda
+    </div>
+    <a class="block" :href="link.replace('##','blob')">Zobrazit zdrojový kód článku</a>
+    <a class="block" :href="link.replace('##','edit')">Navrhnout úpravu</a>
+  </div>
 </template>
 
 <script setup lang="ts">
