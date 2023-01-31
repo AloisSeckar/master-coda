@@ -56,12 +56,12 @@ const fun = [
   },
   {
     id: 'toggl-princess',
-    title: 'Jak zachránit princeznu s programovacími jazyky (by Toggl)',
+    title: 'Jak zachránit princeznu (by Toggl)',
     added: '2023-01-26'
   },
   {
     id: 'toggl-dragon',
-    title: 'Jak zabít draka s programovacími jazyky (by Toggl)',
+    title: 'Jak zabít draka (by Toggl)',
     added: '2023-01-26'
   }
 ]

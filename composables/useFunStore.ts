@@ -13,24 +13,24 @@ export const useFunStore = defineStore({
     return {
       loaded: false,
       items: [] as Fun[],
-      random: {} as Fun,
-      previous: ''
+      index: -1
     }
   },
   actions: {
     fill () {
       this.items = fun
+      this.index = this.items.length - 1
       this.loaded = true
-      this.getRandom()
     },
-    getRandom () {
-      let randomItem
-      do {
-        randomItem = this.items[Math.floor(Math.random() * this.items.length)]
-      } while (randomItem.id === this.previous)
-
-      this.previous = randomItem.id
-      this.random = randomItem
+    prevImage () {
+      if (this.index > 0) {
+        this.index--
+      }
+    },
+    nextImage () {
+      if (this.index < this.items.length - 1) {
+        this.index++
+      }
     }
   },
   getters: {
