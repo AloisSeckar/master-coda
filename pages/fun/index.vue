@@ -17,14 +17,18 @@
         {{ current }} / {{ total }}
       </div>
       <div class="w-[546px] mx-auto">
-        <div :class="buttonClass" @click="next">
-          <div class="actionButtonText">
-            Novější
+        <div class="m-1 w-64 inline-block">
+          <div v-if="nextEnabled" :class="buttonClass" @click="next">
+            <div class="actionButtonText">
+              Novější
+            </div>
           </div>
         </div>
-        <div :class="buttonClass" @click="prev">
-          <div class="actionButtonText">
-            Starší
+        <div class="m-1 w-64 inline-block">
+          <div v-if="prevEnabled" :class="buttonClass" @click="prev">
+            <div class="actionButtonText">
+              Starší
+            </div>
           </div>
         </div>
       </div>
@@ -36,7 +40,7 @@
 <script setup lang="ts">
 import { Fun } from '@/composables/useFunStore'
 
-const buttonClass = 'actionButton w-64 mx-2 hover:cursor-pointer inline-block'
+const buttonClass = 'actionButton w-full hover:cursor-pointer inline-block'
 
 const initial = ref(true)
 
@@ -58,17 +62,26 @@ const init = () => {
   initial.value = false
   reloadImage()
 }
+
 const next = () => {
   funStore.nextImage()
   reloadImage()
 }
+const nextEnabled = computed(() => funStore.index < funStore.items.length - 1)
+
 const prev = () => {
   funStore.prevImage()
   reloadImage()
 }
+const prevEnabled = computed(() => funStore.index > 0)
+
 const reloadImage = () => {
   const newImage = funStore.items[funStore.index]
   imageData.id = newImage.id
   imageData.title = newImage.title
 }
+
+onBeforeRouteLeave(() => {
+  initial.value = true
+})
 </script>
