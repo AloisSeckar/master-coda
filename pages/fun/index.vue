@@ -5,7 +5,7 @@
     </h1>
     <div v-if="initial">
       <div class="w-[260px] mx-auto">
-        <div class="actionButton w-64 mx-2 hover:cursor-pointer inline-block" @click="init">
+        <div :class="buttonClass" @click="init">
           <div class="actionButtonText">
             Prohlédnout si galerii
           </div>
@@ -17,12 +17,12 @@
         {{ current }} / {{ total }}
       </div>
       <div class="w-[546px] mx-auto">
-        <div class="actionButton w-64 mx-2 hover:cursor-pointer inline-block" @click="next">
+        <div :class="buttonClass" @click="next">
           <div class="actionButtonText">
             Novější
           </div>
         </div>
-        <div class="actionButton w-64 mx-2 hover:cursor-pointer inline-block" @click="prev">
+        <div :class="buttonClass" @click="prev">
           <div class="actionButtonText">
             Starší
           </div>
@@ -35,6 +35,8 @@
 
 <script setup lang="ts">
 import { Fun } from '@/composables/useFunStore'
+
+const buttonClass = 'actionButton w-64 mx-2 hover:cursor-pointer inline-block'
 
 const initial = ref(true)
 
