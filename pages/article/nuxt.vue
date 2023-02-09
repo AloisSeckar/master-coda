@@ -41,6 +41,12 @@
         <p>Návody, tipy a triky zde budou přibývat.</p>
         <p>Zatím se můžete podívat na mé postupně se rozrůstající úložiště s demo projekty (v angličtině):</p>
         <NuxtLink to="https://github.com/AloisSeckar/demos-nuxt" :external="true">demos-nuxt @ GitHub</NuxtLink>
+        <p>Pak jsou tu samozřejmě oficiální zdroje:</p>
+        <ul class="list-disc">
+            <li><a href="https://nuxt.com/docs">Nuxt dokumentace</a></li>
+            <li><a href="https://github.com/nuxt/nuxt/discussions">Nuxt fórum</a></li>
+        <ul>
+        <p>V češtině jsem zatím nic moc nenašel. Uvidíme.</p>
       </div>
     <ArticleFooter />
   </div>
