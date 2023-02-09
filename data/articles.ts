@@ -61,6 +61,15 @@ const articles = [
     tags: ['web', 'css', 'tipy', 'fonty', 'optimalizace', 'tutorial', 'python'],
     created: '14.01.2023',
     edited: '14.01.2023'
+  },
+  {
+    id: 'nuxt',
+    cat: 'web',
+    title: 'Nuxt Framework',
+    dscr: 'Představení nástroje, který je pro mě aktuálně nejlepší volbou pro tvorbu webů',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tipy'],
+    created: '09.02.2023',
+    edited: '09.02.2023'
   }
 ]
 
