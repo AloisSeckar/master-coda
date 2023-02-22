@@ -70,6 +70,15 @@ const articles = [
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tipy'],
     created: '09.02.2023',
     edited: '09.02.2023'
+  },
+  {
+    id: 'nuxt-simple',
+    cat: 'web',
+    title: 'Nuxt Tutorial 1 - první kroky',
+    dscr: 'Jak málo dnes stačí na funkční web',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
+    created: '22.02.2023',
+    edited: '22.02.2023'
   }
 ]
 
