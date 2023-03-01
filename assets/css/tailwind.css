@@ -52,7 +52,7 @@
     .article a {
         @apply text-fuchsia-600 hover:text-fuchsia-400;
     }
-    .article ul {
+    .article ul, .article ol {
         @apply ml-6 text-justify marker:text-amber-300;
     }
 
