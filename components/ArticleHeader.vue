@@ -9,7 +9,7 @@
       {{ article?.dscr }}
     </div>
     <div class="flex flex-wrap items-center text-fuchsia-600">
-      <strong>Tagy:&nbsp;</strong>
+      <strong v-if="tags?.length > 0">Tagy:&nbsp;</strong>
       <span v-for="tag in tags" :key="tag" class="actionButton px-1 pb-1">
         <NuxtLink :to="{ path: '/tag/' + tag }">
           <span class="actionButtonText">{{ tag }}</span>
@@ -25,7 +25,11 @@
 <script setup lang="ts">
 const path = useRoute().path
 const id = path.substring(path.lastIndexOf('/') + 1)
-const article = computed(() => useArticleStore().getById(id))
-const edited = computed(() => article.value?.created !== article.value?.edited)
-const tags = computed(() => article.value?.tags)
+let article = useArticleStore().getById(id)
+if (!article) {
+  article = useArticleStore().getEmpty
+  article.title = id
+}
+const edited = article.created !== article.edited
+const tags = article.tags
 </script>
