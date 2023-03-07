@@ -55,6 +55,12 @@
     .article ul, .article ol {
         @apply ml-6 text-justify marker:text-amber-300;
     }
+    .article code {
+        @apply text-amber-300 font-code;
+    }
+    .article h2 > a {
+        @apply text-amber-300 hover:text-amber-200;
+    }
 
     .code {
         @apply bg-transparent text-white font-code;

@@ -1,6 +1,7 @@
 <template>
   <div>
     <ArticleHeader />
+    {{ useRoute().path }}
     <div class="article">
       <ContentDoc>
         <template #not-found>
