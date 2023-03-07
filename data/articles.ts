@@ -6,7 +6,7 @@ const articles = [
     dscr: 'Jak se vyhnout problémům s NULL hodnotou při porovnávání aktuální hodnoty promněnné?',
     tags: ['Java', 'tipy', 'syntaxe', 'NullPointerException'],
     created: '04.01.2023',
-    edited: '04.01.2023'
+    edited: '07.03.2023'
   },
   {
     id: 'null-safe-switch',
