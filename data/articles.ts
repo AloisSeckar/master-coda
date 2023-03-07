@@ -1,6 +1,6 @@
 const articles = [
   {
-    id: 'null-safe-if',
+    id: 'null-safe-equals',
     cat: 'java',
     title: 'Null-safe porovnání',
     dscr: 'Jak se vyhnout problémům s NULL hodnotou při porovnávání aktuální hodnoty promněnné?',
