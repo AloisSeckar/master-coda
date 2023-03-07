@@ -61,11 +61,12 @@
     .article h2 > a {
         @apply text-amber-300 hover:text-amber-200;
     }
-    .article pre {
-        @apply border border-amber-300 bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 text-left overflow-x-auto whitespace-nowrap;
     
+    .article pre {
+        @apply border border-amber-300 bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 overflow-x-auto whitespace-nowrap;
     }
 
+    /*
     .code {
         @apply bg-transparent text-white font-code;
     }
@@ -75,6 +76,7 @@
     div.code {
         @apply border border-amber-300 bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 text-left overflow-x-scroll whitespace-nowrap;
     }
+    */
 
     .j-key {
         @apply text-blue-500 font-bold;
