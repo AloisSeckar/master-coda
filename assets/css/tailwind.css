@@ -53,7 +53,10 @@
         @apply text-fuchsia-600 hover:text-fuchsia-400;
     }
     .article ul, .article ol {
-        @apply ml-6 text-justify marker:text-amber-300;
+        @apply ml-4 text-justify marker:text-amber-300;
+    }
+    .article li {
+        @apply before:content-['•_'] before:text-fuchsia-600
     }
     .article code {
         @apply text-amber-300 font-code;
