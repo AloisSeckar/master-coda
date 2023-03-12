@@ -63,6 +63,11 @@ const fun = [
     id: 'toggl-dragon',
     title: 'Jak zabít draka (by Toggl)',
     added: '2023-01-26'
+  },
+  {
+    id: 'racing-languages',
+    title: 'Závod programovacích jazyků',
+    added: '2023-03-12'
   }
 ]
 
