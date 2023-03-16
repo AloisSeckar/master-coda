@@ -68,6 +68,21 @@ const fun = [
     id: 'racing-languages',
     title: 'Závod programovacích jazyků',
     added: '2023-03-12'
+  },
+  {
+    id: 'while-vs-do-while',
+    title: 'Rozdíl mezi "while" a "do-swhile',
+    added: '2023-03-16'
+  },
+  {
+    id: 'async-programming',
+    title: 'Asynchronní programování',
+    added: '2023-03-16'
+  },
+  {
+    id: 'who-caused-bug',
+    title: 'Kdo způsobil tu chybu?',
+    added: '2023-03-16'
   }
 ]
 
