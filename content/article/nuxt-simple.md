@@ -26,7 +26,6 @@ Pokud budete chtít Nuxt rozjet lokálně, budete potřebovat:
  - **nuxt.config.ts** - konfigurační soubor pro Nuxt. Ve výchozím nastavení může být takto "prázdný", veškerá budoucí nastavení, se provádí dovnitř těla objektu, který je parametrem vestavěné (a tudíž zde rovnou automaticky importované) metody `defineNuxtConfig`.
  - **package-lock.json** - soubor, který automaticky generuje manažer balíčků `npm` během příkazu `npm install`, ve kterém si drží vyčerpávající definici všech projektových závislostí. Panují názory, že je možné jej z Gitu vynechat, protože se často mění a stejně si ho každý vývojář projektu generuje sám lokálně, držím se ovšem [doporučení](https://stackoverflow.com/a/44210813/3204544), že do repozitáře také patří.
  - **package.json** - klíčový soubor, který obsahuje zejména definice závislostí na externích projektech (v našem případě samozřejmě na balíčku `nuxt` a dále na dvou balíčících pro ESLint, a také definice základních příkazů v sekci `script` - definované aliasy se pak volají za "npm run *". <span style="color: gray">Tyto definice nejsou povinné, ale díky ním je ovládaní pohodlnější</span>
- - **pnpm-lock.yaml** - obdoba `package-lock.json`, ale pro alternativní manažer `pnpm`.
  - **tsconfig.json** - možnost customizace pro jinak generovaný soubor nastavení chování TypeScriptu. Více o tématu v (budoucím) samostatném článku.
  
  ## Nuxt Minimal
@@ -38,6 +37,6 @@ Tento subprojekt ukazuje, že ve skutečnosti jde Nuxt rozběhnout ještě jedno
 - **app.vue** - základní vstupní bod s jednoduchou šablonou uvnitř `<template>` + v tomto případě (prázdným) tagem `<script>` (bez něj to při absenci `nuxt.config.ts` souboru nějak nefunguje)
 - **package.json** - ve kterém bude v `devDependencies`</span> deklarovaná závislost na balíčku `nuxt`. <span style="color: gray">Definice npm skriptů tam nezbytně být nemusí.</span>
 
-Zbylé tři soubory v úložišti jsou de-facto navíc - `README.md`, `package-lock.json` a `pnpm-lock.yaml` už jsou popsány výše.
+Zbylé dva soubory v úložišti jsou de-facto navíc - `README.md` a `package-lock.json` už jsou popsány výše.
 
 UPOZORNĚNÍ: Berte však toto pouze jako "legrácku" k demonstračním účelům. Absence běžně očekávaných součástí systémů by se mohla ukázat problematická při pokusu o jakékoliv větší využití. Držte se raději varianty `nuxt-simple`.
