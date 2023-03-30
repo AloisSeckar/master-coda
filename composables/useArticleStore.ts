@@ -36,13 +36,13 @@ export const useArticleStore = defineStore({
     },
     getEmpty: (): Article => {
       return {
-          id: '',
-          cat: '',
-          title: '',
-          dscr: '',
-          tags: [],
-          created: '',
-          edited: ''
+        id: '',
+        cat: '',
+        title: '',
+        dscr: '',
+        tags: [],
+        created: '',
+        edited: ''
       }
     }
   }

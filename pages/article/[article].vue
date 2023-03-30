@@ -11,7 +11,3 @@
     <ArticleFooter />
   </div>
 </template>
-
-<script setup>
-const id = useRoute().params.article.toString()
-</script>
