@@ -74,11 +74,38 @@ const articles = [
   {
     id: 'nuxt-simple',
     cat: 'web',
-    title: 'Nuxt Tutorial 1 - první kroky',
+    title: 'Nuxt Tutorial 1 - První kroky',
     dscr: 'Jak málo dnes stačí na funkční web',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '22.02.2023',
     edited: '01.03.2023'
+  },
+  {
+    id: 'nuxt-pages',
+    cat: 'web',
+    title: 'Nuxt Tutorial 2 - Stránky a komponenty',
+    dscr: 'Nuxt 3 - jak fungují složky /pages a /components',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
+    created: '07.04.2023',
+    edited: '07.04.2023'
+  },
+  {
+    id: 'nuxt-api',
+    cat: 'web',
+    title: 'Nuxt Tutorial 3 - Serverová část',
+    dscr: 'Nuxt 3 - jak funguje serverová část',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
+    created: '07.04.2023',
+    edited: '07.04.2023'
+  },
+  {
+    id: 'nuxt-middleware',
+    cat: 'web',
+    title: 'Nuxt Tutorial 4 - Middleware',
+    dscr: 'Nuxt 3 - jak pracuje middleware',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
+    created: '07.04.2023',
+    edited: '07.04.2023'
   }
 ]
 
