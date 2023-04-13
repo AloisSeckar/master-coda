@@ -14,6 +14,6 @@
 <script setup lang="ts">
 const path = useRoute().path
 const id = path.substring(path.lastIndexOf('/') + 1)
-const link = `https://github.com/AloisSeckar/master-coda/##/master/pages/article/${id}.vue`
+const link = `https://github.com/AloisSeckar/master-coda/##/master/content/article/${id}.md`
 const article = computed(() => useArticleStore().getById(id))
 </script>
