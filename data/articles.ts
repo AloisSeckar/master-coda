@@ -106,6 +106,15 @@ const articles = [
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '07.04.2023',
     edited: '07.04.2023'
+  },
+  {
+    id: 'nuxt-content',
+    cat: 'web',
+    title: 'Nuxt Tutorial 5 - Nuxt Content',
+    dscr: 'Nuxt 3 - modul pro usnadnění tvorby obsahu',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
+    created: '13.04.2023',
+    edited: '13.04.2023'
   }
 ]
 
