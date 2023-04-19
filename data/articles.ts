@@ -83,8 +83,17 @@ const articles = [
   {
     id: 'nuxt-pages',
     cat: 'web',
-    title: 'Nuxt Tutorial 2 - Stránky a komponenty',
-    dscr: 'Nuxt 3 - jak fungují složky /pages a /components',
+    title: 'Nuxt Tutorial 2 - Components & Pages',
+    dscr: 'Nuxt 3 - jak fungují složky /components a /pages',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
+    created: '07.04.2023',
+    edited: '18.04.2023'
+  },
+  {
+    id: 'nuxt-utils',
+    cat: 'web',
+    title: 'Nuxt Tutorial 3 - Composables & Utils',
+    dscr: 'Nuxt 3 - jak fungují složky /composables a /utils',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '07.04.2023',
     edited: '18.04.2023'
@@ -92,7 +101,7 @@ const articles = [
   {
     id: 'nuxt-api',
     cat: 'web',
-    title: 'Nuxt Tutorial 3 - Serverová část',
+    title: 'Nuxt Tutorial 4 - Serverová část',
     dscr: 'Nuxt 3 - jak funguje serverová část',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '07.04.2023',
@@ -101,7 +110,7 @@ const articles = [
   {
     id: 'nuxt-middleware',
     cat: 'web',
-    title: 'Nuxt Tutorial 4 - Middleware',
+    title: 'Nuxt Tutorial 5 - Middleware',
     dscr: 'Nuxt 3 - jak pracuje middleware',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '07.04.2023',
@@ -110,7 +119,7 @@ const articles = [
   {
     id: 'nuxt-content',
     cat: 'web',
-    title: 'Nuxt Tutorial 5 - Nuxt Content',
+    title: 'Nuxt Tutorial 6 - Nuxt Content',
     dscr: 'Nuxt 3 - modul pro usnadnění tvorby obsahu',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
     created: '13.04.2023',
