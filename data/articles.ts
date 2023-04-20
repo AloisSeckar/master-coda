@@ -92,11 +92,11 @@ const articles = [
   {
     id: 'nuxt-utils',
     cat: 'web',
-    title: 'Nuxt Tutorial 3 - Composables & Utils',
-    dscr: 'Nuxt 3 - jak fungují složky /composables a /utils',
+    title: 'Nuxt Tutorial 3 - Utils & Composables',
+    dscr: 'Nuxt 3 - jak fungují složky /utils a /composables',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '07.04.2023',
-    edited: '18.04.2023'
+    edited: '20.04.2023'
   },
   {
     id: 'nuxt-api',
