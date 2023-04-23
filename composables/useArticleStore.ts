@@ -31,6 +31,9 @@ export const useArticleStore = defineStore({
     getById: (state) => {
       return (id: string) => state.items.find(i => i.id === id)
     },
+    getByTitle: (state) => {
+      return (title: string) => state.items.filter(i => i.title?.includes(title))
+    },
     getByTag: (state) => {
       return (tag: string) => state.items.filter(i => i.tags?.includes(tag))
     },

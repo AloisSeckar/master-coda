@@ -8,6 +8,11 @@
         </template>
       </ContentDoc>
     </div>
+    <NuxtTutorialNavigation v-if="isNuxtTutorial" />
     <ArticleFooter />
   </div>
 </template>
+
+<script setup lang="ts">
+const isNuxtTutorial = useRoute().params.article?.includes('nuxt-')
+</script>
