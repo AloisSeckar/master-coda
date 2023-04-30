@@ -37,7 +37,7 @@ Za `->` může následovat buďto jediný příkaz nebo blok kódu. Zároveň u�
 
 Druhá vymoženost je ještě zajímavější - `switch`{lang="java"} teď umí jako celek přímo vracet nějakou hodnotu. Kompileru se to sdělí tak, že začneme psát `var variable = switch { … }`{lang="java"}. Je třeba myslet na tři věci:
 
-- Je-li kód větve v&nbsp;bloku, návratová hodnota se uvozuje kličovým slovem `yield`{lang="java"}
+- Je-li kód větve v&nbsp;bloku, návratová hodnota se uvozuje klíčovým slovem `yield`{lang="java"}
 - Návratové typy všech větví musí být všechny stejné
 - Musí být pokryty všechny varianty vstupu (většinou řešitelné přes `default`{lang="java"})
 

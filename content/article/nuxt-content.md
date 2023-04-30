@@ -1,10 +1,10 @@
-Modul [Nuxt Content](https://content.nuxtjs.org/) je elegantní způsob, jak si usnadnit tvorbu obsahu na webu. Místo složitého šablonování vlastního HTML + CSS je možné jednoduše vzít něco lepšího - například [Markdown](https://www.markdownguide.org/). Stačí dodat zdrojová data, Nuxt Content zařídí za vás, aby se obsah správně vykreslil. A `.md` soubory to nekončí, umí pracovat i s dalšími formáty. V tomto díle tutorialu si však ukážeme pouze implementaci souborů stylovaných pomocí Markdown syntaxe.
+Modul [Nuxt Content](https://content.nuxtjs.org/) je elegantní způsob, jak si usnadnit tvorbu obsahu na webu. Místo složitého šablonování vlastního HTML + CSS je možné jednoduše vzít něco lepšího - například [Markdown](https://www.markdownguide.org/). Stačí dodat zdrojová data, Nuxt Content zařídí za vás, aby se obsah správně vykreslil. A `.md` soubory to nekončí, umí pracovat i s dalšími formáty. V tomto díle tutoriálu si však ukážeme pouze implementaci souborů stylovaných pomocí Markdown syntaxe.
 
 ## Případová studie
 
 Pro příklad použití v praxi nemusíme chodit daleko - právě ho čtete. Když jsem s webem Master Coda začínal, původní myšlenka byla mít samostatnou Nuxt komponentu pro každý jednotlivý článek. To znamenalo mít ji plnou stylovaných HTML tagů, aby se obsah vykresloval tak, jak by se mi líbilo. Bylo to pracné a těžkopádné. Pak jsem se dozvěděl o existenci Nuxt Content.
 
-Výslekdem je, že samotný obsah článku žije ve svém souboru `jmeno-clanku.md` v adresáři `/content/article/`. Chcete-li se pro zajímavost podívat, tady najdete, [jak vypadá tento článek](https://github.com/AloisSeckar/master-coda/blob/master/content/article/nuxt-content.md).
+Výsledkem je, že samotný obsah článku žije ve svém souboru `jmeno-clanku.md` v adresáři `/content/article/`. Chcete-li se pro zajímavost podívat, tady najdete, [jak vypadá tento článek](https://github.com/AloisSeckar/master-coda/blob/master/content/article/nuxt-content.md).
 
 Zvolil jsem Markdown, protože tuto syntaxi celkem dobře znám z různých MediaWiki stránek. Píše se mnohem snáz než těžkopádné HTML s CSS třídami. CSS (resp. [Tailwind]('/article/nuxt-tailwind')) jsem tedy úplně neopustil, ale stylování je nyní globální a o těžkou práci s přiřazováním tříd se stará Nuxt Content, který v sobě navíc obsahuje i zabudovaný syntax-highlighting pro označené bloky zdrojového kódu.
 
@@ -27,11 +27,11 @@ export default defineNuxtConfig({
 })
 ```
 
-Strukturovaný obsah, který budete chtít vykreslovat, umístěte do složky `/content`. Tato složka se chová stejně jako `/pages` - aktuální cesta dle URL v prohlížeči se automaticky se namapuje příslušný obsah. Pomocí podadresářů lze vytvářet složitější struktury. V místech, kde se má strukturovamý obsah vykreslovat, použijte komponentu `<ContentDoc />`. Pokud chcete, můžete ji použít zcela místo `<NuxtPage />` a namísto klasických `/pages` dodávat veškerý věcný obsah vašeho webu už jen přes Nuxt Content.
+Strukturovaný obsah, který budete chtít vykreslovat, umístěte do složky `/content`. Tato složka se chová stejně jako `/pages` - aktuální cesta dle URL v prohlížeči se automaticky se namapuje příslušný obsah. Pomocí podadresářů lze vytvářet složitější struktury. V místech, kde se má strukturovaný obsah vykreslovat, použijte komponentu `<ContentDoc />`. Pokud chcete, můžete ji použít zcela místo `<NuxtPage />` a namísto klasických `/pages` dodávat veškerý věcný obsah vašeho webu už jen přes Nuxt Content.
 
-Dá se to ale i kombinovat, jako to mám například použito zde na svém webu. Klasické struktury komponent pro jednotlivé stránky jsem se nevzdal, komponentu `<ContentDoc />` používám pouze na stránce `/pages/article/[article].vue` - mezi společnou hlavičkou a patičkou, což zase jsou klasické Vue komponenty. Když tedy navštívíte v prohlížeči stránku článku, Nuxt načte globálě společné části definované v šabloně `app.vue`, potom hlavičku a patičku společnou pro všechny články a mezi ně pomocí modulu Nuxt Content naservíruje příslušný `.md` soubor ze složky `/content/article`.
+Dá se to ale i kombinovat, jako to mám například použito zde na svém webu. Klasické struktury komponent pro jednotlivé stránky jsem se nevzdal, komponentu `<ContentDoc />` používám pouze na stránce `/pages/article/[article].vue` - mezi společnou hlavičkou a patičkou, což zase jsou klasické Vue komponenty. Když tedy navštívíte v prohlížeči stránku článku, Nuxt načte globálně společné části definované v šabloně `app.vue`, potom hlavičku a patičku společnou pro všechny články a mezi ně pomocí modulu Nuxt Content naservíruje příslušný `.md` soubor ze složky `/content/article`.
 
-Pokud byste náhodou zkusili navštívit URL neexistujícího článku, stačí komponentě dodat obsah, který má vykreslit, pokud nenalzne odpovídající obsah v očekávané cestě. Dělá se to velmi jednoduše pomocí [pojmenovaného slotu](https://vuejs.org/guide/components/slots.html#named-slots) `#not-found`:
+Pokud byste náhodou zkusili navštívit URL neexistujícího článku, stačí komponentě dodat obsah, který má vykreslit, pokud nenalezne odpovídající obsah v očekávané cestě. Dělá se to velmi jednoduše pomocí [pojmenovaného slotu](https://vuejs.org/guide/components/slots.html#named-slots) `#not-found`:
 
 ```js
 <ContentDoc>

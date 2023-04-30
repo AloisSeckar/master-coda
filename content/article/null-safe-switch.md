@@ -1,4 +1,4 @@
-Switch je způsob, jak (nejen) v&nbsp;Javě rozdělit kód do více větví podle hodnoty kontrolní proměnné. Použít jde tradičně na ordinální datové typy, enumy a&nbsp;od Java&nbsp;7 na řetězce. Java&nbsp;17 čerstvě přichází s&nbsp;pattern matchingem, který okruh možností dále rozšiřuje. To je však téma na samostatný článek.
+Switch je způsob, jak (nejen) v&nbsp;Javě rozdělit kód do více větví podle hodnoty kontrolní proměnné. Použít jde tradičně na ordinální datové typy, výčtové typy (enum) a&nbsp;od Java&nbsp;7 na řetězce. Java&nbsp;17 čerstvě přichází s&nbsp;pattern matchingem, který okruh možností dále rozšiřuje. To je však téma na samostatný článek.
 
 Stejně jako v&nbsp;případě `.equals()`{lang=java} se i&nbsp;v&nbsp;příkazu `switch`{lang=java} skrývá hrozba. Nemůžete do něj poslat `null`{lang=java}, aniž by se urazil a&nbsp;nevyplivl `NullPointerException`{lang=java}.
 
@@ -18,7 +18,7 @@ Jsou to ale dva řádky +&nbsp;odsazení navíc. Mě se proto víc líbí varian
 switch(variable != null ? variable : <<default>>) { … }
 ```
 
-Krom úspory místa se to může hodit třeba v&nbsp;případě, že chcete mít stejnou default akci (například zahlásit „Neznámá akce“) jak pro neznámou hodnotu i&nbsp;pro `null`{lang=java}. Teď prostěn obojí dáte do `default`{lang=java} labelu uvnitř `switch`{lang=java} výrazu.
+Krom úspory místa se to může hodit třeba v&nbsp;případě, že chcete mít stejnou default akci (například zahlásit „Neznámá akce“) jak pro neznámou hodnotu i&nbsp;pro `null`{lang=java}. Teď prostě obojí dáte do `default`{lang=java} labelu uvnitř `switch`{lang=java} výrazu.
 
 ## Optional?
 

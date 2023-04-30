@@ -3,7 +3,7 @@ const articles = [
     id: 'null-safe-equals',
     cat: 'java',
     title: 'Null-safe porovnání',
-    dscr: 'Jak se vyhnout problémům s NULL hodnotou při porovnávání aktuální hodnoty promněnné?',
+    dscr: 'Jak se vyhnout problémům s NULL hodnotou při porovnávání aktuální hodnoty proměnné?',
     tags: ['Java', 'tipy', 'syntaxe', 'NullPointerException'],
     created: '04.01.2023',
     edited: '07.03.2023'
@@ -57,7 +57,7 @@ const articles = [
     id: 'redukce-velikosti-fontu',
     cat: 'web',
     title: 'Redukce objemu dat při práci s webovými fonty',
-    dscr: 'Jak se vyhnout posílání zbytečnýh dat při použití netradičního fontu na webu',
+    dscr: 'Jak se vyhnout posílání zbytečných dat při použití netradičního fontu na webu',
     tags: ['web', 'css', 'tipy', 'fonty', 'optimalizace', 'tutorial', 'python'],
     created: '14.01.2023',
     edited: '14.01.2023'

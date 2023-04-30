@@ -3,7 +3,7 @@ Základy Vue.js aplikací se staví pomocí **_komponent_**. Komponenta Vue.js j
 - `<script>` - prostor pro JavaScript (TypeScript) definici speciální funkcionality komponenty
 - `<style>` - možnost definice grafických CSS stylů
 
-Poměrně často chybí sekce `<style>`, protože komoponenta buď žádné "svoje" styly nepotřebuje definovat, nebo se stylování řeší klasickým centralizovaným způsobem pomocí importu .css (nebo .scss, aj.) souborů. Setkáváme se také s komponentami bez sekce `<script>`, které definují pouze statický vzhled, nebo jednoduché JS výrazy používají inline přímo v `<template>`. Komponenta bez `<template>` je validní (musí však v takovém případě obsahovat `<script>` sekci), ale zatím jsem se nesetkal s praktickým použitím. Pro obslužný kód bez grafického výstupu je lépe použít jiné metody, o kterých si něco řekneme v dalších částech tutorialu.
+Poměrně často chybí sekce `<style>`, protože komponenta buď žádné "svoje" styly nepotřebuje definovat, nebo se stylování řeší klasickým centralizovaným způsobem pomocí importu .css (nebo .scss, aj.) souborů. Setkáváme se také s komponentami bez sekce `<script>`, které definují pouze statický vzhled, nebo jednoduché JS výrazy používají inline přímo v `<template>`. Komponenta bez `<template>` je validní (musí však v takovém případě obsahovat `<script>` sekci), ale zatím jsem se nesetkal s praktickým použitím. Pro obslužný kód bez grafického výstupu je lépe použít jiné metody, o kterých si něco řekneme v dalších částech tutoriálu.
 
 Aby bylo možné komponenty používat na jiných místech Vue.js aplikace, je třeba je **_registrovat_** - buďto v jiné komponentě, kde je chceme použít, nebo to lze i globálně pro celou aplikaci. Ve vanilla Vue.js se to ale každopádně musí dělat ručně.
 
@@ -27,17 +27,17 @@ Důležité každopádně je, že Nuxt sám od sebe podporuje obě možnosti a o
 
 Díky složce `/components` už máme způsob, jak si všude v Nuxt aplikaci zpřístupnit námi definované komponenty. Druhá speciální složka `/pages` obsahuje rovněž soubory, které jsou technicky Vue.js komponentami, také je automaticky procesuje, ale dělá s nimi trochu něco jiného. Obsažené podadresáře a soubory komponent převádí na aplikační cesty (routes). Pokud odpovídající URL zadáte do prohlížeče, vykreslí se obsah příslušné komponenty.
 
-Základem je typicky soubor `/pages/index.vue`, který obsauje to, co se zobrazí po první návštěvě domény - v testovacím případě `http://localhost:3000`. Pokud máme skutečně "jednostránkovou" aplikaci, lze tento krok přeskočit a všechno mít už přímo v `app.vue`. Jakmile ale začneme přidávat další stránky, už se bez této stránky moc neobejdeme, protože Nuxt by pak měl problém určit, co má ve výchozím stavu zobrazit.
+Základem je typicky soubor `/pages/index.vue`, který obsahuje to, co se zobrazí po první návštěvě domény - v testovacím případě `http://localhost:3000`. Pokud máme skutečně "jednostránkovou" aplikaci, lze tento krok přeskočit a všechno mít už přímo v `app.vue`. Jakmile ale začneme přidávat další stránky, už se bez této stránky moc neobejdeme, protože Nuxt by pak měl problém určit, co má ve výchozím stavu zobrazit.
 
 Přidáme-li soubor `/pages/first.vue`, aplikace bude schopná zobrazit odpovídající obsah při návštěvě `http://localhost:3000/first`. Pokud přidáme podadresáře, je struktura respektována. Obsah `/pages/first/second.vue` bude zobrazen na `http://localhost:3000/first/second`. Pokud Nuxt žádnou odpovídající stránku nenajde, vyhodí chybu 404. To všechno se stejně jako u registrace komponent děje "samo". My prostě jen přidáváme nové stránky a Nuxt tvoří nové URL.
 
 To ale ještě není všechno. Nuxt zvládá i tzv. "dynamické" stránky. Pokud název souboru či adresáře obalíme do hranatých závorek, začne Nuxt zachytávat "cokoliv", co nebylo možné namapovat na více specifickou cestu. Tzn. pokud založíme `/pages/[page].vue` a nic dalšího, bude nám do této komponenty padat úplně vše (tedy neplatí tak docela, že _vždy_ potřebujeme `/pages/index.vue`). Pokud k tomu založíme `/pages/first.vue`, tak `http://localhost:3000/first` povede na obsah stránky `first` a cokoliv jiného na obsah stránky `[page]`.
 
-Části v hranatých závorkách se říká "slug" a většinou slouží k identifikaci unikáního datového obsahu, který se ale v obecné rovině zobrazuje stejně. Typicky můžeme mít například stránku pro detail produktu v obchodě `/pages/product/[id].vue`, která bude v rámci společné šablony zobrazovat konkrétní data na základě zachyceného `id`. 
+Části v hranatých závorkách se říká "slug" a většinou slouží k identifikaci unikátního datového obsahu, který se ale v obecné rovině zobrazuje stejně. Typicky můžeme mít například stránku pro detail produktu v obchodě `/pages/product/[id].vue`, která bude v rámci společné šablony zobrazovat konkrétní data na základě zachyceného `id`. 
 
 Parametry získané z URL cesty jsou k dispozici ve `<script>` části komponenty stránky pomocí `useRoute().params` - například tedy `useRoute().params.id` nebo `useRoute().params.page` podle toho, jak jsme pojmenovali náš "slug". S tím pak můžeme ve skriptu pracovat a získat správná data pro zobrazení.
 
-Druhou variantou použití jsou tzv. "catch-all" cesty, kterýmí zobrazíme defaultní stránku pro "cokoliv jiného, než pro co máme dedikovanou stránku", a vyhneme se nutnosti ošetřovat chybu 404.
+Druhou variantou použití jsou tzv. "catch-all" cesty, kterými zobrazíme defaultní stránku pro "cokoliv jiného, než pro co máme dedikovanou stránku", a vyhneme se nutnosti ošetřovat chybu 404.
 
 Chtěl bych ještě zmínit dvě vychytávky:
 - lze kombinovat statickou a dynamickou část - tj. například mít soubory `/pages/product-[id].vue` a `/pages/cagtegory-[id].vue`
@@ -49,7 +49,7 @@ Jak je vidět, systém je nesmírně flexibilní a sám od sebe dovoluje různá
 
 Tento blog se zobrazuje díky souboru `/pages/article/[article].vue`. Základ (hlavička s názvem, daty a tagy + patička s odkazy na GitHub) je společný pro všechny články a je realizován pomocí dvou komponent - `/components/ArticleHeader.vue` a `/components/ArticleFooter.vue`. Na základě konkrétní URL (zde `/article/nuxt-pages`) se vybere potřebný obsah článku, který odpovídá unikátnímu výrazu `nuxt-pages`.
 
-**Pozn.:** Princip platí, ale způsob práce se získanou hodnotou je přeci jen trochu odlišný. Více se dozvíte v [Nuxt tutorialu číslo 6](/article/nuxt-content).
+**Pozn.:** Princip platí, ale způsob práce se získanou hodnotou je přeci jen trochu odlišný. Více se dozvíte v [Nuxt tutoriálu číslo 6](/article/nuxt-content).
 
 ## Demo projekt
 

@@ -1,4 +1,3 @@
-
 V prvním z chystané série výukových článků o [JS frameworku Nuxt](https://nuxt.com/) vám chci ukázat, jak málo stačí k rozběhnutí funkčního projektu.
 
 ## Nuxt Simple
@@ -25,7 +24,7 @@ Pokud budete chtít Nuxt rozjet lokálně, budete potřebovat:
  - **app.vue** - základní vstupní bod s jednoduchou šablonou uvnitř `<template>`. Oproti oficiálnímu nuxt-starteru jsem nahradil jejich uvítací komponentu `<NuxtWelcome>` vlastním HTML kódem. Ten uvidíte vykreslený na stránce poté, co projekt úspěšně spustíte.
  - **nuxt.config.ts** - konfigurační soubor pro Nuxt. Ve výchozím nastavení může být takto "prázdný", veškerá budoucí nastavení, se provádí dovnitř těla objektu, který je parametrem vestavěné (a tudíž zde rovnou automaticky importované) metody `defineNuxtConfig`.
  - **package-lock.json** - soubor, který automaticky generuje manažer balíčků `npm` během příkazu `npm install`, ve kterém si drží vyčerpávající definici všech projektových závislostí. Panují názory, že je možné jej z Gitu vynechat, protože se často mění a stejně si ho každý vývojář projektu generuje sám lokálně, držím se ovšem [doporučení](https://stackoverflow.com/a/44210813/3204544), že do repozitáře také patří.
- - **package.json** - klíčový soubor, který obsahuje zejména definice závislostí na externích projektech (v našem případě samozřejmě na balíčku `nuxt` a dále na dvou balíčících pro ESLint, a také definice základních příkazů v sekci `script` - definované aliasy se pak volají za "npm run *". <span style="color: gray">Tyto definice nejsou povinné, ale díky ním je ovládaní pohodlnější</span>
+ - **package.json** - klíčový soubor, který obsahuje zejména definice závislostí na externích projektech (v našem případě samozřejmě na balíčku `nuxt` a dále na dvou balíčcích pro ESLint, a také definice základních příkazů v sekci `script` - definované aliasy se pak volají za "npm run *". <span style="color: gray">Tyto definice nejsou povinné, ale díky ním je ovládaní pohodlnější</span>
  - **tsconfig.json** - možnost customizace pro jinak generovaný soubor nastavení chování TypeScriptu. Více o tématu v (budoucím) samostatném článku.
  
  ## Nuxt Minimal
