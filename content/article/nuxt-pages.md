@@ -45,7 +45,7 @@ Chtěl bych ještě zmínit dvě vychytávky:
 
 Jak je vidět, systém je nesmírně flexibilní a sám od sebe dovoluje různá "kouzla". A kdyby defaultní chování Nuxtu nestačilo a potřebovali jsme do výchozího chování aplikace sáhnout ještě více, není problém. Pořád je k dispozici přístup přímo k Vue Routeru, který pod tím vším žije a se vším ve skutečnosti hýbe. Nuxt odvede práci, co ve většině případů stačí, ale možnost plné kontroly je stále na programátorovi.
 
-### Případová studie
+## Případová studie
 
 Tento blog se zobrazuje díky souboru `/pages/article/[article].vue`. Základ (hlavička s názvem, daty a tagy + patička s odkazy na GitHub) je společný pro všechny články a je realizován pomocí dvou komponent - `/components/ArticleHeader.vue` a `/components/ArticleFooter.vue`. Na základě konkrétní URL (zde `/article/nuxt-pages`) se vybere potřebný obsah článku, který odpovídá unikátnímu výrazu `nuxt-pages`.
 
