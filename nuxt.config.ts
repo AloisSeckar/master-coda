@@ -10,5 +10,10 @@ export default defineNuxtConfig({
       theme: 'dracula',
       preload: ['java']
     }
+  },
+  runtimeConfig: {
+    public: {
+      github: 'https://github.com/AloisSeckar'
+    }
   }
 })

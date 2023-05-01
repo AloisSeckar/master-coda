@@ -13,7 +13,8 @@
 
 <script setup lang="ts">
 const path = useRoute().path
+const github = useRuntimeConfig().public.github
 const id = path.substring(path.lastIndexOf('/') + 1)
-const link = `https://github.com/AloisSeckar/master-coda/##/master/content/article/${id}.md`
+const link = `${github}/master-coda/##/master/content/article/${id}.md`
 const article = computed(() => useArticleStore().getById(id))
 </script>
