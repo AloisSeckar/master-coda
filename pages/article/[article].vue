@@ -14,5 +14,5 @@
 </template>
 
 <script setup lang="ts">
-const isNuxtTutorial = useRoute().params.article?.includes('nuxt-')
+const isNuxtTutorial = useRoute().params.article?.includes('nuxt')
 </script>

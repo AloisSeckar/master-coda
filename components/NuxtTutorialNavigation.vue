@@ -25,6 +25,6 @@
 </template>
 
 <script setup lang="ts">
-const nuxtArticles = useArticleStore().getByTitle('Nuxt Tutorial')
+const nuxtArticles = useArticleStore().getByTitle('Nuxt')
 const currentArticle = useRoute().params.article
 </script>
