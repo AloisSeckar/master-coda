@@ -117,13 +117,40 @@ const articles = [
     edited: '07.05.2023'
   },
   {
+    id: 'nuxt-ui',
+    cat: 'web',
+    title: 'Nuxt Tutorial 6 - UI integrace',
+    dscr: 'Nuxt 3 - jak snadno integrovat UI prvky',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS'],
+    created: '11.05.2023',
+    edited: '11.05.2023'
+  },
+  {
+    id: 'nuxt-forms',
+    cat: 'web',
+    title: 'Nuxt Tutorial 7 - Formuláře',
+    dscr: 'Nuxt 3 - jak snadno integrovat formulářové prvky',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI'],
+    created: '11.05.2023',
+    edited: '11.05.2023'
+  },
+  {
     id: 'nuxt-content',
     cat: 'web',
-    title: 'Nuxt Tutorial 6 - Nuxt Content',
+    title: 'Nuxt Tutorial 8 - Nuxt Content',
     dscr: 'Nuxt 3 - modul pro usnadnění tvorby obsahu',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
     created: '13.04.2023',
     edited: '13.04.2023'
+  },
+  {
+    id: 'nuxt-pinia',
+    cat: 'web',
+    title: 'Nuxt Tutorial 9 - State management',
+    dscr: 'Nuxt 3 - jak ukládat a distibuovat data napříč celou aplikací',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
+    created: '11.05.2023',
+    edited: '11.05.2023'
   }
 ]
 
