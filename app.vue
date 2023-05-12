@@ -14,5 +14,13 @@
 useHead({
   title: 'Master Coda - The Light Side of the Code'
 })
+useSeoMeta({
+  title: 'Master Coda',
+  ogTitle: 'Master Coda',
+  description: 'Nepravidelný blog o programování',
+  ogDescription: 'Nepravidelný blog o programování',
+  ogImage: 'https://wbsc-scoring.netlify.app/master-coda.webp',
+  twitterCard: 'summary_large_image'
+})
 useArticleStore().fill()
 </script>
