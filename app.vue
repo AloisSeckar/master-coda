@@ -11,5 +11,8 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Master Coda - The Light Side of the Code'
+})
 useArticleStore().fill()
 </script>
