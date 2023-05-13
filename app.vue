@@ -19,7 +19,7 @@ useSeoMeta({
   ogTitle: 'Master Coda',
   description: 'Nepravidelný blog o programování',
   ogDescription: 'Nepravidelný blog o programování',
-  ogImage: 'https://wbsc-scoring.netlify.app/master-coda.webp',
+  ogImage: 'https://master-coda.netlify.app/master-coda.webp',
   twitterCard: 'summary_large_image'
 })
 useArticleStore().fill()
