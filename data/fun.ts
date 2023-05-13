@@ -83,6 +83,21 @@ const fun = [
     id: 'who-caused-bug',
     title: 'Kdo způsobil tu chybu?',
     added: '2023-03-16'
+  },
+  {
+    id: 'cat-vs-printer',
+    title: 'Kočky vs. tiskárny',
+    added: '2023-03-16'
+  },
+  {
+    id: 'it-alignments',
+    title: 'Programátorské povahy',
+    added: '2023-05-12'
+  },
+  {
+    id: 'computer-faults',
+    title: 'Typy počítačových chyb',
+    added: '2023-05-12'
   }
 ]
 
