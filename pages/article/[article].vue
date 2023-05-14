@@ -15,4 +15,14 @@
 
 <script setup lang="ts">
 const isNuxtTutorial = useRoute().params.article?.includes('nuxt')
+
+const article = useArticleStore().getById(useRoute().params.article as string)
+useSeoMeta({
+  title: article?.title,
+  ogTitle: article?.title,
+  description: article?.dscr,
+  ogDescription: article?.dscr,
+  ogImage: 'https://master-coda.netlify.app/master-coda.webp',
+  twitterCard: 'summary_large_image'
+})
 </script>
