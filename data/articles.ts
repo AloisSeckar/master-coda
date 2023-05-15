@@ -151,6 +151,15 @@ const articles = [
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '11.05.2023',
     edited: '11.05.2023'
+  },
+  {
+    id: 'click-prevent',
+    cat: 'debugging',
+    title: 'Nechtěný reload stránky',
+    dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát',
+    tags: ['debugging', 'JavaScript', 'HTML'],
+    created: '15.05.2023',
+    edited: '15.05.2023'
   }
 ]
 
