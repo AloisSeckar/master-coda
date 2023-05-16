@@ -98,6 +98,12 @@ const fun = [
     id: 'computer-faults',
     title: 'Typy počítačových chyb',
     added: '2023-05-12'
+  },
+  {
+    id: 'serious-threat',
+    title: 'Skutečně závažná hrozba',
+    explain: 'Narušitelé budou donuceni debuggovat PHP kód',
+    added: '2023-05-16'
   }
 ]
 
