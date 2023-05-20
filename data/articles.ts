@@ -160,6 +160,15 @@ const articles = [
     tags: ['debugging', 'JavaScript', 'HTML'],
     created: '15.05.2023',
     edited: '15.05.2023'
+  },
+  {
+    id: 'hello-chatgpt',
+    cat: 'misc',
+    title: 'První rande s ChatGPT',
+    dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát',
+    tags: ['ChatGPT', 'programování', 'help'],
+    created: '20.05.2023',
+    edited: '20.05.2023'
   }
 ]
 
