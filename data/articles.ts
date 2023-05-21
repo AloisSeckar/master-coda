@@ -132,7 +132,7 @@ const articles = [
     dscr: 'Nuxt 3 - jak snadno integrovat formulářové prvky',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI'],
     created: '11.05.2023',
-    edited: '11.05.2023'
+    edited: '21.05.2023'
   },
   {
     id: 'nuxt-content',
