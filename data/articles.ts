@@ -166,9 +166,18 @@ const articles = [
     cat: 'misc',
     title: 'První rande s ChatGPT',
     dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát',
-    tags: ['ChatGPT', 'programování', 'help'],
+    tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '20.05.2023',
     edited: '20.05.2023'
+  },
+  {
+    id: 'hello-chatgpt-2',
+    cat: 'misc',
+    title: 'Druhé rande s ChatGPT',
+    dscr: 'Proč AI ano a proč ne s překvapením',
+    tags: ['ChatGPT', 'AI', 'programování', 'help'],
+    created: '27.05.2023',
+    edited: '27.05.2023'
   }
 ]
 
