@@ -173,11 +173,20 @@ const articles = [
   {
     id: 'hello-chatgpt-2',
     cat: 'misc',
-    title: 'Druhé rande s ChatGPT',
+    title: 'Druhé rande s ChatGPT - texty',
     dscr: 'Proč AI ano a proč ne s překvapením',
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '27.05.2023',
     edited: '27.05.2023'
+  },
+  {
+    id: 'hello-chatgpt-3',
+    cat: 'misc',
+    title: 'Třetí rande s ChatGPT - barvy',
+    dscr: 'AI coby můj osobní designový poradce',
+    tags: ['ChatGPT', 'AI', 'programování', 'help'],
+    created: '07.06.2023',
+    edited: '07.06.2023'
   }
 ]
 
