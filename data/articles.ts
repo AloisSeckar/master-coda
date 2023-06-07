@@ -162,7 +162,7 @@ const articles = [
     edited: '15.05.2023'
   },
   {
-    id: 'hello-chatgpt',
+    id: 'hello-chatgpt-1',
     cat: 'misc',
     title: 'První rande s ChatGPT',
     dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát',

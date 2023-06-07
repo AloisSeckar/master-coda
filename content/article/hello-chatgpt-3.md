@@ -1,4 +1,4 @@
-ChatGPT se pomalu etabluje jako můj užitečný pomocník. O prvních zkušenostech jsem psal [ZDE](/article/hello-chatgpt) a [ZDE](/article/hello-chatgpt-2). Minulý týden jsem demonstroval jeho užitečnost při přednášce o základech tvorby webů pro žáky ZŠ a včera jsem ukazoval kolegovi z práce, jak by si díky němu rychle poradil s problémem, se kterým se potýkal "tradiční" Google metodou.
+ChatGPT se pomalu etabluje jako můj užitečný pomocník. O prvních zkušenostech jsem psal [ZDE](/article/hello-chatgpt-1) a [ZDE](/article/hello-chatgpt-2). Minulý týden jsem demonstroval jeho užitečnost při přednášce o základech tvorby webů pro žáky ZŠ a včera jsem ukazoval kolegovi z práce, jak by si díky němu rychle poradil s problémem, se kterým se potýkal "tradiční" Google metodou.
 
 Dneska jsem se rozhodl vyzkoušet zase novou aplikaci a nechat si poradit s výběrem barev textu a grafiky přímo zde na webu. Zde je tedy jedna velice praktická case study jejíž výsledky máte doslova před očima.
 

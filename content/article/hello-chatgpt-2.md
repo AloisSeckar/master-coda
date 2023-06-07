@@ -1,4 +1,4 @@
-Před týdnem jsem psal o své [první zkušenosti s ChatGPT](/article/hello-chatgpt). Co je u mě nového?
+Před týdnem jsem psal o své [první zkušenosti s ChatGPT](/article/hello-chatgpt-1). Co je u mě nového?
 
 ## Proč používat ChatGPT?
 
