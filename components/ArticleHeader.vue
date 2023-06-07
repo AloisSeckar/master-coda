@@ -1,14 +1,14 @@
 <template>
   <div class="p-2">
     <h1>{{ article?.title }}</h1>
-    <div class="text-xs text-amber-300 mb-1">
+    <div class="text-xs text-coda-yellow mb-1">
       {{ article?.created }}
       <span v-if="edited">(aktualizováno {{ article?.edited }})</span>
     </div>
     <div class="mb-2">
       {{ article?.dscr }}
     </div>
-    <div class="flex flex-wrap items-center text-fuchsia-600">
+    <div class="flex flex-wrap items-center text-coda-yellow">
       <strong v-if="tags?.length > 0">Tagy:&nbsp;</strong>
       <span v-for="tag in tags" :key="tag" class="actionButton px-1 pb-1">
         <NuxtLink :to="{ path: '/tag/' + tag }">
@@ -16,7 +16,7 @@
         </NuxtLink>
       </span>
     </div>
-    <div class="my-1 text-xs text-amber-300">
+    <div class="my-1 text-xs text-coda-yellow">
       ----------------------------------------
     </div>
   </div>

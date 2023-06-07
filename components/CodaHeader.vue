@@ -1,7 +1,7 @@
 <template>
   <div class="m-1 h-36">
     <NuxtLink :to="{ path: '/' }">
-      <img class="border-2 border-green-800 hover:border-amber-300" style="width: 115px; float: left;" src="/master-coda.webp" alt="Master Coda">
+      <img class="border-2 border-coda-green hover:border-coda-yellow" style="width: 115px; float: left;" src="/master-coda.webp" alt="Master Coda">
     </NuxtLink>
 
     <div id="large-screens" class="hidden lg:block">
@@ -66,9 +66,9 @@
 </template>
 
 <script setup lang="ts">
-const header = 'ml-32 h-32 pt-2 border-b-2 border-green-800'
-const headerH1 = 'ml-1 font-header text-amber-300 text-2xl'
-const headerH2 = 'ml-1 font-header text-amber-300 text-xl'
+const header = 'ml-32 h-32 pt-2 border-b-2 border-coda-green'
+const headerH1 = 'ml-1 font-header text-coda-yellow text-2xl'
+const headerH2 = 'ml-1 font-header text-coda-yellow text-xl'
 const menuButton = 'actionButton p-1 w-1/5'
 const menuFont = 'actionButtonText font-bold'
 </script>

@@ -9,7 +9,7 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        @apply text-amber-300 font-header font-bold;
+        @apply text-coda-yellow font-header font-bold;
     }
     h1 {
         @apply text-4xl;
@@ -19,28 +19,28 @@
     }
 
     a, a:visited {
-        @apply text-amber-300;
+        @apply text-coda-yellow;
     }
     a:hover, a:active {
         @apply text-amber-100;
     }
 
     div {
-        @apply text-green-700;
+        @apply text-coda-green;
     }
 }
 
 @layer components {
 
     .actionButton {
-        @apply m-1 mt-2 bg-slate-700 hover:bg-green-900 border border-amber-300 rounded text-center;
+        @apply m-1 mt-2 bg-slate-700 hover:bg-coda-green border border-coda-yellow rounded text-center;
     } 
     .actionButtonText {
-        @apply text-amber-300 hover:text-amber-100;
+        @apply text-coda-yellow hover:text-amber-100;
     }
     
     .articleList {
-        @apply mt-2 ml-6 text-justify marker:text-fuchsia-500;
+        @apply mt-2 ml-6 text-justify marker:text-coda-purple;
     }
 
     .article {
@@ -50,23 +50,23 @@
         @apply mt-2 mb-4 text-left sm:text-justify leading-5;
     }
     .article a {
-        @apply text-fuchsia-600 hover:text-fuchsia-400;
+        @apply text-coda-purple hover:text-fuchsia-400;
     }
     .article ul, .article ol {
-        @apply ml-4 text-justify marker:text-amber-300;
+        @apply ml-4 text-justify marker:text-coda-yellow;
     }
     .article li {
-        @apply before:content-['•_'] before:text-fuchsia-600
+        @apply before:content-['•_'] before:text-coda-purple
     }
     .article code {
-        @apply text-amber-300 font-code;
+        @apply text-coda-yellow font-code;
     }
     .article h2 > a {
-        @apply text-amber-300 hover:text-amber-200;
+        @apply text-coda-yellow hover:text-amber-200;
     }
     
     .article pre {
-        @apply border border-amber-300 bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 overflow-x-auto whitespace-nowrap;
+        @apply border border-coda-yellow bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 overflow-x-auto whitespace-nowrap;
     }
 
     /*
@@ -74,10 +74,10 @@
         @apply bg-transparent text-white font-code;
     }
     span.code {
-        @apply text-amber-300 px-px py-0;
+        @apply text-coda-yellow px-px py-0;
     }
     div.code {
-        @apply border border-amber-300 bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 text-left overflow-x-scroll whitespace-nowrap;
+        @apply border border-coda-yellow bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1 text-left overflow-x-scroll whitespace-nowrap;
     }
     */
 

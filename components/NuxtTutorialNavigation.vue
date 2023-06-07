@@ -1,6 +1,6 @@
 <template>
-  <div class="mx-2 p-2 border border-amber-300 bg-slate-800">
-    <div class="text-amber-300 text-2xl font-header font-bold">
+  <div class="mx-2 p-2 border border-coda-yellow bg-slate-800">
+    <div class="text-coda-yellow text-2xl font-header font-bold">
       Nuxt Tutorial
     </div>
     <div>
@@ -11,7 +11,7 @@
     </div>
     <ul class="mt-2">
       <li v-for="article in nuxtArticles" :key="article.id">
-        <div v-if="article.id === currentArticle" class="text-fuchsia-600 font-bold">
+        <div v-if="article.id === currentArticle" class="text-coda-purple font-bold">
           &#9654; {{ article.title }}
         </div>
         <div v-else>

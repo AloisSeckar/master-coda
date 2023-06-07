@@ -1,6 +1,6 @@
 <template>
   <div class="pt-1 text-xs">
-    <div class="my-1 text-amber-300">
+    <div class="my-1 text-coda-yellow">
       ----------------------------------------
     </div>
     <div class="font-bold">
