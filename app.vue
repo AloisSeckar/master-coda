@@ -14,12 +14,12 @@
 useHead({
   title: 'Master Coda - The Light Side of the Code',
   meta: [
-    { hid: 'og-type', property: 'og:type', content: 'website' },
-    { hid: 'og-title', property: 'og:title', content: 'Master Coda' },
-    { hid: 'og-desc', property: 'og:description', content: 'Nepravidelný blog o programování' },
-    { hid: 'og-image', property: 'og:image', content: 'https://master-coda.netlify.app/master-coda.webp' },
-    { hid: 'og-url', property: 'og:url', content: 'https://master-coda.cz' },
-    { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' }
+    { name: 'og:type', content: 'website' },
+    { name: 'og:title', content: 'Master Coda' },
+    { name: 'og:description', content: 'Nepravidelný blog o programování' },
+    { name: 'og:image', content: 'https://master-coda.netlify.app/master-coda.webp' },
+    { name: 'og:url', content: 'https://master-coda.cz' },
+    { name: 'twitter:card', content: 'summary_large_image' }
   ]
 })
 /*

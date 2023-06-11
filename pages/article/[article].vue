@@ -19,12 +19,12 @@ const isNuxtTutorial = useRoute().params.article?.includes('nuxt')
 const article = useArticleStore().getById(useRoute().params.article as string)
 useHead({
   meta: [
-    { hid: 'og-type', property: 'og:type', content: 'website' },
-    { hid: 'og-title', property: 'og:title', content: article?.title },
-    { hid: 'og-desc', property: 'og:description', content: article?.dscr },
-    { hid: 'og-image', property: 'og:image', content: 'https://master-coda.netlify.app/master-coda.webp' },
-    { hid: 'og-url', property: 'og:url', content: 'https://master-coda.cz/articles/' + article?.id },
-    { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' }
+    { name: 'og:type', content: 'website' },
+    { name: 'og:title', content: () => article?.title },
+    { name: 'og:description', content: () => article?.dscr },
+    { name: 'og:image', content: 'https://master-coda.netlify.app/master-coda.webp' },
+    { name: 'og:url', content: () => 'https://master-coda.cz/articles/' + article?.id },
+    { name: 'twitter:card', content: 'summary_large_image' }
   ]
 })
 /*
