@@ -18,10 +18,11 @@ const isNuxtTutorial = useRoute().params.article?.includes('nuxt')
 
 const article = useArticleStore().getById(useRoute().params.article as string)
 useSeoMeta({
-  ogTitle: () => article?.title,
-  description: () => article?.dscr,
-  ogDescription: () => article?.dscr,
-  ogImage: () => 'https://master-coda.netlify.app/master-coda.webp',
-  twitterCard: () => 'summary_large_image'
+  title: () => article?.title || 'Master Coda - The Light Side of the Code',
+  ogTitle: () => article?.title || 'Master Coda - The Light Side of the Code',
+  description: () => article?.dscr || 'Nepravidelný blog o programování',
+  ogDescription: () => article?.dscr || 'Nepravidelný blog o programování',
+  ogImage: 'https://master-coda.netlify.app/master-coda.png',
+  twitterCard: 'summary_large_image'
 })
 </script>
