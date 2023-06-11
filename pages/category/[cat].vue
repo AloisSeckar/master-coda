@@ -17,6 +17,8 @@
 </template>
 
 <script setup lang="ts">
+useArticleStore().fillIfNeeded()
+
 const cat = useRoute().params.cat.toString()
 const articles = computed(() => useArticleStore().getByCategory(cat))
 
@@ -24,4 +26,6 @@ let catName = cat
 if (catName === 'misc') {
   catName = 'ostatní'
 }
+
+usePageMeta(CODA_TITLE, CODA_DSCR)
 </script>

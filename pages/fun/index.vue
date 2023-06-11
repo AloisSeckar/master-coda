@@ -84,4 +84,6 @@ const reloadImage = () => {
 onBeforeRouteLeave(() => {
   initial.value = true
 })
+
+usePageMeta(CODA_TITLE, CODA_DSCR)
 </script>

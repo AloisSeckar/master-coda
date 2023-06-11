@@ -14,15 +14,15 @@
 </template>
 
 <script setup lang="ts">
-const isNuxtTutorial = useRoute().params.article?.includes('nuxt')
+useArticleStore().fillIfNeeded()
 
-const article = useArticleStore().getById(useRoute().params.article as string)
-useSeoMeta({
-  title: () => article?.title || 'Master Coda - The Light Side of the Code',
-  ogTitle: () => article?.title || 'Master Coda - The Light Side of the Code',
-  description: () => article?.dscr || 'Nepravidelný blog o programování',
-  ogDescription: () => article?.dscr || 'Nepravidelný blog o programování',
-  ogImage: 'https://master-coda.netlify.app/master-coda.png',
-  twitterCard: 'summary_large_image'
-})
+const articleId = useRoute().params.article as string
+const article = useArticleStore().getById(articleId)
+if (article) {
+  usePageMeta(article.title, article.dscr)
+} else {
+  usePageMeta(CODA_TITLE, CODA_DSCR)
+}
+
+const isNuxtTutorial = articleId?.includes('nuxt')
 </script>

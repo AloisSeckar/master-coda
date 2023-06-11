@@ -19,9 +19,11 @@ export const useArticleStore = defineStore({
     }
   },
   actions: {
-    fill () {
-      this.items = articles
-      this.loaded = true
+    fillIfNeeded () {
+      if (!this.loaded) {
+        this.items = articles
+        this.loaded = true
+      }
     }
   },
   getters: {

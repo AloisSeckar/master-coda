@@ -17,6 +17,10 @@
 </template>
 
 <script setup lang="ts">
+useArticleStore().fillIfNeeded()
+
 const tag = useRoute().params.tag.toString()
 const articles = computed(() => useArticleStore().getByTag(tag))
+
+usePageMeta(CODA_TITLE, CODA_DSCR)
 </script>

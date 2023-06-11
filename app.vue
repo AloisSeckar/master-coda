@@ -9,15 +9,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-useSeoMeta({
-  title: 'Master Coda - The Light Side of the Code',
-  ogTitle: 'Master Coda',
-  description: 'Nepravidelný blog o programování',
-  ogDescription: 'Nepravidelný blog o programování',
-  ogImage: 'https://master-coda.netlify.app/master-coda.png',
-  twitterCard: 'summary_large_image'
-})
-useArticleStore().fill()
-</script>
