@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       colors: {
         'coda-green': '#38B2AC',
-        'coda-yellow': '#FFD700',
-        'coda-purple': '#D6BCFA',
+        'coda-yellow': '#E1B400',
+        'coda-purple': '#B4AAFF'
       }
     }
   }

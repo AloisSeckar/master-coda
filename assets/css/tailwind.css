@@ -50,7 +50,7 @@
         @apply mt-2 mb-4 text-left sm:text-justify leading-5;
     }
     .article a {
-        @apply text-coda-purple hover:text-fuchsia-400;
+        @apply text-coda-purple hover:text-purple-400;
     }
     .article ul, .article ol {
         @apply ml-4 text-justify marker:text-coda-yellow;

@@ -40,13 +40,19 @@ Celé to trvalo dejme tomu půl hodiny. Včetně úpravy stylů tak, aby se defi
 
 ## Výsledek
 
-Aktuální kombinace je:
+Výsledná kombinace byla:
 
-<div class="mx-2 w-16 h-8 bg-coda-yellow inline-block"></div>
-<div class="mx-2 w-16 h-8 bg-coda-green inline-block"></div>
-<div class="mx-2 w-16 h-8 bg-coda-purple inline-block"></div>
+<div class="mx-2 w-16 h-8 bg-[#38B2AC] inline-block"></div>
+<div class="mx-2 w-16 h-8 bg-[#FFD700]  inline-block"></div>
+<div class="mx-2 w-16 h-8 bg-[#D6BCFA] inline-block"></div>
 
 Nynější stav pokládám za mnohem lepší. Nechám si klidně dále poradit od živého grafika, ale svému ChatGPT tímto děkuji, protože mě opět posunul kupředu..
 
 
 (1) **P.S.:** Díky ChatGPT, že mi obratem ukázal, jak v MarkDown syntaxi zapsat blok kódu s "backtickem" uvnitř ;)
+
+(2) **P.P.S.:** Po několika dnech jsem přeci jen provedl ještě menší korekci odstínů žluté a fialové. Nyní tu je:
+
+<div class="mx-2 w-16 h-8 bg-coda-green inline-block"></div>
+<div class="mx-2 w-16 h-8 bg-coda-yellow inline-block"></div>
+<div class="mx-2 w-16 h-8 bg-coda-purple inline-block"></div>
