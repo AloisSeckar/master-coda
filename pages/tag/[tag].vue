@@ -22,5 +22,10 @@ useArticleStore().fillIfNeeded()
 const tag = useRoute().params.tag.toString()
 const articles = computed(() => useArticleStore().getByTag(tag))
 
-usePageMeta(CODA_TITLE, CODA_DSCR)
+usePageMeta({
+  type: 'website',
+  url: `${CODA_URL}/tag/${tag}`,
+  title: `'Master Coda - ${tag}`,
+  dscr: `Články podle tagu: ${tag}`
+})
 </script>

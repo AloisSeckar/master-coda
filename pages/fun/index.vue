@@ -85,5 +85,5 @@ onBeforeRouteLeave(() => {
   initial.value = true
 })
 
-usePageMeta(CODA_TITLE, CODA_DSCR)
+usePageMeta(CODA_PAGE_META)
 </script>

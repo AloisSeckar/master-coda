@@ -27,5 +27,10 @@ if (catName === 'misc') {
   catName = 'ostatní'
 }
 
-usePageMeta(CODA_TITLE, CODA_DSCR)
+usePageMeta({
+  type: 'website',
+  url: `${CODA_URL}/category/${catName}`,
+  title: `'Master Coda - ${catName}`,
+  dscr: `Články podle kategorie: ${catName}`
+})
 </script>

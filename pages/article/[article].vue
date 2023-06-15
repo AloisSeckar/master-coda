@@ -19,9 +19,14 @@ useArticleStore().fillIfNeeded()
 const articleId = useRoute().params.article as string
 const article = useArticleStore().getById(articleId)
 if (article) {
-  usePageMeta(article.title, article.dscr)
+  usePageMeta({
+    type: 'article',
+    url: `${CODA_URL}/article/${articleId}`,
+    title: article.title,
+    dscr: article.dscr
+  })
 } else {
-  usePageMeta(CODA_TITLE, CODA_DSCR)
+  usePageMeta(CODA_PAGE_META)
 }
 
 const isNuxtTutorial = articleId?.includes('nuxt')

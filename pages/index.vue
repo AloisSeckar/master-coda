@@ -21,5 +21,5 @@
 </template>
 
 <script setup lang="ts">
-usePageMeta(CODA_TITLE, CODA_DSCR)
+usePageMeta(CODA_PAGE_META)
 </script>
