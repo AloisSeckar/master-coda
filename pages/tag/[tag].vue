@@ -25,7 +25,7 @@ const articles = computed(() => useArticleStore().getByTag(tag))
 usePageMeta({
   type: 'website',
   url: `${CODA_URL}/tag/${tag}`,
-  title: `'Master Coda - ${tag}`,
+  title: `Master Coda - ${tag}`,
   dscr: `Články podle tagu: ${tag}`
 })
 </script>

@@ -30,7 +30,7 @@ if (catName === 'misc') {
 usePageMeta({
   type: 'website',
   url: `${CODA_URL}/category/${catName}`,
-  title: `'Master Coda - ${catName}`,
+  title: `Master Coda - ${catName}`,
   dscr: `Články podle kategorie: ${catName}`
 })
 </script>
