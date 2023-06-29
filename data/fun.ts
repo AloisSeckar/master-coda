@@ -104,6 +104,12 @@ const fun = [
     title: 'Skutečně závažná hrozba',
     explain: 'Narušitelé budou donuceni debuggovat PHP kód',
     added: '2023-05-16'
+  },
+  {
+    id: 'file-name',
+    title: 'Jména souborů',
+    explain: 'Když ukládáte soubor jako `afagftgwj` a on už existuje',
+    added: '2023-06-29'
   }
 ]
 
