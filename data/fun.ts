@@ -110,6 +110,11 @@ const fun = [
     title: 'Jména souborů',
     explain: 'Když ukládáte soubor jako `afagftgwj` a on už existuje',
     added: '2023-06-29'
+  },
+  {
+    id: 'where-is-linux',
+    title: 'Kde je Linux?',
+    added: '2023-07-14'
   }
 ]
 
