@@ -33,7 +33,9 @@
         </div>
       </div>
     </div>
-    <img class="mx-auto my-4" :src="'/fun/' + imageData.id + '.jpg'" :alt="imageData.title">
+    <a :href="'/fun/' + imageData.id + '.jpg'" target="_blank">
+      <img class="mx-auto my-4 h-96 w-auto" :src="'/fun/' + imageData.id + '.jpg'" :alt="imageData.title">
+    </a>
   </div>
 </template>
 
