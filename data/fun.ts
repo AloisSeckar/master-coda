@@ -115,6 +115,12 @@ const fun = [
     id: 'where-is-linux',
     title: 'Kde je Linux?',
     added: '2023-07-14'
+  },
+  {
+    id: 'git-push-force',
+    title: 'Push with force',
+    explain: 'Příkaz, který umožní natvrdo propsat vaše změny do hlavní větve na vzdáleném úložišti',
+    added: '2023-07-25'
   }
 ]
 
