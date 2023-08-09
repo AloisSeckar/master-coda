@@ -121,6 +121,18 @@ const fun = [
     title: 'Push with force',
     explain: 'Příkaz, který umožní natvrdo propsat vaše změny do hlavní větve na vzdáleném úložišti',
     added: '2023-07-25'
+  },
+  {
+    id: 'egg-chicken',
+    title: 'Slepice nebo vejce?',
+    explain: 'Seřazení pole Unicode znaků v JS',
+    added: '2023-08-09'
+  },
+  {
+    id: 'i-won',
+    title: 'Debata o nejlepší název proměnné',
+    explain: 'V cyklech používáme nejčastěji řídící proměnnou "i"',
+    added: '2023-08-09'
   }
 ]
 
