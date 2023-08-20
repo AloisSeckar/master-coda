@@ -3,11 +3,18 @@
     <div class="my-1 text-coda-yellow">
       ----------------------------------------
     </div>
-    <div class="font-bold">
-      {{ article?.title }} @ Master Coda
+    <div v-if="article">
+      <div class="font-bold">
+        {{ article.title }} @ Master Coda
+      </div>
+      <a class="block" :href="link.replace('##','blob')">Zobrazit zdrojový kód článku</a>
+      <a class="block" :href="link.replace('##','edit')">Navrhnout úpravu</a>
     </div>
-    <a class="block" :href="link.replace('##','blob')">Zobrazit zdrojový kód článku</a>
-    <a class="block" :href="link.replace('##','edit')">Navrhnout úpravu</a>
+    <div v-else>
+      <div class="font-bold">
+        Články @ Master Coda
+      </div>
+    </div>
   </div>
 </template>
 
