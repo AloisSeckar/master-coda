@@ -4,7 +4,9 @@
     <div class="article">
       <ContentDoc>
         <template #not-found>
-          These are not the articles you are looking for. Keep browsing. Keep browsing.
+          <div class="mb-6">
+            These are not the articles you are looking for. Keep browsing. Keep browsing.
+          </div>
         </template>
       </ContentDoc>
     </div>
