@@ -133,6 +133,18 @@ const fun = [
     title: 'Debata o nejlepší název proměnné',
     explain: 'V cyklech používáme nejčastěji řídící proměnnou "i"',
     added: '2023-08-09'
+  },
+  {
+    id: 'documentation',
+    title: 'Úroveň dokumentace v projektech',
+    explain: 'Často k vidění - nesmyslné a k ničemu užitečné popisy zjevných skutečností',
+    added: '2023-08-23'
+  },
+  {
+    id: 'funny-because-true',
+    title: 'Je to pravda',
+    explain: '!false === true',
+    added: '2023-08-23'
   }
 ]
 
