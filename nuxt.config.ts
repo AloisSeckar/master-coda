@@ -1,3 +1,6 @@
+// TODO fix type error + images in nuxt-content
+import vsharp from 'vite-plugin-vsharp'
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
@@ -9,6 +12,9 @@ export default defineNuxtConfig({
       theme: 'dracula',
       preload: ['java']
     }
+  },
+  vite: {
+    plugins: [vsharp()]
   },
   runtimeConfig: {
     public: {
