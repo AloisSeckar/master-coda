@@ -17,7 +17,7 @@ font-family: "nazevFontu";
 
 Tak jsem to například s&nbsp;fontem `KaushanScript` udělal já, abych mohl mít netradiční font ve jméně na mém osobním webu:
 
-<a href="www.alois-seckar.cz" title="www.alois-seckar.cz">
+<a href="http://www.alois-seckar.cz" title="www.alois-seckar.cz">
 <article-image src="redukce-velikosti-fontu/homepage.jpg" alt="www.alois-seckar.cz" />
 </a>
 
