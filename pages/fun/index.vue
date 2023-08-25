@@ -33,8 +33,8 @@
         </div>
       </div>
     </div>
-    <a :href="'~/assets/img/fun/' + imageData.id + '.jpg'" target="_blank">
-      <img class="mx-auto my-4 h-96 w-auto" :src="useAsset('img/fun/' + imageData.id + '.jpg')" :alt="imageData.title">
+    <a :href="imagePath" target="_blank">
+      <img class="mx-auto my-4 h-96 w-auto" :src="imagePath" :alt="imageData.title">
     </a>
   </div>
 </template>
@@ -59,6 +59,7 @@ const imageData: Fun = reactive({
   title: 'Haha?',
   added: ''
 })
+const imagePath = ref(useAsset('img/fun/' + imageData.id + '.jpg'))
 
 const init = () => {
   initial.value = false
@@ -81,6 +82,7 @@ const reloadImage = () => {
   const newImage = funStore.items[funStore.index]
   imageData.id = newImage.id
   imageData.title = newImage.title
+  imagePath.value = useAsset('img/fun/' + imageData.id + '.jpg')
 }
 
 onBeforeRouteLeave(() => {
@@ -88,13 +90,4 @@ onBeforeRouteLeave(() => {
 })
 
 usePageMeta(CODA_PAGE_META)
-
-function useAsset (path: string): string {
-  const assets = import.meta.glob('~/assets/**/*', {
-    eager: true,
-    import: 'default'
-  })
-  // @ts-expect-error: wrong type info
-  return assets['/assets/' + path]
-}
 </script>
