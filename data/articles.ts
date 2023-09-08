@@ -186,7 +186,7 @@ const articles = [
     dscr: 'AI coby můj osobní designový poradce',
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '07.06.2023',
-    edited: '11.06.2023'
+    edited: '08.09.2023'
   },
   {
     id: 'hello-chatgpt-4',
