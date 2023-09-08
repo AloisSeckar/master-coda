@@ -187,6 +187,15 @@ const articles = [
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '07.06.2023',
     edited: '11.06.2023'
+  },
+  {
+    id: 'hello-chatgpt-4',
+    cat: 'misc',
+    title: 'Čtvrté rande s ChatGPT - seznam Java features',
+    dscr: 'Generování obsáhlého seznamu z konkrétních dat v konkrétním formátování',
+    tags: ['ChatGPT', 'AI', 'programování', 'help'],
+    created: '08.09.2023',
+    edited: '08.09.2023'
   }
 ]
 
