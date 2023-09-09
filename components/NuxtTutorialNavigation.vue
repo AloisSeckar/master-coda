@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-2 p-2 border border-coda-yellow bg-slate-800">
+  <div class="mx-2 my-6 px-4 pt-2 py-4 border border-coda-yellow bg-slate-800">
     <div class="text-coda-yellow text-2xl font-header font-bold">
       Nuxt Tutorial
     </div>
