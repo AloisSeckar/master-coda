@@ -150,7 +150,18 @@ const articles = [
     dscr: 'Nuxt 3 - jak ukládat a distibuovat data napříč celou aplikací',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '11.05.2023',
-    edited: '11.05.2023'
+    edited: '11.05.2023',
+    wip: true
+  },
+  {
+    id: 'nuxt-tailwind',
+    cat: 'web',
+    title: 'Nuxt Tutorial 10 - CSS',
+    dscr: 'Nuxt 3 - jak si pomoct při tvorbě CSS vzhledu',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
+    created: '12.09.2023',
+    edited: '12.09.2023',
+    wip: true
   },
   {
     id: 'click-prevent',

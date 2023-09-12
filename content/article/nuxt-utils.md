@@ -24,7 +24,7 @@ Složka `/composables` se chová naprosto stejně jako `/utils`, ale je určena 
 
 Jak už jsem stihl zjistit - z technického hlediska je to jedno. Nuxt nijak nevynucuje, jak má obsah toho kterého adresáře vypadat. Klidně to můžete i domotat jedno přes druhé a mít bezstavové funkce i v `/composables` a volat composables i v rámci `/utils`(jako se to "povedlo" mě na prvních projektech). Z hlediska kvality a dlouhodobé udržitelnosti by však bylo lepší toto rozdělení dodržovat.
 
-Tato složka je typickým domovem například pro definice _stores_ pro stavový management - jak uvidíme v [jednom z příštích článků](/articles/nuxt-pinia).
+Tato složka je typickým domovem například pro definice _stores_ pro stavový management - jak uvidíme v [jednom z příštích článků](/article/nuxt-pinia).
 
 ## Případová studie
 

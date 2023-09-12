@@ -1,3 +1,3 @@
-## nuxt-pinia stub
+## nuxt-tailwind stub
 
 <under-construction />

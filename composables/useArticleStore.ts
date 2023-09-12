@@ -8,6 +8,7 @@ export type Article = {
     tags: string[],
     created: string,
     edited: string,
+    wip?: boolean
 }
 
 export const useArticleStore = defineStore({
