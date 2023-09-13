@@ -10,7 +10,7 @@
         </template>
       </ContentDoc>
     </div>
-    <NuxtTutorialNavigation v-if="isNuxtTutorial" />
+    <NavigationNuxtTutorial v-if="isNuxtTutorial" />
     <ArticleFooter />
   </div>
 </template>
