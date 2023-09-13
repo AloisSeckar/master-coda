@@ -1,6 +1,7 @@
 <template>
   <div>
     <NavigationNuxtTutorial v-if="isNuxtTutorial" />
+    <NavigationChatGPT v-if="isChatGPTArticle" />
   </div>
 </template>
 
@@ -10,4 +11,5 @@ const props = defineProps({
 })
 
 const isNuxtTutorial = props.articleId.includes('nuxt')
+const isChatGPTArticle = props.articleId.includes('hello-chatgpt')
 </script>
