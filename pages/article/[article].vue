@@ -10,7 +10,7 @@
         </template>
       </ContentDoc>
     </div>
-    <NavigationNuxtTutorial v-if="isNuxtTutorial" />
+    <ArticleNavigation :article-id="articleId" />
     <ArticleFooter />
   </div>
 </template>
@@ -30,6 +30,4 @@ if (article) {
 } else {
   usePageMeta(CODA_PAGE_META)
 }
-
-const isNuxtTutorial = articleId?.includes('nuxt')
 </script>
