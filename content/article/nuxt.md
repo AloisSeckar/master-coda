@@ -34,4 +34,4 @@ Pak jsou tu samozřejmě oficiální zdroje:
 
 V češtině jsem zatím nic moc nenašel, i proto jsem se v roce 2023 pustil do psaní těchto článků.
 
-A teď už vzhůru na první minimální projekt vytvořený pomoci Nuxt frameworku.
+A teď už vzhůru na [první minimální projekt vytvořený pomoci Nuxt frameworku](/article/nuxt-simple).

@@ -78,7 +78,7 @@ const articles = [
     dscr: 'Jak málo dnes stačí na funkční web',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '22.02.2023',
-    edited: '01.03.2023'
+    edited: '14.09.2023'
   },
   {
     id: 'nuxt-pages',
