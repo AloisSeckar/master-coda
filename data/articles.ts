@@ -68,7 +68,7 @@ const articles = [
     title: 'Nuxt Framework',
     dscr: 'Představení nástroje, který je pro mě aktuálně nejlepší volbou pro tvorbu webů',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tipy'],
-    created: '09.02.2023',
+    created: '09.09.2023',
     edited: '09.09.2023'
   },
   {
@@ -77,7 +77,7 @@ const articles = [
     title: 'Nuxt Tutorial 1 - První kroky',
     dscr: 'Jak málo dnes stačí na funkční web',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '22.02.2023',
+    created: '09.09.2023',
     edited: '14.09.2023'
   },
   {
@@ -86,8 +86,8 @@ const articles = [
     title: 'Nuxt Tutorial 2 - Components & Pages',
     dscr: 'Nuxt 3 - jak fungují složky /components a /pages',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '07.04.2023',
-    edited: '19.04.2023'
+    created: '09.09.2023',
+    edited: '15.09.2023'
   },
   {
     id: 'nuxt-utils',
@@ -95,8 +95,8 @@ const articles = [
     title: 'Nuxt Tutorial 3 - Utils & Composables',
     dscr: 'Nuxt 3 - jak fungují složky /utils a /composables',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '07.04.2023',
-    edited: '30.04.2023'
+    created: '09.09.2023',
+    edited: '15.09.2023'
   },
   {
     id: 'nuxt-api',
@@ -104,8 +104,7 @@ const articles = [
     title: 'Nuxt Tutorial 4 - Serverová část',
     dscr: 'Nuxt 3 - jak funguje serverová část',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '07.04.2023',
-    edited: '03.05.2023'
+    created: '09.09.2023'
   },
   {
     id: 'nuxt-middleware',
@@ -113,8 +112,7 @@ const articles = [
     title: 'Nuxt Tutorial 5 - Middleware',
     dscr: 'Nuxt 3 - jak pracuje middleware',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '07.04.2023',
-    edited: '07.05.2023'
+    created: '09.09.2023'
   },
   {
     id: 'nuxt-ui',
@@ -122,8 +120,7 @@ const articles = [
     title: 'Nuxt Tutorial 6 - UI integrace',
     dscr: 'Nuxt 3 - jak snadno integrovat UI prvky',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS'],
-    created: '11.05.2023',
-    edited: '20.05.2023'
+    created: '09.09.2023'
   },
   {
     id: 'nuxt-forms',
@@ -131,8 +128,7 @@ const articles = [
     title: 'Nuxt Tutorial 7 - Formuláře',
     dscr: 'Nuxt 3 - jak snadno integrovat formulářové prvky',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI'],
-    created: '11.05.2023',
-    edited: '21.05.2023'
+    created: '09.09.2023'
   },
   {
     id: 'nuxt-content',
@@ -140,8 +136,7 @@ const articles = [
     title: 'Nuxt Tutorial 8 - Nuxt Content',
     dscr: 'Nuxt 3 - modul pro usnadnění tvorby obsahu',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
-    created: '13.04.2023',
-    edited: '13.04.2023'
+    created: '09.09.2023'
   },
   {
     id: 'nuxt-pinia',
@@ -149,18 +144,16 @@ const articles = [
     title: 'Nuxt Tutorial 9 - State management',
     dscr: 'Nuxt 3 - jak ukládat a distibuovat data napříč celou aplikací',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '11.05.2023',
-    edited: '11.05.2023',
+    created: '09.09.2023',
     wip: true
   },
   {
     id: 'nuxt-tailwind',
     cat: 'web',
     title: 'Nuxt Tutorial 10 - CSS',
-    dscr: 'Nuxt 3 - jak si pomoct při tvorbě CSS vzhledu',
+    dscr: 'Nuxt 3 - jak si usnadnit tvorbu CSS vzhledu',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '12.09.2023',
-    edited: '12.09.2023',
+    created: '09.09.2023',
     wip: true
   },
   {
