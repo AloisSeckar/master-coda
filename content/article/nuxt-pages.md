@@ -1,6 +1,10 @@
-Základy Vue.js aplikací se staví pomocí **_komponent_**. Komponenta Vue.js je textový soubor s příponou `.vue`, která se obvykle skládá ze tří možných části:
-- `<template>` - šablona definující předpis pro vykreslení (rendering) a za běhu se převádí na skutečné HTML+CSS
-- `<script>` - prostor pro JavaScript (TypeScript) definici speciální funkcionality komponenty
+V tomto díle se podíváme na základy tvorby prezentační vrstvy naší budoucí [Nuxt](https://nuxt.com/) aplikace.
+
+## Komponenty obecně
+
+Všechny Vue.js aplikace (Nuxt jako takový běží nad Vue.js) se staví pomocí **_komponent_**. Komponenta Vue.js je textový soubor s příponou `.vue`, která se obvykle skládá ze tří možných části:
+- `<template>` - šablona definující předpis pro vykreslení (rendering), která za běhu se převádí (kompiluje) na skutečné HTML+CSS+JS
+- `<script>` - prostor pro JavaScript (TypeScript) definici obslužné funkcionality komponenty
 - `<style>` - možnost definice grafických CSS stylů
 
 Poměrně často chybí sekce `<style>`, protože komponenta buď žádné "svoje" styly nepotřebuje definovat, nebo se stylování řeší klasickým centralizovaným způsobem pomocí importu .css (nebo .scss, aj.) souborů. Setkáváme se také s komponentami bez sekce `<script>`, které definují pouze statický vzhled, nebo jednoduché JS výrazy používají inline přímo v `<template>`. Komponenta bez `<template>` je validní (musí však v takovém případě obsahovat `<script>` sekci), ale zatím jsem se nesetkal s praktickým použitím. Pro obslužný kód bez grafického výstupu je lépe použít jiné metody, o kterých si něco řekneme v dalších částech tutoriálu.
@@ -13,7 +17,7 @@ Nuxt programátory od obou těchto činností umí efektivně odstínit prostře
 
 ## /components
 
-Nuxt předpokládá, že v projektovém podadresáři `/components` nalezne námi definované komponenty. Je schopen poznat, že jde o definiční soubor komponenty, a provést automatickou globální registraci. Pokud tedy napíšeme komponentu `/components/MojeKomponenta.vue`, aniž bychom se museli starat o cokoliv dalšího, můžeme v šablonách jiných komponent použít tag `<MojeKomponenta>`, jenž v příslušném místě vykreslí její obsah.
+Nuxt předpokládá, že v projektovém podadresáři `/components` nalezne námi definované komponenty. Je schopen poznat, že jde o definiční soubor komponenty, a provést její automatickou globální registraci. Pokud tedy napíšeme komponentu `/components/MojeKomponenta.vue`, aniž bychom se museli starat o cokoliv dalšího, můžeme v šablonách jiných komponent použít tag `<MojeKomponenta>`, jenž v příslušném místě vykreslí její obsah.
 
 Kromě toho dokáže Nuxt sám cestovat i do vnořených podadresářů, přičemž název výsledné komponenty složí z celé relativní cesty + názvu souboru `.vue`. Komponenta `/components/moje/komponenta.vue` bude rovněž k dispozici jako `<MojeKomponenta>`. Ani v tomto případě se nemusíme o nic starat.
 
@@ -21,15 +25,15 @@ Je ovšem diskutabilní, nakolik tuto schopnost používat. Její existence dohr
 
 Nemám na to zatím zcela vyhraněný názor. Je pravda, že ve větším projektu, kde jsem jemné členění zavedl, už celkem narážím na to, že se ten který soubor hůře hledá. Na druhou stranu od určitého počtu zřejmě není ani jeden adresář až tak přehledný...
 
-Důležité každopádně je, že Nuxt sám od sebe podporuje obě možnosti a od nás k tomu krom samotných souborů nic víc nepotřebuje. Dokonce se můžeme rozhodnout po čase strukturu změnit a nemusíme pak nikde nic upravovat. Protože jsou registrace automatické, nemusíme nikde ve skriptech definovat cesty a tudíž je pak ani nemusíme měnit. Nuxt si svoje linkovací `.d.ts` soubory generuje sám, takže si je i sám přepracuje. V nejhorším nás čeká krátký restart dev serveru.
+Důležité každopádně je, že Nuxt sám od sebe podporuje obě možnosti a od nás k tomu krom samotných souborů nic víc nepotřebuje. Dokonce se můžeme rozhodnout po čase strukturu změnit a nemusíme pak nikde nic upravovat. Protože jsou registrace automatické, není třeba nikde ve skriptech definovat cesty a tudíž je pak ani nemusíme měnit. Nuxt si svoje linkovací `.d.ts` soubory generuje sám, takže si je i sám přepracuje. V nejhorším nás čeká krátký restart dev serveru.
 
 ## /pages
 
-Díky složce `/components` už máme způsob, jak si všude v Nuxt aplikaci zpřístupnit námi definované komponenty. Druhá speciální složka `/pages` obsahuje rovněž soubory, které jsou technicky Vue.js komponentami, také je automaticky procesuje, ale dělá s nimi trochu něco jiného. Obsažené podadresáře a soubory komponent převádí na aplikační cesty (routes). Pokud odpovídající URL zadáte do prohlížeče, vykreslí se obsah příslušné komponenty.
+Díky složce `/components` už máme způsob, jak si všude v Nuxt aplikaci zpřístupnit námi definované komponenty. Druhá speciální složka `/pages` obsahuje rovněž soubory, které jsou technicky Vue.js komponentami, Nuxt je také automaticky procesuje, ale dělá s nimi trochu něco jiného. Obsažené podadresáře a soubory komponent převádí na aplikační cesty (routes). Pokud odpovídající URL zadáte do prohlížeče, vykreslí se obsah příslušné komponenty.
 
 Základem je typicky soubor `/pages/index.vue`, který obsahuje to, co se zobrazí po první návštěvě domény - v testovacím případě `http://localhost:3000`. Pokud máme skutečně "jednostránkovou" aplikaci, lze tento krok přeskočit a všechno mít už přímo v `app.vue`. Jakmile ale začneme přidávat další stránky, už se bez této stránky moc neobejdeme, protože Nuxt by pak měl problém určit, co má ve výchozím stavu zobrazit.
 
-Přidáme-li soubor `/pages/first.vue`, aplikace bude schopná zobrazit odpovídající obsah při návštěvě `http://localhost:3000/first`. Pokud přidáme podadresáře, je struktura respektována. Obsah `/pages/first/second.vue` bude zobrazen na `http://localhost:3000/first/second`. Pokud Nuxt žádnou odpovídající stránku nenajde, vyhodí chybu 404. To všechno se stejně jako u registrace komponent děje "samo". My prostě jen přidáváme nové stránky a Nuxt tvoří nové URL.
+Přidáme-li soubor `/pages/first.vue`, aplikace bude schopná zobrazit odpovídající obsah při návštěvě `http://localhost:3000/first`. Pokud přidáme podadresáře, je respektována jejich struktura. Obsah `/pages/first/second.vue` bude zobrazen na `http://localhost:3000/first/second`. Pokud Nuxt žádnou odpovídající stránku nenajde, vyhodí chybu 404. To všechno se stejně jako u registrace komponent děje "samo". My prostě jen přidáváme nové stránky a Nuxt tvoří nové URL.
 
 To ale ještě není všechno. Nuxt zvládá i tzv. "dynamické" stránky. Pokud název souboru či adresáře obalíme do hranatých závorek, začne Nuxt zachytávat "cokoliv", co nebylo možné namapovat na více specifickou cestu. Tzn. pokud založíme `/pages/[page].vue` a nic dalšího, bude nám do této komponenty padat úplně vše (tedy neplatí tak docela, že _vždy_ potřebujeme `/pages/index.vue`). Pokud k tomu založíme `/pages/first.vue`, tak `http://localhost:3000/first` povede na obsah stránky `first` a cokoliv jiného na obsah stránky `[page]`.
 
@@ -43,17 +47,19 @@ Chtěl bych ještě zmínit dvě vychytávky:
 - lze kombinovat statickou a dynamickou část - tj. například mít soubory `/pages/product-[id].vue` a `/pages/cagtegory-[id].vue`
 - nebo je možné mít více "slugs" v jedné cestě - `/pages/[category]/[product].vue`
 
-Jak je vidět, systém je nesmírně flexibilní a sám od sebe dovoluje různá "kouzla". A kdyby defaultní chování Nuxtu nestačilo a potřebovali jsme do výchozího chování aplikace sáhnout ještě více, není problém. Pořád je k dispozici přístup přímo k Vue Routeru, který pod tím vším žije a se vším ve skutečnosti hýbe. Nuxt odvede práci, co ve většině případů stačí, ale možnost plné kontroly je stále na programátorovi.
+Jak je vidět, systém je nesmírně flexibilní a sám od sebe dovoluje různá "kouzla". A kdyby defaultní chování Nuxtu nestačilo a potřebovali jsme do výchozího chování aplikace sáhnout ještě více, není problém. Pořád je k dispozici přístup přímo k objektu [Vue Routeru](https://nuxt.com/docs/api/composables/use-router), který pod tím vším žije a s navigací ve skutečnosti hýbe. Nuxt odvede práci, co ve spoustě případů stačí, ale možnost plné kontroly je stále na programátorovi.
 
 ## Případová studie
 
-Tento blog se zobrazuje díky souboru `/pages/article/[article].vue`. Základ (hlavička s názvem, daty a tagy + patička s odkazy na GitHub) je společný pro všechny články a je realizován pomocí dvou komponent - `/components/ArticleHeader.vue` a `/components/ArticleFooter.vue`. Na základě konkrétní URL (zde `/article/nuxt-pages`) se vybere potřebný obsah článku, který odpovídá unikátnímu výrazu `nuxt-pages`.
+Tam, kde to dává smysl, se budu snažit to, o čem si zrovna říkáme, demonstrovat na názorném příkladě:
 
-**Pozn.:** Princip platí, ale způsob práce se získanou hodnotou je přeci jen trochu odlišný. Více se dozvíte v [Nuxt tutoriálu číslo 6](/article/nuxt-content).
+Tento blog se vám zobrazuje díky souboru [`/pages/article/[article].vue`](https://github.com/AloisSeckar/master-coda/blob/master/pages/article/%5Barticle%5D.vue). Základ (hlavička s názvem, daty a tagy + patička s odkazy na GitHub) je společný pro všechny články a je realizován pomocí dvou komponent - [`/components/ArticleHeader.vue`](https://github.com/AloisSeckar/master-coda/blob/master/components/ArticleHeader.vue) a [`/components/ArticleFooter.vue`](https://github.com/AloisSeckar/master-coda/blob/master/components/ArticleFooter.vue). Podle konkrétní URL (zde `/article/nuxt-pages`) se vybere potřebný obsah článku, který odpovídá unikátnímu výrazu na konci URL (zde `nuxt-pages`). Navigační box na ostatní díly tutoriálu je vykreslen díky komponentě [`/components/ArticleNavigation.vue`](https://github.com/AloisSeckar/master-coda/blob/master/components/ArticleNavigation.vue), která sama v sobě obsahuje další komponenty a podmněně je vykresuje na základě hodnoty `article`.
+
+**Pozn.:** Základní princip platí, ale způsob práce se získanou hodnotou `article` v praxi je přeci jen trochu složitější - vykreslení článku je realizováno pomocí modulu Nuxt Content, o němž se více dozvíte v [Nuxt tutoriálu číslo 6](/article/nuxt-content).
 
 ## Demo projekt
 
-Zdrojový kód ukázkové implementace naleznete zde:
+Zdrojový kód ukázkové implementace ilustrující princip komponent a stránek v Nuxtu naleznete zde:
 [nuxt-pages @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-pages)
 
 Projekt definuje celkem 3 stránky v adresáři `/pages`
@@ -68,3 +74,5 @@ Dále jsou zde 2 komponenty v adresáři `/components`
 ## Shrnutí
 
 Nuxt usnadňuje práci s Vue.js komponentami tím, že automaticky skenuje dedikované adresáře `/components` a `/pages` a provádí automatickou globální registraci komponent do aplikace. Nad adresářovou a souborovou strukturou v rámci `/pages` navíc automaticky vytvoří routing pro navigaci pomocí URL odkazů.
+
+V dalším dílu tutoriálu budeme pokračovat vysvětlením dalších velmi užitečných adresářů `/composables` a `/utils`.
