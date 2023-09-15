@@ -7,8 +7,8 @@
     </p>
     <p class="my-2">
       Na tomto blogu naleznete články o&nbsp;nejrůznějších IT tématech. Snad mé texty někomu pomohou. Budu rád
-      i&nbsp;za zpětnou vazbu, pokud v nich uvidíte chybu nebo znáte způsob, jak danou věc řešit lépe. Vždycky
-      je kam se zlepšovat.
+      i&nbsp;za zpětnou vazbu, pokud v nich uvidíte chybu nebo znáte způsob, jak danou věc řešit lépe. Napište
+      mi na <a href="mailto:alois-seckar@gmail.com">alois-seckar@gmail.com</a>. Vždycky je kam se zlepšovat.
     </p>
     <p class="mt-4 text-xs">
       <strong>Pozn.:</strong> S účtem
