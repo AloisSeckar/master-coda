@@ -96,7 +96,7 @@ const articles = [
     dscr: 'Nuxt 3 - jak fungují složky /utils a /composables',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '09.09.2023',
-    edited: '15.09.2023'
+    edited: '16.09.2023'
   },
   {
     id: 'nuxt-api',
