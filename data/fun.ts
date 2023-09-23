@@ -145,6 +145,11 @@ const fun = [
     title: 'Je to pravda',
     explain: '!false === true',
     added: '2023-08-23'
+  },
+  {
+    id: 'excel',
+    title: 'Excel a automatické formátování',
+    added: '2023-09-23'
   }
 ]
 
