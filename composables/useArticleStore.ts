@@ -7,7 +7,7 @@ export type Article = {
     dscr: string,
     tags: string[],
     created: string,
-    edited: string,
+    edited?: string,
     wip?: boolean
 }
 
