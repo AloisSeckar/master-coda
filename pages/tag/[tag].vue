@@ -19,7 +19,7 @@
 <script setup lang="ts">
 useArticleStore().fillIfNeeded()
 
-const tag = useRoute().params.tag.toString()
+const tag = useRoute().params.tag?.toString() || '_x'
 const articles = computed(() => useArticleStore().getByTag(tag))
 
 usePageMeta({

@@ -80,8 +80,8 @@ const prevEnabled = computed(() => funStore.index > 0)
 
 const reloadImage = () => {
   const newImage = funStore.items[funStore.index]
-  imageData.id = newImage.id
-  imageData.title = newImage.title
+  imageData.id = newImage?.id || '_zoidberg'
+  imageData.title = newImage?.title || 'Haha?'
   imagePath.value = useAsset('img/fun/' + imageData.id + '.jpg')
 }
 

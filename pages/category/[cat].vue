@@ -19,7 +19,7 @@
 <script setup lang="ts">
 useArticleStore().fillIfNeeded()
 
-const cat = useRoute().params.cat.toString()
+const cat = useRoute().params.cat?.toString() || '_x'
 const articles = computed(() => useArticleStore().getByCategory(cat))
 
 let catName = cat

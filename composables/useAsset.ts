@@ -3,5 +3,5 @@ export function useAsset (path: string): string {
     eager: true,
     import: 'default'
   })
-  return assets['/assets/' + path]
+  return assets['/assets/' + path] || '' // TODO return default "missing image"
 }
