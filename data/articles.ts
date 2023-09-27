@@ -104,7 +104,8 @@ const articles = [
     title: 'Nuxt Tutorial 4 - Serverová část',
     dscr: 'Nuxt 3 - jak funguje serverová část',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '09.09.2023'
+    created: '09.09.2023',
+    edited: '27.09.2023'
   },
   {
     id: 'nuxt-middleware',

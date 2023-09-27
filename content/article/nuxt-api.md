@@ -1,10 +1,12 @@
-Dosud jsme se pohybovali v tzv. klientské části Nuxt aplikace. Stránky (`/pages`) tvořené komponentami (`/components`) a poháněné logikou umístěnou do `/composables` a `/utils` jsou stavební prvky toho, co ve finále vidí uživatel - frontend. Pro řadu aplikací, zejména menších, to úplně stačí. 
+Dosud jsme se pohybovali v tzv. klientské části Nuxt aplikace. Stránky (`/pages`) tvořené komponentami (`/components`) a poháněné logikou umístěnou ve složkách `/composables` a `/utils` jsou základní stavební prvky toho, co nakonec vidí uživatel - frontend. Pro řadu aplikací, zejména těch menších, to úplně stačí. 
 
-Nuxt ale nabízí funkcionalitu i pro backendové operace. Umožňuje vystavit API endpointy a sloužit i jako prakticky plnohodnotý server.
+Nuxt ale nabízí funkcionalitu i pro backendové operace. Umožňuje vystavit API endpointy, přijímat a zpracovávat na ně přijímané požadavky a sloužit tak i jako prakticky plnohodnotý server.
 
 ## Nitro
 
-Nuxt pracuje dynamicky pomocí interního webového server enginu [Nitro](https://nitro.unjs.io/). Nitro si vytváří vlastní runtime nezávislý na všem ostatním a tvoří běhové prostředí aplikace, které poskytuje řadu skvělých funkcí. Jednou z nich je API vrstva, která umožňuje tvořit a vystavovat endpointy, které pak lze provolat klasikým HTTP voláním.
+Nuxt funguje dynamicky díky internímu webovému server enginu [Nitro](https://nitro.unjs.io/). Nitro si vytváří vlastní runtime nezávislý na všem ostatním a tvoří běhové prostředí aplikace, které poskytuje řadu skvělých funkcí. Vývojáři ocení třeba hot-module-reload (HMR) při vývoji - stačí uložit soubor a změny se ihned promítnou a nasadí do lokálně běžící verze. Pokud s programováním začínáte dnes, může vám to už připadat jako samozřejmost, ale nebylo to vždycky tak...
+
+Další vymožeností Nitra je [API vrstva](https://nuxt.com/docs/guide/concepts/server-engine#api-layer), která umožňuje jednoduše tvořit a vystavovat endpointy, které pak lze přes HTTP(S) požadavky provolávat.
 
 ## /server
 
@@ -16,9 +18,20 @@ export default defineEventHandler((event) => {
 })
 ```
 
-Stačí jej umístit do další speciální složky `/server/api` nebo `/server/routes` a Nuxt si je automaticky zpracuje a začne vystavovat. Rozdíl mezi uvedenými dvěma složkami je, že obslužný handler ze souboru `/server/api/foo.ts` bude vystaven na `http://localhost:3000/api/foo`, zatímco ze souboru `/server/routes/foo.ts` přímo na `http://localhost:3000/foo`. Podsložka `/server/api` je tedy de-facto totéž jako `/server/routes/api`. Použití prefixu `/api` je poměrně časté, proto existuje jako samostatná možnost, pokud ale trváte na větší volnosti, můžete použít `/routes`.
+Stačí jej umístit do další speciální složky `/server/api` nebo `/server/routes` a Nuxt si ho automaticky zpracuje a začne vystavovat. Rozdíl mezi uvedenými dvěma složkami je, že obslužný handler ze souboru `/server/api/foo.ts` bude vystaven na `http://localhost:3000/api/foo`, zatímco ze souboru `/server/routes/foo.ts` přímo na `http://localhost:3000/foo`. Podsložka `/server/api` je tedy de-facto totéž jako `/server/routes/api`. Použití prefixu `/api` je poměrně časté, proto existuje jako samostatná možnost, pokud ale trváte na větší volnosti, můžete použít `/routes`.
 
-Pomocí suffixů za tečkou v názvech souborů lze jednouše upřesit, kterou [HTTP metodu](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) handler obsluhuje. Soubor `/server/api/foo.get.ts` umožní na `http://localhost:3000/api/foo` volat GET, `/server/api/foo.post.ts` vystaví na `http://localhost:3000/api/foo` POST. Logika obou může být výrazně odlišná v souladu s účelem, které jednotlivé HTTP metody obvyle mají.
+Pomocí _suffixů_ za tečkou v názvech souborů lze jednouše upřesit, kterou [HTTP metodu](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) handler obsluhuje. Soubor `/server/api/foo.get.ts` umožní na `http://localhost:3000/api/foo` volat GET, `/server/api/foo.post.ts` vystaví na `http://localhost:3000/api/foo` POST. Logika obou může být výrazně odlišná. Podle [dokumentace](https://nuxt.com/docs/guide/directory-structure/server) jsou podporovány metody `GET`, `POST`, `PUT` a `DELETE`, tedy ne úplně všechny, ale ty zbylé v běžném provozu stejně příliš často nepotkáte.
+
+Obslužný callback `defineEventHandler` může přijmout vstupní parametr `event`, který je typu `H3Event` z frameworku [h3](https://github.com/unjs/h3). Tento minimalistický HTTP framework, který v sobě Nuxt, resp. Nitro integruje, nabízí celou řadu užitečných funkcí. Například načíst obsah příchozího `POST` požadavku k dalšímu zpracování můžeme jednoduše takto:
+
+```ts
+export default defineEventHandler(async (event) => {
+    const postData = await readBody(event)
+    // další zpracování vstupu
+}
+```
+
+V proměnné `event.node.req` zase naleznete parametry příchozího HTTP požadavku ve formátu [Node.js HTTP](https://www.w3schools.com/nodejs/obj_http_incomingmessage.asp). Snadno si tak lze sáhnout například na HTTP hlavičky, které jsou umístěny v poli `headers`.
 
 ## Demo projekt
 
@@ -26,15 +39,20 @@ Zdrojový kód ukázkové implementace naleznete zde:
 [nuxt-api @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-api)
 
 Serverová část projektu vystavuje dva API endpointy:
-- `sample.get.ts` - vrátí text "Hello, Nuxt!" + aktuální datum a čas (aby bylo vidět, že se požadavek pokaždé znovu procesuje)
-- `error.get.ts` - úmyslně vrací náhodnou HTTP chybu 400-410
+- `sample.get.ts` - vrátí text _"Hello, Nuxt!"_ + aktuální datum a čas (aby bylo vidět, že se požadavek pokaždé znovu procesuje)
+- `error.get.ts` - úmyslně vrací náhodnou [HTTP chybu](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses) 400-410
 
-Jednoduchý frontend provolává a zobrazuje pouze výsledek `sample.get.ts`. Endpoint s chybou si můžete zkusmo provolat sami zadáním `http://localhost:3000/api/error` do prohlížeče.
+Jednoduchý frontend provolává a zobrazuje výsledek `sample.get.ts`. Endpoint s chybou si můžete zkusmo provolat sami zadáním `http://localhost:3000/api/error` do prohlížeče.
+
+## Další odkazy
+* [Server Routes in Nuxt 3 (Michael Thiessen)](https://masteringnuxt.com/blog/server-routes-in-nuxt-3) (EN)
+* [Dokumentace - Nuxt `/server`](https://nuxt.com/docs/guide/directory-structure/server) (EN)
+* [Dokumentace - h3](https://github.com/unjs/h3) (EN)
 
 ## Shrnutí
 
 Serverová část Nuxt frameworku je určena k de-facto backendovým operacím. Umožňuje tvořit a vystavovat vlastní API, které lze poskytovat buďto navenek do internetu, nebo ji také lze využít k logické separaci kódu - serverová část slouží k obsluze volání externích API a k manipulaci s daty, které pak aplikace v klientské frontendové části pouze zobrazuje.
 
-Stejně jako složka `/pages` umožňuje routing na klientovi, složky `/server/api` a `/server/routes` abstrahují vývojáře od nutnosti definovat vlastní cesty.
+Stejně jako složka `/pages` umožňuje routing na straně klienta, složky `/server/api` a `/server/routes` abstrahují vývojáře od nutnosti definovat vlastní cesty.
 
-[Další část tutoriálu](/article/nuxt-middleware) představí koncept <strong>middleware</strong>, což jsou obslužné metody, které je možné volat před vykreslením frontendu nebo před zpracováním dat v serverové části.
+[Další část tutoriálu](/article/nuxt-middleware) představí koncept <strong>middleware</strong>, což jsou obslužné metody, které je možné automaticky volat před vykreslením frontendu nebo před zpracováním dat v serverové části.
