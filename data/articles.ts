@@ -113,7 +113,8 @@ const articles = [
     title: 'Nuxt Tutorial 5 - Middleware',
     dscr: 'Nuxt 3 - jak pracuje middleware',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '09.09.2023'
+    created: '09.09.2023',
+    edited: '28.09.2023'
   },
   {
     id: 'nuxt-ui',
