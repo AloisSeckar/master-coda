@@ -117,9 +117,17 @@ const articles = [
     edited: '28.09.2023'
   },
   {
+    id: 'nuxt-vue',
+    cat: 'web',
+    title: 'Nuxt Tutorial 6 - Vue.js intermezzo',
+    dscr: 'Nuxt 3 - alespoň stručný pohled na základní principy Vue.js, nad kterým je Nuxt postaven',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
+    created: '30.09.2023'
+  },
+  {
     id: 'nuxt-ui',
     cat: 'web',
-    title: 'Nuxt Tutorial 6 - UI integrace',
+    title: 'Nuxt Tutorial 7 - UI integrace',
     dscr: 'Nuxt 3 - jak snadno integrovat UI prvky',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS'],
     created: '09.09.2023'
@@ -127,7 +135,7 @@ const articles = [
   {
     id: 'nuxt-forms',
     cat: 'web',
-    title: 'Nuxt Tutorial 7 - Formuláře',
+    title: 'Nuxt Tutorial 8 - Formuláře',
     dscr: 'Nuxt 3 - jak snadno integrovat formulářové prvky',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI'],
     created: '09.09.2023'
@@ -135,7 +143,7 @@ const articles = [
   {
     id: 'nuxt-content',
     cat: 'web',
-    title: 'Nuxt Tutorial 8 - Nuxt Content',
+    title: 'Nuxt Tutorial 9 - Nuxt Content',
     dscr: 'Nuxt 3 - modul pro usnadnění tvorby obsahu',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
     created: '09.09.2023'
@@ -143,7 +151,7 @@ const articles = [
   {
     id: 'nuxt-pinia',
     cat: 'web',
-    title: 'Nuxt Tutorial 9 - State management',
+    title: 'Nuxt Tutorial 10 - State management',
     dscr: 'Nuxt 3 - jak ukládat a distibuovat data napříč celou aplikací',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '09.09.2023',
@@ -152,7 +160,7 @@ const articles = [
   {
     id: 'nuxt-tailwind',
     cat: 'web',
-    title: 'Nuxt Tutorial 10 - CSS',
+    title: 'Nuxt Tutorial 11 - CSS',
     dscr: 'Nuxt 3 - jak si usnadnit tvorbu CSS vzhledu',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '09.09.2023',
