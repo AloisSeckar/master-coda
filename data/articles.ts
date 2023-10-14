@@ -210,6 +210,14 @@ const articles = [
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '08.09.2023',
     edited: '08.09.2023'
+  },
+  {
+    id: 'hello-chatgpt-5',
+    cat: 'misc',
+    title: 'Páté rande s ChatGPT - obrázky z Wikipedie',
+    dscr: 'Pokus o automatizaci získávání URL na svg obrázkys z Wikipedie',
+    tags: ['ChatGPT', 'AI', 'programování', 'help'],
+    created: '14.10.2023'
   }
 ]
 
