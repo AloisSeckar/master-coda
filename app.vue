@@ -1,8 +1,8 @@
 <template>
   <div class="flex justify-center">
-    <div class="w-full md:w-4/5">
+    <div class="flex flex-col h-screen w-full md:w-4/5">
       <CodaHeader />
-      <main>
+      <main class="mb-auto">
         <NuxtPage />
       </main>
       <CodaFooter />
