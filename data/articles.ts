@@ -217,7 +217,8 @@ const articles = [
     title: 'Páté rande s ChatGPT - obrázky z Wikipedie',
     dscr: 'Pokus o automatizaci získávání URL na svg obrázkys z Wikipedie',
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
-    created: '14.10.2023'
+    created: '14.10.2023',
+    edited: '17.10.2023'
   }
 ]
 
