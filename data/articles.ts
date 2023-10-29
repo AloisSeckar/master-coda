@@ -122,7 +122,8 @@ const articles = [
     title: 'Nuxt Tutorial 6 - Vue.js intermezzo',
     dscr: 'Nuxt 3 - alespoň stručný pohled na základní principy Vue.js, nad kterým je Nuxt postaven',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '30.09.2023'
+    created: '30.09.2023',
+    wip: true
   },
   {
     id: 'nuxt-ui',

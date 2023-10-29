@@ -1,3 +1,3 @@
 ## nuxt-supabase stub
 
-<under-construction />
+Článek o databázové integraci Supabase

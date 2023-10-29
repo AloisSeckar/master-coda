@@ -1,3 +1,3 @@
 ## nuxt-pinia stub
 
-<under-construction />
+Článek o integraci Pinia data store

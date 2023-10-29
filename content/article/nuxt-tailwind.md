@@ -1,3 +1,3 @@
 ## nuxt-tailwind stub
 
-<under-construction />
+Článek o integraci Tailwind CSS

@@ -21,5 +21,3 @@ V tomto vloženém článku se podíváme trochu blíž na vybrané základní k
 ## Shrnutí
 
 V tuto chvíli byste už měli být vyzbrojeni dostatečnou porcí znalostí o možnostech frameworku Nuxt, abyste mohli pomalu zkoušet tvořit větší a reálnější aplikace. Dělat si však všechno od nuly sami by mohlo být zbytečně zdlouhavé. Proto se v dalším díle tutoriálu ukážeme, jak je možné bez větší námahy [integrovat prvky vybraných UI knihoven](/article/nuxt-ui) a rovnou je začít používat. 
-
-<under-construction />

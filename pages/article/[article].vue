@@ -2,6 +2,7 @@
   <div>
     <ArticleHeader />
     <div class="article">
+      <UnderConstruction v-if="article?.wip" />
       <ContentDoc>
         <template #not-found>
           <div class="mb-6">
