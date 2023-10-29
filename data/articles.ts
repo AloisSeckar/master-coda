@@ -136,7 +136,7 @@ const articles = [
     id: 'nuxt-forms',
     cat: 'web',
     title: 'Nuxt Tutorial 8 - Formuláře',
-    dscr: 'Nuxt 3 - jak snadno integrovat formulářové prvky',
+    dscr: 'Nuxt 3 + FormKit = snadná tvorba formulářů',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI'],
     created: '09.09.2023'
   },
@@ -144,7 +144,7 @@ const articles = [
     id: 'nuxt-content',
     cat: 'web',
     title: 'Nuxt Tutorial 9 - Nuxt Content',
-    dscr: 'Nuxt 3 - modul pro usnadnění tvorby obsahu',
+    dscr: 'Nuxt 3 + Nuxt Content = tvorba obsahu bez zbytečných komplikací',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
     created: '09.09.2023'
   },
@@ -152,7 +152,7 @@ const articles = [
     id: 'nuxt-pinia',
     cat: 'web',
     title: 'Nuxt Tutorial 10 - State management',
-    dscr: 'Nuxt 3 - jak ukládat a distibuovat data napříč celou aplikací',
+    dscr: 'Nuxt 3 + Pinia = efektivní ukládání a distibuce dat napříč celou aplikací',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '09.09.2023',
     wip: true
@@ -161,9 +161,18 @@ const articles = [
     id: 'nuxt-tailwind',
     cat: 'web',
     title: 'Nuxt Tutorial 11 - CSS',
-    dscr: 'Nuxt 3 - jak si usnadnit tvorbu CSS vzhledu',
+    dscr: 'Nuxt 3 + Tailwind CSS = jak si usnadnit tvorbu CSS vzhledu',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '09.09.2023',
+    wip: true
+  },
+  {
+    id: 'nuxt-supabase',
+    cat: 'web',
+    title: 'Nuxt Tutorial 12 - Databáze',
+    dscr: 'Nuxt 3 + Supabase = rychlá databázová integrace',
+    tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
+    created: '29.10.2023',
     wip: true
   },
   {
