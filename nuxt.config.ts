@@ -2,6 +2,9 @@
 import vsharp from 'vite-plugin-vsharp'
 
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/'
+  },
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
