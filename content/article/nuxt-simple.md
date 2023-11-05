@@ -26,15 +26,23 @@ Pokud budete chtít Nuxt zprovoznit lokálně, budete potřebovat:
  - **package-lock.json** - soubor, který automaticky generuje manažer balíčků `npm` během příkazu `npm install`, ve kterém si drží vyčerpávající definici všech projektových závislostí. Panují názory, že je možné jej z Gitu vynechat, protože se často mění a stejně si ho každý vývojář projektu generuje sám lokálně, držím se ovšem [doporučení](https://stackoverflow.com/a/44210813/3204544), že do repozitáře také patří.
  - **package.json** - klíčový soubor, který obsahuje zejména definice závislostí na externích projektech. V našem případě samozřejmě na balíčku `nuxt` a dále na dvou balíčcích pro ESLint, a také definice základních příkazů v sekci `script` - definované aliasy se pak volají za "npm run *". <span style="color: gray">Tyto definice nejsou povinné, ale díky ním je ovládaní pohodlnější.</span>
  - **tsconfig.json** - možnost customizace pro jinak generovaný soubor nastavení chování TypeScriptu. Více o tématu v (budoucím) samostatném článku.
+
+## Nuxt Starter
+
+ Pokud budete někdy v budoucnu chtít začít se svým vlastním malým Nuxt projektem, naleznete výše uvedené také ve variantě samostatného GitHub repozitáře, odkud se vám bude zdrojový kód o něco lépe kopírovat:
+
+ [nuxt-starter @ GitHub](https://github.com/AloisSeckar/nuxt-starter)
  
  ## Nuxt Minimal
 
 [nuxt-minimal @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-minimal)
 
-Tento subprojekt ukazuje, že ve skutečnosti jde Nuxt rozběhnout ještě jednodušeji. Přestože to asi není nejlepší nápad, web se nastartuje a zobrazí, pokud budou k dispozici pouze následující dva soubory:
+Tento subprojekt ukazuje, že ve skutečnosti jde Nuxt rozběhnout ještě mnohem jednodušeji. Přestože to asi není nejlepší nápad, web se nastartuje a zobrazí, pokud budou k dispozici pouze následující dva soubory:
 
-- **app.vue** - základní vstupní bod s jednoduchou šablonou uvnitř `<template>` + v tomto případě (prázdným) tagem `<script>` (bez něj to při absenci `nuxt.config.ts` souboru nějak nefunguje)
-- **package.json** - ve kterém bude v `devDependencies`</span> deklarovaná závislost na balíčku `nuxt`. <span style="color: gray">Definice npm skriptů tam nezbytně být nemusí.</span>
+- **app.vue** - základní vstupní bod s jednoduchou šablonou uvnitř `<template>`
+- **package.json** - ve kterém bude v `devDependencies`</span> deklarovaná závislost na balíčku `nuxt`
+
+Místo `npm run dev` (který vyžaduje dodatečnou konfiguraci v souboru `package.json`) se v tomto případě aplikace spouští pomocí externího příkazu `npx nuxi dev` (`npx` je nadstavba nad `npm`, která umožňuje spouštět npm balíčky "on the fly" bez jejich lokální instalace, a `nuxi` CLI nástroj od tvůrců frameworku Nuxt).
 
 Zbylé dva soubory v úložišti - `README.md` a `package-lock.json` - už byly popsány výše a jsou v úložišti de-facto navíc.
 
