@@ -1,4 +1,4 @@
-Jedna z věcí, co mě baví na JavaScriptu, je možnost zkráceného vyhodnocování, zda je proměnná řádně naplněná. Namísto zdlouhavého porovnávání `if (text !== undefined && text!== null && text.length > 0)` můžeme psát jenom `if (text)` a zafunguje to stejně.
+Jedna z věcí, co mě baví na JavaScriptu, je možnost zkráceného vyhodnocování, zda je proměnná řádně naplněná. Namísto zdlouhavého porovnávání `if (text !== undefined && text !== null && text.length > 0)` můžeme psát jenom `if (text)` a zafunguje to stejně.
 
 Jen je potřeba si dávat pozor, pokud chce člověk skládat více takových podmínek. Když zadáte:
 

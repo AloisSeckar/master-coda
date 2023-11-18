@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     ['@pinia/nuxt', { autoImports: ['defineStore'] }]
   ],
   content: {
+    contentHead: false,
     highlight: {
       theme: 'dracula',
       preload: ['java']
