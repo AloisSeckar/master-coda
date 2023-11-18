@@ -229,6 +229,24 @@ const articles = [
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '14.10.2023',
     edited: '17.10.2023'
+  },
+  {
+    id: 'js-gotcha-1',
+    cat: 'debugging',
+    title: 'Chytáky v JavaScriptu 1 - Není všechno boolean, co je za if',
+    dscr: 'Vyhodnocování logických výrazů nemusí vždy fungovat tak, jak si myslíte',
+    tags: ['debugging', 'JavaScript'],
+    created: '18.11.2023',
+    edited: '18.11.2023'
+  },
+  {
+    id: 'js-gotcha-2',
+    cat: 'debugging',
+    title: 'Chytáky v JavaScriptu 2 - Reaktivní Vue.js proměnné',
+    dscr: 'Při použití Vue reaktivity je třeba pamatovat na správné referencování hodnot',
+    tags: ['debugging', 'JavaScript', 'Vue.js'],
+    created: '18.11.2023',
+    edited: '18.11.2023'
   }
 ]
 
