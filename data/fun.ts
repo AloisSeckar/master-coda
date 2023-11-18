@@ -150,6 +150,11 @@ const fun = [
     id: 'excel',
     title: 'Excel a automatické formátování',
     added: '2023-09-23'
+  },
+  {
+    id: 'acronyms',
+    title: 'Vysvětlení IT zkratek',
+    added: '2023-11-18'
   }
 ]
 
