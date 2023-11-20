@@ -237,7 +237,7 @@ const articles = [
     dscr: 'Vyhodnocování logických výrazů nemusí vždy fungovat tak, jak si myslíte',
     tags: ['debugging', 'JavaScript'],
     created: '18.11.2023',
-    edited: '18.11.2023'
+    edited: '20.11.2023'
   },
   {
     id: 'js-gotcha-2',
