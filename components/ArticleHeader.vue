@@ -12,7 +12,7 @@
       <strong v-if="tags?.length > 0">Tagy:&nbsp;</strong>
       <span v-for="tag in tags" :key="tag" class="actionButton px-1 pb-1">
         <NuxtLink :to="{ path: '/tag/' + tag }">
-          <span class="actionButtonText">{{ tag }}</span>
+          <span class="actionButtonText" style="text-decoration-line: none !important;">{{ tag }}</span>
         </NuxtLink>
       </span>
     </div>

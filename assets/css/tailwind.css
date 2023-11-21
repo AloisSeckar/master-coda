@@ -19,10 +19,10 @@
     }
 
     a, a:visited {
-        @apply text-coda-yellow;
+        @apply text-coda-yellow underline underline-offset-2;
     }
     a:hover, a:active {
-        @apply text-amber-100;
+        @apply text-amber-100 underline underline-offset-2;
     }
 
     div {
