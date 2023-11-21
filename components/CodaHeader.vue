@@ -1,7 +1,7 @@
 <template>
   <div class="m-1 h-36">
     <NuxtLink :to="{ path: '/' }">
-      <img class="w-[112px] h-[127px] border-2 border-coda-green hover:border-coda-yellow" style="width: 115px; float: left;" src="/master-coda.webp" alt="Master Coda">
+      <img class="w-[112px] h-[128px] float-left border-2 border-coda-green hover:border-coda-yellow" src="/master-coda.webp" alt="Master Coda">
     </NuxtLink>
 
     <div id="large-screens" class="hidden lg:block">
