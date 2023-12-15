@@ -6,8 +6,8 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "monthly"
-      time: "05:05"
+      interval: "daily"
+      time: "18:15"
     commit-message:
       prefix: "npm"
     groups:
