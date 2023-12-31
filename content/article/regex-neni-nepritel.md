@@ -10,17 +10,17 @@ INSERT INTO "main"."web_news" ("date_created", "content", "author_id", "news_id"
 
 Tabulka nového webu má navíc sloupec `date_edited`, tedy je třeba tuto hodnotu přidat, a do sloupce `news_id`, který je primárním klíčem s auto-generovanou hodnotou se v PostgreSQL nesmí ručně vkládat, tedy je třeba tuto hodnotu naopak vynechat.
 
-Jistě by to šlo projít a příslušné úpravy provést ručně. U „desítek“ záznamů se to ještě snese. Pokud člověk honem neví, kudy do toho, tak je přímá manipulace pravděpodobně nejrychlejší. Skutečně není dobré trávit hodinu automatizací něčeho, co lze přímočaře zvládnout za pár minut. Ale ještě lepší je vědět, jak si to skutečně ulehčit.
+Jistě by to šlo projít a příslušné úpravy provést ručně. U „desítek“ záznamů se to ještě snese. Pokud člověk honem neví, kudy do toho, tak je přímá manipulace pravděpodobně nejrychlejší. Skutečně není dobré trávit hodinu automatizací něčeho, co lze přímočaře zvládnout za pár minut. Ale ještě lepší je vědět, jak si život skutečně ulehčit.
 
 Jiná varianta je zavolat na zdrojové databázi upravené SQL a vytáhnout si data v lepší podobě. Problém chybějícího sloupce jde např. vyřešit jednoduše takto: `SELECT date_created, date_created AS date_edited FROM web_news`{lang="sql"} – prostě data vybereme dvakrát, jednou pod jiným aliasem. Ale dejme tomu, že k databázi nemáme přístup a máme jen už hotový SQL dump.
 
-Takže už nezbývá než zapojit regulární výrazy. Chce to nějaký textový editor, který pomocí nich umí „Hledat“ a „Nahradit“ – například [Notepad++](https://notepad-plus-plus.org/) (pro Windows people jako jsem já - zkratka `Ctrl+H`).
+Takže už nezbývá než zapojit regulární výrazy. Chce to nějaký textový editor, který pomocí nich umí „Hledat“ a „Nahradit“ – moje volba je [Notepad++](https://notepad-plus-plus.org/) (pro Windows people jako jsem já - zkratka `Ctrl+H`).
 
 <div>
 <article-image src="regex-neni-nepritel/notepad-search.jpg" alt="Funkce 'Nahradit' v Notepad++" />
 </div>
 
-Jednodušší úprava je odmazat `news_id` na konci každého INSERTu. Regulární výrazy pracují tak, že prostřednictvím kombinace skutečných znaků a speciálních metaznaků hledají nad zdrojovým textem shodu (**match** – odtud nečeské, ale v tomto kontextu odpovídající slovo _„matchnout“_). Alfou a omegou je sestavit kombinaci správně. Pojďme na to.
+Jednodušší úprava je odmazat `news_id` na konci každého příkazu `INSERT`. Regulární výrazy pracují tak, že prostřednictvím kombinace skutečných znaků a speciálních metaznaků hledají nad zdrojovým textem shodu (**match** – odtud nečeské, ale v tomto kontextu odpovídající slovo _„matchnout“_). Alfou a omegou je sestavit kombinaci správně. Pojďme na to.
 
 **Hledaný výraz bude:** `, '\d+'\)`
 
@@ -60,7 +60,7 @@ Ani jsme nemrkli a už máme, co jsme potřebovali:
 
 Čím více záznamů je třeba řešit, tím větší výhodou je dát si chvilku práci s konstrukcí regulárního výrazu, který repetitivní práci vyřeší za vás. A skutečně to mohou být hodiny práce.
 
-Účastním se jako zapisovatel mezinárodních turnajů baseballu a softballu. Donedávna bylo před každým turnajem nutno zadat do starší verze systému pro online zápis soupisky hráčů jednotlivých týmů. Program si data zapisoval do textových souborů, takže nebylo nezbytně nutné používat jeho interface a vše skutečně otrocky přepisovat. Akorát zdrojová data o hráčích sice byla v elektronické podobě (strojově čitelné PDF), ale pořadí hodnot neodpovídalo tomu, jak to potřeboval program. To však díky regulárním výrazům nebyl velký problém. Stačilo se jednou rozhodnout, že už to prostě do dvou do rána ručně datlovat nebudu, a podařilo se mi potřebný čas stáhnout z hodin na desítky minut.
+Účastním se jako zapisovatel mezinárodních turnajů baseballu a softballu. Donedávna bylo potřeba před každým turnajem zadat do starší verze systému pro online zápis soupisky hráčů jednotlivých týmů. Program si data zapisoval do textových souborů, takže nebylo nezbytně nutné používat jeho interface a vše skutečně otrocky přepisovat. Akorát zdrojová data o hráčích sice byla v elektronické podobě (strojově čitelné PDF), ale pořadí hodnot neodpovídalo tomu, jak to potřeboval program. To však díky regulárním výrazům nebyl velký problém. Stačilo se jednou rozhodnout, že už to prostě do dvou do rána ručně datlovat nebudu, a podařilo se mi potřebný čas stáhnout z hodin na desítky minut.
 
 Možná namítnete, že v dnešní době stačí zadat problém [ChatGPT](/tag/ChatGPT) nebo jinému nástroji umělé inteligence, ať se s konstrukcí správného regexu moří samy. Při práci s generativní AI však platí dvě pravidla - musíte tušit, co je možné udělat, abyste na to mohli napsali prompt, a také byste měli danou problematiku sami trochu ovládat, abyste zvládli verifikovat výstup a potvrdit, že není výplodem ["halucinací"](https://www.ibm.com/topics/ai-hallucinations).
 
