@@ -8,13 +8,13 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
-    ['@pinia/nuxt', { autoImports: ['defineStore'] }]
+    '@pinia/nuxt'
   ],
   content: {
     contentHead: false,
     highlight: {
       theme: 'dracula',
-      preload: ['java']
+      preload: ['java', 'sql']
     }
   },
   vite: {
