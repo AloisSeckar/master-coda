@@ -247,6 +247,14 @@ const articles = [
     tags: ['debugging', 'JavaScript', 'Vue.js'],
     created: '18.11.2023',
     edited: '18.11.2023'
+  },
+  {
+    id: 'regex-neni-nepritel',
+    cat: 'misc',
+    title: 'Regex není nepřítel ',
+    dscr: 'Jak lze využít regulární výrazy k rychlým úpravám textu na praktickém příkladu',
+    tags: ['regulární výrazy', 'regex', 'help', 'tutorial'],
+    created: '31.12.2023'
   }
 ]
 

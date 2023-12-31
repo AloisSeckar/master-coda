@@ -92,6 +92,8 @@ pyftsubset KaushanScript-Regular.ttf
 
 A výsledný soubor je zase ještě skoro o&nbsp;další polovinu menší -&nbsp;**3&nbsp;632 bytů**.
 
+<div>
 <article-image src="redukce-velikosti-fontu/fonts.jpg" alt="Srovnání velikostí souborů" />
+</div>
 
 Pro dnešek máme hotovo, návštěvníci mého webu při každé návštěvě ušetří 180 kilobytů zbytečných dat. Kolik těm svým zvládnete ušetřit vy?
