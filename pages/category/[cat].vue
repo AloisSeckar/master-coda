@@ -4,6 +4,7 @@
     <h1>{{ catName }}</h1>
     <ul class="list-disc articleList">
       <li v-for="article in articles" :key="article.id">
+        <span class="mr-2 text-coda-purple">{{ article.created }}</span>
         <NuxtLink :to="{ path: '/article/' + article.id }">
           <strong>{{ article.title }}</strong>
         </NuxtLink>

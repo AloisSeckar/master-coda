@@ -40,7 +40,7 @@
     }
     
     .articleList {
-        @apply mt-2 ml-6 text-justify marker:text-coda-purple;
+        @apply mt-2 ml-6 text-justify marker:text-coda-yellow;
     }
 
     .article {

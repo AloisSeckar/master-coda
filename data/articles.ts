@@ -32,8 +32,8 @@ const articles = [
     title: 'Skryté (pa)znaky',
     dscr: 'Fonty nejsou tím, čím se zdají být',
     tags: ['debugging', 'fonty'],
-    created: '07.01.2023',
-    edited: '07.01.2023'
+    created: '11.01.2023',
+    edited: '11.01.2023'
   },
   {
     id: 'return-v-metode',
@@ -68,8 +68,8 @@ const articles = [
     title: 'Nuxt Framework',
     dscr: 'Představení nástroje, který je pro mě aktuálně nejlepší volbou pro tvorbu webů',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tipy'],
-    created: '09.09.2023',
-    edited: '09.09.2023'
+    created: '01.01.2024',
+    edited: '01.01.2024'
   },
   {
     id: 'nuxt-simple',
@@ -77,8 +77,8 @@ const articles = [
     title: 'Nuxt Tutorial 1 - První kroky',
     dscr: 'Jak málo dnes stačí na funkční web',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '09.09.2023',
-    edited: '05.11.2023'
+    created: '02.01.2024',
+    edited: '02.01.2024'
   },
   {
     id: 'nuxt-pages',
@@ -86,8 +86,8 @@ const articles = [
     title: 'Nuxt Tutorial 2 - Components & Pages',
     dscr: 'Nuxt 3 - jak fungují složky /components a /pages',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '09.09.2023',
-    edited: '15.09.2023'
+    created: '03.01.2024',
+    edited: '03.01.2024'
   },
   {
     id: 'nuxt-utils',
@@ -95,8 +95,8 @@ const articles = [
     title: 'Nuxt Tutorial 3 - Utils & Composables',
     dscr: 'Nuxt 3 - jak fungují složky /utils a /composables',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '09.09.2023',
-    edited: '16.09.2023'
+    created: '04.01.2024',
+    edited: '04.01.2024'
   },
   {
     id: 'nuxt-api',
@@ -104,8 +104,8 @@ const articles = [
     title: 'Nuxt Tutorial 4 - Serverová část',
     dscr: 'Nuxt 3 - jak funguje serverová část',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '09.09.2023',
-    edited: '27.09.2023'
+    created: '05.01.2024',
+    edited: '05.01.2024'
   },
   {
     id: 'nuxt-middleware',
@@ -113,8 +113,8 @@ const articles = [
     title: 'Nuxt Tutorial 5 - Middleware',
     dscr: 'Nuxt 3 - jak pracuje middleware',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '09.09.2023',
-    edited: '28.09.2023'
+    created: '06.01.2024',
+    edited: '06.01.2024'
   },
   {
     id: 'nuxt-vue',
@@ -122,7 +122,7 @@ const articles = [
     title: 'Nuxt Tutorial 6 - Vue.js intermezzo',
     dscr: 'Nuxt 3 - alespoň stručný pohled na základní principy Vue.js, nad kterým je Nuxt postaven',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '30.09.2023',
+    created: '07.01.2024',
     wip: true
   },
   {
@@ -131,7 +131,7 @@ const articles = [
     title: 'Nuxt Tutorial 7 - UI integrace',
     dscr: 'Nuxt 3 - jak snadno integrovat UI prvky',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS'],
-    created: '09.09.2023'
+    created: '08.01.2024'
   },
   {
     id: 'nuxt-forms',
@@ -139,7 +139,7 @@ const articles = [
     title: 'Nuxt Tutorial 8 - Formuláře',
     dscr: 'Nuxt 3 + FormKit = snadná tvorba formulářů',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI'],
-    created: '09.09.2023'
+    created: '09.01.2024'
   },
   {
     id: 'nuxt-content',
@@ -147,7 +147,7 @@ const articles = [
     title: 'Nuxt Tutorial 9 - Nuxt Content',
     dscr: 'Nuxt 3 + Nuxt Content = tvorba obsahu bez zbytečných komplikací',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
-    created: '09.09.2023'
+    created: '10.01.2024'
   },
   {
     id: 'nuxt-pinia',
@@ -155,7 +155,7 @@ const articles = [
     title: 'Nuxt Tutorial 10 - State management',
     dscr: 'Nuxt 3 + Pinia = efektivní ukládání a distibuce dat napříč celou aplikací',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '09.09.2023',
+    created: '11.01.2024',
     wip: true
   },
   {
@@ -164,7 +164,7 @@ const articles = [
     title: 'Nuxt Tutorial 11 - CSS',
     dscr: 'Nuxt 3 + Tailwind CSS = jak si usnadnit tvorbu CSS vzhledu',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '09.09.2023',
+    created: '12.01.2024',
     wip: true
   },
   {
@@ -173,7 +173,7 @@ const articles = [
     title: 'Nuxt Tutorial 12 - Databáze',
     dscr: 'Nuxt 3 + Supabase = rychlá databázová integrace',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '29.10.2023',
+    created: '13.01.2024',
     wip: true
   },
   {
@@ -245,8 +245,8 @@ const articles = [
     title: 'Chytáky v JavaScriptu 2 - Reaktivní Vue.js proměnné',
     dscr: 'Při použití Vue reaktivity je třeba pamatovat na správné referencování hodnot',
     tags: ['debugging', 'JavaScript', 'Vue.js'],
-    created: '18.11.2023',
-    edited: '18.11.2023'
+    created: '23.11.2023',
+    edited: '23.11.2023'
   },
   {
     id: 'regex-neni-nepritel',

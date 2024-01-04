@@ -29,7 +29,7 @@ export const useArticleStore = defineStore({
   },
   getters: {
     getByCategory: (state) => {
-      return (category: string) => state.items.filter(i => i.cat === category)
+      return (category: string) => state.items.filter(i => i.cat === category)?.sort((a, b) => compareDates(a.created, b.created))
     },
     getById: (state) => {
       return (id: string) => state.items.find(i => i.id === id)
@@ -53,3 +53,11 @@ export const useArticleStore = defineStore({
     }
   }
 })
+
+function compareDates (date1: string, date2: string) {
+  const date1Parts = date1.split('.')
+  const enDate1 = `${date1Parts[2]}-${date1Parts[1]}-${date1Parts[0]}`
+  const date2Parts = date2.split('.')
+  const enDate2 = `${date2Parts[2]}-${date2Parts[1]}-${date2Parts[0]}`
+  return enDate2.localeCompare(enDate1)
+}
