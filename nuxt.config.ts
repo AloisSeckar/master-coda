@@ -8,7 +8,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    'nuxt-security'
   ],
   content: {
     contentHead: false,
