@@ -18,7 +18,7 @@
 
 <script setup>
 const javaNews = []
-const { data } = await useAsyncData('javaNews', () => $fetch('https://alois-seckar.cz/java-news'))
+const { data } = await useFetch('https://alois-seckar.cz/java-news')
 if (data.value) {
   javaNews.push(data.value.item1)
   javaNews.push(data.value.item2)

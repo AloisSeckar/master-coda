@@ -18,7 +18,7 @@
 
 <script setup>
 const nuxtNews = []
-const { data } = await useAsyncData('nuxtNews', () => $fetch('https://alois-seckar.cz/nuxt-news'))
+const { data } = await useFetch('https://alois-seckar.cz/nuxt-news')
 if (data.value) {
   nuxtNews.push(data.value.item1)
   nuxtNews.push(data.value.item2)
