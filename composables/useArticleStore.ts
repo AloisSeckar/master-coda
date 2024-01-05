@@ -31,6 +31,9 @@ export const useArticleStore = defineStore({
     getByCategory: (state) => {
       return (category: string) => state.items.filter(i => i.cat === category)?.sort((a, b) => compareDates(a.created, b.created))
     },
+    getLast5: (state) => {
+      return () => state.items.sort((a, b) => compareDates(a.created, b.created)).slice(0, 5)
+    },
     getById: (state) => {
       return (id: string) => state.items.find(i => i.id === id)
     },
