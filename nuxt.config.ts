@@ -18,6 +18,11 @@ export default defineNuxtConfig({
       preload: ['java', 'sql']
     }
   },
+  security: {
+    corsHandler: {
+      origin: '*'
+    }
+  },
   vite: {
     plugins: [vsharp()]
   },
