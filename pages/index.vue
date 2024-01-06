@@ -10,9 +10,9 @@
       i&nbsp;za zpětnou vazbu. Pokud v&nbsp;nich uvidíte chybu nebo znáte způsob, jak danou věc řešit lépe, napište
       mi na <a href="mailto:alois-seckar@gmail.com">alois-seckar@gmail.com</a>. Vždycky je kam se zlepšovat.
     </p>
-    <NewsCoda />
-    <NewsNuxt />
-    <NewsJava />
+    <TheNewsCoda />
+    <TheNewsNuxt />
+    <TheNewsJava />
   </div>
 </template>
 
