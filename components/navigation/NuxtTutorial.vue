@@ -9,18 +9,7 @@
         Nuxt
       </NuxtLink>
     </div>
-    <ul class="mt-2">
-      <li v-for="article in nuxtArticles" :key="article.id">
-        <div v-if="article.id === currentArticle" class="text-coda-purple font-bold">
-          &#9654; {{ article.title }}
-        </div>
-        <div v-else>
-          <NuxtLink :to="'/article/' + article.id">
-            {{ article.title }}
-          </NuxtLink>
-        </div>
-      </li>
-    </ul>
+    <NavigationArticleList :local-data="nuxtArticles" :current="'/article/' + currentArticle" />
   </div>
 </template>
 

@@ -4,7 +4,7 @@
   </h2>
   <ul v-if="articleList.length > 0" class="list-disc articleList">
     <li v-for="article in articleList" :key="article.link">
-      <NavigationArticleLink :article="article" />
+      <NavigationArticleLink :article="article" :active="article.link !== current" />
     </li>
   </ul>
   <div v-else>
@@ -21,6 +21,7 @@
 const props = defineProps<{
   title?: string,
   localData?: Article[],
+  current?: string,
   externalSource?: string,
   moreArticles?: string
 }>()
