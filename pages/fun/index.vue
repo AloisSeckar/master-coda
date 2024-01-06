@@ -40,8 +40,6 @@
 </template>
 
 <script setup lang="ts">
-import type { Fun } from '@/composables/useFunStore'
-
 const buttonClass = 'actionButton w-full hover:cursor-pointer inline-block'
 
 const initial = ref(true)

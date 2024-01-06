@@ -3,13 +3,6 @@ export const CODA_URL = 'https://master-coda.cz'
 export const CODA_TITLE = 'Master Coda - The Light Side of the Code'
 export const CODA_DSCR = 'Nepravidelný blog o programování'
 
-export type MetaDef = {
-  type?: 'website' | 'article',
-  url?: string,
-  title?: string,
-  dscr?: string
-}
-
 export const CODA_PAGE_META: MetaDef = {
   type: CODA_TYPE,
   url: CODA_URL,

@@ -1,24 +1,5 @@
 import { articles } from '@/data/articles'
 
-export type Article = {
-    id: string,
-    cat: string,
-    title: string,
-    dscr: string,
-    tags: string[],
-    created: string,
-    edited?: string,
-    wip?: boolean
-}
-
-export type ArticleLink = {
-  date: string,
-  link: string,
-  title: string,
-  dscr: string,
-  external: boolean
-}
-
 export const useArticleStore = defineStore({
   id: 'articles-store',
   state: () => {

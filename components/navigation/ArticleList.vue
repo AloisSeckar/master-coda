@@ -22,22 +22,6 @@ const props = defineProps<{
   moreArticles?: string
 }>()
 
-type NewsItem = {
-  date: string,
-  title: string,
-  link: string,
-  dscr: string,
-  external: boolean
-}
-
-type Last5News = {
-  item1: NewsItem,
-  item2: NewsItem,
-  item3: NewsItem,
-  item4: NewsItem,
-  item5: NewsItem,
-}
-
 const articleList: ArticleLink[] = []
 if (props.localData && props.localData.length > 0) {
   props.localData?.forEach(d => articleList.push(d))

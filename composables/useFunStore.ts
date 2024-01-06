@@ -1,12 +1,5 @@
 import { fun } from '@/data/fun'
 
-export type Fun = {
-    id: string,
-    title: string,
-    explain?: string,
-    added: string,
-}
-
 export const useFunStore = defineStore({
   id: 'fun-store',
   state: () => {
