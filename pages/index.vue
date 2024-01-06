@@ -10,12 +10,26 @@
       i&nbsp;za zpětnou vazbu. Pokud v&nbsp;nich uvidíte chybu nebo znáte způsob, jak danou věc řešit lépe, napište
       mi na <a href="mailto:alois-seckar@gmail.com">alois-seckar@gmail.com</a>. Vždycky je kam se zlepšovat.
     </p>
-    <TheNewsCoda />
-    <TheNewsNuxt />
-    <TheNewsJava />
+    <NavigationArticleList
+      title="Co nového na master-coda.cz?"
+      :local-data="codaNews"
+    />
+    <NavigationArticleList
+      title="Co nového v Nuxt/Vue světě?"
+      external-source="https://alois-seckar.cz/nuxt-news"
+      more-articles="https://github.com/AloisSeckar/demos-nuxt/blob/main/NuxtNews.md"
+    />
+    <NavigationArticleList
+      title="Co nového v Java světě?"
+      external-source="https://alois-seckar.cz/java-news"
+      more-articles="https://github.com/AloisSeckar/demos-java/blob/master/JavaNews.md"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
 usePageMeta(CODA_PAGE_META)
+
+useArticleStore().fillIfNeeded()
+const codaNews = useArticleStore().getLast5()
 </script>
