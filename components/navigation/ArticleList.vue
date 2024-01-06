@@ -2,11 +2,14 @@
   <h2 v-if="title">
     {{ title }}
   </h2>
-  <ul class="list-disc articleList">
+  <ul v-if="articleList.length > 0" class="list-disc articleList">
     <li v-for="article in articleList" :key="article.link">
       <NavigationArticleLink :article="article" />
     </li>
   </ul>
+  <div v-else>
+    Žádné články
+  </div>
   <div v-if="moreArticles">
     <NuxtLink :to="moreArticles" noprefetch>
       Zobrazit vše
@@ -17,14 +20,20 @@
 <script setup lang="ts">
 const props = defineProps<{
   title?: string,
-  localData?: ArticleLink[],
+  localData?: Article[],
   externalSource?: string,
   moreArticles?: string
 }>()
 
 const articleList: ArticleLink[] = []
 if (props.localData && props.localData.length > 0) {
-  props.localData?.forEach(d => articleList.push(d))
+  props.localData?.forEach(a => articleList.push({
+    date: a.created,
+    link: '/article/' + a.id,
+    title: a.title,
+    dscr: a.dscr,
+    external: false
+  }))
 }
 if (props.externalSource) {
   const { data } = await useFetch<Last5News>(props.externalSource)

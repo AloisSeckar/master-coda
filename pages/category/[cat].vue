@@ -1,19 +1,7 @@
 <template>
   <div>
     <div>Všechny články v kategorii</div>
-    <h1>{{ catName }}</h1>
-    <ul class="list-disc articleList">
-      <li v-for="article in articles" :key="article.id">
-        <span class="mr-2 text-coda-purple">{{ article.created }}</span>
-        <NuxtLink :to="{ path: '/article/' + article.id }">
-          <strong>{{ article.title }}</strong>
-        </NuxtLink>
-        - {{ article.dscr }}
-      </li>
-    </ul>
-    <div v-if="(articles.length === 0)">
-      Žádné články
-    </div>
+    <NavigationArticleList :title="catName" :local-data="articles" />
   </div>
 </template>
 

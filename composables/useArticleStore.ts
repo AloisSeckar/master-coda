@@ -21,20 +21,7 @@ export const useArticleStore = defineStore({
       return (category: string) => state.items.filter(i => i.cat === category)?.sort((a, b) => compareDates(a.created, b.created))
     },
     getLast5: (state) => {
-      return () => {
-        const last5 = state.items.sort((a, b) => compareDates(a.created, b.created)).slice(0, 5)
-        const result: ArticleLink[] = []
-        last5.forEach((a: Article) => {
-          result.push({
-            date: a.created,
-            link: '/article/' + a.id,
-            title: a.title,
-            dscr: a.dscr,
-            external: false
-          })
-        })
-        return result
-      }
+      return () => state.items.sort((a, b) => compareDates(a.created, b.created)).slice(0, 5)
     },
     getById: (state) => {
       return (id: string) => state.items.find(i => i.id === id)
