@@ -155,6 +155,21 @@ const fun = [
     id: 'acronyms',
     title: 'Vysvětlení IT zkratek',
     added: '2023-11-18'
+  },
+  {
+    id: 'dino-keyboard',
+    title: 'Nová klávesnice',
+    added: '2024-01-05'
+  },
+  {
+    id: 'developer-needs',
+    title: 'Pyramida IT potřeb',
+    added: '2024-01-10'
+  },
+  {
+    id: 'ctrl-x-ctrl-v',
+    title: 'Ctrl-X + Ctrl-V',
+    added: '2024-01-13'
   }
 ]
 
