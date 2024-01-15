@@ -170,6 +170,12 @@ const fun = [
     id: 'ctrl-x-ctrl-v',
     title: 'Ctrl-X + Ctrl-V',
     added: '2024-01-13'
+  },
+  {
+    id: 'vim-playlist',
+    title: 'Vim Playlist',
+    explain: 'Vim je terminálový textový editor v Unixových systémech. Nezkušení uživatelé bývají zmatení ovládáním a mívají problémy editor opustit.',
+    added: '2024-01-15'
   }
 ]
 
