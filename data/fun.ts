@@ -176,6 +176,12 @@ const fun = [
     title: 'Vim Playlist',
     explain: 'Vim je terminálový textový editor v Unixových systémech. Nezkušení uživatelé bývají zmatení ovládáním a mívají problémy editor opustit.',
     added: '2024-01-15'
+  },
+  {
+    id: 'machine-learning',
+    title: 'ML algoritmus v baru',
+    explain: 'Strojové učení (Machine learning) se "učí" odhadovat správný výsledek na základě vstupů, které dostane',
+    added: '2024-01-21'
   }
 ]
 
