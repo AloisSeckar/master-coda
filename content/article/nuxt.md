@@ -18,7 +18,7 @@ Mezi další prerekvizity patří nějaké povědomí o HTML, CSS a JavaScriptu.
 
 Aby se člověku příjemně programovalo, je dobré mít nějaké IDE. Pro vývoj JavaScriptu je zřejmě nejlepší volbou [VS Code](https://code.visualstudio.com/) - je na to určené, je dobré, je zdarma, má hodně pluginů a lidé z Vue.js světa také pracují nejčastěji v něm.
 
-Pro instalaci a správu JavaScriptových závislostí v Node.js prostředí je nutný nějaký package manager - tak jako JS frameworky existují primárně tři možnosti - `npm`, `pnpm` a `yarn`. Já si vcelku vystačím s `npm`, byť souhlasím, že pokročilejší `pnpm` má některé výhody. Nikdy jsem nezkusil `yarn`, ačkoliv vím, že ho mnozí preferují a doporučují. Volba je na vás, obecné principy mají všechny stejné a de-facto jde jen o to, jaká bude syntaxe příkazu.
+Pro instalaci a správu JavaScriptových závislostí v Node.js prostředí je nutný nějaký package manager - tak jako JS frameworky existují primárně tři možnosti - `npm`, `pnpm` a `yarn`. Dlouho jsem si vystačil s `npm`, který přišel první a současný JavaScript svět je do značné míry postaven kolem něj. Nicméně pokročilejší `pnpm` má jednu velkou výhodu - pomocí symlinků na jeden centrální adresář deduplikuje závislosti z různýh projektů, které se jinak do lokálních `node_modules` stahují pokaždé znovu a znovu a zabírají pak celé gigabyty na disku. Nikdy jsem nezkusil `yarn`, ačkoliv vím, že ho mnozí preferují a doporučují. Volba je na vás, obecné principy mají všechny stejné a v jádru jde jen o to, jaká bude syntaxe příkazu.
 
 _"Last but not least"_ to chce `Git` na správu a verzování zdrojového kódu. Pro menší testovací projekty si možná vystačíte i bez něj, ale pro vývoj čehokoliv většího je to takřka nutnost. Pokud máte raději jiné verzovací systémy, musíte si nějak poradit.
 
@@ -26,7 +26,7 @@ _"Last but not least"_ to chce `Git` na správu a verzování zdrojového kódu.
 
 Návody, tipy a triky zde budou přibývat. Na jednotlivé kapitoly se dostanete pomocí odkazů v boxu dole.
 
-Zatím se můžete podívat na mé postupně se rozrůstající úložiště s demo projekty (v angličtině): [demos-nuxt @ GitHub](https://github.com/AloisSeckar/demos-nuxt). Předpokládá použití `Git` a `npm`.
+Zatím se můžete podívat na mé postupně se rozrůstající úložiště s demo projekty (v angličtině): [demos-nuxt @ GitHub](https://github.com/AloisSeckar/demos-nuxt). Předpokládá použití `Git` a `pnpm`.
 
 Pak jsou tu samozřejmě oficiální zdroje:
 - [Nuxt dokumentace](https://nuxt.com/docs)

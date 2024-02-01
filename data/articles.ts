@@ -69,7 +69,7 @@ const articles = [
     dscr: 'Představení nástroje, který je pro mě aktuálně nejlepší volbou pro tvorbu webů',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tipy'],
     created: '01.01.2024',
-    edited: '01.01.2024'
+    edited: '01.02.2024'
   },
   {
     id: 'nuxt-simple',
@@ -78,7 +78,7 @@ const articles = [
     dscr: 'Jak málo dnes stačí na funkční web',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '02.01.2024',
-    edited: '02.01.2024'
+    edited: '01.02.2024'
   },
   {
     id: 'nuxt-pages',
@@ -96,7 +96,7 @@ const articles = [
     dscr: 'Nuxt 3 - jak fungují složky /utils a /composables',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '04.01.2024',
-    edited: '04.01.2024'
+    edited: '01.02.2024'
   },
   {
     id: 'nuxt-api',

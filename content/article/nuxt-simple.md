@@ -12,8 +12,8 @@ Pokud budete chtít Nuxt zprovoznit lokálně, budete potřebovat:
 - Stáhnout projekt pomocí verzovacího nástroje [Git](https://git-scm.com/)
 - Otevřít jej ve vývojovém prostředí [VS Code](https://code.visualstudio.com/)
 - Přepnout se do složky `nuxt-simple`
-- Zadat v terminálu příkaz `npm install`
-- Spustit aplikaci pomocí příkazu `npm run dev`
+- Zadat v terminálu příkaz `pnpm install`
+- Spustit aplikaci pomocí příkazu `pnpm run dev`
 - Zobrazit v prohlížeči URL `http://localhost:3000`
  
  Uvidíte jednoduchou stránku, která toho sama o sobě moc neumí, ale je to důkaz, že Nuxt běží, a můžeme na tom začít stavět dál. Pojďme si ještě předtím projít jednotlivé součásti:
@@ -23,8 +23,8 @@ Pokud budete chtít Nuxt zprovoznit lokálně, budete potřebovat:
  - **README.md** - je popisný soubor Gitu, který vám při pohledu do [`GitHub`](https://github.com/) úložiště předloží základní informace o projektu. Není povinný, ale je obvyklou praxí ho v projektech mít a informovat skrze něj návštěvníky a potenciální uživatele vašeho kódu.
  - **app.vue** - základní vstupní bod s jednoduchou šablonou uvnitř `<template>`. Oproti oficiálnímu nuxt-starteru jsem nahradil jejich uvítací komponentu `<NuxtWelcome>` vlastním HTML kódem. Ten uvidíte vykreslený na stránce poté, co projekt úspěšně spustíte.
  - **nuxt.config.ts** - konfigurační soubor pro Nuxt. Ve výchozím nastavení může být takto "prázdný", veškerá budoucí nastavení, se provádí dovnitř těla objektu, který je parametrem vestavěné (a tudíž zde rovnou automaticky importované) metody `defineNuxtConfig`.
- - **package-lock.json** - soubor, který automaticky generuje manažer balíčků `npm` během příkazu `npm install`, ve kterém si drží vyčerpávající definici všech projektových závislostí. Panují názory, že je možné jej z Gitu vynechat, protože se často mění a stejně si ho každý vývojář projektu generuje sám lokálně, držím se ovšem [doporučení](https://stackoverflow.com/a/44210813/3204544), že do repozitáře také patří.
- - **package.json** - klíčový soubor, který obsahuje zejména definice závislostí na externích projektech. V našem případě samozřejmě na balíčku `nuxt` a dále na dvou balíčcích pro ESLint, a také definice základních příkazů v sekci `script` - definované aliasy se pak volají za "npm run *". <span style="color: gray">Tyto definice nejsou povinné, ale díky ním je ovládaní pohodlnější.</span>
+ - **pnpm-lock.yaml** - soubor, který automaticky generuje manažer balíčků `pnpm` během příkazu `pnpm install`, ve kterém si drží vyčerpávající definici všech projektových závislostí. Panují názory, že tyto "lock" soubory je možné z Gitu vynechat, protože se často mění a stejně si ho každý vývojář projektu generuje sám lokálně, držím se ovšem [doporučení](https://stackoverflow.com/a/44210813/3204544), že do repozitáře také patří.
+ - **package.json** - klíčový soubor, který obsahuje zejména definice závislostí na externích projektech. V našem případě samozřejmě na balíčku `nuxt` a dále na dvou balíčcích pro ESLint, a také definice základních příkazů v sekci `script` - definované aliasy se pak volají za "pnpm run *". <span style="color: gray">Tyto definice nejsou povinné, ale díky ním je ovládaní pohodlnější.</span>
  - **tsconfig.json** - možnost customizace pro jinak generovaný soubor nastavení chování TypeScriptu. Více o tématu v (budoucím) samostatném článku.
 
 ## Nuxt Starter
@@ -42,9 +42,9 @@ Tento subprojekt ukazuje, že ve skutečnosti jde Nuxt rozběhnout ještě mnohe
 - **app.vue** - základní vstupní bod s jednoduchou šablonou uvnitř `<template>`
 - **package.json** - ve kterém bude v `devDependencies`</span> deklarovaná závislost na balíčku `nuxt`
 
-Místo `npm run dev` (který vyžaduje dodatečnou konfiguraci v souboru `package.json`) se v tomto případě aplikace spouští pomocí externího příkazu `npx nuxi dev` (`npx` je nadstavba nad `npm`, která umožňuje spouštět npm balíčky "on the fly" bez jejich lokální instalace, a `nuxi` CLI nástroj od tvůrců frameworku Nuxt).
+Místo `pnpm run dev` (který vyžaduje dodatečnou konfiguraci v souboru `package.json`) se v tomto případě aplikace spouští pomocí externího příkazu `npx nuxi dev` (`npx` je nadstavba nad `npm`, která umožňuje spouštět npm balíčky "on the fly" bez jejich lokální instalace, a `nuxi` CLI nástroj od tvůrců frameworku Nuxt).
 
-Zbylé dva soubory v úložišti - `README.md` a `package-lock.json` - už byly popsány výše a jsou v úložišti de-facto navíc.
+Zbylé dva soubory v úložišti - `README.md` a `pnpm-lock.yaml` - už byly popsány výše a jsou v úložišti de-facto navíc.
 
 UPOZORNĚNÍ: Berte však toto pouze jako "legrácku" k demonstračním účelům. Absence běžně očekávaných součástí systémů by se mohla ukázat problematická při pokusu o jakékoliv větší využití. Držte se raději varianty `nuxt-simple`.
 
