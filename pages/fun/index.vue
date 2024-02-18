@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <a :href="imagePath" target="_blank">
+    <a :href="imageAssetPath" target="_blank">
       <NuxtImg
         class="mx-auto my-4 h-[350px] w-auto"
         :src="imagePath"
@@ -66,6 +66,7 @@ const imageData: Ref<Fun> = ref({
   added: ''
 })
 const imagePath = computed(() => `/fun/${imageData.value.id}.jpg`)
+const imageAssetPath = computed(() => useAsset(`img/fun/${imageData.value.id}.jpg`))
 
 const init = () => {
   initial.value = false
