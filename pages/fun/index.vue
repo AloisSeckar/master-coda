@@ -2,6 +2,9 @@
   <div>
     <h1 class="text-center">
       {{ imageData.title }}
+      <span v-if="imageData.explain" :title="imageData.explain">
+        <Icon name="material-symbols:help" color="gold" class="w-8 pb-1" />
+      </span>
     </h1>
     <div v-if="initial">
       <div class="w-[260px] mx-auto">
@@ -85,6 +88,7 @@ const reloadImage = () => {
   const newImage = funStore.items[funStore.index]
   imageData.value.id = newImage?.id || '_zoidberg'
   imageData.value.title = newImage?.title || 'Haha?'
+  imageData.value.explain = newImage?.explain
 }
 
 onBeforeRouteLeave(() => {
