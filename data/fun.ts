@@ -182,6 +182,11 @@ const fun = [
     title: 'ML algoritmus v baru',
     explain: 'Strojové učení (Machine learning) se "učí" odhadovat správný výsledek na základě vstupů, které dostane',
     added: '2024-01-21'
+  },
+  {
+    id: 'testing',
+    title: 'Jak funguje testování',
+    added: '2024-02-18'
   }
 ]
 
