@@ -34,7 +34,12 @@
       </div>
     </div>
     <a :href="imagePath" target="_blank">
-      <img class="mx-auto my-4 h-96 w-auto" :src="imagePath" :alt="imageData.title">
+      <NuxtImg
+        class="mx-auto my-4 h-[350px] w-auto"
+        :src="imagePath"
+        :alt="imageData.title"
+        title="Kliknutím zobrazíte plnou velikost"
+      />
     </a>
   </div>
 </template>
@@ -52,12 +57,12 @@ if (!funStore.loaded) {
 const current = computed(() => funStore.index + 1)
 const total = computed(() => funStore.items.length)
 
-const imageData: Fun = reactive({
+const imageData: Ref<Fun> = ref({
   id: '_zoidberg',
   title: 'Haha?',
   added: ''
 })
-const imagePath = ref(useAsset('img/fun/' + imageData.id + '.jpg'))
+const imagePath = computed(() => `/fun/${imageData.value.id}.jpg`)
 
 const init = () => {
   initial.value = false
@@ -78,9 +83,8 @@ const prevEnabled = computed(() => funStore.index > 0)
 
 const reloadImage = () => {
   const newImage = funStore.items[funStore.index]
-  imageData.id = newImage?.id || '_zoidberg'
-  imageData.title = newImage?.title || 'Haha?'
-  imagePath.value = useAsset('img/fun/' + imageData.id + '.jpg')
+  imageData.value.id = newImage?.id || '_zoidberg'
+  imageData.value.title = newImage?.title || 'Haha?'
 }
 
 onBeforeRouteLeave(() => {

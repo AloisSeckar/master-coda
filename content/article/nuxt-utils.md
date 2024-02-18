@@ -44,7 +44,6 @@ Na tomto webu zatím nemám žádné využití pro `/utils`. Používám však n
 - [useArticleStore](https://github.com/AloisSeckar/master-coda/blob/master/composables/useArticleStore.ts) - načítá metadata k článkům ze souboru `/data/articles.ts` (typičtější by bylo čtení z databáze, ale pro tento web se mi zatím nechtělo žádnou konfigurovat). Umožňuje zbytku aplikace získat jejich seznam + je umí různě filtrovat. Je to implementace Pinia store, o kterém bude řeč v [pozdějším tutoriálu](/article/nuxt-pinia).
 - [useFunStore](https://github.com/AloisSeckar/master-coda/blob/master/composables/useFunStore.ts) - obdobným způsobem načítá a poskytuje metadata k obrázkům, které se zobrazují v [sekci `Humor`](/fun).
 - [usePageMeta](https://github.com/AloisSeckar/master-coda/blob/master/composables/usePageMeta.ts) - sem jsem vytáhl funkci, která vloží do každé stránky [SEO meta tagy](https://www.w3schools.com/tags/tag_meta.asp), abych je nemusel na každé stránce opakovat.
-- [useAsset](https://github.com/AloisSeckar/master-coda/blob/master/composables/useAsset.ts) - ne úplně triviální způsob, jak dynamicky linkovat obrázky ze složky `/assets` (kde jsou proto, aby si na ně mohl sáhnout kompresní modul [vsharp](https://github.com/jw-12138/vite-plugin-vsharp)).
 
 ## Demo projekt
 

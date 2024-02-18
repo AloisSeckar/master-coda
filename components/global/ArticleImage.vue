@@ -1,6 +1,6 @@
 <template>
   <div v-bind="$attrs">
-    <img :src="asset" :alt="alt">
+    <NuxtImg :src="`/articles/${props.src}`" :alt="alt" />
   </div>
 </template>
 
@@ -9,5 +9,4 @@ const props = defineProps({
   src: { type: String, required: true },
   alt: { type: String, required: true }
 })
-const asset = useAsset('img/articles/' + props.src)
 </script>

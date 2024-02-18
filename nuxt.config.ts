@@ -1,12 +1,10 @@
-// @ts-ignore: noImplicitAny - JS module with no types...
-import vsharp from 'vite-plugin-vsharp'
-
 export default defineNuxtConfig({
   app: {
     baseURL: '/'
   },
   modules: [
     '@nuxt/content',
+    '@nuxt/image',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-security'
@@ -18,13 +16,13 @@ export default defineNuxtConfig({
       preload: ['java', 'sql']
     }
   },
+  image: {
+    dir: 'assets/img'
+  },
   security: {
     corsHandler: {
       origin: '*'
     }
-  },
-  vite: {
-    plugins: [vsharp()]
   },
   runtimeConfig: {
     public: {
