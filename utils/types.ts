@@ -28,6 +28,14 @@ export type ArticleLink = {
   external: boolean
 }
 
+export type ArticleSeries = {
+  title: string,
+  dscr: string,
+  linkTitle: string,
+  linkURL: string,
+  match: string
+}
+
 // FUN IMAGES
 
 export type Fun = {

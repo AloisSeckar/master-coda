@@ -65,7 +65,7 @@ const articles = [
   {
     id: 'nuxt',
     cat: 'web',
-    title: 'Nuxt Framework',
+    title: 'Nuxt Tutorial',
     dscr: 'Představení nástroje, který je pro mě aktuálně nejlepší volbou pro tvorbu webů',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tipy'],
     created: '01.01.2024',
