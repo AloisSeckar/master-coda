@@ -17,7 +17,8 @@ export type Article = {
   tags: string[],
   created: string,
   edited?: string,
-  wip?: boolean
+  wip?: boolean,
+  hidden?: boolean
 }
 
 export type ArticleLink = {

@@ -11,7 +11,7 @@ export const useArticleStore = defineStore({
   actions: {
     fillIfNeeded () {
       if (!this.loaded) {
-        this.items = articles
+        this.items = articles.filter(i => !i.hidden)
         this.loaded = true
       }
     }
