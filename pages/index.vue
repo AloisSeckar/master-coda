@@ -24,6 +24,11 @@
       external-source="https://alois-seckar.cz/java-news"
       more-articles="https://github.com/AloisSeckar/demos-java/blob/master/JavaNews.md"
     />
+    <NavigationArticleList
+      title="Co nového v IT světě?"
+      external-source="https://alois-seckar.cz/coda-digest"
+      more-articles="https://github.com/AloisSeckar/master-coda/blob/master/CodaDigest.md"
+    />
   </div>
 </template>
 
