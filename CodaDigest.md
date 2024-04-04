@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2024-04-03`** | [Rust memory safety explained](https://www.infoworld.com/article/3714925/rust-memory-safety-explained.html) - how **Rust** enforces rules to prevent memory issues and couple of others common programming flaws |
 | **`2024-03-22`** | [Exploring Tailwind Oxide](https://blog.logrocket.com/exploring-tailwind-oxide/) - popular CSS library **Tailwind** is moving forward with its new inner engine |
 | **`2024-03-19`** | [Migrating a JavaScript frontend to Leptos, a Rust framework](https://blog.logrocket.com/migrating-javascript-frontend-leptos-rust-framework/) - if you trust in **Rust**, you may start thinking it for the frontend as well |
 | **`2024-03-11`** | [WinterJS 1.0](https://wasmer.io/posts/winterjs-v1) - forgot **Bun** and brace yourselves, a new super-fast JavaScript web server is coming |
