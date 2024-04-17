@@ -95,9 +95,8 @@ const articles = [
     title: 'Nuxt Tutorial 3 - Utils & Composables',
     dscr: 'Nuxt 3 - jak fungují složky /utils a /composables',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
-    created: '04.01.2024',
-    edited: '01.02.2024',
-    hidden: true
+    created: '17.04.2024',
+    edited: '17.04.2024'
   },
   {
     id: 'nuxt-api',
