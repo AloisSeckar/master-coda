@@ -26,9 +26,10 @@ if (article) {
     type: 'article',
     url: `${CODA_URL}/article/${articleId}`,
     title: article.title,
-    dscr: article.dscr
+    dscr: article.dscr,
   })
-} else {
+}
+else {
   usePageMeta(CODA_PAGE_META)
 }
 </script>

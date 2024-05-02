@@ -5,16 +5,16 @@ export const useArticleStore = defineStore({
   state: () => {
     return {
       loaded: false,
-      items: [] as Article[]
+      items: [] as Article[],
     }
   },
   actions: {
-    fillIfNeeded () {
+    fillIfNeeded() {
       if (!this.loaded) {
         this.items = articles.filter(i => !i.hidden)
         this.loaded = true
       }
-    }
+    },
   },
   getters: {
     getByCategory: (state) => {
@@ -40,13 +40,13 @@ export const useArticleStore = defineStore({
         dscr: '',
         tags: [],
         created: '',
-        edited: ''
+        edited: '',
       }
-    }
-  }
+    },
+  },
 })
 
-function compareDates (date1: string, date2: string) {
+function compareDates(date1: string, date2: string) {
   const date1Parts = date1.split('.')
   const enDate1 = `${date1Parts[2]}-${date1Parts[1]}-${date1Parts[0]}`
   const date2Parts = date2.split('.')

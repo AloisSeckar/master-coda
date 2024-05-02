@@ -6,29 +6,29 @@ export const useFunStore = defineStore({
     return {
       loaded: false,
       items: [] as Fun[],
-      index: -1
+      index: -1,
     }
   },
   actions: {
-    fill () {
+    fill() {
       this.items = fun
       this.index = this.items.length - 1
       this.loaded = true
     },
-    prevImage () {
+    prevImage() {
       if (this.index > 0) {
         this.index--
       }
     },
-    nextImage () {
+    nextImage() {
       if (this.index < this.items.length - 1) {
         this.index++
       }
-    }
+    },
   },
   getters: {
     getById: (state) => {
       return (id: string) => state.items.find(i => i.id === id)
-    }
-  }
+    },
+  },
 })

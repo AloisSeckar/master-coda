@@ -6,7 +6,7 @@ const articles = [
     dscr: 'Jak se vyhnout problémům s NULL hodnotou při porovnávání aktuální hodnoty proměnné?',
     tags: ['Java', 'tipy', 'syntaxe', 'NullPointerException'],
     created: '04.01.2023',
-    edited: '07.03.2023'
+    edited: '07.03.2023',
   },
   {
     id: 'null-safe-switch',
@@ -15,7 +15,7 @@ const articles = [
     dscr: 'Jak se vyhnout problémům s NULL hodnotou při vyhodnocení podmínky příkazu switch?',
     tags: ['Java', 'tipy', 'syntaxe', 'NullPointerException'],
     created: '06.01.2023',
-    edited: '06.01.2023'
+    edited: '06.01.2023',
   },
   {
     id: 'neni-js-jako-js',
@@ -24,7 +24,7 @@ const articles = [
     dscr: 'Když obvyklá JS metoda nechce fungovat...',
     tags: ['debugging', 'JavaScript'],
     created: '07.01.2023',
-    edited: '13.01.2023'
+    edited: '13.01.2023',
   },
   {
     id: 'skryte-znaky',
@@ -33,7 +33,7 @@ const articles = [
     dscr: 'Fonty nejsou tím, čím se zdají být',
     tags: ['debugging', 'fonty'],
     created: '11.01.2023',
-    edited: '11.01.2023'
+    edited: '11.01.2023',
   },
   {
     id: 'return-v-metode',
@@ -42,7 +42,7 @@ const articles = [
     dscr: 'Vždycky pouze jednou nebo to může být i jinak?',
     tags: ['refactoring', 'syntaxe'],
     created: '08.01.2023',
-    edited: '08.01.2023'
+    edited: '08.01.2023',
   },
   {
     id: 'switch-java17',
@@ -51,7 +51,7 @@ const articles = [
     dscr: 'Příjemné syntaktické novinky v (zatím) poslední LTS verzi Javy',
     tags: ['Java', 'tipy', 'tutorial', 'syntaxe'],
     created: '12.01.2023',
-    edited: '12.01.2023'
+    edited: '12.01.2023',
   },
   {
     id: 'redukce-velikosti-fontu',
@@ -60,7 +60,7 @@ const articles = [
     dscr: 'Jak se vyhnout posílání zbytečných dat při použití netradičního fontu na webu',
     tags: ['web', 'css', 'tipy', 'fonty', 'optimalizace', 'tutorial', 'python'],
     created: '14.01.2023',
-    edited: '14.01.2023'
+    edited: '14.01.2023',
   },
   {
     id: 'nuxt',
@@ -69,7 +69,7 @@ const articles = [
     dscr: 'Představení nástroje, který je pro mě aktuálně nejlepší volbou pro tvorbu webů',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tipy'],
     created: '25.03.2024',
-    edited: '25.03.2024'
+    edited: '25.03.2024',
   },
   {
     id: 'nuxt-simple',
@@ -78,7 +78,7 @@ const articles = [
     dscr: 'Jak málo dnes stačí na funkční web',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '26.03.2024',
-    edited: '26.03.2024'
+    edited: '26.03.2024',
   },
   {
     id: 'nuxt-pages',
@@ -87,7 +87,7 @@ const articles = [
     dscr: 'Nuxt 3 - jak fungují složky /components a /pages',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '31.03.2024',
-    edited: '31.03.2024'
+    edited: '31.03.2024',
   },
   {
     id: 'nuxt-utils',
@@ -96,7 +96,7 @@ const articles = [
     dscr: 'Nuxt 3 - jak fungují složky /utils a /composables',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '17.04.2024',
-    edited: '17.04.2024'
+    edited: '17.04.2024',
   },
   {
     id: 'nuxt-api',
@@ -105,7 +105,7 @@ const articles = [
     dscr: 'Nuxt 3 - jak funguje serverová část',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '01.05.2024',
-    edited: '01.05.2024'
+    edited: '01.05.2024',
   },
   {
     id: 'nuxt-middleware',
@@ -115,7 +115,7 @@ const articles = [
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '06.01.2024',
     edited: '06.01.2024',
-    hidden: true
+    hidden: true,
   },
   {
     id: 'nuxt-vue',
@@ -125,7 +125,7 @@ const articles = [
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '07.01.2024',
     wip: true,
-    hidden: true
+    hidden: true,
   },
   {
     id: 'nuxt-ui',
@@ -134,7 +134,7 @@ const articles = [
     dscr: 'Nuxt 3 - jak snadno integrovat UI prvky',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS'],
     created: '08.01.2024',
-    hidden: true
+    hidden: true,
   },
   {
     id: 'nuxt-forms',
@@ -143,7 +143,7 @@ const articles = [
     dscr: 'Nuxt 3 + FormKit = snadná tvorba formulářů',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI'],
     created: '09.01.2024',
-    hidden: true
+    hidden: true,
   },
   {
     id: 'nuxt-content',
@@ -152,7 +152,7 @@ const articles = [
     dscr: 'Nuxt 3 + Nuxt Content = tvorba obsahu bez zbytečných komplikací',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
     created: '10.01.2024',
-    hidden: true
+    hidden: true,
   },
   {
     id: 'nuxt-pinia',
@@ -162,7 +162,7 @@ const articles = [
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '11.01.2024',
     wip: true,
-    hidden: true
+    hidden: true,
   },
   {
     id: 'nuxt-tailwind',
@@ -172,7 +172,7 @@ const articles = [
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '12.01.2024',
     wip: true,
-    hidden: true
+    hidden: true,
   },
   {
     id: 'nuxt-supabase',
@@ -182,7 +182,7 @@ const articles = [
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial'],
     created: '13.01.2024',
     wip: true,
-    hidden: true
+    hidden: true,
   },
   {
     id: 'click-prevent',
@@ -191,7 +191,7 @@ const articles = [
     dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát',
     tags: ['debugging', 'JavaScript', 'HTML'],
     created: '15.05.2023',
-    edited: '15.05.2023'
+    edited: '15.05.2023',
   },
   {
     id: 'hello-chatgpt-1',
@@ -200,7 +200,7 @@ const articles = [
     dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát',
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '20.05.2023',
-    edited: '20.05.2023'
+    edited: '20.05.2023',
   },
   {
     id: 'hello-chatgpt-2',
@@ -209,7 +209,7 @@ const articles = [
     dscr: 'Proč AI ano a proč ne s překvapením',
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '27.05.2023',
-    edited: '27.05.2023'
+    edited: '27.05.2023',
   },
   {
     id: 'hello-chatgpt-3',
@@ -218,7 +218,7 @@ const articles = [
     dscr: 'AI coby můj osobní designový poradce',
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '07.06.2023',
-    edited: '08.09.2023'
+    edited: '08.09.2023',
   },
   {
     id: 'hello-chatgpt-4',
@@ -227,7 +227,7 @@ const articles = [
     dscr: 'Generování obsáhlého seznamu z konkrétních dat v konkrétním formátování',
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '08.09.2023',
-    edited: '08.09.2023'
+    edited: '08.09.2023',
   },
   {
     id: 'hello-chatgpt-5',
@@ -236,7 +236,7 @@ const articles = [
     dscr: 'Pokus o automatizaci získávání URL na svg obrázkys z Wikipedie',
     tags: ['ChatGPT', 'AI', 'programování', 'help'],
     created: '14.10.2023',
-    edited: '17.10.2023'
+    edited: '17.10.2023',
   },
   {
     id: 'js-gotcha-1',
@@ -245,7 +245,7 @@ const articles = [
     dscr: 'Vyhodnocování logických výrazů nemusí vždy fungovat tak, jak si myslíte',
     tags: ['debugging', 'JavaScript'],
     created: '18.11.2023',
-    edited: '20.11.2023'
+    edited: '20.11.2023',
   },
   {
     id: 'js-gotcha-2',
@@ -254,7 +254,7 @@ const articles = [
     dscr: 'Při použití Vue reaktivity je třeba pamatovat na správné referencování hodnot',
     tags: ['debugging', 'JavaScript', 'Vue.js'],
     created: '23.11.2023',
-    edited: '23.11.2023'
+    edited: '23.11.2023',
   },
   {
     id: 'regex-neni-nepritel',
@@ -262,8 +262,8 @@ const articles = [
     title: 'Regex není nepřítel ',
     dscr: 'Jak lze využít regulární výrazy k rychlým úpravám textu na praktickém příkladu',
     tags: ['regulární výrazy', 'regex', 'help', 'tutorial'],
-    created: '31.12.2023'
-  }
+    created: '31.12.2023',
+  },
 ]
 
 export { articles }

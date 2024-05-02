@@ -19,10 +19,10 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  title?: string,
-  localData?: Article[],
-  current?: string,
-  externalSource?: string,
+  title?: string
+  localData?: Article[]
+  current?: string
+  externalSource?: string
   moreArticles?: string
 }>()
 
@@ -33,7 +33,7 @@ if (props.localData && props.localData.length > 0) {
     link: '/article/' + a.id,
     title: a.title,
     dscr: a.dscr,
-    external: false
+    external: false,
   }))
 }
 if (props.externalSource) {

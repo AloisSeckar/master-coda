@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 const props = defineProps({
-  articleId: { type: String, required: true }
+  articleId: { type: String, required: true },
 })
 
 const isNuxtTutorial = props.articleId.startsWith('nuxt')
@@ -16,7 +16,7 @@ const nuxtTutorialConfig: ArticleSeries = {
   dscr: 'Série výukových článků o JS frameworku',
   linkTitle: 'Nuxt',
   linkURL: 'https://nuxt.com/',
-  match: 'Nuxt Tutorial'
+  match: 'Nuxt Tutorial',
 }
 
 const isChatGPTArticle = props.articleId.includes('hello-chatgpt')
@@ -25,6 +25,6 @@ const chatGPTConfig: ArticleSeries = {
   dscr: 'Série článků o mých interakcích s',
   linkTitle: 'ChatGPT',
   linkURL: 'https://chat.openai.com/',
-  match: 'rande s ChatGPT'
+  match: 'rande s ChatGPT',
 }
 </script>

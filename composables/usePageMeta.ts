@@ -7,10 +7,10 @@ export const CODA_PAGE_META: MetaDef = {
   type: CODA_TYPE,
   url: CODA_URL,
   title: CODA_TITLE,
-  dscr: CODA_DSCR
+  dscr: CODA_DSCR,
 }
 
-export function usePageMeta (meta: MetaDef) {
+export function usePageMeta(meta: MetaDef) {
   return useSeoMeta({
     title: meta?.title || CODA_TITLE,
     description: meta?.dscr || CODA_DSCR,
@@ -19,6 +19,6 @@ export function usePageMeta (meta: MetaDef) {
     ogTitle: meta?.title || CODA_TITLE,
     ogDescription: meta?.dscr || CODA_DSCR,
     ogImage: 'https://master-coda.cz/master-coda.png',
-    twitterCard: 'summary_large_image'
+    twitterCard: 'summary_large_image',
   })
 }

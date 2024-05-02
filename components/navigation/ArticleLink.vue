@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 defineProps<{
-  article: ArticleLink,
+  article: ArticleLink
   active: boolean
 }>()
 </script>

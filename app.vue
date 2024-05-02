@@ -13,7 +13,7 @@
 <script setup>
 useHead({
   htmlAttrs: {
-    lang: 'cs'
-  }
+    lang: 'cs',
+  },
 })
 </script>

@@ -63,7 +63,7 @@ const total = computed(() => funStore.items.length)
 const imageData: Ref<Fun> = ref({
   id: '_zoidberg',
   title: 'Haha?',
-  added: ''
+  added: '',
 })
 const imagePath = computed(() => `/fun/${imageData.value.id}.jpg`)
 const imageAssetPath = computed(() => useAsset(`img/fun/${imageData.value.id}.jpg`))

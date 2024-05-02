@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 const props = defineProps({
-  config: { type: Object as PropType<ArticleSeries>, required: true }
+  config: { type: Object as PropType<ArticleSeries>, required: true },
 })
 const series = useArticleStore().getByTitle(props.config.match)
 const currentArticle = useRoute().params.article
