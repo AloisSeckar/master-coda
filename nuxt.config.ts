@@ -1,7 +1,4 @@
 export default defineNuxtConfig({
-  app: {
-    baseURL: '/',
-  },
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -22,9 +19,6 @@ export default defineNuxtConfig({
     config: {
       stylistic: true,
     },
-  },
-  image: {
-    dir: 'assets/img',
   },
   security: {
     corsHandler: {

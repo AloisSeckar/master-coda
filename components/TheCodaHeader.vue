@@ -3,7 +3,7 @@
     <NuxtLink :to="{ path: '/' }">
       <NuxtImg
         class="w-[112px] h-[128px] float-left border-2 border-coda-green hover:border-coda-yellow"
-        src="/master-coda.webp"
+        src="/img/master-coda.webp"
         alt="Master Coda - Logo"
       />
     </NuxtLink>

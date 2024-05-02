@@ -1,6 +1,6 @@
 <template>
   <div v-bind="$attrs">
-    <NuxtImg :src="`/articles/${props.src}`" :alt="alt" />
+    <NuxtImg :src="`/img/articles/${props.src}`" :alt="alt" />
   </div>
 </template>
 
