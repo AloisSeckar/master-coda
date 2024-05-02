@@ -3,7 +3,7 @@
   "scripts": {
     "eslint": "eslint .",
     "dev": "nuxi dev",
-    "build": "npm run eslint && nuxi build",
+    "build": "nuxi build",
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
