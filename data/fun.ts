@@ -188,6 +188,22 @@ const fun = [
     title: 'Jak funguje testování',
     added: '2024-02-18',
   },
+  {
+    id: 'address',
+    title: 'Není adresa jako adresa',
+    explain: '1 = IP adresa, 2 = místní IP adresa počítače (localhost), 3 = tzv. MAC adresa zařízení připojeného k síti',
+    added: '2024-05-11',
+  },
+  {
+    id: 'try-catch',
+    title: 'Try-Catch',
+    added: '2024-05-11',
+  },
+  {
+    id: 'multithreading',
+    title: 'Multithreading - teorie vs. praxe',
+    added: '2024-05-11',
+  },
 ]
 
 export { fun }
