@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2024-04-17`** | [ECMAScript 2024 features you can use now](https://www.infoworld.com/article/3715260/ecmascript-2024-features-you-can-use-now.html) - overview of new language features that should arrive this year in JS |
 | **`2024-04-11`** | [Finally Understand Responsive Design!](https://dev.to/jaredcodes/finally-understand-responsive-design-3con) - key concepts for achieving "responsive" design of web applications |
 | **`2024-04-03`** | [Rust memory safety explained](https://www.infoworld.com/article/3714925/rust-memory-safety-explained.html) - how **Rust** enforces rules to prevent memory issues and couple of others common programming flaws |
 | **`2024-04-02`** | [How to get somebody fired using Git](https://dev.to/mauroaccorinti/how-to-get-somebody-fired-using-git-31if) - some potentionally "destructive" Git commands explained in an unusual way |
