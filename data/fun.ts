@@ -204,6 +204,11 @@ const fun = [
     title: 'Multithreading - teorie vs. praxe',
     added: '2024-05-11',
   },
+  {
+    id: 'software-development',
+    title: 'Jak probíhá vývoj softwaru, když...',
+    added: '2024-06-20',
+  },
 ]
 
 export { fun }
