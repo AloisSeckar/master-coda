@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2024-06-30`** | [Dev rejects CVE severity, makes his GitHub repo read-only](https://www.bleepingcomputer.com/news/security/dev-rejects-cve-severity-makes-his-github-repo-read-only/) - recent **ip** package controversy raises concerns about current way of reporting security issues in (JavaScript) open-source world |
 | **`2024-06-26`** | [The 5 Worst Anti-Patterns in API Management](https://thenewstack.io/the-5-worst-anti-patterns-in-api-management/) - if you want to have system with API sustainable in a long term you shouldn't do this |
 | **`2024-06-04`** | [How Deep is Your DOM?](https://frontendatscale.com/blog/how-deep-is-your-dom/) - how nesting a lot of HTML elements can impact speed of your page - with examples |
 | **`2024-05-02`** | [Render-blocking on purpose](https://fullystacked.net/render-blocking-on-purpose/) - learn about new HTML attributes that can help you control rendering of your website |
@@ -23,6 +24,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2024-03-05`** | [Feature flags are ruining your codebase](https://zaidesanton.substack.com/p/feature-flags-are-ruining-your-codebase) - a case against using conf variables to turn functionality on and off on demand |
 | **`2024-02-22`** | [JavaScript Bloat in 2024](https://tonsky.me/blog/js-bloat/) - how much code is required to be downloaded before some websites can be displayed - with examples |
 | **`2024-02-17`** | [How Qwik Differs From React Hydration](https://thenewstack.io/javascript-on-demand-how-qwik-differs-from-react-hydration/) - a comparsion between **React** and **Qwik** frameworks rendering paradigms |
+| **`2024-01-31`** | [Making a PDF that’s larger than Germany](https://alexwlchan.net/2024/big-pdf/) - under the hood of PDF and it's size limits |
 | **`2024-01-03`** | [Understanding CORS](https://itnext.io/understanding-cors-4157bf640e11) - the title says it all! |
 
 ## < 2024
