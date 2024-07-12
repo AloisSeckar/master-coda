@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2024-07-03`** | [CSS One-Liners to Improve (Almost) Every Project](https://dev.to/alvaromontoro/css-one-liners-to-improve-almost-every-project-18m) - did you know those neat CSS tricks? |
 | **`2024-06-30`** | [Dev rejects CVE severity, makes his GitHub repo read-only](https://www.bleepingcomputer.com/news/security/dev-rejects-cve-severity-makes-his-github-repo-read-only/) - recent **ip** package controversy raises concerns about current way of reporting security issues in (JavaScript) open-source world |
 | **`2024-06-26`** | [The 5 Worst Anti-Patterns in API Management](https://thenewstack.io/the-5-worst-anti-patterns-in-api-management/) - if you want to have system with API sustainable in a long term you shouldn't do this |
 | **`2024-06-04`** | [How Deep is Your DOM?](https://frontendatscale.com/blog/how-deep-is-your-dom/) - how nesting a lot of HTML elements can impact speed of your page - with examples |
