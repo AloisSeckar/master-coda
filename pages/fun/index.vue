@@ -38,7 +38,7 @@
     </div>
     <a :href="imagePath" target="_blank">
       <NuxtImg
-        class="mx-auto my-4 h-[350px] w-auto"
+        class="mx-auto my-4 h-[350px] w-auto cursor-zoom-in"
         :src="imagePath"
         :alt="imageData.title"
         title="Kliknutím zobrazíte plnou velikost"
