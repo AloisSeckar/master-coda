@@ -209,6 +209,11 @@ const fun = [
     title: 'Jak probíhá vývoj softwaru, když...',
     added: '2024-06-20',
   },
+  {
+    id: 'toggl-games',
+    title: 'Kdyby programovací jazyky byly hry (by Toggl)',
+    added: '2024-07-30',
+  },
 ]
 
 export { fun }
