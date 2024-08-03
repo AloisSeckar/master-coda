@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2024-07-28`** | [Perfectionism - one of the biggest productivity killers](https://newsletter.eng-leadership.com/p/perfectionism-one-of-the-biggest) - do not waste time on over-improving things - lessons learned by two IT professionals |
 | **`2024-07-22`** | [Vue.js and HTML Injection Explained](https://vueschool.io/articles/vuejs-tutorials/vue-js-and-html-injection-explained/) - great VueSchool article talking about (not) using **v-html** directive in **Vue.js** |
 | **`2024-07-15`** | [JavaScript Event Loop: A Deep Dive](https://dev.to/mdhassanpatwary/javascript-event-loop-a-deep-dive-2289) - how JavaScript performs its operations |
 | **`2024-07-03`** | [CSS One-Liners to Improve (Almost) Every Project](https://dev.to/alvaromontoro/css-one-liners-to-improve-almost-every-project-18m) - did you know those neat CSS tricks? |
