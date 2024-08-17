@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2024-08-02`** | [How to Build Your Own Vue-like Reactivity System](https://dev.to/alexanderop/how-to-build-your-own-vue-like-reactivity-system-from-scratch-1d2d) - understand Vue's core concept of reactivity by implementing its alike! |
 | **`2024-07-28`** | [Perfectionism - one of the biggest productivity killers](https://newsletter.eng-leadership.com/p/perfectionism-one-of-the-biggest) - do not waste time on over-improving things - lessons learned by two IT professionals |
 | **`2024-07-22`** | [Vue.js and HTML Injection Explained](https://vueschool.io/articles/vuejs-tutorials/vue-js-and-html-injection-explained/) - great VueSchool article talking about (not) using **v-html** directive in **Vue.js** |
 | **`2024-07-15`** | [JavaScript Event Loop: A Deep Dive](https://dev.to/mdhassanpatwary/javascript-event-loop-a-deep-dive-2289) - how JavaScript performs its operations |
@@ -36,6 +37,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
 | **`2023-09-15`** | [Optimization in Pom XML file](https://swapnilagarwal2001.medium.com/optimization-in-pom-xml-file-b218469e3800) - how **Maven** dependencies work and what can you do to define them better |
+| **`2023-03-14`** | [16 little UI design rules that make a big impact](https://uxplanet.org/16-ui-design-tips-ba2e7524d203) - build better UIs by following at least some of those principles |
 | **`2021-07-07`** | [npm audit: Broken by Design](https://overreacted.io/npm-audit-broken-by-design/) - aside from being a rant against **npm audit** command, it gives brilliant insight into how it works, making this article a valuable resource to improve your **npm** JS package management understanding |
 | **`2020-12-17`** | [Troubleshooting Native Memory Leaks in Java Applications](https://poonamparhar.github.io/troubleshooting_native_memory_leaks/) - how to understand, diagnose and confirm leaks coming from native code interactions with memory |
 | **`2014-04-17`** | [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) - the anatomy of an error that caused $460 million loss in just 45-minutes |
