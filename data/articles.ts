@@ -261,6 +261,14 @@ const articles = [
     tags: ['regulární výrazy', 'regex', 'help', 'tutorial'],
     created: '31.12.2023',
   },
+  {
+    id: 'vue-overcomputed',
+    cat: 'debugging',
+    title: '"Overcomputed" Vue.js',
+    dscr: 'Pozor na Vue.js reaktivní funkci `computed()`, může se spouštět častěji, než byste čekali a chtěli',
+    tags: ['debugging', 'JavaScript', 'Vue.js'],
+    created: '21.08.2024',
+  },
 ]
 
 export { articles }
