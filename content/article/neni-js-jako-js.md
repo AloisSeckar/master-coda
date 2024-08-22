@@ -13,5 +13,6 @@ Užitečným pomocníkem pro plánování kompatibility vašeho kódu může bý
 
 Například pro mnou zmiňovanou metodu `.includes()`{lang="js"} to s&nbsp;podporou v&nbsp;prohlížečích vypadá [TAKTO](https://caniuse.com/?search=includes).
 
-## Poučení
+::wise-words
 Vždy si dobře rozmyslet, zda mi bude věc fungovat i&nbsp;na cílové platformě. Existují on-line nástroje, jak to zjistit.
+::

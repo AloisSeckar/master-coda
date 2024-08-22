@@ -16,5 +16,6 @@ inﬁltráty … eozinoﬁlních
 
 Naštěstí mě po chvilkovém dumání napadlo přenést text do Notepad++ (kde to je vidět lépe než zde na webu). Nečekal jsem sice zrovna tohle, ale řešení bylo rázem na stole. Za všechno může podivuhodný znak `ﬁ`, který z&nbsp;nějakého důvodu v&nbsp;textu nahrazuje sekvenci dvou písmen „fi“. Zřejmě se tam dostal při OCR vytěžování PDF, případně byl do strojově zpracovatelného PDF už takto zapsán. Přijde mi fascinující, že ho Word (minimálně má Office 365 verze) uznává a&nbsp;sám pro sebe správně interpretuje, pročež nehlásí nic o&nbsp;špatném spellingu. Stálo mě to pěkných pár minut přemýšlení.
 
-## Poučení
+::wise-words
 Není znak jako znak.
+::

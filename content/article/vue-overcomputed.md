@@ -29,5 +29,6 @@ V případě reaktivity jsem v&nbsp;mých začátcích s&nbsp;Vue utrpěl syndro
 
 Zpočátku je problém si toho vůbec všimnout, protože Vue je dobře optimalizované. Když se to někde provalí, může být už zase složité s&nbsp;tím v&nbsp;rozvinuté a&nbsp;nějak fungující aplikaci něco dělat. Proto je nejlepší řešit to už na začátku. Pokaždé si dobře rozmyslete, které reaktivní funkce skutečně potřebujete, a&nbsp;vyhýbejte se jejich zbytečnému nadužívání.
 
-## Poučení
-Dvakrát (i&nbsp;třikrát) měř než použiješ `computed()` 
+::wise-words
+Dvakrát (i&nbsp;třikrát) měř než použiješ `computed()`.
+::

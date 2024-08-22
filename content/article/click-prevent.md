@@ -11,5 +11,6 @@ Bylo v tomto případě vcelku jednoduché. Vue.js nabízí [modifikátory udál
 
 Opraveno za minutu, hledání příčiny zabralo přes hodinu.
 
-## Poučení
+::wise-words
 Často je potřeba lépe rozumět tomu, co přesně se vlivem našeho kódu děje, protože pak se mohou vynořit souvislosti, které na první pohled nejsou vidět. Povědomí o tom, jak funguje ten který programovací jazyk či technologie, je dobré neustále postupně prohlubovat.
+::
