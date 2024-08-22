@@ -1,6 +1,8 @@
-Tento text se týká programání ve [Vue.js](https://vuejs.org/). Pokud se o Vue chcete dozvědět víc, mám zde [tutorial práce s frameworkem Nuxt](/article/nuxt), který je nad Vue postaven.
+<div>
+<nuxt-tutorial />
+</div>
 
-Budu se zde zabývat opakujícím se scénářem, který generuje chyby při vyhodnocování JS kódu ve Vue.js aplikacích. Konkrétně se nejčastěji objevuje v podmínkách pro určení, zda zobrazit nebo nezobrazit určitý prvek.
+V tomto textu se budu zabývat opakujícím se scénářem, který generuje chyby při vyhodnocování JS kódu ve Vue.js aplikacích. Konkrétně se nejčastěji objevuje v podmínkách pro určení, zda zobrazit nebo nezobrazit určitý prvek.
 
 Představte si, že máte nadefinovanou `boolean` proměnnou, tj. nabývá hodnot buďto `true` nebo `false`, například testuje, zda je zadán neprázdný řetězec:
 ```js

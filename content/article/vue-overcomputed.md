@@ -1,4 +1,6 @@
-<div style="background-color: #111111; padding: 5px;">&nbsp;&raquo;&raquo; Tento text se zabývá programováním ve <a href="https://vuejs.org/">Vue.js</a>. Pro zájemce o tuto technologii tu mám svůj <a href="/article/nuxt">tutoriál práce s frameworkem Nuxt</a>, který je nad Vue postaven.</div>
+<div>
+<nuxt-tutorial />
+</div>
 
 V prosinci 2023 jsme do provozu nasadili naši první úspěšnou implementaci Nuxt frontendu. Celkem velká věc pro jeden státní úřad. Časem snad sepíšu svoje zkušenosti, jaké to bylo začínat (téměř) na zelené louce s&nbsp;novou a&nbsp;pořád ještě dost živou technologií. Podstatné je, že to proběhlo vcelku dobře a&nbsp;nepsalo se o&nbsp;tom v&nbsp;novinách jako o&nbsp;dalším provaru při pokusech o&nbsp;větší digitalizaci státní správy.
 
