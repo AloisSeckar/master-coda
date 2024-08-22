@@ -16,9 +16,7 @@ Jiná varianta je zavolat na zdrojové databázi upravené SQL a vytáhnout si d
 
 Takže už nezbývá než zapojit regulární výrazy. Chce to nějaký textový editor, který pomocí nich umí „Hledat“ a „Nahradit“ – moje volba je [Notepad++](https://notepad-plus-plus.org/) (pro Windows people jako jsem já - zkratka `Ctrl+H`).
 
-<div>
-<article-image src="regex-neni-nepritel/notepad-search.jpg" alt="Funkce 'Nahradit' v Notepad++" />
-</div>
+:article-image{src="regex-neni-nepritel/notepad-search.jpg" alt="Funkce 'Nahradit' v Notepad++" width="w-1/2"}
 
 Jednodušší úprava je odmazat `news_id` na konci každého příkazu `INSERT`. Regulární výrazy pracují tak, že prostřednictvím kombinace skutečných znaků a speciálních metaznaků hledají nad zdrojovým textem shodu (**match** – odtud nečeské, ale v tomto kontextu odpovídající slovo _„matchnout“_). Alfou a omegou je sestavit kombinaci správně. Pojďme na to.
 
@@ -68,6 +66,4 @@ Pokud jsem vás přesvědčil, že to s regulárními výrazy stojí za to zkusi
 - V češtině existuje povedená stránka https://www.regularnivyrazy.info/, z níž jsem se sám kdysi učil
 - Dále je tu ultimátní web https://regex101.com/, kde si můžete výrazy psát interaktivně a web rovnou automaticky ověřuje, zda fungují, a poskytuje detailní rozbor, co bylo vlastně zadáno. V praxi neocenitelný pomcník, ke kterému se můžete vždy vrátit.
 
-<a href="https://regex101.com/" title="regex101.com">
-<article-image src="regex-neni-nepritel/regex101.jpg" alt="Analýza regulárního výrazu na regex101.com" />
-</a>
+:article-image{src="regex-neni-nepritel/regex101.jpg" alt="Analýza regulárního výrazu na regex101.com" width="w-full"}

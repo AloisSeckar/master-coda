@@ -17,9 +17,7 @@ font-family: "nazevFontu";
 
 Tak jsem to například s&nbsp;fontem `KaushanScript` udělal já, abych mohl mít netradiční font ve jméně na mém osobním webu:
 
-<a href="http://www.alois-seckar.cz" title="www.alois-seckar.cz">
-<article-image src="redukce-velikosti-fontu/homepage.jpg" alt="www.alois-seckar.cz" />
-</a>
+:article-image{src="redukce-velikosti-fontu/homepage.jpg" alt="www.alois-seckar.cz" link="http://www.alois-seckar.cz"}
 
 Nelíbila se mi na tom jen jedna věc. Font chci mít jen tady v&nbsp;nadpisu v&nbsp;podobě mého jména, takže reálně potřebuju pouze 11 znaků. Ale soubor `KaushanScript-Regular.ttf` jich samozřejmě definuje mnohem víc. Velikost má **183&nbsp;972 bytů**. Tolik dat by se muselo tahat při každém zobrazení stránky kvůli 11 písmenům.
 
@@ -92,8 +90,6 @@ pyftsubset KaushanScript-Regular.ttf
 
 A výsledný soubor je zase ještě skoro o&nbsp;další polovinu menší -&nbsp;**3&nbsp;632 bytů**.
 
-<div>
-<article-image src="redukce-velikosti-fontu/fonts.jpg" alt="Srovnání velikostí souborů" />
-</div>
+:article-image{src="redukce-velikosti-fontu/fonts.jpg" alt="Srovnání velikostí souborů" width="w-[500px]"}
 
 Pro dnešek máme hotovo, návštěvníci mého webu při každé návštěvě ušetří 180 kilobytů zbytečných dat. Kolik těm svým zvládnete ušetřit vy?

@@ -22,7 +22,6 @@ useArticleStore().fillIfNeeded()
 const articleId = useRoute().params.article as string
 const article = useArticleStore().getById(articleId)
 if (article) {
-  console.log(article)
   usePageMeta({
     type: 'article',
     url: `${CODA_URL}/article/${articleId}`,
@@ -33,7 +32,6 @@ if (article) {
 else {
   usePageMeta(CODA_PAGE_META)
 }
-console.log(article)
 </script>
 
 <style scoped>
