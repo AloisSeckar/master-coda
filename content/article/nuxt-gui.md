@@ -133,6 +133,8 @@ V jiném projektu mám [komponentu](https://github.com/AloisSeckar/ELRHistory/bl
 
 "FA" je podobně jako Boostrap evergreenem ve světě webdesignu a&nbsp;používá jej kde kdo. Integrace do Nuxtu je pochopitelně možná, ale znamená to nejmně tři nové závislosti na JS modulech (více, pokud chcete používat ikony z&nbsp;dalších dostupných (placených!) sad) a&nbsp;celkově mi to přijde těžkopádnější než Icônes. Ale opět -&nbsp;kdo je zvyklý a&nbsp;sype názvy FontAwesome ikon z&nbsp;rukávu, může je používat i&nbsp;nadále.
 
+Jedinou nevýhodou je, že podobně jako DevExtreme, ani FontAwesome si netyká s Nuxt SSR, takže je třeba nastavit `ssr: false`.
+
 ### Integrace do Nuxt 3
 
 Dotažení FA do Nuxt projektu jsem vyřešil opět pluginem, tentokrát trochu méně intuitivním, protože je potřeba nejprve rozšířit objekt `library` o&nbsp;definice ikon, které chcete používat, a&nbsp;poté vzít druhý objekt `FontAwesomeIcon` (z&nbsp;druhého FA balíčku) a&nbsp;ten zaregistrovat jako Vue komponentu uvnitř vaší aplikace:
