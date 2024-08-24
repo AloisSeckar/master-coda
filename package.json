@@ -19,6 +19,8 @@
     "tailwindcss": "3.4.4"
   },
   "overrides": {
-    "vue": "latest"
+    "nuxt-security": {
+      "cheerio": "1.0.0-rc.12"
+    }
   }
 }
