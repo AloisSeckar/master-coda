@@ -125,13 +125,12 @@ const articles = [
     created: '28.07.2024',
   },
   {
-    id: 'nuxt-ui',
+    id: 'nuxt-gui',
     cat: 'web',
     title: 'Nuxt Tutorial 7 - UI integrace',
     dscr: 'Nuxt 3 - jak snadno integrovat UI prvky',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS'],
-    created: '08.01.2024',
-    hidden: true,
+    created: '24.08.2024',
   },
   {
     id: 'nuxt-forms',
@@ -264,7 +263,7 @@ const articles = [
   {
     id: 'vue-overcomputed',
     cat: 'debugging',
-    title: '"Overcomputed" Vue.js',
+    title: 'Overcomputed Vue.js',
     dscr: 'Pozor na Vue.js reaktivní funkci `computed()`, může se spouštět častěji, než byste čekali a chtěli',
     tags: ['debugging', 'JavaScript', 'Vue.js'],
     created: '21.08.2024',
