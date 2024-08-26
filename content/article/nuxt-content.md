@@ -6,7 +6,7 @@ Pro příklad použití v praxi nemusíme chodit daleko - právě ho čtete. Kdy
 
 Výsledkem je, že samotný obsah článku žije ve svém souboru `jmeno-clanku.md` v adresáři `/content/article/`. Chcete-li se pro zajímavost podívat, tady najdete, [jak vypadá tento článek](https://github.com/AloisSeckar/master-coda/blob/master/content/article/nuxt-content.md).
 
-Zvolil jsem Markdown, protože tuto syntaxi celkem dobře znám z různých MediaWiki stránek. Píše se mnohem snáz než těžkopádné HTML s CSS třídami. CSS (resp. [Tailwind]('/article/nuxt-tailwind')) jsem tedy úplně neopustil, ale stylování je nyní globální a o těžkou práci s přiřazováním tříd se stará Nuxt Content, který v sobě navíc obsahuje i zabudovaný syntax-highlighting pro označené bloky zdrojového kódu.
+Zvolil jsem Markdown, protože tuto syntaxi celkem dobře znám z různých MediaWiki stránek. Píše se mnohem snáz než těžkopádné HTML s CSS třídami. CSS (resp. [Tailwind]('/article/nuxt-gui#tailwind-css')) jsem tedy úplně neopustil, ale stylování je nyní globální a o těžkou práci s přiřazováním tříd se stará Nuxt Content, který v sobě navíc obsahuje i zabudovaný syntax-highlighting pro označené bloky zdrojového kódu.
 
 Jak to celé zprovoznit, to si řekneme vzápětí:
 

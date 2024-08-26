@@ -68,7 +68,7 @@ Je dobré držet se pravidla, že styly uvnitř SFC komponenty patří pouze k&n
 
 Platí, že `<style>` bloků může být v&nbsp;jedné komponentě definováno více, ale nepřipadá mi to příliš praktické. Stejně tak jsem zatím nevyužil podporu [CSS modulů](https://cs.vuejs.org/api/sfc-css-features.html#css-modules).
 
-Obecně bych řekl, že v&nbsp;praxi budete tento blok používat spíš méně, pouze pro řešení nějakých speciálních požadavků. Vzhled často už řeší různé UI knihovny a&nbsp;není většinou třeba vynalézat znovu kolo. Nebo pokud sáhnete třeba po populární knihovně **Tailwind CSS** (viz [pozdější díl tutoriálu](/article/nuxt-tailwind)), klasické CSS pro vás takřka přestane existovat...
+Obecně bych řekl, že v&nbsp;praxi budete tento blok používat spíš méně, pouze pro řešení nějakých speciálních požadavků. Vzhled často už řeší různé UI knihovny a&nbsp;není většinou třeba vynalézat znovu kolo. Nebo pokud sáhnete třeba po populární knihovně **Tailwind CSS** (viz [pozdější díl tutoriálu](/article/nuxt-gui#tailwind-css)), klasické CSS pro vás takřka přestane existovat...
 
 ## Předávání dat mezi komponentami
 
