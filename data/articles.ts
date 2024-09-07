@@ -266,6 +266,14 @@ const articles = [
     tags: ['debugging', 'JavaScript', 'Vue.js'],
     created: '21.08.2024',
   },
+  {
+    id: 'neni-short-jako-int',
+    cat: 'debugging',
+    title: 'Není short jako int',
+    dscr: 'Když nesedí datové typy, dějí se zvláštní věci',
+    tags: ['debugging', 'Java', 'testy', 'datové typy'],
+    created: '07.09.2024',
+  },
 ]
 
 export { articles }
