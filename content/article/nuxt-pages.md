@@ -45,9 +45,10 @@ Parametry získané z&nbsp;URL cesty jsou k&nbsp;dispozici ve `<script>` části
 
 Druhou variantou použití jsou tzv. „catch-all“ cesty, kterými zobrazíme defaultní stránku pro _„cokoliv jiného, než pro co máme dedikovanou stránku“_, a&nbsp;vyhneme se nutnosti ošetřovat chybu **404**.
 
-Chtěl bych ještě zmínit dvě vychytávky:
+Chtěl bych ještě zmínit tři vychytávky:
 - lze kombinovat statickou a&nbsp;dynamickou část - tj. například mít soubory `/pages/product-[id].vue` a `/pages/cagtegory-[id].vue`
 - nebo je možné mít více „slugs“ v&nbsp;jedné cestě - `/pages/[category]/[product].vue`
+- od verze **3.13** existují také ještě tzv. „route groups“ - adresáře v kulatých závorkých (např.: `/(dir)/`) jsou v&nbsp;rámci cesty ignorovány - `/pages/(extra)/page.vue` bude v&nbsp;prohlížeči dostupné pod `/page`. Je to možnost, jak lépe organizovat obsah z&nbsp;pohledu vývojáře, aniž by to ovlivnilo výsledek z&nbsp;pohledu uživatele.
 
 Jak je vidět, systém je nesmírně flexibilní a&nbsp;sám od sebe dovoluje různá „kouzla“. A&nbsp;kdyby defaultní chování Nuxtu nestačilo a&nbsp;potřebovali jsme do výchozího chování aplikace sáhnout ještě více, není problém. Pořád je k&nbsp;dispozici přístup přímo k&nbsp;objektu [Vue Routeru](https://nuxt.com/docs/api/composables/use-router), který pod tím vším žije a&nbsp;s&nbsp;navigací ve skutečnosti hýbe. Nuxt odvede práci, co ve většině případů stačí, ale možnost plné kontroly je stále na programátorovi.
 
@@ -64,10 +65,11 @@ Tento blog se vám zobrazuje díky souboru [`/pages/article/[article].vue`](http
 Zdrojový kód ukázkové implementace ilustrující princip komponent a&nbsp;stránek v Nuxtu naleznete zde:
 [nuxt-pages @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-pages)
 
-Projekt definuje celkem 3 stránky v&nbsp;adresáři `/pages`
+Projekt definuje celkem 4 stránky v&nbsp;adresáři `/pages`
 - `index.vue` - výchozí dostupná v&nbsp;cestě `/` nebo `/index`
 - `first.vue` - zobrazí se po zadání `/first`
 - `second.vue` - zobrazí se po zadání `/second`
+- `(extra)/third.vue` - zobrazí se po zadání `/third` (demonstruje novinku z&nbsp;Nuxt **3.13** jménem [route groups](https://nuxt.com/docs/guide/directory-structure/pages#route-groups))
 
 Dále jsou zde 2 komponenty v adresáři `/components`
 - `TheMenu.vue` - definuje odkazy na jednotlivé stránky a&nbsp;je vložena do společného layoutu v&nbsp;`app.vue`
