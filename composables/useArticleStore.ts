@@ -6,11 +6,13 @@ export const useArticleStore = defineStore({
     return {
       loaded: false,
       items: [] as Article[],
+      allItems: [] as Article[],
     }
   },
   actions: {
     fillIfNeeded() {
       if (!this.loaded) {
+        this.allItems = articles
         this.items = articles.filter(i => !i.hidden)
         this.loaded = true
       }
@@ -24,7 +26,7 @@ export const useArticleStore = defineStore({
       return () => state.items.sort((a, b) => compareDates(a.created, b.created)).slice(0, 5)
     },
     getById: (state) => {
-      return (id: string) => state.items.find(i => i.id === id)
+      return (id: string) => state.allItems.find(i => i.id === id)
     },
     getByTitle: (state) => {
       return (title: string) => state.items.filter(i => i.title?.includes(title))?.sort((a, b) => compareDates(b.created, a.created))
