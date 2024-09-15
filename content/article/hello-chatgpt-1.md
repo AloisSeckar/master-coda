@@ -56,7 +56,7 @@ Při dalším vývoji jsem se ještě ptal, jak obrátit pořadí pole pro for-e
 
 Pak jsem chtěl pomoct s [článkem](https://master-coda.netlify.app/article/nuxt-ui). To jsem vlastně chtěl jako první, ale chuť něco nového naprogramovat mě přepadla dřív, než chuť něco dopisovat.
 
-Konkrétně mi šlo o stručné představení čtyř UI technologií, na jejichž integrace do Nuxt 3 jsem stvořil demo příklady - něco jako slovníková definice. Práce na chvilku, ale vůbec se mi do toho nechtělo. Tak jsem poprosil ChatGPT o: `Napiš definici XY do 50 slov` (posléze upraveno na `Popiš XY v 50 slovech`).
+Konkrétně mi šlo o stručné představení čtyř UI technologií, na jejichž integrace do frameworku Nuxt jsem stvořil demo příklady - něco jako slovníková definice. Práce na chvilku, ale vůbec se mi do toho nechtělo. Tak jsem poprosil ChatGPT o: `Napiš definici XY do 50 slov` (posléze upraveno na `Popiš XY v 50 slovech`).
 
 S takto vágním zadáním z toho sice vylezly i dost vágní definice, ale pořád to byl základ, který jsem pak mohl přizpůsobit k obrazu svému. AI za mě překonala kritickou fázi "jak začít?". Doplněný článek, který jsem následně rozšířil i o mé vlastní názory a doporučení k jednotlivým nástrojům, už od rána visí na webu. Kdybych se k tomu měl dokopat sám, kdo ví, kdy by to bylo.
 
@@ -64,7 +64,7 @@ S takto vágním zadáním z toho sice vylezly i dost vágní definice, ale poř
 
 ChatGPT má ovšem přeci jen i jednu velkou vadu - neumí přiznat, že něco neví. A co hůř, klidně si místo toho vymýšlí. Například neváhal napsat "návod" s použitím NPM modulu, který neexistuje. Alespoň že nezapírá, když je "přistižen". Některé odpovědi je ovšem třeba brát s rezervou.
 
-Druhý problém je, že aktuální verze, se kterou se bavím, má znalosti platné v září 2021. Na obecné a zavedené konstrukce v rozšířených programovacích jazycích tedy super, ale s vývojem pro [Nuxt 3](https://nuxt.com/), který byl tou dobou ještě v plenkách v některé z alpha verzí, mi zrovna příliš nepomůže. Škoda, potřeboval bych poradit s nastavením pro SEO meta tagy. Budu se holt muset obrátit na živé programátory, kteří se kolem Nuxtu pohybují...
+Druhý problém je, že aktuální verze, se kterou se bavím, má znalosti platné v září 2021. Na obecné a zavedené konstrukce v rozšířených programovacích jazycích tedy super, ale s vývojem pro [Nuxt](https://nuxt.com/) verze 3, který byl tou dobou ještě v plenkách v některé z alpha verzí, mi zrovna příliš nepomůže. Škoda, potřeboval bych poradit s nastavením pro SEO meta tagy. Budu se holt muset obrátit na živé programátory, kteří se kolem Nuxtu pohybují...
 
 ## A co dál?
 

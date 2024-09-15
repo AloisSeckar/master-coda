@@ -39,7 +39,7 @@ Jen s tím se už dá leccos vytvořit. Pro příklady integrací s&nbsp;pokroč
 
 Jeho popis by vydal na samostatný článek. Pro mě je to nyní jasná volba č.&nbsp;1 co se tvorby vzhledu webových stránek týká. Vyžaduje trochu jinou filosofii, ale zvykal jsem si den a&nbsp;už to nechci dělat jinak. Tailwind CSS používá třeba právě tento web -&nbsp;původní design jsem ještě nahodil "ručně", převést jej do odpovídající Tailwind struktury trvalo jeden večer.
 
-### Integrace do Nuxt 3
+### Nuxt integrace
 
 Začít používat Tailwind CSS je úplná hračka, protože na to existuje [modul](https://tailwindcss.nuxtjs.org/), který vše podstatné udělá za vás.
 
@@ -50,7 +50,7 @@ Zdrojový kód ukázkové implementace naleznete zde:
 
 [Open Props](https://open-props.style/) staví na podobném principu jako Tailwind CSS -&nbsp;nabízí přepřipravené styly, jejichž použití vás sice bude trochu svazovat, ale na druhou stranu nemusíte všude znovu vynalézat kolo. Hlavní výhodou  je odlehčenost a&nbsp;škálovatelnost -&nbsp;Tailwind je proti komprimovaným Open Props css souborům i&nbsp;po [veškerých možných optimalizacích](https://v1.tailwindcss.com/docs/controlling-file-size) "velký" a&nbsp;stahujete ho vždy celý. Naproti tomu Open Props umožňují použít jen menší část, která je zrovna potřeba.
 
-### Integrace do Nuxt 3
+### Nuxt integrace
 
 TODO
 
@@ -64,7 +64,7 @@ TODO
 
 Mě úplně k srdci nepřirostl, a&nbsp;pokud si nechcete psát vlastní CSS sami, tak bych doporučil spíš kombinaci výše uvedeného Tailwind CSS +&nbsp;Formkit na formulářové prvky. Ale mnoho vývojářů je na něj zvyklých a&nbsp;Nuxt samozřejmě nebrání, aby ho mohli nadále používat.
 
-### Integrace do Nuxt 3
+### Nuxt integrace
 
 V tomto případě jsem zvolil použití Nuxt [pluginu](https://nuxt.com/docs/guide/directory-structure/plugins). O&nbsp;pluginech jsme zatím ještě nemluvili, ale je to efektivní způsob, jak do základní Nuxt aplikace doplňovat novou funkcionalitu.
 
@@ -87,7 +87,7 @@ UI knihovnu [DevExtreme](https://js.devexpress.com/) mi prvně představil koleg
 
 Drobná vada na kráse je, že z&nbsp;nějakého důvodu Dx komponenty nefungují při _Server-Side Renderingu_, nebo jsem aspoň nepřišel na to, co je třeba udělat. Je tedy nutné nastavit `ssr: false` a&nbsp;počítat s&nbsp;tím, že aplikace se bude vykreslovat pomocí JavaScriptu až v&nbsp;prohlížeči klienta.
 
-### Integrace do Nuxt 3
+### Nuxt integrace
 
 Přes `package.json` je třeba referencovat základní NPM balíček `devextreme` a&nbsp;jeho Vue port `devextreme-vue`. To už by stačilo pro lokální vývoj, problém je, že mechanismus "tree-shakingu" (odstraňování nepoužitých závislostí z&nbsp;produkčního buildu) nepozná, že část komponent používáte, a&nbsp;úspěšně očeše všechny definice.
 
@@ -116,7 +116,7 @@ Po spuštění si můžete všimnout nápadného licenčního varování, které
 
 Pokud se mě zeptáte, jak na ikony, jednoznačně doporučím Icônes. Snadný způsob definice z&nbsp;SVG, který je volně přenositelný do různých prostředí, žádná potřeba nových závislostí a&nbsp;obrovský výběr definic ikon zdarma. V&nbsp;Nuxtu, resp. přímo v samotném Vue lze každou ikonu zavést jako samostatnou komponentu. Pokud nepoužívate UI knihovnu, která si ikony řeší sama jinak (viz např. budoucí článek o&nbsp;Nuxt UI), je to výborná light-weight volba, která vám umožní použít jen to, co skutečně potřebujete.
 
-### Integrace do Nuxt 3
+### Nuxt integrace
 
 Funguje to skutečně bez jakékoliv externí závislosti. Prostě si na webu Icônes najdete ikonu, kterou chcete použít, a&nbsp;přímo odtamtud vyexportujete zdrojový kód ve formě Vue komponenty. V&nbsp;mé demo ukázce jsou takto převzaty tři vybrané ikony ve složce `/components`.
 
@@ -135,7 +135,7 @@ V jiném projektu mám [komponentu](https://github.com/AloisSeckar/ELRHistory/bl
 
 Jedinou nevýhodou je, že podobně jako DevExtreme, ani FontAwesome si netyká s Nuxt SSR, takže je třeba nastavit `ssr: false`.
 
-### Integrace do Nuxt 3
+### Nuxt integrace
 
 Dotažení FA do Nuxt projektu jsem vyřešil opět pluginem, tentokrát trochu méně intuitivním, protože je potřeba nejprve rozšířit objekt `library` o&nbsp;definice ikon, které chcete používat, a&nbsp;poté vzít druhý objekt `FontAwesomeIcon` (z&nbsp;druhého FA balíčku) a&nbsp;ten zaregistrovat jako Vue komponentu uvnitř vaší aplikace:
 
