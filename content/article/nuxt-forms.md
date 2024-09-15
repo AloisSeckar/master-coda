@@ -1,37 +1,52 @@
-Dalším krokem na cestě k funkční a užitečné aplikace, jsou formáláře použitelné jak na strukturovanou prezentaci dat, tak hlavně na obsluhu uživatelských vstupů. Abychom si je nemuseli psát pomocí nativních HTML elementů úplně sami, existují různé nástroje, které můžeme využít.
+Dalším krokem na cestě k&nbsp;funkční a&nbsp;užitečné aplikaci jsou formáláře použitelné jak na strukturovanou prezentaci dat, tak hlavně na obsluhu uživatelských vstupů. Abychom si je nemuseli psát pomocí nativních HTML elementů úplně sami, existují různé nástroje, které můžeme využít.
 
-Svou vlastní knihovnu stylovaných formulářových prvků nabízí například [Bootstrap](/article/nuxt-ui#bootstrap), jehož integraci jsme si ukázali v minulém díle tutoriálu. Nyní si ukážeme dvě další integrace technologií, které jsou na formuláře specializované ještě o něco více. 
+Hezky stylované formulářové prvky nabízí například [Nuxt&nbsp;UI](/article/nuxt-ui), jehož integraci jsme si ukázali v&nbsp;minulém díle tutoriálu. Nyní se podíváme na ještě trochu jiný nástroj, který kromě UI prvků nabízí i&nbsp;pohodlnou abstrakci celého formuláře.
 
 ## FormKit
 
-[FormKit](https://formkit.com/) je formulářová knihovna, která se teprve vyvíjí a usazuje, nicméně je dělaná přímo pro Vue.js, je lightweight a celkově se mi dost líbí. Hlavní filosofií je, že `Každý prvek formuláře může být komponenta <FormKit>` a pouze vlastnosti (props), které instancím předáváme řídí to, jak bude vypadat HTML výsledek. Pomocí vlastností lze nastavovat typ inputu, popisky, nápovědy a dokonce i validace, vše v jednom. 
+[FormKit](https://formkit.com/) je formulářová knihovna, která se stále ještě vyvíjí a&nbsp;usazuje, nicméně je dělaná přímo pro Vue.js, je lightweight a&nbsp;celkově se mi moc líbí. Hlavní filosofií je, že `každý prvek formuláře může být komponenta <FormKit>` a&nbsp;pouze vlastnosti (props), které instancím předáváme, řídí to, jak bude vypadat HTML výsledek. Pomocí vlastností lze nastavovat typ inputu, popisky, nápovědy a&nbsp;dokonce i&nbsp;validace, vše v&nbsp;jednom.
 
-FormKit není tak robustní jako jiné starší a propracovanější formulářové frameworky, ale do ekosystému Vue.js a Nuxtu se podle mě perfektně hodí, pročež je pro mě aktuálně jasná volba číslo jedna do mých aplikací.
+Celé to obaluje speciální `<FormKit>` nejvyšší úrovně definovaný atributem `type="form"`, ve kterém stačí naslouchat jeho emitované události `@submit`, abychom dostali kompletní aktuální obsah:
 
-### Integrace do Nuxt 3
+```vue-html
+<template>
+  <FormKit type="form" @submit="odeslat">
+    <!-- definice polí formuláře -->
+  </FormKit>
+<template>
 
-Je to velmi jednoduché - prostě se přidá závislost na `@formkit/nuxt` a zaregistruje se příslušný modul. Pak už jen vesele využíváme komponentu `<FormKit>` a stavíme si formuláře podle pořeby.
+<script setup>
+const odeslat = (hodnoty) => {
+  // práce s hodnotami formuláře
+}
+</script>
+```
 
-Zdrojový kód ukázkové implementace naleznete zde:
+S takto sestavovanými formuláři se po chvilce nácviku pracuje jedna báseň.
+
+V základní sadě je nyní k&nbsp;dispozici 25 zabudovaných UI prvků zdarma a&nbsp;dalších 14 pokročilejších lze připoupit v&nbsp;placené verzi Pro. Kromě toho nabízí FormKit [hromadu zabudovaných validací](https://formkit.com/essentials/validation), [šablony pro stylování](https://formkit.com/essentials/styling), [podporu více jazyků](https://formkit.com/essentials/internationalization) a&nbsp;další skvělé vychytávky jako třeba generování formulářů z&nbsp;[JSON schématu](https://formkit.com/essentials/schema).
+
+## Případová studie
+
+Jedním z projektů, kde FormKit s&nbsp;úspěchem používám, je web [Stará Krč](https://krc-historie.cz/), resp. jeho back-endová adminstrace, přes kterou můžeme s&nbsp;tátou editovat údaje obrázků a&nbsp;psát články.
+
+Přikládám screen jako důkaz, že formuláře se dají s&nbsp;pomocí CSS flexibilně stylovat, nejste odkázáni na předem pevně daný vzhled:
+
+:article-image{src="nuxt-forms/stara-krc.webp" alt="FormKit administrace na webu 'Stará Krč'" width="w-[600px]"}
+
+Koho by implementace zajímala blíž, stránky pohání můj [proprietární CMS ELRHistory](https://github.com/AloisSeckar/ELRHistory). Definice formulářů pro administraci naleznete v&nbsp;`/components/admin/form`.
+
+## Demo projekt
+
+Zdrojový kód ukázkové implementace FormKit formuláře naleznete zde:
 [nuxt-formkit @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-formkit)
 
-## DevExtreme
+Je to velmi jednoduché - prostě se přidá závislost na `@formkit/nuxt` a&nbsp;zaregistruje se příslušný modul. Pak už jen vesele využíváme komponentu `<FormKit>` a&nbsp;stavíme si formuláře podle pořeby.
 
-[DevExtreme](https://js.devexpress.com/) je sada UI prvků vyvíjená společností DevExpress. Poskytuje množství widgetů a nástrojů pro vytváření uživatelsky přívětivých a přitom výkonných aplikací. Lze jej využít pro všechny hlavní JS frameworky (Angular, React a Vue.js) a snadno se integruje s různými backendovými technologiemi. Samozřejmostí je silná build-in podpora responzivního designu. Také nabízí podrobnou dokumentaci a komunitní podporu.
-
-Využíváme DevExtreme na projektu v práci a musím říct, že bez něj bych si dostatečně rychlou tvorbu složitých formulářů, se kterými se tam pracuje, moc představit nedovedl. A to ačkoliv průběžně tápeme, jak se ta která věc udělá ve Vue.js světě (kolegové jsou totiž původem Angularisté). Pro menší projekt bych upřednostnil výše zmíněný FormKit. Na velké enterprise aplikace je to však asi lepší volba. Ovšem pozor, DevExtreme má i jednu celkem velkou nevýhodu - není zdarma pro komeční vývoj. Nicméně pokud subskripci máte, lze jej do Nuxt 3 projektu s úspěchem začlenit.
-
-Integrace nebyla úplně přímočará, ale o výsledek se rád podělím, abyste vy už nemuseli tolik bádat.
-
-### Integrace do Nuxt 3
-
-Podstatný je plugin `dx.client.ts`, v němž probíhá import těch Dx komponent, které chcete ve vaší aplikaci používat, a jejich explicitní globální registrace do instance Vue.js, nad kterou běží Nuxt. Pokud byste tento krok obešli a chtěli komponenty importovat až tam, kde je používáte, tak to sice bude fungovat v dev módu, ale [tree-shaking](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking) produkčního buildu potřebné balíčky vyhází, protože z nějakého důvodu není schopen zjistit, že se používají. Tohle byl zpočátku docela boj, který bych asi sám nevyřešil, proto děkuji za [radu](https://github.com/nuxt/nuxt/discussions/16898#discussioncomment-3562772).
-
-Zdrojový kód ukázkové implementace naleznete zde:
-[nuxt-dx @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-dx)
-
-**Poznámka:** DevExtreme nefunguje v Nuxt režimu **Server-Side Rendering**. Prvky se sice vykreslí, ale nejsou aktivní, patrně proto, že předkreslení na serveru požere ovládací JavaScript. Zřejmě by bylo nutné pomocí pluginu injektovat `.js` soubory, podobně jako u Bootstrap integrace. Je ale otázkou, zda to je vůbec možné. Zatím jsem tuto otázku nevyřešil. V `nuxt.config.ts` je tedy třeba nastavit `ssr: false` (viz [CSR](https://nuxt.com/docs/guide/concepts/rendering#client-side-rendering)).
+Ukázkový formulář obsahuje několik polí nejběžnějších datových typů a&nbsp;tlačítko pro odeslání. Většina polí je povinná a&nbsp;na poli pro věk je navíc nastavena validace od 18 do 99 let. Hodnoty se průběžně vypisují nad formulářem v&nbsp;surové podobě datového objektu, což demonstruje možnost okamžitého reaktivního propojení formulářových polí s&nbsp;dalším použitím v&nbsp;aplikaci. V&nbsp;případě úspěšného odeslání (po splnění validací) se aktualizuje datum a&nbsp;čas posledního odeslání.
 
 ## Shrnutí
 
-Ani v případě formulářů nás Nuxt nenechá na holičkách a umožní relativně jednoduché integrace specializovaných nástrojů, které nám pomohou uživatelské rozhraní stavět.
+FormKit možná není tak robustní jako jiné starší a&nbsp;propracovanější formulářové frameworky, ale do ekosystému Vue.js a&nbsp;Nuxtu se podle mě perfektně hodí, pročež je pro mě aktuálně jasná volba číslo jedna do mých aplikací.
+
+V příštím již [10. díle Nuxt tutoriálu](/article/nuxt-content) posuneme o&nbsp;krok dál tvorbu obsahu - &nbsp;ukážeme si modul **Nuxt Content**, který nám umožní psát v&nbsp;Markdown syntaxi, což je mnohem jednodušší než stylovat vše v&nbsp;HTML.

@@ -146,8 +146,7 @@ const articles = [
     title: 'Nuxt Tutorial 9 - Formuláře',
     dscr: 'Nuxt 3 + FormKit = snadná tvorba formulářů',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI'],
-    created: '09.01.2024',
-    hidden: true,
+    created: '15.09.2024',
   },
   {
     id: 'nuxt-content',
@@ -157,6 +156,7 @@ const articles = [
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
     created: '10.01.2024',
     hidden: true,
+    wip: true,
   },
   {
     id: 'nuxt-pinia',
