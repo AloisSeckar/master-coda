@@ -1,5 +1,5 @@
 {
-  // https://v3.nuxtjs.org/concepts/typescript
+  // https://nuxt.com/docs/guide/directory-structure/tsconfig
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "noUncheckedIndexedAccess": true
