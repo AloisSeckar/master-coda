@@ -48,11 +48,14 @@ Zdrojový kód ukázkové implementace naleznete zde:
 
 ## Open Props
 
-[Open Props](https://open-props.style/) staví na podobném principu jako Tailwind CSS -&nbsp;nabízí přepřipravené styly, jejichž použití vás sice bude trochu svazovat, ale na druhou stranu nemusíte všude znovu vynalézat kolo. Hlavní výhodou  je odlehčenost a&nbsp;škálovatelnost -&nbsp;Tailwind je proti komprimovaným Open Props css souborům i&nbsp;po [veškerých možných optimalizacích](https://v1.tailwindcss.com/docs/controlling-file-size) "velký" a&nbsp;stahujete ho vždy celý. Naproti tomu Open Props umožňují použít jen menší část, která je zrovna potřeba.
+[Open Props](https://open-props.style/) staví na podobném principu jako Tailwind CSS -&nbsp;nabízí set přepřipravených stylů, jejichž použití vás sice bude trochu svazovat, ale na druhou stranu nemusíte všude znovu vynalézat kolo. Namísto celých předpřipravených CSS tříd jsou v&nbsp;tomto případě nositelem informace o&nbsp;výsledném stylu [CSS proměnné](https://www.jakpsatweb.cz/css/css-promenne.html#promenne), které můžete využít a&nbsp;skládat ve svých třídách. Open Props tedy neabstrahují od veškerého psaní CSS, pouze nabízejí již připravené a&nbsp;vyzkoušené hodnoty. Hlavní výhodou je odlehčenost a&nbsp;škálovatelnost -&nbsp;Tailwind je proti komprimovaným Open Props css souborům i&nbsp;po [veškerých možných optimalizacích](https://v1.tailwindcss.com/docs/controlling-file-size) "velký" a&nbsp;stahujete ho vždy celý. Naproti tomu Open Props umožňují použít jen menší část, která je zrovna potřeba.
 
 ### Nuxt integrace
 
-TODO
+Jelikož Nuxt (Vue) sám o&nbsp;sobě neumí při kompilaci nahrazovat CSS proměnné skutečnými hodnotami, je potřeba doplnit CSS processor (v&nbsp;demu `postcss`) spolu s&nbsp;pluginem, který po nakrmení definicemi z&nbsp;`OpenProps` nahrazení hodnot provede. To je asi jediný zádrhel, jinak je prostě naimportován NPM balíček `open-props` a&nbsp;v&nbsp;demu nadefinováno pár stylů.
+
+Zdrojový kód ukázkové implementace naleznete zde:
+[nuxt-openprops @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-openprops)
 
 ## Vuetify
 
