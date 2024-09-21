@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
 
-  compatibilityDate: '2024-09-01',
+  compatibilityDate: '2024-09-21',
 
   devtools: {
     enabled: false,
@@ -9,10 +9,10 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
+    '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
-    'nuxt-icon',
     'nuxt-security',
   ],
 
