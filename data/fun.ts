@@ -214,6 +214,11 @@ const fun = [
     title: 'Kdyby programovací jazyky byly hry (by Toggl)',
     added: '2024-07-30',
   },
+  {
+    id: 'css-puns',
+    title: 'CSS slovní hříčky',
+    added: '2024-09-23',
+  },
 ]
 
 export { fun }
