@@ -219,6 +219,12 @@ const fun = [
     title: 'CSS slovní hříčky',
     added: '2024-09-23',
   },
+  {
+    id: 'root-beer',
+    title: 'Oblíbený nápoj CSS vývojáře',
+    explain: 'V USA oblíbený nápoj "root beer" - cola s bylinnou příchutí',
+    added: '2024-09-25',
+  },
 ]
 
 export { fun }
