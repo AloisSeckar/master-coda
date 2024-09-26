@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2024-08-10`** | [Common Causes of Memory Leaks in JavaScript](https://www.trevorlasn.com/blog/common-causes-of-memory-leaks-in-javascript/) - how can you monitor JS memory usage and how to spot most common causes of troubles |
 | **`2024-08-02`** | [How to Build Your Own Vue-like Reactivity System](https://dev.to/alexanderop/how-to-build-your-own-vue-like-reactivity-system-from-scratch-1d2d) - understand Vue's core concept of reactivity by implementing its alike! |
 | **`2024-07-29`** | [Why Unknown Types Are Useful](https://michaeluloth.com/programming-types-unknown-why-useful/) - how to use **unknown** in TypeScript |
 | **`2024-07-28`** | [Perfectionism - one of the biggest productivity killers](https://newsletter.eng-leadership.com/p/perfectionism-one-of-the-biggest) - do not waste time on over-improving things - lessons learned by two IT professionals |
