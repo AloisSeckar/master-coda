@@ -225,6 +225,12 @@ const fun = [
     explain: 'V USA oblíbený nápoj "root beer" - cola s bylinnou příchutí',
     added: '2024-09-25',
   },
+  {
+    id: 'now-and-then',
+    title: '1960s vs. 2020s',
+    explain: 'Vlevo Margaret Hamilton, programátorka mise Apollo 11; vpravo uživatel, co neumí s textovým editorem vim',
+    added: '2024-10-03',
+  },
 ]
 
 export { fun }
