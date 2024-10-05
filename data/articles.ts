@@ -155,9 +155,7 @@ const articles = [
     title: 'Nuxt Tutorial 10 - Nuxt Content',
     dscr: 'Nuxt + Nuxt Content = tvorba obsahu bez zbytečných komplikací',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
-    created: '10.01.2024',
-    hidden: true,
-    wip: true,
+    created: '05.10.2024',
   },
   {
     id: 'nuxt-pinia',

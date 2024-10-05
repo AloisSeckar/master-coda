@@ -1,4 +1,10 @@
-Modul [Nuxt Content](https://content.nuxtjs.org/) je elegantní způsob, jak si usnadnit tvorbu obsahu na webu. Místo složitého šablonování vlastního HTML + CSS je možné jednoduše vzít něco lepšího - například [Markdown](https://www.markdownguide.org/). Stačí dodat zdrojová data, Nuxt Content zařídí za vás, aby se obsah správně vykreslil. A `.md` soubory to nekončí, umí pracovat i s dalšími formáty. V tomto díle tutoriálu si však ukážeme pouze implementaci souborů stylovaných pomocí Markdown syntaxe.
+V minulém díle jsme se zabývali zpracováním formulářů. Neméně důležitá než interakce s uživatelem je ale i samotná prezentace dat. Zejména pokud je na webu více obsahu (blogy, tutoriáy, apod.), je třeba řešit vzhled a formátování textu. S Nuxtem je to opět mnohem snazší, pokud víte, jak na to.
+
+## Nuxt Content
+
+Modul [Nuxt Content](https://content.nuxt.com/) je elegantní způsob, jak si tvorbu obsahu na webu usnadnit. Místo složitého šablonování vlastního HTML + CSS či integrace nějakého rich-text editoru a ukládání textů do databáze, je možné v rámci projektu jednoduše začlenit psaní pomocí [Markdown syntaxe](https://www.markdownguide.org/). Stačí dodat soubory se zdrojovými daty a Nuxt Content už zařídí za vás, aby se obsah správně vykreslil. A `.md` soubory to nekončí, umí pracovat i s dalšími formáty, například `.json`.
+
+Zde si však ukážeme pouze implementaci souborů stylovaných v Markdownu.
 
 ## Případová studie
 
@@ -6,9 +12,9 @@ Pro příklad použití v praxi nemusíme chodit daleko - právě ho čtete. Kdy
 
 Výsledkem je, že samotný obsah článku žije ve svém souboru `jmeno-clanku.md` v adresáři `/content/article/`. Chcete-li se pro zajímavost podívat, tady najdete, [jak vypadá tento článek](https://github.com/AloisSeckar/master-coda/blob/master/content/article/nuxt-content.md).
 
-Zvolil jsem Markdown, protože tuto syntaxi celkem dobře znám z různých MediaWiki stránek. Píše se mnohem snáz než těžkopádné HTML s CSS třídami. CSS (resp. [Tailwind]('/article/nuxt-gui#tailwind-css')) jsem tedy úplně neopustil, ale stylování je nyní globální a o těžkou práci s přiřazováním tříd se stará Nuxt Content, který v sobě navíc obsahuje i zabudovaný syntax-highlighting pro označené bloky zdrojového kódu.
+Zvolil jsem Markdown, protože tuto syntaxi celkem dobře znám z různých MediaWiki stránek. Píše se mnohem snáz než těžkopádné HTML s CSS třídami. O těžkou práci s formátováním textu se nyní stará Nuxt Content, který v sobě navíc obsahuje i zabudovaný syntax-highlighting pro označené bloky zdrojového kódu.
 
-Jak to celé zprovoznit, to si řekneme vzápětí:
+Jak to celé zprovoznit, to si řekneme vzápětí.
 
 ## Setup
 
@@ -41,6 +47,14 @@ Pokud byste náhodou zkusili navštívit URL neexistujícího článku, stačí 
 </ContentDoc>
 ```
 
+V rámci Markdownu je legitimní používat HTML vč. tagů pro Vue komponenty (za předpokladu, že jsou umístěny ve složce `/components/global` a tím globálně registrované), ale je podporována i přirozenější integrace do Markdownu. Pokud své komponenty máte ve složce `\components\content`, modul si je automaticky načte a můžete je následně referencovat přes dvojtečku a kebab-case název. Do složených závorek pak předáte atributy vlastností (props).
+
+Takto například ve svých článcích používám komponentu pro vykreslení obrázků:
+
+```js
+:article-image{src="redukce-velikosti-fontu/homepage.jpg" alt="www.alois-seckar.cz" link="http://www.alois-seckar.cz"}
+```
+
 Poslední věcí, kterou bych chtěl ukázat, je už zmíněný syntax-highlighting. Nuxt Content má potřebné nástroje v sobě. Pokud pomocí "backticku" začnete psát inline kód nebo pomocí tří "backticků" blok kódu, modul je při vykreslování sám aplikuje a zdrojový kód barevně odliší. Můžete si vybrat, jaký [barevný styl](https://github.com/shikijs/shiki/blob/main/docs/themes.md) použijete. Dělá se to v `nuxt.config.ts` ve vlastní sekci `content`, kterou si modul přináší:
 
 ```js
@@ -51,7 +65,7 @@ content: {
 }
 ```
 
-Kdyby vás možnosti nastavení modulu zajímaly blíže, [zde je dokumentace](https://content.nuxtjs.org/api/configuration).
+Kdyby vás možnosti nastavení modulu zajímaly blíže, [zde je dokumentace](https://content.nuxt.com/get-started/installation).
 
 ## Demo projekt
 
@@ -60,6 +74,6 @@ Zdrojový kód ukázkové implementace naleznete zde:
 
 ## Shrnutí
 
-Pomocí modulu Nuxt Content si můžete velmi usnadnit práci s tvorbou obsahu vašeho webu. Může vás odstínit od těžké a zbytečné práce s HTML a CSS a umožní vám více se soustředit na věcnou kvalitu vámi tvořeného obsahu.
+Pomocí modulu Nuxt Content si můžete velmi usnadnit práci s tvorbou obsahu vašeho webu. Může vás odstínit od těžké a zbytečné práce s HTML a CSS a umožní vám více se soustředit na věcnou kvalitu vámi tvořeného obsahu. Neukázali jsme si ani zdaleka vše, co modul umí. Ale i s tímto málem už můžete tvořit velké věci.
 
-Neukázali jsme si ani zdaleka vše, co modul umí. Ale i s tímto málem už můžete tvořit velké věci.
+Možnosti našeho webu se nám pomalu rozrůstají. Abychom odemkli další level, ukážeme si v příštím díle tutoriálu [správu stavu](/article/nuxt-pinia), díky níž budeme moci efektivně distribuovat a udržovat data napříč celou aplikací.
