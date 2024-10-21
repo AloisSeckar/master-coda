@@ -231,6 +231,18 @@ const fun = [
     explain: 'Vlevo Margaret Hamilton, programátorka mise Apollo 11; vpravo uživatel, co neumí s textovým editorem vim',
     added: '2024-10-03',
   },
+  {
+    id: '200-400',
+    title: 'HTTP status',
+    explain: 'Odpověď s chybou 4** se má vrátit i se statusem 4** a netvářit se jako v pořádku zpracovaný požadavek',
+    added: '2024-10-21',
+  },
+  {
+    id: 'trick-or-treat',
+    title: 'Vennovy diagramy',
+    explain: 'Operace s množinami - OR | AND | XOR | NOR | NAND | NXOR',
+    added: '2024-10-21',
+  },
 ]
 
 export { fun }
