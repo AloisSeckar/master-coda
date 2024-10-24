@@ -1,5 +1,6 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "eslint": "eslint .",
     "dev": "nuxi dev",
@@ -13,6 +14,7 @@
     "@nuxt/image": "1.8.0",
     "@nuxtjs/tailwindcss": "6.12.1",
     "@pinia/nuxt": "0.5.5",
+    "elrh-pslo": "1.1.6",
     "nuxt": "3.13.2",
     "nuxt-security": "2.0.0",
     "pinia": "2.2.3",
