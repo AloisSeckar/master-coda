@@ -1,6 +1,6 @@
-Nedávno jsem to psal do jedné FB diskuse a&nbsp;několika uživatelům se to líbilo. Pak ale autor vlákna celou diskusi najednou smazal. Tak jsem rozhodl sepsat to rovnou jako trvalý článek.
+Nedávno jsem to psal do jedné FB diskuse a několika uživatelům se to líbilo. Pak ale autor vlákna celou diskusi najednou smazal. Tak jsem rozhodl sepsat to rovnou jako trvalý článek.
 
-Java se postupně mění a&nbsp;podle mě se většinou mění k&nbsp;lepšímu. Jedním z&nbsp;příkladů vývoje v&nbsp;nejnovější LTS verzi Java&nbsp;17 ze září 2021 evoluce příkazu `switch`{lang="java"}. Jako ukázkový příklad mám jednoduchý úkol - vezmi náhodné číslo 1-7 a&nbsp;vypiš počet písmen v&nbsp;anglickém názvu příslušného dne v&nbsp;týdnu.
+Java se postupně mění a podle mě se většinou mění k lepšímu. Jedním z příkladů vývoje v nejnovější LTS verzi Java 17 ze září 2021 evoluce příkazu `switch`{lang="java"}. Jako ukázkový příklad mám jednoduchý úkol - vezmi náhodné číslo 1-7 a vypiš počet písmen v anglickém názvu příslušného dne v týdnu.
 
 
 Ve "staré" verzi `switch`{lang="java"} by to hlavní vypadalo třeba takto:
@@ -27,7 +27,7 @@ switch` (day) {
 System.out.println("Pocet pismen: " + numLetters);
 ```
 
-Vylepšený `switch`{lang="java"} umí dvě věci - spojit větve se stejnou obsluhou na jeden řádek s&nbsp;využtím nového symbolu `->`{lang="java"} a&nbsp;tím ušetřit místo. Tedy např.:
+Vylepšený `switch`{lang="java"} umí dvě věci - spojit větve se stejnou obsluhou na jeden řádek s využtím nového symbolu `->`{lang="java"} a tím ušetřit místo. Tedy např.:
 
 ```java
 case MONDAY, FRIDAY, SUNDAY -> System.out.println(6);
@@ -37,7 +37,7 @@ Za `->` může následovat buďto jediný příkaz nebo blok kódu. Zároveň u�
 
 Druhá vymoženost je ještě zajímavější - `switch`{lang="java"} teď umí jako celek přímo vracet nějakou hodnotu. Kompileru se to sdělí tak, že začneme psát `var variable = switch { … }`{lang="java"}. Je třeba myslet na tři věci:
 
-- Je-li kód větve v&nbsp;bloku, návratová hodnota se uvozuje klíčovým slovem `yield`{lang="java"}
+- Je-li kód větve v bloku, návratová hodnota se uvozuje klíčovým slovem `yield`{lang="java"}
 - Návratové typy všech větví musí být všechny stejné
 - Musí být pokryty všechny varianty vstupu (většinou řešitelné přes `default`{lang="java"})
 
@@ -57,8 +57,8 @@ int numLetters = switch (day) {
 System.out.println("Pocet pismen: " + numLetters);
 ```
 
-Za mě mnohem kratší, kompatknější a&nbsp;hezčí.
+Za mě mnohem kratší, kompatknější a hezčí.
 
 ## Další odkazy
 
-- [Demo kód](https://github.com/AloisSeckar/demos-java/blob/master/src/main/java/cz/aloisseckar/java/javademos/java17/newswitch/SwitchDemo.java) v&nbsp;rámci mých [Java demos](https://github.com/AloisSeckar/demos-java)
+- [Demo kód](https://github.com/AloisSeckar/demos-java/blob/master/src/main/java/cz/aloisseckar/java/javademos/java17/newswitch/SwitchDemo.java) v rámci mých [Java demos](https://github.com/AloisSeckar/demos-java)
