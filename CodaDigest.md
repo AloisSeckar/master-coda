@@ -7,8 +7,11 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2024-10-20`** | [Why I’m skeptical of rewriting JavaScript tools in “faster” languages](https://nolanlawson.com/2024/10/20/why-im-skeptical-of-rewriting-javascript-tools-in-faster-languages/) - every tool should be used accordingly and this also applies to "faster JavaScript alternatives" |
 | **`2024-10-20`** | [What docs as code really means](https://passo.uno/what-docs-as-code-means/) - there is more in the documentation than you'd admit |
+| **`2024-10-18`** | [Deep dive into bits, bytes, shorts, ints, longs, signed, and unsigned with Java](https://foojay.io/today/deep-dive-into-bits-bytes-shorts-ints-longs-signed-and-unsigned-with-java/) - working with numbers in Java from unconventional point of view |
 | **`2024-10-16`** | [Six things you may not know about JavaScript](https://blog.logrocket.com/six-things-you-may-not-know-about-javascript/) - simple things that have interesting consequences |
+| **`2024-10-13`** | [Applying SOLID Principles in JavaScript and TypeScript Framework](https://blog.logrocket.com/six-things-you-may-not-know-about-javascript/) - practical examples of making your code better |
 | **`2024-09-27`** | [9 Laws That Every Software Developer Should Know](https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022) - a list of interesting pheomenons observed in IT industry |
 | **`2024-08-10`** | [Common Causes of Memory Leaks in JavaScript](https://www.trevorlasn.com/blog/common-causes-of-memory-leaks-in-javascript/) - how can you monitor JS memory usage and how to spot most common causes of troubles |
 | **`2024-08-02`** | [How to Build Your Own Vue-like Reactivity System](https://dev.to/alexanderop/how-to-build-your-own-vue-like-reactivity-system-from-scratch-1d2d) - understand Vue's core concept of reactivity by implementing its alike! |
