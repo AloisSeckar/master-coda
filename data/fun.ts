@@ -243,6 +243,11 @@ const fun = [
     explain: 'Operace s množinami - OR | AND | XOR | NOR | NAND | NXOR',
     added: '2024-10-21',
   },
+  {
+    id: 'learn-cpp',
+    title: 'C++ v jedné lekci',
+    added: '2024-10-30',
+  },
 ]
 
 export { fun }
