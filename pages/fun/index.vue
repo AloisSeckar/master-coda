@@ -42,6 +42,7 @@
         :src="imagePath"
         :alt="imageData.title"
         title="Kliknutím zobrazíte plnou velikost"
+        :placeholder="[25, 25]"
       />
     </a>
   </div>
