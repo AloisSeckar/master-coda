@@ -45,6 +45,15 @@
         :placeholder="[25, 25]"
       />
     </a>
+    <div v-if="!initial">
+      <div class="w-[260px] mx-auto">
+        <div :class="buttonClass" @click="reset">
+          <div class="actionButtonText">
+            Zpět
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -67,6 +76,15 @@ const imageData: Ref<Fun> = ref({
   added: '',
 })
 const imagePath = computed(() => `/img/fun/${imageData.value.id}.jpg`)
+
+const reset = () => {
+  initial.value = true
+  imageData.value.id = '_zoidberg'
+  imageData.value.title = 'Haha?'
+  imageData.value.explain = undefined
+  imageData.value.added = ''
+  funStore.index = funStore.items.length - 1
+}
 
 const init = () => {
   initial.value = false
