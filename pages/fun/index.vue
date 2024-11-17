@@ -93,35 +93,25 @@ const reset = () => {
   imageData.value.title = 'Haha?'
   imageData.value.explain = undefined
   imageData.value.added = ''
-  funStore.index = funStore.items.length - 1
 }
 
 const init = () => {
   initial.value = false
-  reloadImage()
+  last()
+  reloadImge()
 }
 
-const first = () => {
-  funStore.index = 0
-  reloadImage()
-}
-const next = () => {
-  funStore.nextImage()
-  reloadImage()
-}
+const first = () => funStore.index = 0
+const last = () => funStore.index = funStore.items.length - 1
+const next = () => funStore.nextImage()
+const prev = () => funStore.prevImage()
+
 const nextAvailable = computed(() => funStore.index < funStore.items.length - 1)
-
-const last = () => {
-  funStore.index = funStore.items.length - 1
-  reloadImage()
-}
-const prev = () => {
-  funStore.prevImage()
-  reloadImage()
-}
 const prevAvailable = computed(() => funStore.index > 0)
 
-const reloadImage = () => {
+watch(() => funStore.index, () => reloadImge())
+
+function reloadImge() {
   const newImage = funStore.items[funStore.index]
   imageData.value.id = newImage?.id || '_zoidberg'
   imageData.value.title = newImage?.title || 'Haha?'
