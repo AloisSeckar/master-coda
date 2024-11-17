@@ -21,16 +21,26 @@
       </div>
       <div class="w-[546px] mx-auto">
         <div class="m-1 w-64 inline-block">
-          <div v-if="nextEnabled" :class="buttonClass" @click="next">
+          <div v-if="nextAvailable" :class="buttonClass" @click="next">
             <div class="actionButtonText">
               Novější
             </div>
           </div>
+          <div v-else :class="buttonClass" @click="first">
+            <div class="actionButtonText">
+              Nejstarší
+            </div>
+          </div>
         </div>
         <div class="m-1 w-64 inline-block">
-          <div v-if="prevEnabled" :class="buttonClass" @click="prev">
+          <div v-if="prevAvailable" :class="buttonClass" @click="prev">
             <div class="actionButtonText">
               Starší
+            </div>
+          </div>
+          <div v-else :class="buttonClass" @click="last">
+            <div class="actionButtonText">
+              Nejnovější
             </div>
           </div>
         </div>
@@ -91,17 +101,25 @@ const init = () => {
   reloadImage()
 }
 
+const first = () => {
+  funStore.index = 0
+  reloadImage()
+}
 const next = () => {
   funStore.nextImage()
   reloadImage()
 }
-const nextEnabled = computed(() => funStore.index < funStore.items.length - 1)
+const nextAvailable = computed(() => funStore.index < funStore.items.length - 1)
 
+const last = () => {
+  funStore.index = funStore.items.length - 1
+  reloadImage()
+}
 const prev = () => {
   funStore.prevImage()
   reloadImage()
 }
-const prevEnabled = computed(() => funStore.index > 0)
+const prevAvailable = computed(() => funStore.index > 0)
 
 const reloadImage = () => {
   const newImage = funStore.items[funStore.index]
