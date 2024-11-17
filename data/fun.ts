@@ -22,6 +22,7 @@ const fun = [
   {
     id: 'programmers-then-and-now',
     title: 'Dříve a dnes',
+    explain: 'Vlevo Margaret Hamilton, programátorka mise Apollo 11; vpravo uživatel, co neumí s textovým editorem vim',
     added: '2023-01-14',
   },
   {
@@ -226,12 +227,6 @@ const fun = [
     added: '2024-09-25',
   },
   {
-    id: 'now-and-then',
-    title: '1960s vs. 2020s',
-    explain: 'Vlevo Margaret Hamilton, programátorka mise Apollo 11; vpravo uživatel, co neumí s textovým editorem vim',
-    added: '2024-10-03',
-  },
-  {
     id: '200-400',
     title: 'HTTP status',
     explain: 'Odpověď s chybou 4** se má vrátit i se statusem 4** a netvářit se jako v pořádku zpracovaný požadavek',
@@ -247,6 +242,12 @@ const fun = [
     id: 'learn-cpp',
     title: 'C++ v jedné lekci',
     added: '2024-10-30',
+  },
+  {
+    id: 'compile-vs-runtime',
+    title: 'Není error jako error',
+    explain: 'Program, který se správně přeloží, ještě není program, který správně funguje',
+    added: '2024-11-17',
   },
 ]
 
