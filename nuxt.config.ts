@@ -1,11 +1,5 @@
 export default defineNuxtConfig({
 
-  compatibilityDate: '2024-09-21',
-
-  devtools: {
-    enabled: false,
-  },
-
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -16,6 +10,10 @@ export default defineNuxtConfig({
     'nuxt-security',
   ],
 
+  devtools: {
+    enabled: false,
+  },
+
   content: {
     contentHead: false,
     highlight: {
@@ -23,6 +21,14 @@ export default defineNuxtConfig({
       preload: ['java', 'sql'],
     },
   },
+
+  runtimeConfig: {
+    public: {
+      github: 'https://github.com/AloisSeckar',
+    },
+  },
+
+  compatibilityDate: '2024-12-01',
 
   eslint: {
     config: {
@@ -33,12 +39,6 @@ export default defineNuxtConfig({
   security: {
     corsHandler: {
       origin: '*',
-    },
-  },
-
-  runtimeConfig: {
-    public: {
-      github: 'https://github.com/AloisSeckar',
     },
   },
 })
