@@ -43,7 +43,7 @@
     }
     
     .articleList {
-        @apply mt-2 ml-6 text-justify marker:text-coda-yellow;
+        @apply mt-2 ml-6 sm:text-justify marker:text-coda-yellow;
     }
 
     .article {
@@ -56,7 +56,7 @@
         @apply text-coda-purple hover:text-purple-400;
     }
     .article ul, .article ol {
-        @apply ml-4 text-justify marker:text-coda-yellow;
+        @apply ml-4 md:text-justify marker:text-coda-yellow;
     }
     .article li {
         @apply before:content-['•_'] before:text-coda-purple
