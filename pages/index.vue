@@ -1,11 +1,11 @@
 <template>
   <div>
     <h1>Master Coda</h1>
-    <p class="my-2">
+    <p class="my-2 sm:text-justify">
       Jmenuji se Alois Sečkár, živí (a&nbsp;baví) mě programování a&nbsp; věci, které jsem se přitom naučil,
       si nechci nechávat jen pro sebe.
     </p>
-    <p class="my-2">
+    <p class="my-2 sm:text-justify">
       Na tomto blogu naleznete články o&nbsp;nejrůznějších IT tématech. Snad mé texty někomu pomohou. Budu rád
       i&nbsp;za zpětnou vazbu. Pokud v&nbsp;nich uvidíte chybu nebo znáte způsob, jak danou věc řešit lépe, napište
       mi na <a href="mailto:alois-seckar@gmail.com">alois-seckar@gmail.com</a>. Vždycky je kam se zlepšovat.
