@@ -249,6 +249,11 @@ const fun = [
     explain: 'Program, který se správně přeloží, ještě není program, který správně funguje',
     added: '2024-11-17',
   },
+  {
+    id: 'toggl-music',
+    title: 'Hudební žánry (by Toggl)',
+    added: '2024-12-01',
+  },
 ]
 
 export { fun }
