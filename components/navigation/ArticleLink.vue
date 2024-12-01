@@ -5,7 +5,7 @@
       <NuxtLink :to="article?.link" :external="article?.external" noprefetch>
         <strong>{{ article?.title }}</strong>
       </NuxtLink>
-      - {{ article?.dscr }}
+      - {{ pslo(article?.dscr) }}
     </div>
     <div v-else class="inline text-coda-purple font-bold">
       &#9654; {{ article.title }}
@@ -14,6 +14,8 @@
 </template>
 
 <script setup lang="ts">
+import { preventSingleLetterOrphans as pslo } from 'elrh-pslo'
+
 defineProps<{
   article: ArticleLink
   active: boolean
