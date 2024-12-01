@@ -9,17 +9,17 @@
   },
   "devDependencies": {
     "@nuxt/content": "2.13.4",
-    "@nuxt/eslint": "0.6.1",
-    "@nuxt/icon": "1.6.1",
+    "@nuxt/eslint": "0.7.2",
+    "@nuxt/icon": "1.9.0",
     "@nuxt/image": "1.8.1",
     "@nuxtjs/tailwindcss": "6.12.2",
-    "@pinia/nuxt": "0.6.1",
+    "@pinia/nuxt": "0.8.0",
     "elrh-pslo": "1.1.6",
-    "nuxt": "3.13.2",
-    "nuxt-security": "2.0.0",
-    "pinia": "2.2.5",
-    "tailwindcss": "3.4.14",
-    "typescript": "5.6.3"
+    "nuxt": "3.14.1592",
+    "nuxt-security": "2.1.5",
+    "pinia": "2.2.8",
+    "tailwindcss": "3.4.15",
+    "typescript": "5.7.2"
   },
   "packageManager": "pnpm@9.11.0"
 }
