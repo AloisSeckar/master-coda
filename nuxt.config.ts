@@ -1,18 +1,8 @@
 export default defineNuxtConfig({
 
-  modules: [
-    '@nuxt/content',
-    '@nuxt/eslint',
-    '@nuxt/icon',
-    '@nuxt/image',
-    '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
-    'nuxt-security',
+  extends: [
+    'nuxt-ignis',
   ],
-
-  devtools: {
-    enabled: false,
-  },
 
   content: {
     contentHead: false,
@@ -28,17 +18,4 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: '2024-12-01',
-
-  eslint: {
-    config: {
-      stylistic: true,
-    },
-  },
-
-  security: {
-    corsHandler: {
-      origin: '*',
-    },
-  },
 })
