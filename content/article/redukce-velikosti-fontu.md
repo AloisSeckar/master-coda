@@ -21,7 +21,7 @@ Tak jsem to například s fontem `KaushanScript` udělal já, abych mohl mít ne
 
 Nelíbila se mi na tom jen jedna věc. Font chci mít jen tady v nadpisu v podobě mého jména, takže reálně potřebuju pouze 11 znaků. Ale soubor `KaushanScript-Regular.ttf` jich samozřejmě definuje mnohem víc. Velikost má **183 972 bytů**. Tolik dat by se muselo tahat při každém zobrazení stránky kvůli 11 písmenům.
 
-Jistě, při dnešních rychlostech připojení se nad necelými 0.2 Mb nestihne nikdo ani pozastavit, ale tady jde o princip - na větších webech s větší zátěží se to nasčítává, a i když to možná nebude trápit návštěvníky webu, tak třeba v Cloudu kde platíte za objem přenesených dat, to může brzy začít lézt do peněz. Vypěstovat si návyk redukovat velikost potřebných zdrojů se vám dřív nebo později určitě vyplatí.
+Jistě, při dnešních rychlostech připojení se nad necelými 0.2 Mb nestihne nikdo ani pozastavit, ale tady jde o princip – na větších webech s větší zátěží se to nasčítává, a i když to možná nebude trápit návštěvníky webu, tak třeba v Cloudu kde platíte za objem přenesených dat, to může brzy začít lézt do peněz. Vypěstovat si návyk redukovat velikost potřebných zdrojů se vám dřív nebo později určitě vyplatí.
 
 Co kdybychom tedy dokázali z definice fontu vypárat subset právě jen těch potřebných jedenácti znaků?
 
@@ -37,7 +37,7 @@ Jakmile `Python` máme, jednoduše nainstalujeme přes jeho integrovaného sprá
 pip install fonttools
 ```
 
-Ten nabízí daleko víc funkcí, které jsem ještě ani nezkoumal, ale pro náš účel využijeme příkaz `pyftsubset`, který dělá právě to, co potřebujeme - ze zadaného souboru písma vybere požadovaný soubor znaků a uloží do nového redukovaného souboru. Tím pak nahradíme svou definici `@font-face` a máme hotovo.
+Ten nabízí daleko víc funkcí, které jsem ještě ani nezkoumal, ale pro náš účel využijeme příkaz `pyftsubset`, který dělá právě to, co potřebujeme – ze zadaného souboru písma vybere požadovaný soubor znaků a uloží do nového redukovaného souboru. Tím pak nahradíme svou definici `@font-face` a máme hotovo.
 
 Vstupní soubor je první argument, znaky specifikujeme uvnitř volby `--unicodes=""`, kde může být buďto výčet `Unicode` znaků oddělený čárkami, nebo rozsah daný _spojovníkem_ (např. `U+0020-007F` jsou velké a malé znaky anglické abecedy).
  
@@ -68,13 +68,13 @@ pyftsubset KaushanScript-Regular.ttf
  --output-file="KaushanScript-AS.ttf"
 ```
 
-Výsledný soubor má pouze **6 668 bytů**, je tedy více než **27x** menší. A přitom se nadpis zobrazuje pořád stejně. Dobré, ne?. Teď si představte, že fontů používáte víc a z každého jen několik málo znaků. Nebo by vám stačila anglická abeceda a nepotřebujete pokrýt další stovky znaků z národních abeced. Řešení = `pyftsubset`.
+Výsledný soubor má pouze **6 668 bytů**, je tedy více než **27x** menší. A přitom se nadpis zobrazuje pořád stejně. Dobré, ne? Teď si představte, že fontů používáte víc a z každého jen několik málo znaků. Nebo by vám stačila anglická abeceda a nepotřebujete pokrýt další stovky znaků z národních abeced. Řešení = `pyftsubset`.
 
 ## .woff2 formát
 
 Všem úsporám ještě nemusí být konec. Velikost jde dále redukovat převodem na [Web Open Font Format](https://www.lifewire.com/what-is-woff-web-open-font-format-4800761) (`woff`, resp. `woff2`), což je moderní způsob, jak definovat písma na webu s lepší kompresí a optimalizovaným načítáním v CSS. Je třeba dát si pozor na starší prohlížeče, které by to ještě nemusely umět, ale obecně už je podpora dost dobrá.
 
-Dobrá zpráva je, že i to umí `pyftsubset`. Jen k tomu potřebuje zapnout volbu `--flavor="woff2"` a doinstalovat Python modul kompresního Google nástroje `brotli`, což je ale s pomocí `pip` také hračka - jednoduše:
+Dobrá zpráva je, že i to umí `pyftsubset`. Jen k tomu potřebuje zapnout volbu `--flavor="woff2"` a doinstalovat Python modul kompresního Google nástroje `brotli`, což je ale s pomocí `pip` také hračka – jednoduše:
 
 ```
 pip install brotli
