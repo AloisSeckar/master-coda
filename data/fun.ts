@@ -254,6 +254,11 @@ const fun = [
     title: 'Hudební žánry (by Toggl)',
     added: '2024-12-01',
   },
+  {
+    id: 'bugfixing',
+    title: 'Jak na opravy chyb',
+    added: '2024-12-21',
+  },
 ]
 
 export { fun }
