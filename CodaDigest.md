@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2024-12-04`** | [The Build Process of a Vue App: Rollup vs Rolldown](https://www.vuemastery.com/blog/the-build-process-of-a-vue-app-rollup-vs-rolldown/) - discover how building an app works in Vue right now and what is the planned future |
 | **`2024-10-20`** | [Why I’m skeptical of rewriting JavaScript tools in “faster” languages](https://nolanlawson.com/2024/10/20/why-im-skeptical-of-rewriting-javascript-tools-in-faster-languages/) - every tool should be used accordingly and this also applies to "faster JavaScript alternatives" |
 | **`2024-10-20`** | [What docs as code really means](https://passo.uno/what-docs-as-code-means/) - there is more in the documentation than you'd admit |
 | **`2024-10-18`** | [Deep dive into bits, bytes, shorts, ints, longs, signed, and unsigned with Java](https://foojay.io/today/deep-dive-into-bits-bytes-shorts-ints-longs-signed-and-unsigned-with-java/) - working with numbers in Java from unconventional point of view |
