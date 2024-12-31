@@ -2,7 +2,7 @@ Už nějakou dobu si hraju s obrázky od [Midjourney](https://www.midjourney.com
 
 ## Asistent při programování
 
-Zrovna jsem si vymyslel, že na svůj web přidám možnost importu uživatelského vstupu z `.json` souboru. Honem jsem ale nevěděl, jak přesně bych to udělal - po kliknutí na tlačítko zobrazit dialog pro výběr souborů, vybraný soubor načíst do proměnné a tu pak použít pro naplnění hodnot formálářových prvků. V JavaScriptu jsem to ještě nedělal. Nic světoborného a určitě bych to brzy dohledal, ale byl to ideální podnět pro vyzkoušení ChatGPT.
+Zrovna jsem si vymyslel, že na svůj web přidám možnost importu uživatelského vstupu z `.json` souboru. Honem jsem ale nevěděl, jak přesně bych to udělal - po kliknutí na tlačítko zobrazit dialog pro výběr souborů, vybraný soubor načíst do proměnné a tu pak použít pro naplnění hodnot formulářových prvků. V JavaScriptu jsem to ještě nedělal. Nic světoborného a určitě bych to brzy dohledal, ale byl to ideální podnět pro vyzkoušení ChatGPT.
 
 Takže jsem se zeptal: `Propose JavaScript code to upload a file after clicking on button`
 
@@ -74,4 +74,4 @@ Zatím jsem sotva nakoukl klíčovou dírkou do nového světa. Vlastně ještě
 
 **Fakt:** _Vývoj vždycky probíhá pomaleji, než si mnozí myslí._ ChatGPT není "živý" a v nejbližší době neovládne svět a nevyhladí lidstvo. 
 
-**Fakt č. 2:** _Vývoj vždycky probíhá rychleji, než si mnozí myslí._ Když si vzpomenu, že pár let zpátky jsem ještě neměl chytrý telefon a v něm internetový vyhledávač čehokoliv, online mapu, aplikaci na jízní řády a nákup jízdenek, atd. Těším se na to, co bude za dalších pár let.
+**Fakt č. 2:** _Vývoj vždycky probíhá rychleji, než si mnozí myslí._ Když si vzpomenu, že pár let zpátky jsem ještě neměl chytrý telefon a v něm internetový vyhledávač čehokoliv, online mapu, aplikaci na jízdní řády a nákup jízdenek, atd. Těším se na to, co bude za dalších pár let.

@@ -4,7 +4,7 @@ Dneska jsem se rozhodl vyzkoušet zase novou aplikaci a nechat si poradit s výb
 
 ## Výchozí stav
 
-Grafika jde trošku mimo mě. Něco o principech vím a neskromě si myslím, že když sem tam něco tvořím, tak to není úplná zhůvěřilost. Cit pro barvy mi ale poněkud chybí. Když jsem tvořil tenhle blog, věděl jsem, že chci tmavé pozadí, a potom "podle chuti" hledal nějaké vhodné barvy. Přišlo mi rozumné mít nadpisy žluté/zlaté, hlavní text zelený a odkazy doplňkovou fialovou.
+Grafika jde trošku mimo mě. Něco o principech vím a neskromně si myslím, že když sem tam něco tvořím, tak to není úplná zhůvěřilost. Cit pro barvy mi ale poněkud chybí. Když jsem tvořil tenhle blog, věděl jsem, že chci tmavé pozadí, a potom "podle chuti" hledal nějaké vhodné barvy. Přišlo mi rozumné mít nadpisy žluté/zlaté, hlavní text zelený a odkazy doplňkovou fialovou.
 
 Abych to měl snazší, snažil jsem se držet [výchozí barevné palety TailwindCSS](https://tailwindcss.com/docs/customizing-colors). To mě samozřejmě samo o sobě limitovalo. Skončil jsem u této kombinace:
 
@@ -16,7 +16,7 @@ Moc spokojený jsem nebyl. Nadpisy vcelku ok, ale zelený text byl pro čtení d
 
 ## Tvůrčí proces
 
-Pamětliv instrukce, že je dobré prompt nějakým způsobem zasetovat, aby AI neměla úplnou volnost ve výmýlšení odpovědi, informoval jsem ji o barvě mého pozadí (`slate-900` z TailwindCSS palety) a poprosil o vhodné barevné téma založené na mnou vybraných barvách - zelené, zlaté a fialové.
+Pamětliv instrukce, že je dobré prompt nějakým způsobem zasetovat, aby AI neměla úplnou volnost ve výmýšlení odpovědi, informoval jsem ji o barvě mého pozadí (`slate-900` z TailwindCSS palety) a poprosil o vhodné barevné téma založené na mnou vybraných barvách - zelené, zlaté a fialové.
 
 ``I have a webpage with `#0f172a` background. Can you suggest reasonable theme colors based on green, gold and purple?`` (1)
 
@@ -28,7 +28,7 @@ Obratem jsem dostal trojici barev vč. popisu zvolených odstínů doplňující
 
 Byly mi nabídnuty ještě další barvy - "light background color" a "light/dark font color", ale ty jsem se rozhodl ignorovat.
 
-Už toto by byl na první pokus super výsledek. Po nasazení mi ale přišlo, že ostíny jsou přeci jen trochu tmavé. Řekl jsem si tedy napřed o světlejší písmo:
+Už toto by byl na první pokus super výsledek. Po nasazení mi ale přišlo, že odstíny jsou přeci jen trochu tmavé. Řekl jsem si tedy napřed o světlejší písmo:
 
 ``Can you suggest a green color tone that would be somewhat lighter than `#2C7A7B` and being good visible on `#0f172a` background?``
 
