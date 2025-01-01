@@ -14,7 +14,7 @@ Zbývalo už jen pochopit, čím je to způsobeno. Klíčovou stopou se stal fak
 
 Tu jsme vyřešili dynamicky - podle toho, jaká je v URL identifikace verze, taková komponenta se má načíst. Technicky se to ve Vue řeší pomocí vestavěného konstruktu `<component :is="dynamickaKomponenta" />`. Hodnotu proměnné `dynamickaKomponenta` jsem na samém začátku projektu začal určovat pomocí Vue utility `resolveComponent()` uvnitř reaktivní `computed()` funkce. A to byl právě kámen úrazu.
 
-Použít `computed()` v tomto případě je totiž nejen zbytečné (hodnota mě zajímá pouze na začátku zobrazování stránky, když je třeba určit, které verzované komponenty formuláře se mají načíst, pak už se to nemění), ale přímo škodlivé. Proč? Protože výpočet je navázán na změnu proměnné `verze`. Dokud uživatel zústával na stránce, nedělo se nic. Jakmile se však chtěl přesunout na _"Správu příloh"_, stalo se následující:
+Použít `computed()` v tomto případě je totiž nejen zbytečné (hodnota mě zajímá pouze na začátku zobrazování stránky, když je třeba určit, které verzované komponenty formuláře se mají načíst, pak už se to nemění), ale přímo škodlivé. Proč? Protože výpočet je navázán na změnu proměnné `verze`. Dokud uživatel zůstával na stránce, nedělo se nic. Jakmile se však chtěl přesunout na _"Správu příloh"_, stalo se následující:
 
 - vlivem změny URL došlo ke změně proměnné `verze`
 - změnu hodnoty `verze` zachytil reaktivní systém Vue a provedl přepočet hodnoty `dynamickaKomponenta`
@@ -30,5 +30,5 @@ V případě reaktivity jsem v mých začátcích s Vue utrpěl syndromem kladiv
 Zpočátku je problém si toho vůbec všimnout, protože Vue je dobře optimalizované. Když se to někde provalí, může být už zase složité s tím v rozvinuté a nějak fungující aplikaci něco dělat. Proto je nejlepší řešit to už na začátku. Pokaždé si dobře rozmyslete, které reaktivní funkce skutečně potřebujete, a vyhýbejte se jejich zbytečnému nadužívání.
 
 ::wise-words
-Dvakrát (i třikrát) měř než použiješ `computed()`.
+Dvakrát (i třikrát) měř, než použiješ `computed()`.
 ::

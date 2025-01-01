@@ -6,7 +6,7 @@ Většinou ale spíše nechceme dělat vše od začátku sami znovu. V tomto čl
 
 Pokud migrujete nějaký svůj starší projekt, možná už `css` soubory stylů máte hotové. Nebo jste využili nějakou ze služeb, které své styly jako samostatný `css` poskytují (třeba při [použití Bootstrap z CDN](https://getbootstrap.com/docs/3.4/getting-started/#download-cdn)). Nuxt pro tyto případy nabízí velmi jednoduchou integraci.
 
-Svoje soubory stylů nahrajte do složky `/assets`. Poté je možné se na ně odkázat pomocí volby `css` v `nuxt.config.ts` konfiguaračním souboru:
+Svoje soubory stylů nahrajte do složky `/assets`. Poté je možné se na ně odkázat pomocí volby `css` v `nuxt.config.ts` konfiguračním souboru:
 
 ```ts
 export default defineNuxtConfig({
@@ -48,11 +48,11 @@ Zdrojový kód ukázkové implementace naleznete zde:
 
 ## Open Props
 
-[Open Props](https://open-props.style/) staví na podobném principu jako Tailwind CSS - nabízí set přepřipravených stylů, jejichž použití vás sice bude trochu svazovat, ale na druhou stranu nemusíte všude znovu vynalézat kolo. Namísto celých předpřipravených CSS tříd jsou v tomto případě nositelem informace o výsledném stylu [CSS proměnné](https://www.jakpsatweb.cz/css/css-promenne.html#promenne), které můžete využít a skládat ve svých třídách. Open Props tedy neabstrahují od veškerého psaní CSS, pouze nabízejí již připravené a vyzkoušené hodnoty. Hlavní výhodou je odlehčenost a škálovatelnost - Tailwind je proti komprimovaným Open Props css souborům i po [veškerých možných optimalizacích](https://v1.tailwindcss.com/docs/controlling-file-size) "velký" a stahujete ho vždy celý. Naproti tomu Open Props umožňují použít jen menší část, která je zrovna potřeba.
+[Open Props](https://open-props.style/) staví na podobném principu jako Tailwind CSS - nabízí set předpřipravených stylů, jejichž použití vás sice bude trochu svazovat, ale na druhou stranu nemusíte všude znovu vynalézat kolo. Namísto celých předpřipravených CSS tříd jsou v tomto případě nositelem informace o výsledném stylu [CSS proměnné](https://www.jakpsatweb.cz/css/css-promenne.html#promenne), které můžete využít a skládat ve svých třídách. Open Props tedy neabstrahují od veškerého psaní CSS, pouze nabízejí již připravené a vyzkoušené hodnoty. Hlavní výhodou je odlehčenost a škálovatelnost - Tailwind je proti komprimovaným Open Props css souborům i po [veškerých možných optimalizacích](https://v1.tailwindcss.com/docs/controlling-file-size) "velký" a stahujete ho vždy celý. Naproti tomu Open Props umožňují použít jen menší část, která je zrovna potřeba.
 
 ### Nuxt integrace
 
-Jelikož Nuxt (Vue) sám o sobě neumí při kompilaci nahrazovat CSS proměnné skutečnými hodnotami, je potřeba doplnit CSS processor (v demu `postcss`) spolu s pluginem, který po nakrmení definicemi z `OpenProps` nahrazení hodnot provede. To je asi jediný zádrhel, jinak je prostě naimportován NPM balíček `open-props` a v demu nadefinováno pár stylů.
+Jelikož Nuxt (Vue) sám o sobě neumí při kompilaci nahrazovat CSS proměnné skutečnými hodnotami, je potřeba doplnit CSS procesor (v demu `postcss`) spolu s pluginem, který po nakrmení definicemi z `OpenProps` nahrazení hodnot provede. To je asi jediný zádrhel, jinak je prostě naimportován NPM balíček `open-props` a v demu nadefinováno pár stylů.
 
 Zdrojový kód ukázkové implementace naleznete zde:
 [nuxt-openprops @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-openprops)
@@ -86,7 +86,7 @@ Zdrojový kód ukázkové implementace naleznete zde:
 
 ## DevExtreme
 
-UI knihovnu [DevExtreme](https://js.devexpress.com/) mi prvně představil kolega "Angularista". Je však univerzální, takže ji lze použít i ve Vue. Jako hlavní nevýhodu bych hned na úvod zdůraznil, že je placená a ne zrovna málo. Na druhou stranu použili jsme ji na větším reálném projektu v práci a musím říct, že tvorba složitých vnořených formulářů, které bylo třeba od nuly poskládat, šla v DevExtreme jako po másle. Díky jejich layoutům i celkem slušně responzivně. Také mají kvalitně zpracovanou dokumentaci, i když zpočátku mi chvíli trvalo, než jsem se v ní dokázal orientovat.
+UI knihovnu [DevExtreme](https://js.devexpress.com/) mi prvně představil kolega "Angularista". Je však univerzální, takže ji lze použít i ve Vue. Jako hlavní nevýhodu bych hned na úvod zdůraznil, že je placená - a ne zrovna málo. Na druhou stranu použili jsme ji na větším reálném projektu v práci a musím říct, že tvorba složitých vnořených formulářů, které bylo třeba od nuly poskládat, šla v DevExtreme jako po másle. Díky jejich layoutům i celkem slušně responzivně. Také mají kvalitně zpracovanou dokumentaci, i když zpočátku mi chvíli trvalo, než jsem se v ní dokázal orientovat.
 
 Drobná vada na kráse je, že z nějakého důvodu Dx komponenty nefungují při _Server-Side Renderingu_, nebo jsem aspoň nepřišel na to, co je třeba udělat. Je tedy nutné nastavit `ssr: false` a počítat s tím, že aplikace se bude vykreslovat pomocí JavaScriptu až v prohlížeči klienta.
 
@@ -94,7 +94,7 @@ Drobná vada na kráse je, že z nějakého důvodu Dx komponenty nefungují př
 
 Přes `package.json` je třeba referencovat základní NPM balíček `devextreme` a jeho Vue port `devextreme-vue`. To už by stačilo pro lokální vývoj, problém je, že mechanismus "tree-shakingu" (odstraňování nepoužitých závislostí z produkčního buildu) nepozná, že část komponent používáte, a úspěšně očeše všechny definice.
 
-S tím jsem docela dlouho bojoval a nakonec si musel [nechat poradit](https://github.com/nuxt/nuxt/discussions/16898). Klíčem je znovu Nuxt plugin, ve kterém postupně registrujeme komponenty z DevExtreme, které chceme použít, jako Vue komponenty. Silně doporučuji registrovat je pod stejným názvem, jako se jmenují v DevExtreme, jinak se připravíte o možnost jednoduše hledat v jejich dokumentaci.
+S tím jsem docela dlouho bojoval, a nakonec si musel [nechat poradit](https://github.com/nuxt/nuxt/discussions/16898). Klíčem je znovu Nuxt plugin, ve kterém postupně registrujeme komponenty z DevExtreme, které chceme použít, jako Vue komponenty. Silně doporučuji registrovat je pod stejným názvem, jako se jmenují v DevExtreme, jinak se připravíte o možnost jednoduše hledat v jejich dokumentaci.
 
 V příkladu používám pouze základní tlačítko, ale princip je stejný pro všechny ostatní:
 
@@ -117,7 +117,7 @@ Po spuštění si můžete všimnout nápadného licenčního varování, které
 
 [Icônes](https://icones.js.org/) je projekt zaměřený na poskytování rozsáhlé sbírky ikon pro webové stránky a aplikace. Nabízí široký výběr vektorových ikon ve formátu SVG, které jsou snadno použitelné a přizpůsobitelné. Icônes tak usnadňuje integraci ikon do projektů a přispívá k vizuálnímu zlepšení uživatelských rozhraní.
 
-Pokud se mě zeptáte, jak na ikony, jednoznačně doporučím Icônes. Snadný způsob definice z SVG, který je volně přenositelný do různých prostředí, žádná potřeba nových závislostí a obrovský výběr definic ikon zdarma. V Nuxtu, resp. přímo v samotném Vue lze každou ikonu zavést jako samostatnou komponentu. Pokud nepoužívate UI knihovnu, která si ikony řeší sama jinak (viz např. budoucí článek o Nuxt UI), je to výborná light-weight volba, která vám umožní použít jen to, co skutečně potřebujete.
+Pokud se mě zeptáte, jak na ikony, jednoznačně doporučím Icônes. Snadný způsob definice z SVG, který je volně přenositelný do různých prostředí, žádná potřeba nových závislostí a obrovský výběr definic ikon zdarma. V Nuxtu, resp. přímo v samotném Vue lze každou ikonu zavést jako samostatnou komponentu. Pokud nepoužíváte UI knihovnu, která si ikony řeší sama jinak (viz např. budoucí článek o Nuxt UI), je to výborná light-weight volba, která vám umožní použít jen to, co skutečně potřebujete.
 
 ### Nuxt integrace
 
@@ -134,7 +134,7 @@ V jiném projektu mám [komponentu](https://github.com/AloisSeckar/ELRHistory/bl
 
 [FontAwesome](https://fontawesome.com/) je populární knihovna ikon pro webové stránky a aplikace. Poskytuje široký výběr vektorových ikon ve formátu SVG a fontových souborech, které lze snadno použít prostřednictvím CSS. FontAwesome umožňuje jednoduchou manipulaci s ikonami, změnu velikosti, barvy a další úpravy.
 
-"FA" je podobně jako Boostrap evergreenem ve světě webdesignu a používá jej kde kdo. Integrace do Nuxtu je pochopitelně možná, ale znamená to nejmně tři nové závislosti na JS modulech (více, pokud chcete používat ikony z dalších dostupných (placených!) sad) a celkově mi to přijde těžkopádnější než Icônes. Ale opět - kdo je zvyklý a sype názvy FontAwesome ikon z rukávu, může je používat i nadále.
+"FA" je podobně jako Boostrap evergreenem ve světě webdesignu a používá jej kde kdo. Integrace do Nuxtu je pochopitelně možná, ale znamená to nejméně tři nové závislosti na JS modulech (více, pokud chcete používat ikony z dalších dostupných (placených!) sad) a celkově mi to přijde těžkopádnější než Icônes. Ale opět - kdo je zvyklý a sype názvy FontAwesome ikon z rukávu, může je používat i nadále.
 
 Jedinou nevýhodou je, že podobně jako DevExtreme, ani FontAwesome si netyká s Nuxt SSR, takže je třeba nastavit `ssr: false`.
 

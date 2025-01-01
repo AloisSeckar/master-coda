@@ -25,7 +25,7 @@ Zdrojový kód ukázkové implementace Nuxt UI naleznete zde:
 
 Projekt obsahuje balíček Nuxt UI jako závislost v `package.json` a v sekci `modules` konfiguračního `nuxt.config.ts` definuje příslušný modul. Tím je všechno nastaveno a automaticky nataženo.
 
-V souboru `app.vue` je vytovřen přehled se základními ukázkami použití.
+V souboru `app.vue` je vytvovřen přehled se základními ukázkami použití.
 
 ## Shrnutí
 

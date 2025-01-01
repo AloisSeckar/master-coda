@@ -1,6 +1,6 @@
 Dosud jsme se pohybovali v tzv. klientské části Nuxt aplikace. Stránky (`/pages`) tvořené komponentami (`/components`) a poháněné logikou umístěnou ve složkách `/composables` a `/utils` jsou základní stavební prvky toho, co nakonec vidí uživatel - frontend. Pro řadu aplikací, zejména těch menších, to úplně stačí. 
 
-Nuxt ale nabízí funkcionalitu i pro backendové operace. Umožňuje vystavit API endpointy, přijímat a zpracovávat na ně přijímané požadavky, a sloužit tak i jako prakticky plnohodnotý server.
+Nuxt ale nabízí funkcionalitu i pro backendové operace. Umožňuje vystavit API endpointy, přijímat a zpracovávat na ně přijímané požadavky, a sloužit tak i jako prakticky plnohodnotný server.
 
 ## Nitro
 
@@ -20,7 +20,7 @@ export default defineEventHandler((event) => {
 
 Stačí jej umístit do další speciální složky `/server/api` nebo `/server/routes` a Nuxt si ho automaticky zpracuje a začne vystavovat. Rozdíl mezi uvedenými dvěma složkami je, že obslužný handler ze souboru `/server/api/foo.ts` bude vystaven na `http://localhost:3000/api/foo`, zatímco ze souboru `/server/routes/foo.ts` přímo na `http://localhost:3000/foo`. Podsložka `/server/api` je tedy de-facto totéž jako `/server/routes/api`. Použití prefixu `/api` je poměrně časté, proto existuje jako samostatná možnost, pokud ale trváte na větší volnosti, můžete použít `/routes` a uvnitř rozvinout svou strukturu podle libosti.
 
-Pomocí _suffixů_ za tečkou v názvech souborů lze jednouše upřesit, kterou [HTTP metodu](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) handler obsluhuje. Soubor `/server/api/foo.get.ts` umožní na `http://localhost:3000/api/foo` volat GET, `/server/api/foo.post.ts` vystaví na `http://localhost:3000/api/foo` POST. Logika obou může být výrazně odlišná. Podle [dokumentace](https://nuxt.com/docs/guide/directory-structure/server) jsou podporovány metody `GET`, `POST`, `PUT` a `DELETE`, tedy ne úplně všechny, ale ty zbylé v běžném provozu stejně příliš často nepotkáte.
+Pomocí _suffixů_ za tečkou v názvech souborů lze jednoduše upřesnit, kterou [HTTP metodu](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) handler obsluhuje. Soubor `/server/api/foo.get.ts` umožní na `http://localhost:3000/api/foo` volat GET, `/server/api/foo.post.ts` vystaví na `http://localhost:3000/api/foo` POST. Logika obou může být výrazně odlišná. Podle [dokumentace](https://nuxt.com/docs/guide/directory-structure/server) jsou podporovány metody `GET`, `POST`, `PUT` a `DELETE`, tedy ne úplně všechny, ale ty zbylé v běžném provozu stejně příliš často nepotkáte.
 
 Obslužný callback `defineEventHandler` může přijmout vstupní parametr `event`, který je typu `H3Event` z frameworku [h3](https://github.com/unjs/h3). Tento minimalistický HTTP framework, který v sobě Nuxt, resp. Nitro integruje, nabízí celou řadu užitečných funkcí. Například načíst obsah příchozího `POST` požadavku k dalšímu zpracování můžeme jednoduše takto:
 

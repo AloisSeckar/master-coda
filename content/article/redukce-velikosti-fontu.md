@@ -21,7 +21,7 @@ Tak jsem to například s fontem `KaushanScript` udělal já, abych mohl mít ne
 
 Nelíbila se mi na tom jen jedna věc. Font chci mít jen tady v nadpisu v podobě mého jména, takže reálně potřebuju pouze 11 znaků. Ale soubor `KaushanScript-Regular.ttf` jich samozřejmě definuje mnohem víc. Velikost má **183 972 bytů**. Tolik dat by se muselo tahat při každém zobrazení stránky kvůli 11 písmenům.
 
-Jistě, při dnešních rychlostech připojení se nad necelými 0.2 Mb nestihne nikdo ani pozastavit, ale tady jde o princip – na větších webech s větší zátěží se to nasčítává, a i když to možná nebude trápit návštěvníky webu, tak třeba v Cloudu kde platíte za objem přenesených dat, to může brzy začít lézt do peněz. Vypěstovat si návyk redukovat velikost potřebných zdrojů se vám dřív nebo později určitě vyplatí.
+Jistě, při dnešních rychlostech připojení se nad necelými 0.2 Mb nestihne nikdo ani pozastavit, ale tady jde o princip – na větších webech s větší zátěží se to nasčítává, a i když to možná nebude trápit návštěvníky webu, tak třeba v cloudu, kde platíte za objem přenesených dat, to může brzy začít lézt do peněz. Vypěstovat si návyk redukovat velikost potřebných zdrojů se vám dřív nebo později určitě vyplatí.
 
 Co kdybychom tedy dokázali z definice fontu vypárat subset právě jen těch potřebných jedenácti znaků?
 

@@ -12,7 +12,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
 })
 ```
 
-Datový typ (resp. interface) parametrů `from` a `to` je převzatý z [Vue Routeru](https://router.vuejs.org/) a jmenuje se [`RouteLocation`](https://router.vuejs.org/api/interfaces/RouteLocation.html). Skrz tyto objekty máte přístup ke všem postatným informacím o navigaci - URL, get parametry (za `?` v url), hash (za `#` v url), aj. Dále je možné uvnitř funkce volat libovolné [composables a util funkce](/article/nuxt-utils).
+Datový typ (resp. interface) parametrů `from` a `to` je převzatý z [Vue Routeru](https://router.vuejs.org/) a jmenuje se [`RouteLocation`](https://router.vuejs.org/api/interfaces/RouteLocation.html). Skrz tyto objekty máte přístup ke všem podstatným informacím o navigaci - URL, get parametry (za `?` v url), hash (za `#` v url), aj. Dále je možné uvnitř funkce volat libovolné [composables a util funkce](/article/nuxt-utils).
 
 ### Spouštění middleware
 

@@ -64,6 +64,6 @@ Možná namítnete, že v dnešní době stačí zadat problém [ChatGPT](/tag/C
 
 Pokud jsem vás přesvědčil, že to s regulárními výrazy stojí za to zkusit, zde je materiál na další samostudium:
 - V češtině existuje povedená stránka https://www.regularnivyrazy.info/, z níž jsem se sám kdysi učil
-- Dále je tu ultimátní web https://regex101.com/, kde si můžete výrazy psát interaktivně a web rovnou automaticky ověřuje, zda fungují, a poskytuje detailní rozbor, co bylo vlastně zadáno. V praxi neocenitelný pomcník, ke kterému se můžete vždy vrátit.
+- Dále je tu ultimátní web https://regex101.com/, kde si můžete výrazy psát interaktivně a web rovnou automaticky ověřuje, zda fungují, a poskytuje detailní rozbor, co bylo vlastně zadáno. V praxi neocenitelný pomocník, ke kterému se můžete vždy vrátit.
 
 :article-image{src="regex-neni-nepritel/regex101.jpg" alt="Analýza regulárního výrazu na regex101.com" width="w-full"}

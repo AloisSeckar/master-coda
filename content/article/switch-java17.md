@@ -35,7 +35,7 @@ case MONDAY, FRIDAY, SUNDAY -> System.out.println(6);
 
 Za `->` může následovat buďto jediný příkaz nebo blok kódu. Zároveň už není třeba psát klíčové slovo `break`{lang="java"}, aby kód nepropadl do další větve pod tím.
 
-Druhá vymoženost je ještě zajímavější - `switch`{lang="java"} teď umí jako celek přímo vracet nějakou hodnotu. Kompileru se to sdělí tak, že začneme psát `var variable = switch { … }`{lang="java"}. Je třeba myslet na tři věci:
+Druhá vymoženost je ještě zajímavější - `switch`{lang="java"} teď umí jako celek přímo vracet nějakou hodnotu. Kompilátoru se to sdělí tak, že začneme psát `var variable = switch { … }`{lang="java"}. Je třeba myslet na tři věci:
 
 - Je-li kód větve v bloku, návratová hodnota se uvozuje klíčovým slovem `yield`{lang="java"}
 - Návratové typy všech větví musí být všechny stejné
@@ -57,7 +57,7 @@ int numLetters = switch (day) {
 System.out.println("Pocet pismen: " + numLetters);
 ```
 
-Za mě mnohem kratší, kompatknější a hezčí.
+Za mě mnohem kratší, kompaktnější a hezčí.
 
 ## Další odkazy
 
