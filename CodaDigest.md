@@ -3,6 +3,13 @@ Interesting articles, news and tutorials I have come across while browsing the i
 
 Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/NuxtNews.md) and [Java News](https://github.com/AloisSeckar/demos-java/blob/master/JavaNews.md).
 
+## 2025
+
+| Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
+| --- | :--  |
+| **`2025-01-22`** | [C stdlib isn’t threadsafe and even safe Rust didn’t save us](https://www.edgedb.com/blog/c-stdlib-isn-t-threadsafe-and-even-safe-rust-didn-t-save-us) - an insightful deep dive into low-level Rust/C debugging |
+| **`2025-01-05`** | [Balancing Text In CSS](https://ishadeed.com/article/balancing-text-css/) - see what can be done to improve your websites just by using simple **CSS** directives |
+
 ## 2024
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
