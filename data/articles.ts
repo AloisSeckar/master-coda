@@ -156,6 +156,7 @@ const articles = [
     dscr: 'Nuxt + Nuxt Content = tvorba obsahu bez zbytečných komplikací',
     tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown'],
     created: '05.10.2024',
+    edited: '09.02.2025',
   },
   {
     id: 'nuxt-pinia',

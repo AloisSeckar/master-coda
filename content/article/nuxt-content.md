@@ -22,7 +22,7 @@ Prvním krokem je doplnit závislost na `@nuxt/content` do `devDependencies` v p
 
 Poté zavést příslušný modul do `nuxt.config.ts`:
 
-```js
+```ts
 export default defineNuxtConfig({
   // ...
   modules: [
@@ -33,44 +33,68 @@ export default defineNuxtConfig({
 })
 ```
 
-Strukturovaný obsah, který budete chtít vykreslovat, umístěte do složky `/content`. Tato složka se chová stejně jako `/pages` - aktuální cesta dle URL v prohlížeči se automaticky se namapuje příslušný obsah. Pomocí podadresářů lze vytvářet složitější struktury. V místech, kde se má strukturovaný obsah vykreslovat, použijte komponentu `<ContentDoc />`. Pokud chcete, můžete ji použít zcela místo `<NuxtPage />` a namísto klasických `/pages` dodávat veškerý věcný obsah vašeho webu už jen přes Nuxt Content.
+Strukturovaný obsah, který budete chtít vykreslovat, umístěte do složky `/content`. Tato složka se chová stejně jako `/pages` - aktuální cesta dle URL v prohlížeči se automaticky se namapuje příslušný obsah. Pomocí podadresářů lze vytvářet složitější struktury. V místech, kde se má strukturovaný obsah vykreslovat, použijte komponentu `<ContentRenderer />`. Pokud chcete, můžete ji použít zcela místo `<NuxtPage />` a namísto klasických `/pages` dodávat veškerý věcný obsah vašeho webu už jen přes Nuxt Content.
 
-Dá se to ale i kombinovat, jako to mám například použito zde na svém webu. Klasické struktury komponent pro jednotlivé stránky jsem se nevzdal, komponentu `<ContentDoc />` používám pouze na stránce `/pages/article/[article].vue` - mezi společnou hlavičkou a patičkou, což zase jsou klasické Vue komponenty. Když tedy navštívíte v prohlížeči stránku článku, Nuxt načte globálně společné části definované v šabloně `app.vue`, potom hlavičku a patičku společnou pro všechny články a mezi ně pomocí modulu Nuxt Content naservíruje příslušný `.md` soubor ze složky `/content/article`.
+Dá se to ale i kombinovat, jako to mám například použito zde na svém webu. Klasické struktury komponent pro jednotlivé stránky jsem se nevzdal, komponentu `<ContentRenderer />` používám pouze na stránce `/pages/article/[article].vue` - mezi společnou hlavičkou a patičkou, což zase jsou klasické Vue komponenty. Když tedy navštívíte v prohlížeči stránku článku, Nuxt načte globálně společné části definované v šabloně `app.vue`, potom hlavičku a patičku společnou pro všechny články a mezi ně pomocí modulu Nuxt Content naservíruje příslušný `.md` soubor ze složky `/content/article`.
 
-Pokud byste náhodou zkusili navštívit URL neexistujícího článku, stačí komponentě dodat obsah, který má vykreslit, pokud nenalezne odpovídající obsah v očekávané cestě. Dělá se to velmi jednoduše pomocí [pojmenovaného slotu](https://vuejs.org/guide/components/slots.html#named-slots) `#not-found`:
+Od verze 3 (leden 2025) je potřeba zpracovaný Markdown obsah vložit do vykreslovací komponenty pomocí vlastnosti `value`. Nejjednodušší způsob, jak se k hodnotě dostat, je využít utility funkci `queryCollection`. Výchozí kolekce, do které modul načte obsah složky `content`, se jmenuje (nepřekvapivě) také `content`. Pomocí [konfigurace](https://content.nuxt.com/docs/collections/define) se s tím dá pracovat a organizovat si své vlastní kolekce. Já toho využil a pojmenoval svou kolekci `articles`. Není potřeba nic dalšího, než založit soubor `content.config.ts`. Nuxtu nemusíte o jeho existenci nic říkat, sám ho zjistí.
 
-```js
-<ContentDoc>
-  <template #not-found>
-    These are not the articles you are looking for. Keep browsing. Keep browsing.
-  </template>
-</ContentDoc>
+```ts
+import { defineCollection, defineContentConfig } from '@nuxt/content'
+
+export default defineContentConfig({
+  collections: {
+    articles: defineCollection({
+      source: 'article/*',
+      type: 'page',
+    }),
+  },
+})
+```
+
+Data článků načítám v kombinaci s Nuxt composable `useRoute()`, která obsahuje informace o aktuální relativní URL. A protože jde o asynchronní operaci, pro načítání dat je obaleno v `useAsyncData`.
+
+```ts
+const { data: articleText } = await useAsyncData(() => queryCollection('articles').path(useRoute().path).first())
+```
+
+Pokud byste náhodou zkusili navštívit URL neexistujícího článku, mám ještě fallback text, který se vypíše místo vykreslení komponenty se zformátovaným Markdown obsahem. Celé to tedy v šabloně stránky vypadá takto:
+
+```vue
+<ContentRenderer v-if="articleText" :value="articleText" />
+<div v-else class="mb-6">
+  These are not the articles you are looking for. Keep browsing. Keep browsing.
+</div>
 ```
 
 V rámci Markdownu je legitimní používat HTML vč. tagů pro Vue komponenty (za předpokladu, že jsou umístěny ve složce `/components/global` a tím globálně registrované), ale je podporována i přirozenější integrace do Markdownu. Pokud své komponenty máte ve složce `\components\content`, modul si je automaticky načte a můžete je následně referencovat přes dvojtečku a kebab-case název. Do složených závorek pak předáte atributy vlastností (props).
 
 Takto například ve svých článcích používám komponentu pro vykreslení obrázků:
 
-```js
+```ts
 :article-image{src="redukce-velikosti-fontu/homepage.jpg" alt="www.alois-seckar.cz" link="http://www.alois-seckar.cz"}
 ```
 
 Poslední věcí, kterou bych chtěl ukázat, je už zmíněný syntax-highlighting. Nuxt Content má potřebné nástroje v sobě. Pokud pomocí "backticku" začnete psát inline kód nebo pomocí tří "backticků" blok kódu, modul je při vykreslování sám aplikuje a zdrojový kód barevně odliší. Můžete si vybrat, jaký [barevný styl](https://github.com/shikijs/shiki/blob/main/docs/themes.md) použijete. Dělá se to v `nuxt.config.ts` ve vlastní sekci `content`, kterou si modul přináší:
 
-```js
+```ts
 content: {
-  highlight: {
-    theme: 'dracula'
-  }
+  build: {
+    markdown: {
+      highlight: {
+        theme: 'dracula',
+      },
+    },
+  },
 }
 ```
 
-Kdyby vás možnosti nastavení modulu zajímaly blíže, [zde je dokumentace](https://content.nuxt.com/get-started/installation).
+Kdyby vás další možnosti nastavení modulu zajímaly blíže, [zde je dokumentace](https://content.nuxt.com/docs/getting-started/installation).
 
 ## Demo projekt
 
 Zdrojový kód ukázkové implementace naleznete zde:
-[nuxt-content @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-content)
+[nuxt-content @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-content3)
 
 ## Shrnutí
 
