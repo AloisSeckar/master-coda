@@ -8,7 +8,7 @@ Hezky stylované formulářové prvky nabízí například [Nuxt UI](/article/nu
 
 Celé to obaluje speciální `<FormKit>` nejvyšší úrovně definovaný atributem `type="form"`, ve kterém stačí naslouchat jeho emitované události `@submit`, abychom dostali kompletní aktuální obsah:
 
-```vue-html
+```vue
 <template>
   <FormKit type="form" @submit="odeslat">
     <!-- definice polí formuláře -->

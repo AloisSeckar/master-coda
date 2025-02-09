@@ -9,7 +9,8 @@ export default defineNuxtConfig({
       markdown: {
         highlight: {
           theme: 'dracula',
-          preload: ['java', 'sql', 'js', 'ts'],
+          langs: ['sql'],
+          preload: ['java', 'js', 'ts', 'vue'],
         },
       },
     },
