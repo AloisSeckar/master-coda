@@ -5,10 +5,13 @@ export default defineNuxtConfig({
   ],
 
   content: {
-    contentHead: false,
-    highlight: {
-      theme: 'dracula',
-      preload: ['java', 'sql'],
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'dracula',
+          preload: ['java', 'sql', 'js', 'ts'],
+        },
+      },
     },
   },
 

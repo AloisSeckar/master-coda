@@ -3,13 +3,10 @@
     <ArticleHeader />
     <div class="article">
       <ArticleStub v-if="article?.wip" />
-      <ContentDoc>
-        <template #not-found>
-          <div class="mb-6">
-            These are not the articles you are looking for. Keep browsing. Keep browsing.
-          </div>
-        </template>
-      </ContentDoc>
+      <ContentRenderer v-if="articleText" :value="articleText" />
+      <div v-else class="mb-6">
+        These are not the articles you are looking for. Keep browsing. Keep browsing.
+      </div>
     </div>
     <ArticleNavigation :article-id="articleId" />
     <ArticleFooter />
@@ -32,6 +29,9 @@ if (article) {
 else {
   usePageMeta(CODA_PAGE_META)
 }
+
+// nuxt-content v3 content loading
+const { data: articleText } = await useAsyncData(() => queryCollection('articles').path(useRoute().path).first())
 </script>
 
 <style scoped>

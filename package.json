@@ -8,9 +8,8 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt-ignis": "0.1.4",
+    "nuxt-ignis": "0.2.0",
     "vue": "latest",
     "vue-router": "latest"
-  },
-  "packageManager": "pnpm@9.14.4"
+  }
 }
