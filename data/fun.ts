@@ -259,6 +259,22 @@ const fun = [
     title: 'Jak na opravy chyb',
     added: '2024-12-21',
   },
+  {
+    id: 'toggl-heroes',
+    title: 'Komiksoví hrdinové (by Toggl)',
+    added: '2025-02-01',
+  },
+  {
+    id: 'philosophy',
+    title: 'Filosofie programování',
+    added: '2025-02-10',
+  },
+  {
+    id: 'mac-os',
+    title: 'Stopování uživatelů MacOS',
+    explain: '.DS_Store je skrytý systémový soubor obsahující metainformace o adresáři',
+    added: '2025-02-14',
+  },
 ]
 
 export { fun }
