@@ -1,7 +1,6 @@
 import { articles } from '@/data/articles'
 
-export const useArticleStore = defineStore({
-  id: 'articles-store',
+export const useArticleStore = defineStore('articles-store', {
   state: () => {
     return {
       loaded: false,

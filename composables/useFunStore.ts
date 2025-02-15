@@ -1,7 +1,6 @@
 import { fun } from '@/data/fun'
 
-export const useFunStore = defineStore({
-  id: 'fun-store',
+export const useFunStore = defineStore('fun-store', {
   state: () => {
     return {
       loaded: false,
