@@ -1,12 +1,15 @@
 <template>
   <div>
-    <h1 class="text-center">
+    <h1 class="text-center mt-3">
       {{ imageData.title }}
       <span v-if="imageData.explain" :title="imageData.explain">
         <Icon name="material-symbols:help" color="gold" class="w-8 pb-1" />
       </span>
     </h1>
     <div v-if="initial">
+      <div class="w-[200px] mx-auto text-center text-lg font-bold">
+        Celkem {{ total }} obrázků
+      </div>
       <div class="w-[260px] mx-auto">
         <div :class="buttonClass" @click="init">
           <div class="actionButtonText">
