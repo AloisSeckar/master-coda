@@ -275,6 +275,11 @@ const fun = [
     explain: '.DS_Store je skrytý systémový soubor obsahující metainformace o adresáři',
     added: '2025-02-14',
   },
+  {
+    id: 'floor-is-java',
+    title: 'The floor is Java',
+    added: '2025-03-04',
+  },
 ]
 
 export { fun }
