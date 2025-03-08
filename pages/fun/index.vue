@@ -10,7 +10,7 @@
       <div class="w-[200px] mx-auto text-center text-lg font-bold">
         Celkem {{ total }} obrázků
       </div>
-      <div class="w-[260px] mx-auto">
+      <div class="w-[260px] mx-auto text-center">
         <div :class="buttonClass" @click="init">
           <div class="actionButtonText">
             Prohlédnout si galerii
@@ -22,29 +22,25 @@
       <div class="w-[200px] mx-auto text-center text-lg font-bold">
         {{ current }} / {{ total }}
       </div>
-      <div class="w-[546px] mx-auto">
-        <div class="m-1 w-64 inline-block">
-          <div v-if="nextAvailable" :class="buttonClass" @click="next">
-            <div class="actionButtonText">
-              Novější
-            </div>
-          </div>
-          <div v-else :class="buttonClass" @click="first">
-            <div class="actionButtonText">
-              Nejstarší
-            </div>
+      <div class="w-[546px] mx-auto text-center">
+        <div v-if="nextAvailable" :class="buttonClass" @click="next">
+          <div class="actionButtonText">
+            Novější
           </div>
         </div>
-        <div class="m-1 w-64 inline-block">
-          <div v-if="prevAvailable" :class="buttonClass" @click="prev">
-            <div class="actionButtonText">
-              Starší
-            </div>
+        <div v-else :class="buttonClass" @click="first">
+          <div class="actionButtonText">
+            Nejstarší
           </div>
-          <div v-else :class="buttonClass" @click="last">
-            <div class="actionButtonText">
-              Nejnovější
-            </div>
+        </div>
+        <div v-if="prevAvailable" :class="buttonClass" @click="prev">
+          <div class="actionButtonText">
+            Starší
+          </div>
+        </div>
+        <div v-else :class="buttonClass" @click="last">
+          <div class="actionButtonText">
+            Nejnovější
           </div>
         </div>
       </div>
@@ -59,7 +55,7 @@
       />
     </a>
     <div v-if="!initial">
-      <div class="w-[260px] mx-auto">
+      <div class="w-[260px] mx-auto text-center">
         <div :class="buttonClass" @click="reset">
           <div class="actionButtonText">
             Zpět
@@ -71,7 +67,7 @@
 </template>
 
 <script setup lang="ts">
-const buttonClass = 'actionButton w-full hover:cursor-pointer inline-block'
+const buttonClass = 'actionButton w-48 hover:cursor-pointer inline-block'
 
 const initial = ref(true)
 
