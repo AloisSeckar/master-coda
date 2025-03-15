@@ -1,3 +1,13 @@
+---
+file: 'nuxt-forms'
+cat: 'web'
+title: 'Nuxt Tutorial 9 - Formuláře'
+dscr: 'Nuxt + FormKit = snadná tvorba formulářů'
+tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI']
+date: '2024-09-15'
+created: '15.09.2024'
+---
+
 Dalším krokem na cestě k funkční a užitečné aplikaci jsou formuláře použitelné jak na strukturovanou prezentaci dat, tak hlavně na obsluhu uživatelských vstupů. Abychom si je nemuseli psát pomocí nativních HTML elementů úplně sami, existují různé nástroje, které můžeme využít.
 
 Hezky stylované formulářové prvky nabízí například [Nuxt UI](/article/nuxt-ui), jehož integraci jsme si ukázali v minulém díle tutoriálu. Nyní se podíváme na ještě trochu jiný nástroj, který kromě UI prvků nabízí i pohodlnou abstrakci celého formuláře.

@@ -16,7 +16,7 @@ const nuxtTutorialConfig: ArticleSeries = {
   dscr: 'Série výukových článků o JS frameworku',
   linkTitle: 'Nuxt',
   linkURL: 'https://nuxt.com/',
-  match: 'Nuxt Tutorial',
+  match: 'nuxt-',
 }
 
 const isChatGPTArticle = props.articleId.includes('hello-chatgpt')
@@ -25,6 +25,6 @@ const chatGPTConfig: ArticleSeries = {
   dscr: 'Série článků o mých interakcích s',
   linkTitle: 'ChatGPT',
   linkURL: 'https://chat.openai.com/',
-  match: 'rande s ChatGPT',
+  match: 'hello-chatgpt-',
 }
 </script>

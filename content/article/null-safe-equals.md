@@ -1,3 +1,14 @@
+---
+file: 'null-safe-equals'
+cat: 'java'
+title: 'Null-safe porovnání'
+dscr: 'Jak se vyhnout problémům s NULL hodnotou při porovnávání aktuální hodnoty proměnné?'
+tags: ['Java', 'tipy', 'syntaxe', 'NullPointerException']
+date: '2023-01-04'
+created: '04.01.2023'
+edited: '07.03.2023'
+---
+
 Původně mi přišlo, že tento článek je zbytečný, protože to přeci každý zná. Ale nedávno jsem přesně na tuto situaci narazil při řešení provozní chyby v našem produkčním kódu. Takže se zdá, že to smysl zopakovat má.
 
 Často potřebujeme porovnat aktuální hodnotu proměnné s nějakou konstantou a podle toho určit další průchod kódem. Pokud je to v Javě textový řetězec, použijeme metodu `.equals()`{lang="java"}. Tedy něco jako:

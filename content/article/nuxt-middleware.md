@@ -1,3 +1,14 @@
+---
+file: 'nuxt-middleware'
+cat: 'web'
+title: 'Nuxt Tutorial 5 - Middleware'
+dscr: 'Nuxt - jak pracuje middleware'
+tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
+date: '2024-05-05'
+created: '05.05.2024'
+edited: '05.05.2024'
+---
+
 Tento díl Nuxt tutoriálu je věnován middleware, což jsou obslužné metody, které je možné automaticky volat před každým vykreslením určité stránky na [frontendu](/article/nuxt-pages) nebo před zpracováním dat v [serverové části](/article/nuxt-api).
 
 ## /middleware

@@ -1,3 +1,14 @@
+---
+file: 'hello-chatgpt-4'
+cat: 'misc'
+title: 'Čtvrté rande s ChatGPT - seznam Java features'
+dscr: 'Generování obsáhlého seznamu z konkrétních dat v konkrétním formátování'
+tags: ['ChatGPT', 'AI', 'programování', 'help']
+date: '2023-09-08'
+created: '08.09.2023'
+edited: '08.09.2023'
+---
+
 Blíží se vydání [Java JDK 21](https://www.infoworld.com/article/3689880/jdk-21-the-new-features-in-java-21.html), což mě vedlo k tomu, abych oprášil svůj projekt [Java Demos](https://github.com/AloisSeckar/demos-java), který jsem vytvořil po vydání Javy 17. Napadlo mě, že by nebylo špatné přidat si tam `.md` soubor s přehledem všech úprav (JEP), které postupně do JDK přistávají s jednotlivými verzemi, jež nyní Oracle uvolňuje pravidelně každý půlrok.
 
 Tím vznikl nový usecase pro ChatGPT, jelikož těchto "JEPů" už je přes 450, takže sepisovat všechno ručně by zabralo zbytečně moc času. Tedy vzhůru do toho.

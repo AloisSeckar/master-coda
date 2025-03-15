@@ -1,3 +1,14 @@
+---
+file: 'nuxt-api'
+cat: 'web'
+title: 'Nuxt Tutorial 4 - Serverová část'
+dscr: 'Nuxt - jak funguje serverová část'
+tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
+date: '2024-05-01'
+created: '01.05.2024'
+edited: '01.05.2024'
+---
+
 Dosud jsme se pohybovali v tzv. klientské části Nuxt aplikace. Stránky (`/pages`) tvořené komponentami (`/components`) a poháněné logikou umístěnou ve složkách `/composables` a `/utils` jsou základní stavební prvky toho, co nakonec vidí uživatel - frontend. Pro řadu aplikací, zejména těch menších, to úplně stačí. 
 
 Nuxt ale nabízí funkcionalitu i pro backendové operace. Umožňuje vystavit API endpointy, přijímat a zpracovávat na ně přijímané požadavky, a sloužit tak i jako prakticky plnohodnotný server.

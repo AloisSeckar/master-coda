@@ -1,3 +1,14 @@
+---
+file: 'js-gotcha-2'
+cat: 'debugging'
+title: 'Chytáky v JavaScriptu 2 - Reaktivní Vue.js proměnné'
+dscr: 'Při použití Vue reaktivity je třeba pamatovat na správné referencování hodnot'
+tags: ['debugging', 'JavaScript', 'Vue.js']
+date: '2023-11-23'
+created: '23.11.2023'
+edited: '23.11.2023'
+---
+
 <div>
 <nuxt-tutorial />
 </div>

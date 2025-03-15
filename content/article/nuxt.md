@@ -1,3 +1,14 @@
+---
+file: 'nuxt'
+cat: 'web'
+title: 'Nuxt Tutorial'
+dscr: 'Představení nástroje, který je pro mě aktuálně nejlepší volbou pro tvorbu webů'
+tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tipy']
+date: '2024-03-25'
+created: '25.03.2024'
+edited: '05.05.2024'
+---
+
 Dovolte mi, abych vám ukázal [Nuxt](https://nuxt.com/). Nástroj, díky kterému je tvorba webů hračka. Stačí jen velmi málo a máte připravenou aplikaci, kterou několika dalšími kliknutími zvládnete i nasadit. Zejména menší projekty, které nepotřebují příliš mnoho dodatečné funkcionality, se v něm píšou úplně hladce. Zároveň ale nabízí spoustu možností, jak jít hlouběji a vytvářet i sofistikované webové aplikace.
 
 V následující sérii článků se na něj postupně podíváme podrobněji.

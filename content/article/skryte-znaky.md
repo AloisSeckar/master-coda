@@ -1,3 +1,14 @@
+---
+file: 'skryte-znaky'
+cat: 'debugging'
+title: 'Skryté (pa)znaky'
+dscr: 'Fonty nejsou tím, čím se zdají být'
+tags: ['debugging', 'fonty']
+date: '2023-01-11'
+created: '11.01.2023'
+edited: '11.01.2023'
+---
+
 Hlavní databáze našeho projektu je IBM Informix. Kódování má nastavené ISO 8859-2, takže občas narážíme na problémy s nepodporovanými UTF-8 znaky, které se do ní nedaří uložit. Nejčastěji k tomu dochází při kopírování textů z Wordu či odjinud. Spolehlivým řešením by byla migrace textů, u kterých to hrozí, do jiné databáze (postupně zavádíme MongoDB), ale to je běh na dlouhou trať. Snažíme se to tedy řešit alespoň automatizovaným nahrazováním problémových znaků, se kterými se opakovaně setkáváme. Ovšem stále nás něco překvapuje.
 
 Naposledy to byl zdánlivě nevinný text:

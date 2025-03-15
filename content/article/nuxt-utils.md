@@ -1,3 +1,14 @@
+---
+file: 'nuxt-utils'
+cat: 'web'
+title: 'Nuxt Tutorial 3 - Utils & Composables'
+dscr: 'Nuxt - jak fungují složky /utils a /composables'
+tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
+date: '2024-04-17'
+created: '17.04.2024'
+edited: '05.05.2024'
+---
+
 V [předchozím díle](/article/nuxt-pages) jsme se učili pracovat s komponentami a stránkami. Pokud se opakuje nějaká část šablony, je v souladu s programátorským [DRY principem](https://zdrojak.cz/clanky/navrhove-principy-dry/) horkým kandidátem na extrakci do samostatné nové komponenty. Co když se však opakují metody pro práci s daty v sekci `<script>`? Nebo chceme aplikaci lépe členit a vyhnout se hrozivě dlouhým souborům komponent, ve kterých se pak špatně vyznává?
 
 Logiku z JavaScript (TypeScript) kódu můžeme samozřejmě dát stranou také. Nuxt zařídí automatický import napříč aplikací, pokud příslušné soubory umístíme do dalších dvou speciálních složek - `/utils` a `/composables`.

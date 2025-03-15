@@ -1,3 +1,13 @@
+---
+file: 'nuxt-ui'
+cat: 'web'
+title: 'Nuxt Tutorial 8 - Nuxt UI'
+dscr: 'Nuxt - práce s modulem Nuxt UI dedikovaným pro práci s uživatelským rozhraním'
+tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS']
+date: '2024-08-26'
+created: '26.08.2024'
+---
+
 V [minulém díle tutoriálu](/article/nuxt-gui) jsme si představili různé možnosti integrace CSS a UI knihoven třetích stran do Nuxt projektu. Když jsem s tvorbou webů v Nuxtu začínal, byl to skvělý způsob, jak pracovat s vzhledem aplikace. Vývojový tým však mezitím postoupil ještě o něco dál a přišel s [oficiálním modulem Nuxt UI](https://ui.nuxt.com/).
 
 ## Popis modulu

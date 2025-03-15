@@ -1,3 +1,14 @@
+---
+file: 'js-gotcha-1'
+cat: 'debugging'
+title: 'Chytáky v JavaScriptu 1 - Není všechno boolean, co je za if'
+dscr: 'Vyhodnocování logických výrazů nemusí vždy fungovat tak, jak si myslíte'
+tags: ['debugging', 'JavaScript']
+date: '2023-11-18'
+created: '18.11.2023'
+edited: '20.11.2023'
+---
+
 Jedna z věcí, co mě baví na JavaScriptu, je možnost zkráceného vyhodnocování, zda je proměnná řádně naplněná. Namísto zdlouhavého porovnávání `if (text !== undefined && text !== null && text.length > 0)` můžeme psát jenom `if (text)` a zafunguje to stejně.
 
 Jen je potřeba si dávat pozor, pokud chce člověk skládat více takových podmínek. Když zadáte:

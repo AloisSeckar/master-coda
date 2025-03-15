@@ -1,3 +1,14 @@
+---
+file: 'nuxt-gui'
+cat: 'web'
+title: 'Nuxt Tutorial 7 - UI integrace'
+dscr: 'Nuxt - jak snadno integrovat UI prvky'
+tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS']
+date: '2024-08-24'
+created: '24.08.2024'
+edited: '20.09.2024'
+---
+
 Už umíme Nuxt aplikaci rozhýbat a používat různé stavební prvky, ze kterých ji lze poskládat. Teď je na čase dát našim stránkám trochu důstojný vzhled. To už si teoreticky můžeme zařídit sami - s pomocí CSS stylů definovaných v rámci sekcí `<style>` jednotlivých komponent. Kdo si na to věří a umí to, může mít zanedlouho krásný web.
 
 Většinou ale spíše nechceme dělat vše od začátku sami znovu. V tomto článku si proto ukážeme nejprve, jak snadno importovat celé připravené CSS soubory, a poté i několik integrací s projekty, které tvorbu uživatelského rozhraní výrazně usnadňují. Konkrétně budu zmiňovat `Tailwind CSS`, `Open Props`, `Vuetify`, `Bootstrap`, `DevExtreme`, `Icônes` a `FontAwesome`.

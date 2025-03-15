@@ -19,9 +19,9 @@
 </template>
 
 <script setup lang="ts">
-const path = useRoute().path
+const props = defineProps({
+  article: { type: Object as PropType<ArticlesCollectionItem>, required: true },
+})
 const github = useRuntimeConfig().public.github
-const id = path.substring(path.lastIndexOf('/') + 1)
-const link = `${github}/master-coda/##/master/content/article/${id}.md`
-const article = computed(() => useArticleStore().getById(id))
+const link = `${github}/master-coda/##/master/content/article/${props.article?.file}.md`
 </script>

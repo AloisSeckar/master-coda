@@ -20,7 +20,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   title?: string
-  localData?: Article[]
+  localData?: Article[] | null
   current?: string
   externalSource?: string
   moreArticles?: string
@@ -28,13 +28,17 @@ const props = defineProps<{
 
 const articleList: ArticleLink[] = []
 if (props.localData && props.localData.length > 0) {
-  props.localData?.forEach(a => articleList.push({
-    date: a.created,
-    link: '/article/' + a.id,
-    title: a.title,
-    dscr: a.dscr,
-    external: false,
-  }))
+  props.localData?.forEach((a) => {
+    if (!a.hidden) {
+      articleList.push({
+        date: a.created,
+        link: '/article/' + a.file,
+        title: a.title,
+        dscr: a.dscr,
+        external: false,
+      })
+    }
+  })
 }
 if (props.externalSource) {
   const { data } = await useFetch<Last5News>(props.externalSource)

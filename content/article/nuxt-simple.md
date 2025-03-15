@@ -1,3 +1,14 @@
+---
+file: 'nuxt-simple'
+cat: 'web'
+title: 'Nuxt Tutorial 1 - První kroky'
+dscr: 'Jak málo dnes stačí na funkční web'
+tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
+date: '2024-03-26'
+created: '26.03.2024'
+edited: '07.09.2024'
+---
+
 V prvním z chystané série výukových článků o [JS frameworku Nuxt](https://nuxt.com/) vám chci ukázat, jak snadno v něm jde rozběhnout funkční projekt.
 
 ## Nuxt Simple

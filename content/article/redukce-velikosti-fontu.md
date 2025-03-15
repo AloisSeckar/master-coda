@@ -1,3 +1,14 @@
+---
+file: 'redukce-velikosti-fontu'
+cat: 'web'
+title: 'Redukce objemu dat při práci s webovými fonty'
+dscr: 'Jak se vyhnout posílání zbytečných dat při použití netradičního fontu na webu'
+tags: ['web', 'css', 'tipy', 'fonty', 'optimalizace', 'tutorial', 'python']
+date: '2023-01-14'
+created: '14.01.2023'
+edited: '14.01.2023'
+---
+
 Pěkný web se dá poskládat i s využitím “standardních” a na webu (většinou) dostupných druhů písma (viz [ZDE](https://www.w3schools.com/cssref/css_websafe_fonts.asp) a [ZDE](https://www.w3schools.com/cssref/css_fonts_fallbacks.asp). Variantou, která dále dramaticky rozšiřuje možnosti, je použití [Google Fonts](https://fonts.google.com/), kdy si můžete soubory písem nechat dotáhnout z ověřeného zdroje `fonts.googleapis.com`. Jsou jich tam volně k dispozici stovky. Vzniká vám ale závislost na třetí straně, i když je to Google _(nebo možná právě proto?)_, a při každém requestu na váš web se budou klientovi stahovat data odjinud. Ne, že by na dnešním webu nebyl běžný stav. Jde to ale i jinak.
 
 Soubor písma je možné uložit, nahrát na FTP a následně načítat přímo na vašem webu. V CSS definujete globální direktivu:

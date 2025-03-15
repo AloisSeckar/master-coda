@@ -1,3 +1,14 @@
+---
+file: 'return-v-metode'
+cat: 'misc'
+title: 'Kolikrát má být v metodě return?'
+dscr: 'Vždycky pouze jednou nebo to může být i jinak?'
+tags: ['refactoring', 'syntaxe']
+date: '2023-01-08'
+created: '08.01.2023'
+edited: '08.01.2023'
+---
+
 **Pozn.:** _S ohledem na mé zaměření mám zkušenosti převážně v Javě a JavaScriptu). Je možné, že v jiných jazycích mohou platit trochu jiná pravidla a jiná pro a proti._
 
 Věřím, že spousta z vás se už potkala s tvrzením, že každá metoda má mít právě jeden výstup, tj. v případě Javy maximálně jeden `return`{lang="java"} (pokud je návratový typ `void`{lang="java"}, tak `return`{lang="java"} není potřeba, ačkoliv není syntaktická chyba prázdný `return;`{lang="java"} řádek uvést).

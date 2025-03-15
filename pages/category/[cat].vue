@@ -6,10 +6,9 @@
 </template>
 
 <script setup lang="ts">
-useArticleStore().fillIfNeeded()
-
 const cat = useRoute().params.cat?.toString() || '_x'
-const articles = computed(() => useArticleStore().getByCategory(cat))
+
+const { data: articles } = await useAsyncData(() => queryCollection('articles').where('cat', '=', cat).order('date', 'DESC').all())
 
 let catName = cat
 if (catName === 'misc') {

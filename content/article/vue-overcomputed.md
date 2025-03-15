@@ -1,3 +1,13 @@
+---
+file: 'vue-overcomputed'
+cat: 'debugging'
+title: 'Overcomputed Vue.js'
+dscr: 'Pozor na Vue.js reaktivní funkci `computed()`, může se spouštět častěji, než byste čekali a chtěli'
+tags: ['debugging', 'JavaScript', 'Vue.js']
+date: '2024-08-21'
+created: '21.08.2024'
+---
+
 <div>
 <nuxt-tutorial />
 </div>

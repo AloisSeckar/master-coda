@@ -1,3 +1,14 @@
+---
+file: 'null-safe-switch'
+cat: 'java'
+title: 'Null-safe switch'
+dscr: 'Jak se vyhnout problémům s NULL hodnotou při vyhodnocení podmínky příkazu switch?'
+tags: ['Java', 'tipy', 'syntaxe', 'NullPointerException']
+date: '2023-01-06'
+created: '06.01.2023'
+edited: '06.01.2023'
+---
+
 Switch je způsob, jak (nejen) v Javě rozdělit kód do více větví podle hodnoty kontrolní proměnné. Použít jde tradičně na ordinální datové typy, výčtové typy (enum) a od Java 7 na řetězce. Java 17 čerstvě přichází s pattern matchingem, který okruh možností dále rozšiřuje. To je však téma na samostatný článek.
 
 Stejně jako v případě `.equals()`{lang=java} se i v příkazu `switch`{lang=java} skrývá hrozba. Nemůžete do něj poslat `null`{lang=java}, aniž by se urazil a nevyplivl `NullPointerException`{lang=java}.

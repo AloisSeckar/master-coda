@@ -1,3 +1,13 @@
+---
+file: 'nuxt-vue'
+cat: 'web'
+title: 'Nuxt Tutorial 6 - Vue.js intermezzo'
+dscr: 'Nuxt - alespoň stručný pohled na základní principy Vue.js, nad kterým je Nuxt postaven'
+tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
+date: '2024-07-28'
+created: '28.07.2024'
+---
+
 V tomto vloženém článku se podíváme trochu blíž na vybrané základní koncepty frameworku Vue.js, nad kterým Nuxt pracuje. Nemyslím totiž, že je vhodné používat jakýkoliv nástroj, aniž by měl člověk alespoň hrubou představu, jak to funguje. Než budeme pokračovat v objevování dalších skvělých funkcí Nuxtu, vrátíme se ke kořenům, aniž bychom v tomto díle něco konkrétního naprogramovali. Budete však mít lepší průpravu, až se o to později sami pokusíte.
 
 Na úvod si zapište nejlepší dostupný zdroj informací o Vue – [oficiální dokumentaci](https://vuejs.org/). „Náhodou“ mám na svědomí její kompletní, průběžně aktualizovaný [překlad do češtiny](https://cs.vuejs.org/), takže na rozdíl od mnoha jiných technologií není třeba vládnout angličtinou. O  všech tématech, která zde zmíním, se mnohem víc dozvíte tam a budete se k ní moct vždycky vrátit a zkonzultovat své dotazy a problémy.

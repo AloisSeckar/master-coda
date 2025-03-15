@@ -1,3 +1,14 @@
+---
+file: 'hello-chatgpt-2'
+cat: 'misc'
+title: 'Druhé rande s ChatGPT - texty'
+dscr: 'Proč AI ano a proč ne s překvapením'
+tags: ['ChatGPT', 'AI', 'programování', 'help']
+date: '2023-05-27'
+created: '27.05.2023'
+edited: '27.05.2023'
+---
+
 Před týdnem jsem psal o své [první zkušenosti s ChatGPT](/article/hello-chatgpt-1). Co je u mě nového?
 
 ## Proč používat ChatGPT?

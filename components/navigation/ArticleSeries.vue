@@ -17,6 +17,8 @@
 const props = defineProps({
   config: { type: Object as PropType<ArticleSeries>, required: true },
 })
-const series = useArticleStore().getByTitle(props.config.match)
+
+const { data: series } = await useAsyncData(() => queryCollection('articles').where('file', 'LIKE', props.config.match + '%').order('date', 'DESC').all())
+
 const currentArticle = useRoute().params.article
 </script>

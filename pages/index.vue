@@ -35,6 +35,5 @@
 <script setup lang="ts">
 usePageMeta(CODA_PAGE_META)
 
-useArticleStore().fillIfNeeded()
-const codaNews = useArticleStore().getLast5()
+const { data: codaNews } = await useAsyncData(() => queryCollection('articles').order('date', 'DESC').limit(5).all())
 </script>

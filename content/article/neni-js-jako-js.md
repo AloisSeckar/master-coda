@@ -1,3 +1,14 @@
+---
+file: 'neni-js-jako-js'
+cat: 'debugging'
+title: 'Není JavaScript jako JavaScript'
+dscr: 'Když obvyklá JS metoda nechce fungovat...'
+tags: ['debugging', 'JavaScript']
+date: '2023-01-07'
+created: '07.01.2023'
+edited: '13.01.2023'
+---
+
 Jedna z našich aplikací je už dost stará - postavená na Java EE 6 a frontend dělaný v JSP se spoustou přidrátovaného JavaScriptu. Něco se vykonává v Javových “actions”, něco řeší až JS na zobrazené stránce. Kvůli historickým problémům se zobrazováním se navíc udělalo, že klient obaluje nějakou starou verzi Internet Exploreru a v něm se vykresluje obsah. Tato legacy záležitost se nechystá zemřít, a tak do ní občas přidáváme nové funkce.
 
 Tuhle jsem potřeboval, aby se po kliknutí na tlačítko v detailu záznamu zobrazil v novém okně PDF dokument z interního archivu. Záznamy jsou několika typů a podle toho je potřeba pokaždé sáhnout na různá místa. Chtěl jsem to řešit hledáním společných částí (INFO, JRF a PD) v řetězci pro název typu, podle kterých se to dá poznat.

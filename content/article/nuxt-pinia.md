@@ -1,3 +1,13 @@
+---
+file: 'nuxt-pinia'
+cat: 'web'
+title: 'Nuxt Tutorial 11 - State management'
+dscr: 'Nuxt + Pinia = efektivní ukládání a distibuce dat napříč celou aplikací'
+tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
+date: '2025-02-25'
+created: '15.02.2025'
+---
+
 Druhou desítku článků o frameworku [Nuxt](https://nuxt.com/) začneme dílem o správě stavu naší aplikace a jak nám může pomoct Vue.js knihovna [Pinia](https://pinia.vuejs.org/).
 
 ## Kdy stav (ne)spravovat?

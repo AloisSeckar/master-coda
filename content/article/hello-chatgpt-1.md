@@ -1,3 +1,14 @@
+---
+file: 'hello-chatgpt-1'
+cat: 'misc'
+title: 'První rande s ChatGPT'
+dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát'
+tags: ['ChatGPT', 'AI', 'programování', 'help']
+date: '2023-05-20'
+created: '20.05.2023'
+edited: '20.05.2023'
+---
+
 Už nějakou dobu si hraju s obrázky od [Midjourney](https://www.midjourney.com/), ale **Tu AI** jménem [ChatGPT](https://openai.com/blog/chatgpt) jsem až do včerejška nevyzkoušel. Řekl jsem si, že nastal čas to napravit.
 
 ## Asistent při programování

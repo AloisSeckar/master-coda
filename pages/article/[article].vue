@@ -1,37 +1,34 @@
 <template>
   <div>
-    <ArticleHeader />
+    <ArticleHeader :article />
     <div class="article">
+      <!--
       <ArticleStub v-if="article?.wip" />
-      <ContentRenderer v-if="articleText" :value="articleText" />
+    -->
+      <ContentRenderer v-if="article" :value="article" />
       <div v-else class="mb-6">
         These are not the articles you are looking for. Keep browsing. Keep browsing.
       </div>
     </div>
-    <ArticleNavigation :article-id="articleId" />
-    <ArticleFooter />
+    <ArticleNavigation :article-id="article?.file || ''" />
+    <ArticleFooter :article />
   </div>
 </template>
 
 <script setup lang="ts">
-useArticleStore().fillIfNeeded()
-
-const articleId = useRoute().params.article as string
-const article = useArticleStore().getById(articleId)
-if (article) {
+// nuxt-content v3 content loading
+const { data: article } = await useAsyncData(() => queryCollection('articles').path(useRoute().path).first())
+if (article.value) {
   usePageMeta({
     type: 'article',
-    url: `${CODA_URL}/article/${articleId}`,
-    title: article.title,
-    dscr: article.dscr,
+    url: `${CODA_URL}/article/${article.value.file}`,
+    title: article.value.title,
+    dscr: article.value.dscr,
   })
 }
 else {
   usePageMeta(CODA_PAGE_META)
 }
-
-// nuxt-content v3 content loading
-const { data: articleText } = await useAsyncData(() => queryCollection('articles').path(useRoute().path).first())
 </script>
 
 <style scoped>

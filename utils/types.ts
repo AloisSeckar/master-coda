@@ -9,8 +9,9 @@ export type MetaDef = {
 
 // ARTICLES
 
+// TODO how to infer this type from content collection definition
 export type Article = {
-  id: string
+  file: string
   cat: string
   title: string
   dscr: string

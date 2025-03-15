@@ -1,3 +1,14 @@
+---
+file: 'hello-chatgpt-5'
+cat: 'misc'
+title: 'Páté rande s ChatGPT - obrázky z Wikipedie'
+dscr: 'Pokus o automatizaci získávání URL na svg obrázky z Wikipedie'
+tags: ['ChatGPT', 'AI', 'programování', 'help']
+date: '2023-10-14'
+created: '14.10.2023'
+edited: '17.10.2023'
+---
+
 Umělá inteligence nás programátory prý brzy nahradí. Ale ještě to nejspíš nějakou chvíli potrvá. Alespoň při mém posledním pokusu mi ChatGPT život zas tak moc neusnadnil, i když cestu ke správnému řešení nakonec ukázal. Nebo jsem jen zatím dostatečně neovládl umění zadat mu ten správný vstup? Posuďte sami.
 
 Přímotal jsem se k [projektu](https://github.com/ByMykel/spanish-cities), který se snaží vytvořit databázi informací o Španělských provinciích a městech v podobě `npm` balíčku. Něco jako náš RÚIAN, ale navíc s obrázky vlajek a znaků. Trochu obskurní téma, pravda. To se vám může stát, když vás napadne zúčastnit se [Hacktoberfestu](https://hacktoberfest.com/) (mimochodem zajímavá akce, která by zasloužila vlastní článek...snad brzy).

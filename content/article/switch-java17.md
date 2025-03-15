@@ -1,3 +1,14 @@
+---
+file: 'switch-java17'
+cat: 'java'
+title: 'Vylepšený switch v Java 17'
+dscr: 'Příjemné syntaktické novinky v (zatím) poslední LTS verzi Javy'
+tags: ['Java', 'tipy', 'tutorial', 'syntaxe']
+date: '2023-01-12'
+created: '12.01.2023'
+edited: '12.01.2023'
+---
+
 Nedávno jsem to psal do jedné FB diskuse a několika uživatelům se to líbilo. Pak ale autor vlákna celou diskusi najednou smazal. Tak jsem rozhodl sepsat to rovnou jako trvalý článek.
 
 Java se postupně mění a podle mě se většinou mění k lepšímu. Jedním z příkladů vývoje v nejnovější LTS verzi Java 17 ze září 2021 evoluce příkazu `switch`{lang="java"}. Jako ukázkový příklad mám jednoduchý úkol - vezmi náhodné číslo 1-7 a vypiš počet písmen v anglickém názvu příslušného dne v týdnu.

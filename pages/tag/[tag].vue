@@ -6,10 +6,10 @@
 </template>
 
 <script setup lang="ts">
-useArticleStore().fillIfNeeded()
-
 const tag = useRoute().params.tag?.toString() || '_x'
-const articles = computed(() => useArticleStore().getByTag(tag))
+console.log(tag)
+
+const { data: articles } = await useAsyncData(() => queryCollection('articles').where('tags', 'LIKE', '%' + tag + '%').order('date', 'DESC').all())
 
 usePageMeta({
   type: 'website',

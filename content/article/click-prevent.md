@@ -1,3 +1,14 @@
+---
+file: 'click-prevent'
+cat: 'debugging'
+title: 'Nechtěný reload stránky'
+dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát'
+tags: ['debugging', 'JavaScript', 'HTML']
+date: '2023-05-15'
+created: '15.05.2023'
+edited: '15.05.2023'
+---
+
 Dnes jsem v práci řešil jednu "reklamaci", jež měla vcelku zajímavý důvod a řešení. Náš program je psaný v JS frameworku [Nuxt](https://nuxt.com/) postaveném nad [Vue.js](https://vuejs.org/). Tester do ticketu zapsal, že při práci s formulářem dochází k neustálému ukládání datového objektu. To by se dít nemělo, chceme, aby se změny do databáze automaticky ukládaly pouze při vstupu na formulář a při odchodu z něj.
 
 Na první pohled nebylo jasné, proč se děje. Procházel jsem logiku formuláře a marně hledal místo, odkud by se metoda pro ukládání volala. Protože jsme ve Vue.js, tak mě napadlo hledat nějaký [watcher](https://vuejs.org/guide/essentials/watchers.html) nebo [computed proměnnou](https://vuejs.org/api/reactivity-core.html#computed), která by z nějakého důvodu vyvolávala na pozadí změnu a nutila hlavní datový objekt ukládat se. Taky žádný výsledek. Mezitím jsem zjistil, že neumím ve VS Code správně spustit debugger, ale to je téma na jinou diskusi.
