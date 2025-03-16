@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+const { title, articles, current, moreArticles } = defineProps<{
   title?: string
   articles: ArticleLink[]
   current?: string
