@@ -18,13 +18,10 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   title?: string
   articles: ArticleLink[]
   current?: string
   moreArticles?: string
 }>()
-
-// TODO log just for troubleshooting Netlify deployment
-console.warn(JSON.stringify(props.articles))
 </script>
