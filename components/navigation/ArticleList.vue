@@ -2,8 +2,8 @@
   <h2 v-if="title">
     {{ title }}
   </h2>
-  <ul v-if="articleList.length > 0" class="list-disc articleList">
-    <li v-for="article in articleList" :key="article.link">
+  <ul v-if="articles.length > 0" class="list-disc articleList">
+    <li v-for="article in articles" :key="article.link">
       <NavigationArticleLink :article="article" :active="article.link !== current" />
     </li>
   </ul>
@@ -18,39 +18,10 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   title?: string
-  localData?: Article[] | null
+  articles: ArticleLink[]
   current?: string
-  externalSource?: string
   moreArticles?: string
 }>()
-
-const articleList: ArticleLink[] = []
-if (props.localData && props.localData.length > 0) {
-  props.localData?.forEach((a) => {
-    if (!a.hidden) {
-      articleList.push({
-        date: a.created,
-        link: '/article/' + a.file,
-        title: a.title,
-        dscr: a.dscr,
-        external: false,
-      })
-    }
-  })
-}
-if (props.externalSource) {
-  const { data } = await useFetch<Last5News>(props.externalSource)
-  if (data.value) {
-    articleList.push(data.value.item1)
-    articleList.push(data.value.item2)
-    articleList.push(data.value.item3)
-    articleList.push(data.value.item4)
-    articleList.push(data.value.item5)
-  }
-  articleList.forEach((a: ArticleLink) => {
-    a.external = true
-  })
-}
 </script>

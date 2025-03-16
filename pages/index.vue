@@ -10,21 +10,21 @@
       i&nbsp;za zpětnou vazbu. Pokud v&nbsp;nich uvidíte chybu nebo znáte způsob, jak danou věc řešit lépe, napište
       mi na <a href="mailto:alois-seckar@gmail.com">alois-seckar@gmail.com</a>. Vždycky je kam se zlepšovat.
     </p>
-    <NavigationArticleList
+    <NavigationArticleListContent
       title="Co nového na master-coda.cz?"
-      :local-data="codaNews"
+      :articles="codaNews"
     />
-    <NavigationArticleList
+    <NavigationArticleListExternal
       title="Co nového v Nuxt/Vue světě?"
       external-source="https://alois-seckar.cz/nuxt-news"
       more-articles="https://github.com/AloisSeckar/demos-nuxt/blob/main/NuxtNews.md"
     />
-    <NavigationArticleList
+    <NavigationArticleListExternal
       title="Co nového v Java světě?"
       external-source="https://alois-seckar.cz/java-news"
       more-articles="https://github.com/AloisSeckar/demos-java/blob/master/JavaNews.md"
     />
-    <NavigationArticleList
+    <NavigationArticleListExternal
       title="Co nového v IT světě?"
       external-source="https://alois-seckar.cz/coda-digest"
       more-articles="https://github.com/AloisSeckar/master-coda/blob/master/CodaDigest.md"

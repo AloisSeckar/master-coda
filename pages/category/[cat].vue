@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>Všechny články v kategorii</div>
-    <NavigationArticleList :title="catName" :local-data="articles" />
+    <NavigationArticleListContent :title="catName" :articles />
   </div>
 </template>
 

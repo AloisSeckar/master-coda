@@ -9,7 +9,7 @@
         {{ config.linkTitle }}
       </NuxtLink>
     </div>
-    <NavigationArticleList :local-data="series" :current="'/article/' + currentArticle" />
+    <NavigationArticleListContent :articles="series" :current="'/article/' + currentArticle" />
   </div>
 </template>
 
