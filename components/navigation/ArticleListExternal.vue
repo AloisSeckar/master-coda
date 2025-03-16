@@ -11,16 +11,16 @@ const props = defineProps<{
   moreArticles: string
 }>()
 
-const articleList: ArticleLink[] = []
+const articleList: Ref<ArticleLink[]> = ref([])
 const { data } = await useFetch<Last5News>(props.externalSource)
 if (data.value) {
-  articleList.push(data.value.item1)
-  articleList.push(data.value.item2)
-  articleList.push(data.value.item3)
-  articleList.push(data.value.item4)
-  articleList.push(data.value.item5)
+  articleList.value.push(data.value.item1)
+  articleList.value.push(data.value.item2)
+  articleList.value.push(data.value.item3)
+  articleList.value.push(data.value.item4)
+  articleList.value.push(data.value.item5)
 }
-articleList.forEach((a: ArticleLink) => {
+articleList.value.forEach((a: ArticleLink) => {
   a.external = true
 })
 </script>
