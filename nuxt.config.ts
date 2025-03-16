@@ -23,9 +23,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    prerender: {
-      routes: ['/', '/fun'],
-    },
+    static: true,
   },
 
 })
