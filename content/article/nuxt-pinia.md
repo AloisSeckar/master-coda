@@ -6,6 +6,7 @@ dscr: 'Nuxt + Pinia = efektivní ukládání a distibuce dat napříč celou apl
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2025-02-25'
 created: '15.02.2025'
+edited: '16.03.2025'
 ---
 
 Druhou desítku článků o frameworku [Nuxt](https://nuxt.com/) začneme dílem o správě stavu naší aplikace a jak nám může pomoct Vue.js knihovna [Pinia](https://pinia.vuejs.org/).
@@ -52,18 +53,13 @@ Do Nuxtu se Pinia podobně jako jiné nástroje integruje jednoduše pomocí [de
 
 ## Případová studie
 
-Na tomto webu Master Coda mám Pinia stores dva - `useArticleStore` udržuje seznam článků, které zde čtete, a `useFunStore` seznam vtipných obrázků, které si můžete [prohlédnout](/fun). Trochu jsem si ulehčil práci a nepoužil čtení obsahových dat z databáze. Lépe řečeno mou databází jsou dva soubory. Jelikož se zdejší obsah příliš dynamicky nemění, je to dostatečně dobré a jednoduché řešení.
+Na tomto webu Master Coda jeden Pinia store mám - `useFunStore` udržuje seznam vtipných obrázků, které si můžete [prohlédnout](/fun). Trochu jsem si ulehčil práci a nepoužil čtení obsahových dat z databáze. Lépe řečeno mou databází je pouze soubor definující pole s metadaty. Jelikož se seznam obrázků příliš dynamicky nemění, je to dostatečně dobré a přitom jednoduché řešení. `useFunStore` si při prvním použití natáhne definice obrázků z `/data/fun.ts`, nastaví interní ukazatel na poslední obrázek a zpřístupňuje metody pro posun ukazatele vpřed a vzad. Pomocí toho se na stránce s obrázky naviguje klikáním na tlačítka.
 
-`useArticleStore` si při prvním použití načte metadata článků z `/data/articles.ts`. Nad tímto seznamem poté nabízí metody pro vyhledávání, které pak používají klientské komponenty.
+Tento příklad je nyní nedílnou součástí toho, jak tento web funguje. Zároveň je dost možná v rozporu s tím, co jsem psal v úvodu, protože řeší udržování něčeho, co by udržováno být nemuselo. Například proto, že ne každý návštěvník prokliká obrázky všechny, a tedy není nutné je načítat dopředu, stačilo by ad-hoc během prohlížení. Jen mě to nenapadlo, když jsem stránku vymýšlel a zatím se mi to nechce předělávat. Aspoň ale vidíte, že k poznání, co dělat a co nedělat, vede klikatá cesta lemovaná pohrobky špatných rozhodnutí. Zároveň je pravda, že práce s knihovnou Pinia je natolik snadná a režijní náklady natolik malé, že si můžu dovolit tuto nedokonalost v kódu ponechat a zde se na ni z edukativních důvodů odkázat.
 
-`useFunStore` obdobně natáhne definice obrázků z `/data/fun.ts`, nastaví interní ukazatel na poslední obrázek a zpřístupňuje metody pro posun ukazatele vpřed a vzad. Pomocí toho se na stránce s obrázky naviguje klikáním na tlačítka.
-
-Oba tyto příklady jsou nedílnou součástí toho, jak tento web funguje. Zároveň jsou dost možná v rozporu s tím, co jsem psal v úvodu, protože řeší udržování něčeho, co by udržováno být nemuselo. Například proto, že metadata všech článků každého z návštěvníků stránek nejspíš ani nezajímají. Vyhledávání nad seznamem metadat by mohlo být implementováno ad-hoc bez zavádění state managementu. Aspoň ale vidíte, že k poznání, co dělat a co nedělat, vede klikatá cesta lemovaná připomínkami špatných rozhodnutí. Zároveň je pravda, že práce s knihovnou Pinia je natolik snadná a režijní náklady natolik malé, že si můžu dovolit tuto nedokonalost v kódu ponechat a zde se na ni z edukativních důvodů odkázat.
-
-Druhá zajímavost obou příkladů je, že jsou stále napsány v _Options_ stylu. Ten mi totiž zpočátku přišel z nějakého důvodu srozumitelnější, ačkoliv je to v rozporu s _Composition API_ přístupem, jenž jsem si osvojil všude jinde. I z tohoto pohledu bych už dnes tento kód napsal jinak. Ale zase to můžete brát jako důkaz, že i druhý přístup funguje, což je vždy to hlavní.
+Druhá zajímavostí příkladu je, že je stále napsán v _Options_ stylu. Ten mi totiž zpočátku přišel z nějakého důvodu srozumitelnější, ačkoliv je to v rozporu s _Composition API_ přístupem, jenž jsem si osvojil všude jinde. I z tohoto pohledu bych už dnes tento kód napsal jinak. Ale zase to můžete brát jako důkaz, že i druhý přístup funguje, což je vždy to hlavní.
 
 Na konkrétní implementaci se můžete podívat zde:
-- https://github.com/AloisSeckar/master-coda/blob/master/composables/useArticleStore.ts
 - https://github.com/AloisSeckar/master-coda/blob/master/composables/useFunStore.ts
 
 ## Demo projekt
