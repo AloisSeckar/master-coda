@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2025-03-04`** | [Stop Using And Recommending React](https://blog.lusito.info/stop-using-and-recommending-react.html) - an experienced **React** dev explains how he sees the current state of his ecosystem and giving some alternative tips |
 | **`2025-02-26`** | [How do lava lamps help with Internet encryption?](https://www.cloudflare.com/learning/ssl/lava-lamp-encryption/) - discover how you can achieve a "real" randomness in the deterministic computer world |
 | **`2025-02-04`** | [The End of Programming as We Know It](https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/) - why you shouldn't be afraid of "AI will take our jobs" doomsaying |
 | **`2025-01-30`** | [Assert but Verify](https://donraab.medium.com/assert-but-verify-b2727bd63f6c) - lessons learned about Java inheritance by the developer of **Eclipse Collections** |
