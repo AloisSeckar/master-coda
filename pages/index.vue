@@ -14,10 +14,6 @@
       title="Co nového na master-coda.cz?"
       :articles="codaNews"
     />
-    <!-- TODO fixme -->
-    <section class="mt-4 mb-2 p-2 w-full border-2 border-red-800 bg-red-200 rounded-md text-red-600 text-center">
-      <strong>Pozor:</strong> Aktuálně bohužel nefunguje načítání článků z externího zdroje. Snažím se vyřešit proč...
-    </section>
     <NavigationArticleListExternal
       title="Co nového v Nuxt/Vue světě?"
       external-source="https://alois-seckar.cz/nuxt-news"
