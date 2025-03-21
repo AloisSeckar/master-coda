@@ -7,6 +7,8 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2025-03-19`** | [No Longer My Favorite Git Commit](https://mtlynch.io/no-longer-my-favorite-git-commit/) - re-visiting approach to good quality commit messages |
+| **`2025-03-06`** | [JavaScript Error Re-Throwing: What, Why, When?](https://vueschool.io/articles/vuejs-tutorials/javascript-error-re-throwing-what-why-when/) - a great guide to error handling in JS applications |
 | **`2025-03-04`** | [Stop Using And Recommending React](https://blog.lusito.info/stop-using-and-recommending-react.html) - an experienced **React** dev explains how he sees the current state of his ecosystem and giving some alternative tips |
 | **`2025-02-26`** | [How do lava lamps help with Internet encryption?](https://www.cloudflare.com/learning/ssl/lava-lamp-encryption/) - discover how you can achieve a "real" randomness in the deterministic computer world |
 | **`2025-02-04`** | [The End of Programming as We Know It](https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/) - why you shouldn't be afraid of "AI will take our jobs" doomsaying |
@@ -65,6 +67,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2023-03-14`** | [16 little UI design rules that make a big impact](https://uxplanet.org/16-ui-design-tips-ba2e7524d203) - build better UIs by following at least some of those principles |
 | **`2021-07-07`** | [npm audit: Broken by Design](https://overreacted.io/npm-audit-broken-by-design/) - aside from being a rant against **npm audit** command, it gives brilliant insight into how it works, making this article a valuable resource to improve your **npm** JS package management understanding |
 | **`2020-12-17`** | [Troubleshooting Native Memory Leaks in Java Applications](https://poonamparhar.github.io/troubleshooting_native_memory_leaks/) - how to understand, diagnose and confirm leaks coming from native code interactions with memory |
+| **`2019-08-30`** | [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) - how to make a change of single whitespace character epic - and why it matters |
 | **`2014-04-17`** | [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) - the anatomy of an error that caused $460 million loss in just 45-minutes |
 
 ---
