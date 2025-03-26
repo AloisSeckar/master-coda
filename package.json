@@ -8,9 +8,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt-ignis": "0.2.4",
-    "vue": "latest",
-    "vue-router": "latest"
+    "nuxt-ignis": "0.2.5"
   },
   "pnpm": {
     "onlyBuiltDependencies": [ "better-sqlite3"]
