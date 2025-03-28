@@ -42,6 +42,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2024-06-26`** | [The 5 Worst Anti-Patterns in API Management](https://thenewstack.io/the-5-worst-anti-patterns-in-api-management/) - if you want to have system with API sustainable in a long term you shouldn't do this |
 | **`2024-06-04`** | [How Deep is Your DOM?](https://frontendatscale.com/blog/how-deep-is-your-dom/) - how nesting a lot of HTML elements can impact speed of your page - with examples |
 | **`2024-05-02`** | [Render-blocking on purpose](https://fullystacked.net/render-blocking-on-purpose/) - learn about new HTML attributes that can help you control rendering of your website |
+| **`2024-04-24`** | [Top 10 Tools for Kafka Engineers](https://thenewstack.io/top-10-tools-for-kafka-engineers/) - list of interesting technologies built around **Apache Kafka** |
 | **`2024-04-25`** | [A brief history of web development. And why your framework doesn't matter.](https://gebna.gg/blog/brief-history-of-web-development) - in case you've missed the last 15 years of web development evolution, here's a breathtaking summary of it |
 | **`2024-04-25`** | [Hidden Gems of Tailwind CSS](https://railsdesigner.com/hidden-gems-tailwind/) - take your **Tailwind CSS** skills to a new level with this _not-another-boring_ list of features |
 | **`2024-04-17`** | [ECMAScript 2024 features you can use now](https://www.infoworld.com/article/3715260/ecmascript-2024-features-you-can-use-now.html) - overview of new language features that should arrive this year in JS |
