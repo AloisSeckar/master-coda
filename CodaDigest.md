@@ -8,6 +8,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
 | **`2025-04-10`** | [Linus Torvalds built Git in 10 days](https://www.zdnet.com/article/linus-torvalds-built-git-in-10-days-and-never-imagined-it-would-last-20-years/) - fascinating story behind the origins of Git |
+| **`2025-04-04`** | [The Best Programmers I Know](https://endler.dev/2025/best-programmers/) - things that the most outstanding software engineers do (and you should too) |
 | **`2025-03-19`** | [No Longer My Favorite Git Commit](https://mtlynch.io/no-longer-my-favorite-git-commit/) - re-visiting approach to good quality commit messages |
 | **`2025-03-06`** | [JavaScript Error Re-Throwing: What, Why, When?](https://vueschool.io/articles/vuejs-tutorials/javascript-error-re-throwing-what-why-when/) - a great guide to error handling in JS applications |
 | **`2025-03-04`** | [Stop Using And Recommending React](https://blog.lusito.info/stop-using-and-recommending-react.html) - an experienced **React** dev explains how he sees the current state of his ecosystem and giving some alternative tips |
