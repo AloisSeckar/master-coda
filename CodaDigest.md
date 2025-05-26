@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2025-05-22`** | [A Brief History of JavaScript](https://deno.com/blog/history-of-javascript) - the journey that lasts 30 years already - and JS is definitely not done yet! |
 | **`2025-05-05`** | [How to Harden GitHub Actions: The Unofficial Guide](https://www.wiz.io/blog/github-actions-security-guide) - an interesting insight into GitHub Action ecosystem - their common security weaknesses and how to deal with them |
 | **`2025-04-28`** | [Categorize Your Dependencies](https://antfu.me/posts/categorize-deps) - with PNPM, you can create special catalogues for your JavaScript dependencies to maintain better consistency |
 | **`2025-04-10`** | [Linus Torvalds built Git in 10 days](https://www.zdnet.com/article/linus-torvalds-built-git-in-10-days-and-never-imagined-it-would-last-20-years/) - fascinating story behind the origins of Git |
