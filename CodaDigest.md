@@ -73,6 +73,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2023-03-14`** | [16 little UI design rules that make a big impact](https://uxplanet.org/16-ui-design-tips-ba2e7524d203) - build better UIs by following at least some of those principles |
 | **`2021-07-07`** | [npm audit: Broken by Design](https://overreacted.io/npm-audit-broken-by-design/) - aside from being a rant against **npm audit** command, it gives brilliant insight into how it works, making this article a valuable resource to improve your **npm** JS package management understanding |
 | **`2020-12-17`** | [Troubleshooting Native Memory Leaks in Java Applications](https://poonamparhar.github.io/troubleshooting_native_memory_leaks/) - how to understand, diagnose and confirm leaks coming from native code interactions with memory |
+| **`2020-01-11`** | [Goodbye, Clean Code](https://overreacted.io/goodbye-clean-code/) - why applying the rules blindly isn't always the best option |
 | **`2019-08-30`** | [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) - how to make a change of single whitespace character epic - and why it matters |
 | **`2014-04-17`** | [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) - the anatomy of an error that caused $460 million loss in just 45-minutes |
 
