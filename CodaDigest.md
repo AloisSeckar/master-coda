@@ -7,6 +7,8 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2025-05-28`** | [AI didn’t kill Stack Overflow](https://www.infoworld.com/article/3993482/ai-didnt-kill-stack-overflow.html) - Quo vadis, Stack Overflow? It would be too easy to blame just the AI... |
+| **`2025-05-27`** | [How Java Sparked an Open Source Revolution 30 Years Ago](https://thenewstack.io/how-java-sparked-an-open-source-revolution-30-years-ago/) - being able to re-share your code easily was a gamechanger back then |
 | **`2025-05-22`** | [A Brief History of JavaScript](https://deno.com/blog/history-of-javascript) - the journey that lasts 30 years already - and JS is definitely not done yet! |
 | **`2025-05-05`** | [How to Harden GitHub Actions: The Unofficial Guide](https://www.wiz.io/blog/github-actions-security-guide) - an interesting insight into GitHub Action ecosystem - their common security weaknesses and how to deal with them |
 | **`2025-04-28`** | [Categorize Your Dependencies](https://antfu.me/posts/categorize-deps) - with PNPM, you can create special catalogues for your JavaScript dependencies to maintain better consistency |
