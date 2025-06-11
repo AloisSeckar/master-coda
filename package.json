@@ -11,6 +11,11 @@
     "nuxt-ignis": "0.2.5"
   },
   "pnpm": {
-    "onlyBuiltDependencies": [ "better-sqlite3"]
-  } 
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "better-sqlite3",
+      "esbuild",
+      "sharp"
+    ]
+  }
 }
