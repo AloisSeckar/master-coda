@@ -18,28 +18,28 @@
         </div>
         <ul class="flex">
           <li :class="menuButton">
-            <NuxtLink :to="{ path: '/category/java' }">
+            <NuxtLink external :to="{ path: '/category/java' }">
               <div :class="menuFont">
                 JAVA
               </div>
             </NuxtLink>
           </li>
           <li :class="menuButton">
-            <NuxtLink :to="{ path: '/category/web' }">
+            <NuxtLink external :to="{ path: '/category/web' }">
               <div :class="menuFont">
                 WEB
               </div>
             </NuxtLink>
           </li>
           <li :class="menuButton">
-            <NuxtLink :to="{ path: '/category/debugging' }">
+            <NuxtLink external :to="{ path: '/category/debugging' }">
               <div :class="menuFont">
                 DEBUGGING
               </div>
             </NuxtLink>
           </li>
           <li :class="menuButton">
-            <NuxtLink :to="{ path: '/category/misc' }">
+            <NuxtLink external :to="{ path: '/category/misc' }">
               <div :class="menuFont">
                 OSTATNÍ
               </div>

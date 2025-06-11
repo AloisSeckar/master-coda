@@ -1,6 +1,7 @@
 .data
 .nuxt
 .output
+dist
 node_modules
 nuxt.d.ts
 *.log

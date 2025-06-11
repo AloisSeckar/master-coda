@@ -15,7 +15,6 @@ const { data: articles } = await useAsyncData(
 )
 
 const catName = computed(() => {
-  log.warn('catvalue changed to ' + cat.value)
   let catName = cat.value
   if (catName === 'misc') {
     catName = 'ostatní'
