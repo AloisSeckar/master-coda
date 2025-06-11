@@ -6,14 +6,18 @@
 </template>
 
 <script setup lang="ts">
-const tag = useRoute().params.tag?.toString() || '_x'
+const tag = computed(() => useRoute().params.tag?.toString() || '_x')
 
-const { data: articles } = await useAsyncData(() => queryCollection('articles').where('tags', 'LIKE', '%' + tag + '%').order('date', 'DESC').all())
+const { data: articles } = await useAsyncData(
+  'articles',
+  () => queryCollection('articles').where('tags', 'LIKE', '%' + tag.value + '%').order('date', 'DESC').all(),
+  { watch: [tag] },
+)
 
 usePageMeta({
   type: 'website',
-  url: `${CODA_URL}/tag/${tag}`,
-  title: `Master Coda - ${tag}`,
-  dscr: `Články podle tagu: ${tag}`,
+  url: `${CODA_URL}/tag/${tag.value}`,
+  title: `Master Coda - ${tag.value}`,
+  dscr: `Články podle tagu: ${tag.value}`,
 })
 </script>

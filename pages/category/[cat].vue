@@ -6,19 +6,27 @@
 </template>
 
 <script setup lang="ts">
-const cat = useRoute().params.cat?.toString() || '_x'
+const cat = computed(() => useRoute().params.cat?.toString() || '_x')
 
-const { data: articles } = await useAsyncData(() => queryCollection('articles').where('cat', '=', cat).order('date', 'DESC').all())
+const { data: articles } = await useAsyncData(
+  'articles',
+  () => queryCollection('articles').where('cat', '=', cat.value).order('date', 'DESC').all(),
+  { watch: [cat] },
+)
 
-let catName = cat
-if (catName === 'misc') {
-  catName = 'ostatní'
-}
+const catName = computed(() => {
+  console.log('catvalue changed to ' + cat.value)
+  let catName = cat.value
+  if (catName === 'misc') {
+    catName = 'ostatní'
+  }
+  return catName
+})
 
 usePageMeta({
   type: 'website',
-  url: `${CODA_URL}/category/${catName}`,
-  title: `Master Coda - ${catName}`,
-  dscr: `Články podle kategorie: ${catName}`,
+  url: `${CODA_URL}/category/${catName.value}`,
+  title: `Master Coda - ${catName.value}`,
+  dscr: `Články podle kategorie: ${catName.value}`,
 })
 </script>
