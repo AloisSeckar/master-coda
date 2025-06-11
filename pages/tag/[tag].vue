@@ -7,7 +7,6 @@
 
 <script setup lang="ts">
 const tag = useRoute().params.tag?.toString() || '_x'
-console.log(tag)
 
 const { data: articles } = await useAsyncData(() => queryCollection('articles').where('tags', 'LIKE', '%' + tag + '%').order('date', 'DESC').all())
 
