@@ -10,6 +10,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2025-05-28`** | [AI didn’t kill Stack Overflow](https://www.infoworld.com/article/3993482/ai-didnt-kill-stack-overflow.html) - Quo vadis, Stack Overflow? It would be too easy to blame just the AI... |
 | **`2025-05-27`** | [How Java Sparked an Open Source Revolution 30 Years Ago](https://thenewstack.io/how-java-sparked-an-open-source-revolution-30-years-ago/) - being able to re-share your code easily was a gamechanger back then |
 | **`2025-05-22`** | [A Brief History of JavaScript](https://deno.com/blog/history-of-javascript) - the journey that lasts 30 years already - and JS is definitely not done yet! |
+| **`2025-05-12`** | [The Past, Present, and Future of Web Components](https://dev.to/besworks/the-past-present-and-future-of-web-components-2g43) - for sure you have heard about **Web Components** - but do you know more about them? |
 | **`2025-05-05`** | [How to Harden GitHub Actions: The Unofficial Guide](https://www.wiz.io/blog/github-actions-security-guide) - an interesting insight into GitHub Action ecosystem - their common security weaknesses and how to deal with them |
 | **`2025-04-28`** | [Categorize Your Dependencies](https://antfu.me/posts/categorize-deps) - with PNPM, you can create special catalogues for your JavaScript dependencies to maintain better consistency |
 | **`2025-04-10`** | [Linus Torvalds built Git in 10 days](https://www.zdnet.com/article/linus-torvalds-built-git-in-10-days-and-never-imagined-it-would-last-20-years/) - fascinating story behind the origins of Git |
@@ -78,6 +79,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2020-01-11`** | [Goodbye, Clean Code](https://overreacted.io/goodbye-clean-code/) - why applying the rules blindly isn't always the best option |
 | **`2019-08-30`** | [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) - how to make a change of single whitespace character epic - and why it matters |
 | **`2014-04-17`** | [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) - the anatomy of an error that caused $460 million loss in just 45-minutes |
+| **`2003-08-29`** | [Cannot Measure Productivity](https://martinfowler.com/bliki/CannotMeasureProductivity.html) - **Martin Fowler** about evaluating devs' productivity |
 
 ---
 _This list is being maintainted since 04/2024_
