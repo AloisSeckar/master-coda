@@ -280,6 +280,18 @@ const fun = [
     title: 'The floor is Java',
     added: '2025-03-04',
   },
+  {
+    id: 'development-models',
+    title: 'Development Models',
+    explain: 'Waterfall - postupně od návrhu přes vývoj až po testování a nasazení; Agile - iterativní vývoj od malého prototypu k úplnému řešení; AI - beze slov :D',
+    added: '2025-06-20',
+  },
+  {
+    id: 'sans-sheriff',
+    title: 'Sans Sheriff',
+    explain: 'Písmo Sans Serif (z francouzštiny "bezpatkové")',
+    added: '2025-06-29',
+  },
 ]
 
 export { fun }
