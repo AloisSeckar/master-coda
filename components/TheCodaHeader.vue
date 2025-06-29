@@ -119,8 +119,8 @@
 
 <script setup lang="ts">
 const header = 'ml-32 h-32 pt-2 border-b-2 border-coda-green'
-const headerH1 = 'ml-1 font-header text-coda-yellow text-2xl'
-const headerH2 = 'ml-1 font-header text-coda-yellow text-xl'
+const headerH1 = 'ml-1 font-header text-coda-yellow! text-2xl'
+const headerH2 = 'ml-1 font-header text-coda-yellow! text-xl'
 const menuButton = 'actionButton p-1 w-1/5'
 const menuButtonFloat = 'actionButton p-1 w-36 text-center'
 const menuFont = 'actionButtonText font-bold'

@@ -10,6 +10,9 @@
     --font-code: 'Courier New';
 }
 
+/* TODO this seriously needs to be eradicated... */
+/* https://dev.to/aloisseckar/i-was-using-tailwind-wrong-so-you-dont-have-to-4h7j */
+
 body {
     @apply bg-slate-900;
 }
