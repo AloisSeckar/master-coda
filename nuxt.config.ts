@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     },
   },
 
+  // TODO this will be part of the nuxt-ignis config in the future
+  css: [
+    '@/assets/css/coda-tailwind.css',
+  ],
+
   content: {
     build: {
       markdown: {
