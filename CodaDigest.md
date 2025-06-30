@@ -7,6 +7,9 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2025-06-27`** | [Context Engineering is the New Vibe Coding](https://analyticsindiamag.com/ai-features/context-engineering-is-the-new-vibe-coding/) - the AI landscape is evolving fast and new techniques are emerging as well |
+| **`2025-06-17`** | [Why JPEGs Still Rule the Web](https://spectrum.ieee.org/jpeg-image-format-history) - a brief history of **JPEG** format and why it was so successfull |
+| **`2025-06-16`** | [What I Wish Someone Told Me When I Was Getting Into ARIA](https://www.smashingmagazine.com/2025/06/what-i-wish-someone-told-me-aria/) - this (long) article might as well be a gospel of web accessibility |
 | **`2025-05-28`** | [AI didn’t kill Stack Overflow](https://www.infoworld.com/article/3993482/ai-didnt-kill-stack-overflow.html) - Quo vadis, Stack Overflow? It would be too easy to blame just the AI... |
 | **`2025-05-27`** | [How Java Sparked an Open Source Revolution 30 Years Ago](https://thenewstack.io/how-java-sparked-an-open-source-revolution-30-years-ago/) - being able to re-share your code easily was a gamechanger back then |
 | **`2025-05-22`** | [A Brief History of JavaScript](https://deno.com/blog/history-of-javascript) - the journey that lasts 30 years already - and JS is definitely not done yet! |
@@ -79,6 +82,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2020-01-11`** | [Goodbye, Clean Code](https://overreacted.io/goodbye-clean-code/) - why applying the rules blindly isn't always the best option |
 | **`2019-08-30`** | [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) - how to make a change of single whitespace character epic - and why it matters |
 | **`2014-04-17`** | [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) - the anatomy of an error that caused $460 million loss in just 45-minutes |
+| **`2010-01-08`** | [The Virtue of Forgiving HTML Parsers](https://quandyfactory.com/blog/39/the_virtue_of_forgiving_html_parsers) - the web became _world wide_ because browsers allow to render even badly formatted code - that's why it is a good thing |
 | **`2003-08-29`** | [Cannot Measure Productivity](https://martinfowler.com/bliki/CannotMeasureProductivity.html) - **Martin Fowler** about evaluating devs' productivity |
 
 ---
