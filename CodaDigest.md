@@ -74,6 +74,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2023-11-02`** | [How to write good alt text for screen readers](https://www.craigabbott.co.uk/blog/how-to-write-good-alt-text-for-screen-readers/) - a lesson from Web Accessibility that is worth taking even without deeper context |
 | **`2023-09-22`** | [So, you want to speak at conferences](https://hollycummins.com/so-you-want-to-speak-at-conferences/) - your guide to become a future star of IT conferences |
 | **`2023-09-15`** | [Optimization in Pom XML file](https://swapnilagarwal2001.medium.com/optimization-in-pom-xml-file-b218469e3800) - how **Maven** dependencies work and what can you do to define them better |
 | **`2023-03-14`** | [16 little UI design rules that make a big impact](https://uxplanet.org/16-ui-design-tips-ba2e7524d203) - build better UIs by following at least some of those principles |
