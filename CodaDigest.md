@@ -7,6 +7,10 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2025-07-01`** | [You Only Need 12 Lines of CSS to Build a Clean, Attractive Website](https://www.howtogeek.com/get-a-clean-attractive-site-with-lines-of-css/) - simple but great tips for styling your websites |
+| **`2025-06-27`** | [Context Engineering is the New Vibe Coding](https://analyticsindiamag.com/ai-features/context-engineering-is-the-new-vibe-coding/) - the AI landscape is evolving fast and new techniques are emerging as well |
+| **`2025-06-17`** | [Why JPEGs Still Rule the Web](https://spectrum.ieee.org/jpeg-image-format-history) - a brief history of **JPEG** format and why it was so successfull |
+| **`2025-06-16`** | [What I Wish Someone Told Me When I Was Getting Into ARIA](https://www.smashingmagazine.com/2025/06/what-i-wish-someone-told-me-aria/) - this (long) article might as well be a gospel of web accessibility |
 | **`2025-05-28`** | [AI didn’t kill Stack Overflow](https://www.infoworld.com/article/3993482/ai-didnt-kill-stack-overflow.html) - Quo vadis, Stack Overflow? It would be too easy to blame just the AI... |
 | **`2025-05-27`** | [How Java Sparked an Open Source Revolution 30 Years Ago](https://thenewstack.io/how-java-sparked-an-open-source-revolution-30-years-ago/) - being able to re-share your code easily was a gamechanger back then |
 | **`2025-05-22`** | [A Brief History of JavaScript](https://deno.com/blog/history-of-javascript) - the journey that lasts 30 years already - and JS is definitely not done yet! |
@@ -71,6 +75,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2023-11-02`** | [How to write good alt text for screen readers](https://www.craigabbott.co.uk/blog/how-to-write-good-alt-text-for-screen-readers/) - a lesson from Web Accessibility that is worth taking even without deeper context |
 | **`2023-09-22`** | [So, you want to speak at conferences](https://hollycummins.com/so-you-want-to-speak-at-conferences/) - your guide to become a future star of IT conferences |
 | **`2023-09-15`** | [Optimization in Pom XML file](https://swapnilagarwal2001.medium.com/optimization-in-pom-xml-file-b218469e3800) - how **Maven** dependencies work and what can you do to define them better |
 | **`2023-03-14`** | [16 little UI design rules that make a big impact](https://uxplanet.org/16-ui-design-tips-ba2e7524d203) - build better UIs by following at least some of those principles |
@@ -79,6 +84,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2020-01-11`** | [Goodbye, Clean Code](https://overreacted.io/goodbye-clean-code/) - why applying the rules blindly isn't always the best option |
 | **`2019-08-30`** | [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) - how to make a change of single whitespace character epic - and why it matters |
 | **`2014-04-17`** | [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) - the anatomy of an error that caused $460 million loss in just 45-minutes |
+| **`2010-01-08`** | [The Virtue of Forgiving HTML Parsers](https://quandyfactory.com/blog/39/the_virtue_of_forgiving_html_parsers) - the web became _world wide_ because browsers allow to render even badly formatted code - that's why it is a good thing |
 | **`2003-08-29`** | [Cannot Measure Productivity](https://martinfowler.com/bliki/CannotMeasureProductivity.html) - **Martin Fowler** about evaluating devs' productivity |
 
 ---
