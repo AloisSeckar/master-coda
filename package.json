@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "better-sqlite3": "12.2.0",
-    "nuxt-ignis": "0.4.0-rc.2"
+    "nuxt-ignis": "0.4.0-rc.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
