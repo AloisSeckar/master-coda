@@ -2,7 +2,7 @@
   <div class="m-1 h-36">
     <NuxtLink :to="{ path: '/' }">
       <NuxtImg
-        class="w-[112px] h-[128px] float-left border-2 border-coda-green hover:border-coda-yellow"
+        class="mt-2 w-[119px] h-auto float-left border-2 border-coda-green hover:border-coda-yellow"
         src="/img/master-coda.webp"
         alt="Master Coda - Logo"
       />
@@ -11,7 +11,7 @@
     <div id="large-screens" class="hidden lg:block">
       <div :class="header">
         <div :class="headerH1">
-          <span class="text-3xl font-bold">Master Coda</span> - The light side of the code
+          <span class="text-3xl font-bold text-wrap">Master Coda</span> - The light side of the code
         </div>
         <div :class="headerH2">
           Nepravidelný blog o programování
@@ -119,8 +119,8 @@
 
 <script setup lang="ts">
 const header = 'ml-32 h-32 pt-2 border-b-2 border-coda-green'
-const headerH1 = 'ml-1 font-header text-coda-yellow! text-2xl'
-const headerH2 = 'ml-1 font-header text-coda-yellow! text-xl'
+const headerH1 = 'ml-1 font-header text-coda-yellow! text-xl'
+const headerH2 = 'ml-1 font-header text-coda-yellow! text-lg max-[395px]:hidden'
 const menuButton = 'actionButton p-1 w-1/5'
 const menuButtonFloat = 'actionButton p-1 w-36 text-center'
 const menuFont = 'actionButtonText font-bold'

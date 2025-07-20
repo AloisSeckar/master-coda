@@ -13,6 +13,11 @@
 /* TODO this seriously needs to be eradicated... */
 /* https://dev.to/aloisseckar/i-was-using-tailwind-wrong-so-you-dont-have-to-4h7j */
 
+html {
+    /* override Nuxt Ignis defaults */
+    @apply max-w-[1000px] text-[18px];
+}
+
 body {
     @apply bg-slate-900;
 }

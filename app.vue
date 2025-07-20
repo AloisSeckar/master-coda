@@ -9,11 +9,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-useHead({
-  htmlAttrs: {
-    lang: 'cs',
-  },
-})
-</script>

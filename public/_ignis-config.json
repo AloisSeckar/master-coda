@@ -1,0 +1,108 @@
+{
+  "modules": [
+    "@nuxt/eslint",
+    "@nuxt/fonts",
+    "@nuxt/image",
+    "@nuxt/scripts",
+    "nuxt-security",
+    "@vueuse/nuxt",
+    "@pinia/nuxt",
+    "@nuxt/content"
+  ],
+  "vue": {
+    "compilerOptions": {},
+    "transformAssetUrls": {
+      "video": [
+        "src",
+        "poster"
+      ],
+      "source": [
+        "src"
+      ],
+      "img": [
+        "src"
+      ],
+      "image": [
+        "xlink:href",
+        "href"
+      ],
+      "use": [
+        "xlink:href",
+        "href"
+      ]
+    },
+    "runtimeCompiler": false,
+    "propsDestructure": true,
+    "config": {}
+  },
+  "css": [
+    "C:\\Git\\master-coda\\node_modules\\.pnpm\\nuxt-ignis@0.4.0-rc.1_e826d9ecb7a92fe670f849051cc253de\\node_modules\\nuxt-ignis\\assets\\css\\ignis.css",
+    "C:\\Git\\master-coda\\node_modules\\.pnpm\\nuxt-ignis@0.4.0-rc.1_e826d9ecb7a92fe670f849051cc253de\\node_modules\\nuxt-ignis\\assets\\css\\ignis-tailwind.css"
+  ],
+  "vite": {
+    "plugins": [
+      {
+        "name": "vite-plugin-ignore-sourcemap-warnings",
+        "apply": "build"
+      },
+      [
+        {
+          "name": "@tailwindcss/vite:scan",
+          "enforce": "pre"
+        },
+        {
+          "name": "@tailwindcss/vite:generate:serve",
+          "apply": "serve",
+          "enforce": "pre"
+        },
+        {
+          "name": "@tailwindcss/vite:generate:build",
+          "apply": "build",
+          "enforce": "pre"
+        }
+      ]
+    ]
+  },
+  "app": {
+    "head": {
+      "meta": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ],
+      "link": [],
+      "style": [],
+      "script": [],
+      "noscript": [],
+      "htmlAttrs": {
+        "lang": "cs"
+      },
+      "title": "Nuxt Ignis App"
+    },
+    "baseURL": "/",
+    "buildAssetsDir": "/_nuxt/",
+    "cdnURL": "",
+    "layoutTransition": false,
+    "pageTransition": false,
+    "viewTransition": false,
+    "keepalive": false,
+    "rootId": "__nuxt",
+    "rootTag": "div",
+    "rootAttrs": {
+      "id": "__nuxt"
+    },
+    "teleportTag": "div",
+    "teleportId": "teleports",
+    "teleportAttrs": {
+      "id": "teleports"
+    },
+    "spaLoaderTag": "div",
+    "spaLoaderAttrs": {
+      "id": "__nuxt-loader"
+    }
+  }
+}
