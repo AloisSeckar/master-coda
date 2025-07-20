@@ -8,7 +8,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt-ignis": "0.4.0-rc.1"
+    "nuxt-ignis": "0.4.0-rc.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

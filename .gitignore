@@ -6,3 +6,5 @@ node_modules
 nuxt.d.ts
 *.log
 .env
+
+_ignis-config.json
