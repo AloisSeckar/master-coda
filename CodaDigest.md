@@ -6,7 +6,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 ## 2025
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
-| --- | :--  |.
+| --- | :--  |
 | **`2025-07-01`** | [You Only Need 12 Lines of CSS to Build a Clean, Attractive Website](https://www.howtogeek.com/get-a-clean-attractive-site-with-lines-of-css/) - simple but great tips for styling your websites |
 | **`2025-06-27`** | [Context Engineering is the New Vibe Coding](https://analyticsindiamag.com/ai-features/context-engineering-is-the-new-vibe-coding/) - the AI landscape is evolving fast and new techniques are emerging as well |
 | **`2025-06-17`** | [Why JPEGs Still Rule the Web](https://spectrum.ieee.org/jpeg-image-format-history) - a brief history of **JPEG** format and why it was so successfull |
