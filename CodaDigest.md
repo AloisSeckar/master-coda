@@ -5,12 +5,15 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 ## 2025
 
+https://piccalil.li/blog/printing-the-web-making-webpages-look-good-on-paper/
+
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
-| --- | :--  |
+| --- | :--  |.
 | **`2025-07-01`** | [You Only Need 12 Lines of CSS to Build a Clean, Attractive Website](https://www.howtogeek.com/get-a-clean-attractive-site-with-lines-of-css/) - simple but great tips for styling your websites |
 | **`2025-06-27`** | [Context Engineering is the New Vibe Coding](https://analyticsindiamag.com/ai-features/context-engineering-is-the-new-vibe-coding/) - the AI landscape is evolving fast and new techniques are emerging as well |
 | **`2025-06-17`** | [Why JPEGs Still Rule the Web](https://spectrum.ieee.org/jpeg-image-format-history) - a brief history of **JPEG** format and why it was so successfull |
 | **`2025-06-16`** | [What I Wish Someone Told Me When I Was Getting Into ARIA](https://www.smashingmagazine.com/2025/06/what-i-wish-someone-told-me-aria/) - this (long) article might as well be a gospel of web accessibility |
+| **`2025-06-05`** | [Printing the web: making webpages look good on paper](https://piccalil.li/blog/printing-the-web-making-webpages-look-good-on-paper/) - how to make your sites print-friendly with CSS |
 | **`2025-05-28`** | [AI didn’t kill Stack Overflow](https://www.infoworld.com/article/3993482/ai-didnt-kill-stack-overflow.html) - Quo vadis, Stack Overflow? It would be too easy to blame just the AI... |
 | **`2025-05-27`** | [How Java Sparked an Open Source Revolution 30 Years Ago](https://thenewstack.io/how-java-sparked-an-open-source-revolution-30-years-ago/) - being able to re-share your code easily was a gamechanger back then |
 | **`2025-05-22`** | [A Brief History of JavaScript](https://deno.com/blog/history-of-javascript) - the journey that lasts 30 years already - and JS is definitely not done yet! |
