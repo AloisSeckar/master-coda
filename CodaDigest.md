@@ -7,7 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
-| **`2025-08-04`** | [Thinking Deeply About Theming and Color Naming](https://css-tricks.com/thinking-deeply-about-theming-and-color-naming/) - did you ever think about utilizing your own CSS color palettes as this author did?|
+| **`2025-08-04`** | [Thinking Deeply About Theming and Color Naming](https://css-tricks.com/thinking-deeply-about-theming-and-color-naming/) - did you ever think about utilizing your own CSS color palettes as this author did? |
 | **`2025-07-31`** | [JVM Iceberg – Modern Performance Edition](https://javapro.io/2025/07/31/jvm-iceberg-modern-performance-edition/) - the many tools you can use to measure and improve performance of your Java apps |
 | **`2025-07-01`** | [You Only Need 12 Lines of CSS to Build a Clean, Attractive Website](https://www.howtogeek.com/get-a-clean-attractive-site-with-lines-of-css/) - simple but great tips for styling your websites |
 | **`2025-06-27`** | [The many, many, many JavaScript runtimes of the last decade](https://buttondown.com/whatever_jamie/archive/the-many-many-many-javascript-runtimes-of-the-last-decade/) - an exhaustive overview of the neverending evolution of the JavaScript world |
@@ -19,7 +19,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2025-05-27`** | [How Java Sparked an Open Source Revolution 30 Years Ago](https://thenewstack.io/how-java-sparked-an-open-source-revolution-30-years-ago/) - being able to re-share your code easily was a gamechanger back then |
 | **`2025-05-22`** | [A Brief History of JavaScript](https://deno.com/blog/history-of-javascript) - the journey that lasts 30 years already - and JS is definitely not done yet! |
 | **`2025-05-15`** | [Modern Node.js Patterns for 2025](https://kashw1n.com/blog/nodejs-2025/) - do not get stuck and fall back in working with **Node.js** - it is keep evolving |
-| **`2025-05-12`** | [The Past, Present, and Future of Web Components](https://dev.to/besworks/the-past-present-and-future-of-web-components-2g43) - for sure you have heard about **Web Components** - but do you know more about them? |
+| **`2025-05-12`** | [The Past, Present, and Future of Web Components](https://dev.to/besworks/the-past-present-and-future-of-web-components-2g43) - for sure you have heard about **Web Components** - but do you know more about them |
 | **`2025-05-05`** | [How to Harden GitHub Actions: The Unofficial Guide](https://www.wiz.io/blog/github-actions-security-guide) - an interesting insight into GitHub Action ecosystem - their common security weaknesses and how to deal with them |
 | **`2025-04-28`** | [Categorize Your Dependencies](https://antfu.me/posts/categorize-deps) - with PNPM, you can create special catalogues for your JavaScript dependencies to maintain better consistency |
 | **`2025-04-10`** | [Linus Torvalds built Git in 10 days](https://www.zdnet.com/article/linus-torvalds-built-git-in-10-days-and-never-imagined-it-would-last-20-years/) - fascinating story behind the origins of Git |
