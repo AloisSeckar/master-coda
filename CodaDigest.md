@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2025-08-11`** | [Frontend Performance Checklist](https://crystallize.com/blog/frontend-performance-checklist) - awesome and exhaustive list of things to have in mind when creating great websites |
 | **`2025-08-04`** | [Thinking Deeply About Theming and Color Naming](https://css-tricks.com/thinking-deeply-about-theming-and-color-naming/) - did you ever think about utilizing your own CSS color palettes as this author did? |
 | **`2025-07-31`** | [JVM Iceberg – Modern Performance Edition](https://javapro.io/2025/07/31/jvm-iceberg-modern-performance-edition/) - the many tools you can use to measure and improve performance of your Java apps |
 | **`2025-07-01`** | [You Only Need 12 Lines of CSS to Build a Clean, Attractive Website](https://www.howtogeek.com/get-a-clean-attractive-site-with-lines-of-css/) - simple but great tips for styling your websites |
