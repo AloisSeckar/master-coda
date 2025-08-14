@@ -15,6 +15,7 @@ export default defineContentConfig({
         created: z.string().regex(/\d{2}\.\d{2}\.\d{4}/),
         edited: z.string().regex(/\d{2}\.\d{2}\.\d{4}/).optional(),
         wip: z.boolean().optional(),
+        unchecked: z.boolean().optional(),
         hidden: z.boolean().optional(),
       }),
     }),

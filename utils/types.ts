@@ -19,6 +19,7 @@ export type Article = {
   created: string
   edited?: string
   wip?: boolean
+  unchecked?: boolean
   hidden?: boolean
 }
 

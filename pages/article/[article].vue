@@ -2,9 +2,8 @@
   <div>
     <ArticleHeader :article />
     <div class="article">
-      <!--
       <ArticleStub v-if="article?.wip" />
-    -->
+      <ArticleUnchecked v-if="article?.unchecked" />
       <ContentRenderer v-if="article" :value="article" />
       <div v-else class="mb-6">
         These are not the articles you are looking for. Keep browsing. Keep browsing.
