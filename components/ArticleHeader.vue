@@ -1,6 +1,17 @@
 <template>
   <div class="p-2">
-    <h1>{{ article?.title }}</h1>
+    <h1>
+      <span v-if="article?.english" class="inline-block text-xs text-coda-yellow">
+        <NuxtLink :to="article.english" class="inline" target="_blank">
+          <NuxtImg
+            src="/img/en-flag.webp" alt="Link to English version"
+            title="You can read this article in English @ dev.to"
+            :width="50" :height="30" class="rounded"
+          />
+        </NuxtLink>
+      </span>
+      {{ article?.title }}
+    </h1>
     <div class="text-xs text-coda-yellow mb-1">
       {{ article?.created }}
       <span v-if="edited">(aktualizováno {{ article?.edited }})</span>

@@ -4,6 +4,16 @@
       ----------------------------------------
     </div>
     <div v-if="article">
+      <div v-if="article.english" class="flex flex-row items-center gap-2 mb-2">
+        <NuxtImg
+          src="/img/en-flag.webp" alt="English version available"
+          title="English version available"
+          :width="25" :height="15" class="rounded inline-block"
+        />
+        <a class="block text-sm" :href="article.english">
+          You can read this article in English at <span class="font-mono">dev.to</span>
+        </a>
+      </div>
       <div class="font-bold">
         {{ article.title }} @ Master Coda
       </div>

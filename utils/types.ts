@@ -18,6 +18,7 @@ export type Article = {
   tags: string[]
   created: string
   edited?: string
+  english?: string
   wip?: boolean
   unchecked?: boolean
   hidden?: boolean

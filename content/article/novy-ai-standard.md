@@ -6,6 +6,7 @@ dscr: 'Představení iniciativy The AI Manifesto'
 tags: ['AI', 'manifest', 'pravidla', 'novinka']
 date: '2025-08-13'
 created: '13.08.2025'
+english: 'https://dev.to/aloisseckar/the-brink-of-new-ai-standard-1a1i'
 unchecked: true
 ---
 
