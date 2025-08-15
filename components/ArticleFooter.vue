@@ -29,9 +29,11 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  article: { type: Object as PropType<ArticlesCollectionItem>, required: true },
-})
+import type { ArticlesCollectionItem } from '@nuxt/content'
+
+const props = defineProps<{
+  article: ArticlesCollectionItem | null
+}>()
 const github = useRuntimeConfig().public.github
 const link = `${github}/master-coda/##/master/content/article/${props.article?.file}.md`
 </script>
