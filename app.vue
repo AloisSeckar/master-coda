@@ -3,6 +3,7 @@
     <div class="flex flex-col h-screen w-full md:w-4/5">
       <TheCodaHeader />
       <main class="mb-auto p-2 md:p-0">
+        <TheEnglishVersion />
         <NuxtPage />
       </main>
       <TheCodaFooter />
