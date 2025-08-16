@@ -1,11 +1,12 @@
 ---
 file: 'regex-neni-nepritel'
 cat: 'misc'
-title: 'Regex není nepřítel '
+title: 'Regex není nepřítel'
 dscr: 'Jak lze využít regulární výrazy k rychlým úpravám textu na praktickém příkladu'
 tags: ['regulární výrazy', 'regex', 'help', 'tutorial']
 date: '2023-12-31'
 created: '31.12.2023'
+english: 'https://dev.to/aloisseckar/regex-is-not-your-enemy-4mgb'
 ---
 
 Jedním z vděčných námětů IT vtipů jsou regulární výrazy coby „magie“, kterou nikdo nedokáže pochopit. Souhlasím, že řada vývojářů tyhle _„divné shluky znaků“_ nemá v lásce, a pokud mohou, tak se jim vyhýbají. Přitom je to škoda, protože jsou velmi užitečné.
