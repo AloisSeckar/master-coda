@@ -7,8 +7,8 @@
       </NuxtLink>
       - {{ pslo(article?.dscr) }}
     </div>
-    <div v-else class="inline text-coda-purple font-bold">
-      &#9654; {{ article.title }}
+    <div v-else class="inline text-coda-purple! font-bold">
+      <span title="Aktuální článek">&#9654;</span> {{ article.title }}
     </div>
   </div>
 </template>

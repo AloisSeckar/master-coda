@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div>Všechny články v kategorii</div>
+    <div class="mb-2">
+      Všechny články v kategorii:
+    </div>
     <NavigationArticleListContent :title="catName" :articles />
   </div>
 </template>

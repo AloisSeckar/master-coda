@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div>Všechny články podle tagu</div>
+    <div class="mb-2">
+      Všechny články podle tagu:
+    </div>
     <NavigationArticleListContent :title="tag" :articles />
   </div>
 </template>

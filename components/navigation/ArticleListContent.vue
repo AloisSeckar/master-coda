@@ -1,12 +1,17 @@
 <template>
-  <div>
-    <NavigationArticleList :title :articles="articleList" :current />
-  </div>
+  <h2 v-if="title">
+    {{ title }}
+  </h2>
+  <p v-if="dscr">
+    {{ dscr }}
+  </p>
+  <NavigationArticleList :articles="articleList" :current="current" />
 </template>
 
 <script setup lang="ts">
 const props = defineProps<{
   title?: string
+  dscr?: string
   articles: Article[] | null
   current?: string
 }>()
