@@ -6,7 +6,7 @@ dscr: 'Jak málo dnes stačí na funkční web'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2024-03-26'
 created: '26.03.2024'
-edited: '07.09.2024'
+edited: '19.08.2025'
 ---
 
 V prvním z chystané série výukových článků o [JS frameworku Nuxt](https://nuxt.com/) vám chci ukázat, jak snadno v něm jde rozběhnout funkční projekt.
@@ -29,9 +29,9 @@ Pokud budete chtít Nuxt zprovoznit lokálně, budete potřebovat:
  
  Uvidíte jednoduchou stránku, která toho sama o sobě moc neumí, ale je to důkaz, že Nuxt běží. Na tom můžeme začít stavět dál. Pojďme si ještě předtím projít jednotlivé součásti:
  
+ - **`app/app.vue`** - základní vstupní bod s jednoduchou šablonou uvnitř `<template>` (od Nuxt v4 je ve složce `/app` a nikoliv přímo v hlavním adresáři projektu). Oproti oficiálnímu **nuxt-starter** jsem nahradil jejich uvítací komponentu `<NuxtWelcome>` vlastním HTML kódem. Ten uvidíte vykreslený na stránce poté, co projekt úspěšně spustíte.
  - **`public/favicon.ico`** - ve skutečnosti nepovinný soubor obrázku, který přidá ikonu do tabu v internetovém prohlížeči. Aplikace by fungovala i bez toho, ale vypadá to lépe. Navíc to demonstruje, jak málo v tomto případě stačí, aby to fungovalo - prostě jen nakopírujete do této cesty váš obrázek a bez jakékoliv další úpravy máte hotovo.
  - **`README.md`** - je popisný soubor Gitu, který vám při pohledu do [GitHub](https://github.com/) úložiště předloží základní informace o projektu. Není povinný, ale je obvyklou praxí ho v projektech mít a informovat skrze něj návštěvníky a potenciální uživatele vašeho kódu.
- - **`app.vue`** - základní vstupní bod s jednoduchou šablonou uvnitř `<template>`. Oproti oficiálnímu **nuxt-starter** jsem nahradil jejich uvítací komponentu `<NuxtWelcome>` vlastním HTML kódem. Ten uvidíte vykreslený na stránce poté, co projekt úspěšně spustíte.
  - **`eslint.config.mjs`** - tento konfigurační soubor pro modul [@nuxt/eslint](https://eslint.nuxt.com/) řídí chování nástroje [ESLint](https://eslint.org/), který jsem se rozhodl do projektu přidat (ačkoliv v oficiálním **nuxt-starter** není), protože za vás hlídá pravidla syntaxe a pomáhá vám tak udržovat váš zdrojový kód hezčí. Vyžaduje drobné nastavení prostředí, o kterém více v (budoucím) samostatném článku. Dokud nastaveno nemáte, ničemu to nevadí, pouze zatím nevyužijete pomoc při údržbě kvality vašeho kódu.
  - **`nuxt.config.ts`** - konfigurační soubor pro Nuxt. Ve výchozím nastavení může být třeba i úplně „prázdný“, veškerá budoucí nastavení se provádí dovnitř těla objektu, který je parametrem vestavěné (a tudíž zde rovnou automaticky importované) metody `defineNuxtConfig`. V tuto chvíli je v něm vložená konfigurace modulu [@nuxt/eslint](https://eslint.nuxt.com/), který ve spolupráci se souborem `eslint.config.mjs` zajišťuje jednoduchou implementaci ESLint pravidel.
  - **`pnpm-lock.yaml`** - soubor, který automaticky generuje manažer balíčků `pnpm` během příkazu `pnpm install`, ve kterém si drží vyčerpávající definici všech projektových závislostí. Panují názory, že tyto „lock“ soubory je možné z Gitu vynechat, protože se často mění a stejně si ho každý vývojář projektu generuje sám lokálně. Držím se ovšem [doporučení](https://stackoverflow.com/a/44210813/3204544), že do repozitáře také patří.
@@ -42,7 +42,7 @@ Pokud budete chtít Nuxt zprovoznit lokálně, budete potřebovat:
 
  Pokud budete někdy v budoucnu chtít začít se svým vlastním malým Nuxt projektem, naleznete výše uvedené také ve variantě samostatného GitHub repozitáře, odkud se vám bude zdrojový kód o něco lépe kopírovat:
 
- [nuxt-starter @ GitHub](https://github.com/AloisSeckar/nuxt-starter)
+ [nuxt-v4-starter @ GitHub](https://github.com/AloisSeckar/nuxt-v4-starter)
  
  ## Nuxt Minimal
 
