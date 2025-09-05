@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2025-08-24`** | [The Bubble That Knows It's a Bubble](https://craigmccaskill.com/ai-bubble-history) - current AI hype from interesting economical perspective |
 | **`2025-08-11`** | [Frontend Performance Checklist](https://crystallize.com/blog/frontend-performance-checklist) - awesome and exhaustive list of things to have in mind when creating great websites |
 | **`2025-08-04`** | [Thinking Deeply About Theming and Color Naming](https://css-tricks.com/thinking-deeply-about-theming-and-color-naming/) - did you ever think about utilizing your own CSS color palettes as this author did? |
 | **`2025-07-31`** | [JVM Iceberg – Modern Performance Edition](https://javapro.io/2025/07/31/jvm-iceberg-modern-performance-edition/) - the many tools you can use to measure and improve performance of your Java apps |
@@ -89,6 +90,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2020-12-17`** | [Troubleshooting Native Memory Leaks in Java Applications](https://poonamparhar.github.io/troubleshooting_native_memory_leaks/) - how to understand, diagnose and confirm leaks coming from native code interactions with memory |
 | **`2020-01-11`** | [Goodbye, Clean Code](https://overreacted.io/goodbye-clean-code/) - why applying the rules blindly isn't always the best option |
 | **`2019-08-30`** | [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) - how to make a change of single whitespace character epic - and why it matters |
+| **`2015-08-17`** | [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) - aged but still pretty relevant and well-composed article about JS event loop and task execution logic |
 | **`2014-04-17`** | [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) - the anatomy of an error that caused $460 million loss in just 45-minutes |
 | **`2010-01-08`** | [The Virtue of Forgiving HTML Parsers](https://quandyfactory.com/blog/39/the_virtue_of_forgiving_html_parsers) - the web became _world wide_ because browsers allow to render even badly formatted code - that's why it is a good thing |
 | **`2003-08-29`** | [Cannot Measure Productivity](https://martinfowler.com/bliki/CannotMeasureProductivity.html) - **Martin Fowler** about evaluating devs' productivity |
