@@ -7,6 +7,8 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2025-09-17`** | [Is it Time to Un-Sass?](https://css-tricks.com/is-it-time-to-un-sass/) - vanilla CSS is now nearly as good as SASS pre-processing |
+| **`2025-08-28`** | [You no longer need JavaScript](https://lyra.horse/blog/2025/08/you-dont-need-js/) - the fascinating overview of modern CSS features and tricks |
 | **`2025-08-24`** | [The Bubble That Knows It's a Bubble](https://craigmccaskill.com/ai-bubble-history) - current AI hype from interesting economical perspective |
 | **`2025-08-11`** | [Frontend Performance Checklist](https://crystallize.com/blog/frontend-performance-checklist) - awesome and exhaustive list of things to have in mind when creating great websites |
 | **`2025-08-04`** | [Thinking Deeply About Theming and Color Naming](https://css-tricks.com/thinking-deeply-about-theming-and-color-naming/) - did you ever think about utilizing your own CSS color palettes as this author did? |
