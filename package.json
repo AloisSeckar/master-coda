@@ -12,6 +12,9 @@
     "nuxt-ignis": "0.5.0-rc.2"
   },
   "pnpm": {
+    "overrides": {
+      "nuxt": "4.1.2"
+    },
     "onlyBuiltDependencies": [
       "@parcel/watcher",
       "@tailwindcss/oxide",
