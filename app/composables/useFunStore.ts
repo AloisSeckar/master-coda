@@ -1,4 +1,4 @@
-import { fun } from '@/data/fun'
+import { fun } from '@@/data/fun'
 
 export const useFunStore = defineStore('fun-store', {
   state: () => {

@@ -12,7 +12,7 @@
 const props = defineProps<{
   title?: string
   dscr?: string
-  articles: Article[] | null
+  articles: Article[] | undefined
   current?: string
 }>()
 

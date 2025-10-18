@@ -32,7 +32,7 @@
 import type { ArticlesCollectionItem } from '@nuxt/content'
 
 const props = defineProps<{
-  article: ArticlesCollectionItem | null
+  article: ArticlesCollectionItem | undefined
 }>()
 const github = useRuntimeConfig().public.github
 const link = `${github}/master-coda/##/master/content/article/${props.article?.file}.md`

@@ -37,7 +37,7 @@
 import type { ArticlesCollectionItem } from '@nuxt/content'
 
 const props = defineProps<{
-  article: ArticlesCollectionItem | null
+  article: ArticlesCollectionItem | undefined
 }>()
 const edited = props.article?.created !== props.article?.edited
 const path = useRoute().path.replace('/article/', '')
