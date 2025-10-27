@@ -34,8 +34,10 @@ export default defineNuxtConfig({
     },
   },
 
-  nitro: {
-    static: true,
+  routeRules: {
+    '/article/**': { static: true },
+    '/category/**': { static: true },
+    '/tag/**': { static: true },
   },
 
 })
