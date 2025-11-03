@@ -292,6 +292,12 @@ const fun = [
     explain: 'Písmo Sans Serif (z francouzštiny "bezpatkové")',
     added: '2025-06-29',
   },
+  {
+    id: 'as-any',
+    title: 'Typescript as any',
+    explain: 'Konstrukt "as any" umožní v TypeScriptu zcela ignorovat typovou kontrolu',
+    added: '2025-11-03',
+  },
 ]
 
 export { fun }
