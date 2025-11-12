@@ -72,7 +72,7 @@ const fun = [
   },
   {
     id: 'while-vs-do-while',
-    title: 'Rozdíl mezi "while" a "do-swhile',
+    title: 'Rozdíl mezi "while" a "do-while"',
     added: '2023-03-16',
   },
   {
