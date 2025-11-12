@@ -298,6 +298,11 @@ const fun = [
     explain: 'Konstrukt "as any" umožní v TypeScriptu zcela ignorovat typovou kontrolu',
     added: '2025-11-03',
   },
+  {
+    id: 'no-documentation',
+    title: 'Stav dokumentace',
+    added: '2025-11-12',
+  },
 ]
 
 export { fun }
