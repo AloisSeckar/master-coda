@@ -1,8 +1,8 @@
 ---
-file: 'click-prevent'
+file: 'hacktoberfest-reflexe'
 cat: 'java'
 title: 'Reflexe Hacktoberfestu'
-dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát'
+dscr: 'Jak jsem prožil letošní Hacktoberfest jako správce vlastního projektu'
 tags: ['java', 'opensource', 'hacktoberfest']
 date: '2025-11-03'
 created: '11.03.2025'
