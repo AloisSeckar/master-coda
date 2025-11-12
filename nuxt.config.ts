@@ -35,9 +35,14 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    '/': { ssr: true },
     '/article/**': { static: true },
     '/category/**': { static: true },
     '/tag/**': { static: true },
+  },
+
+  nitro: {
+    preset: 'netlify',
   },
 
 })
