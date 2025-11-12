@@ -7,6 +7,7 @@ tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2024-03-31'
 created: '31.03.2024'
 edited: '09.09.2024'
+hidden: true
 ---
 
 V tomto díle se podíváme na základy tvorby prezentační vrstvy naší budoucí [Nuxt](https://nuxt.com/) aplikace.

@@ -7,6 +7,7 @@ tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'Markdown']
 date: '2024-10-05'
 created: '05.10.2024'
 edited: '09.02.2025'
+hidden: true
 ---
 
 V minulém díle jsme se zabývali zpracováním formulářů. Neméně důležitá než interakce s uživatelem je ale i samotná prezentace dat. Zejména pokud je na webu více obsahu (blogy, tutoriály, apod.), je třeba řešit vzhled a formátování textu. S Nuxtem je to opět mnohem snazší, pokud víte, jak na to.

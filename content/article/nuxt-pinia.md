@@ -7,6 +7,7 @@ tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2025-02-25'
 created: '15.02.2025'
 edited: '16.03.2025'
+hidden: true
 ---
 
 Druhou desítku článků o frameworku [Nuxt](https://nuxt.com/) začneme dílem o správě stavu naší aplikace a jak nám může pomoct Vue.js knihovna [Pinia](https://pinia.vuejs.org/).

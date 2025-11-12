@@ -6,6 +6,7 @@ dscr: 'Nuxt + FormKit = snadná tvorba formulářů'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI']
 date: '2024-09-15'
 created: '15.09.2024'
+hidden: true
 ---
 
 Dalším krokem na cestě k funkční a užitečné aplikaci jsou formuláře použitelné jak na strukturovanou prezentaci dat, tak hlavně na obsluhu uživatelských vstupů. Abychom si je nemuseli psát pomocí nativních HTML elementů úplně sami, existují různé nástroje, které můžeme využít.
