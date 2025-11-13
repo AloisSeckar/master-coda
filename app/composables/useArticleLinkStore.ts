@@ -52,7 +52,11 @@ export const useArticleLinkStore = defineStore('article-links', () => {
   }
 
   async function fetchExternalArticles(source: string, target: Ref<ArticleLink[]>) {
-    const data = await $fetch<Last5News>(source)
+    const data = await $fetch<Last5News>(source, {
+      headers: {
+        'User-Agent': 'master-coda',
+      },
+    })
     if (data) {
       target.value.push(data.item1)
       target.value.push(data.item2)
