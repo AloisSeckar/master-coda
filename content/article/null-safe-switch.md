@@ -17,9 +17,9 @@ Tradiční řešení je obalit `switch`{lang=java} kontrolní podmínkou:
 
 ```java
 if (variable != null) {
-    switch(variable) {
-        …
-    }
+  switch(variable) {
+    // code
+  }
 }
 ```
 

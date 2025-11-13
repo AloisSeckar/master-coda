@@ -84,6 +84,6 @@ div {
 }
 
 .article pre {
-    @apply border border-coda-yellow bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1.5 overflow-x-auto whitespace-nowrap;
+    @apply border border-coda-yellow bg-slate-700 mx-2 mt-1 mb-4 px-2 py-1.5 overflow-x-auto;
 }
     

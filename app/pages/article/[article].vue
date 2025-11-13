@@ -45,10 +45,3 @@ else {
   usePageMeta(CODA_PAGE_META)
 }
 </script>
-
-<style scoped>
-pre {
-  /* Retain whitespaces in article code blocks */
-  white-space: pre;
-}
-</style>
