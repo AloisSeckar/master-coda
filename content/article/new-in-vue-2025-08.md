@@ -12,9 +12,8 @@ unchecked: true
 
 Jsou to tři týdny od mého [prvního článku New in Vue](https://dev.to/aloisseckar/new-in-vue-july-2025-24id), je na čase začít skládat další. Věděli jste, že je vlastně docela těžké nutit se do psaní článků pravidelně? Ale svět Vue.js se neustále vyvíjí a nová inspirativní témata vznikají téměř každý den. Podívejme se.
 
-![Nový Vue newsletter spuštěn](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/csywjp8b1lrbu95xywgi.png)
-
----
+::vue-newsletter
+::
 
 ## Vite 7.0 a velké plány do budoucna
 

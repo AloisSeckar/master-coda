@@ -12,9 +12,8 @@ unchecked: true
 
 Čas letí! Skoro bych tento měsíc vynechal! Naštěstí jsem se probudil před koncem září a tady je nové vydání mého (zhruba) měsíčního newsletteru o ekosystému **Vue** a **Nuxt**.
 
-![Nový Vue newsletter spuštěn](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/csywjp8b1lrbu95xywgi.png)
-
----
+::vue-newsletter
+::
 
 Poslední týdny byly ve frontendových vodách klidnější. Po některých bouřlivých změnách během léta si nejsem vědom žádných opravdu průlomových novinek, které bych mohl sdílet.
 

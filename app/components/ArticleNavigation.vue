@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NavigationArticleSeries v-if="isVueNews" :config="vueNewsConfig" />
     <NavigationArticleSeries v-if="isNuxtTutorial" :config="nuxtTutorialConfig" />
     <NavigationArticleSeries v-if="isChatGPTArticle" :config="chatGPTConfig" />
   </div>
@@ -9,6 +10,15 @@
 const props = defineProps({
   articleId: { type: String, required: true },
 })
+
+const isVueNews = props.articleId.startsWith('new-in-vue')
+const vueNewsConfig: ArticleSeries = {
+  title: 'New in Vue',
+  dscr: 'Přehled novinek ze světa',
+  linkTitle: 'Vue.js',
+  linkURL: 'https://vuejs.org/',
+  match: 'new-in-vue-',
+}
 
 const isNuxtTutorial = props.articleId.startsWith('nuxt')
 const nuxtTutorialConfig: ArticleSeries = {

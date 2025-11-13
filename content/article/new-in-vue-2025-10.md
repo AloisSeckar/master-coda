@@ -12,9 +12,8 @@ unchecked: true
 
 Po dalším měsíci plném akcí zde je moje reflexe nejnovějších zpráv a událostí ze stále se vyvíjejícího světa **Vue**, **Nuxt**, **Vite** a jejich úžasných open-source ekosystémů.
 
-![Nový Vue newsletter spuštěn](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/csywjp8b1lrbu95xywgi.png)
-
----
+::vue-newsletter
+::
 
 V [zářijovém čísle](https://dev.to/aloisseckar/new-in-vue-september-2025-4mef) jsem označil nadcházející [ViteConf v Amsterdamu](https://viteconf.amsterdam/) jako zdroj zajímavých novinek. A rozhodně byla! Největším oznámením, které tam zaznělo, samotným Evanem You, bylo **[Vite+](https://voidzero.dev/posts/announcing-vite-plus)**. Je to nový all-in-one nástroj pro vývoj webu postavený okolo [Vite](https://vite.dev/) a nového [Oxc](https://oxc.rs/) toolchainu. Budování nových aplikací bude ještě jednodušší a rychlejší než dříve.
 

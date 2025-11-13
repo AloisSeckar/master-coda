@@ -14,9 +14,8 @@ Sleduji Vue komunitu už nějaký čas. Čtu články, sleduji videa, setkávám
 
 Minulý týden se staly dvě zajímavé věci, které mě inspirovaly k napsání tohoto článku. Doufám, že se z toho stane něco jako newsletter, který budu schopen publikovat více či méně pravidelně. Vue je stále přehlíženo mnoha lidmi, přestože je to vyspělý a užitečný JS framework plně schopný konkurovat ostatním. Zaslouží si více pozornosti a rád bych pomohl. Pojďme na to.
 
-![Nový Vue newsletter spuštěn](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/csywjp8b1lrbu95xywgi.png)
-
----
+::vue-newsletter
+::
 
 ## Vercel + Nuxt = ?
 
