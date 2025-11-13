@@ -18,19 +18,19 @@
     <NavigationArticleListExternal
       title="Co nového v&nbsp;Nuxt/Vue.js světě?"
       dscr="Novinky o frameworku Nuxt a&nbsp;Vue.js (anglicky):"
-      external-source="https://alois-seckar.cz/nuxt-news"
+      :external-articles="store.articlesNuxt"
       more-articles="https://github.com/AloisSeckar/demos-nuxt/blob/main/NuxtNews.md"
     />
     <NavigationArticleListExternal
       title="Co nového v&nbsp;Java světě?"
       dscr="Novinky o programovacím jazyce Java (anglicky):"
-      external-source="https://alois-seckar.cz/java-news"
+      :external-articles="store.articlesJava"
       more-articles="https://github.com/AloisSeckar/demos-java/blob/master/JavaNews.md"
     />
     <NavigationArticleListExternal
       title="Co nového v&nbsp;IT světě?"
       dscr="Výběr zajímavých a&nbsp;přínosných článků na libovolné téma (anglicky):"
-      external-source="https://alois-seckar.cz/coda-digest"
+      :external-articles="store.articlesCoda"
       more-articles="https://github.com/AloisSeckar/master-coda/blob/master/CodaDigest.md"
     />
   </div>

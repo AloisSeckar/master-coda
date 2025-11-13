@@ -10,7 +10,7 @@
     />
     {{ dscr }}
   </p>
-  <NavigationArticleList :articles="articleList" />
+  <NavigationArticleList :articles="externalArticles" />
   <div v-if="moreArticles" class="mb-4">
     <NuxtLink :to="moreArticles" noprefetch>
       Zobrazit vše
@@ -19,23 +19,10 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   title: string
   dscr: string
-  externalSource: string
+  externalArticles: ArticleLink[]
   moreArticles: string
 }>()
-
-const articleList: Ref<ArticleLink[]> = ref([])
-const { data } = await useFetch<Last5News>(props.externalSource)
-if (data.value) {
-  articleList.value.push(data.value.item1)
-  articleList.value.push(data.value.item2)
-  articleList.value.push(data.value.item3)
-  articleList.value.push(data.value.item4)
-  articleList.value.push(data.value.item5)
-}
-articleList.value.forEach((a: ArticleLink) => {
-  a.external = true
-})
 </script>

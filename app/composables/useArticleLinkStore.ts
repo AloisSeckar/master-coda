@@ -7,6 +7,10 @@ export const useArticleLinkStore = defineStore('article-links', () => {
   const loading = useState<boolean>('articles-loading', () => false)
   const error = useState<Error | null>('articles-error', () => null)
 
+  const articlesNuxt = useState<ArticleLink[]>('articles-nuxt', () => [])
+  const articlesJava = useState<ArticleLink[]>('articles-java', () => [])
+  const articlesCoda = useState<ArticleLink[]>('articles-coda', () => [])
+
   // Actions
   async function fetchArticles() {
     if (articles.value.length > 0) {
@@ -15,6 +19,8 @@ export const useArticleLinkStore = defineStore('article-links', () => {
 
     loading.value = true
     error.value = null
+
+    // internal
 
     try {
       const data = await queryCollection('articles')
@@ -25,12 +31,38 @@ export const useArticleLinkStore = defineStore('article-links', () => {
     }
     catch (e) {
       error.value = e as Error
-      console.error('Failed to fetch articles:', e)
+      console.error('Failed to fetch internal articles:', e)
       throw e
     }
-    finally {
-      loading.value = false
+
+    // external
+
+    try {
+      await fetchExternalArticles('https://alois-seckar.cz/nuxt-news', articlesNuxt)
+      await fetchExternalArticles('https://alois-seckar.cz/java-news', articlesJava)
+      await fetchExternalArticles('https://alois-seckar.cz/coda-digest', articlesCoda)
     }
+    catch (e) {
+      error.value = e as Error
+      console.error('Failed to fetch external articles:', e)
+      throw e
+    }
+
+    loading.value = false
+  }
+
+  async function fetchExternalArticles(source: string, target: Ref<ArticleLink[]>) {
+    const data = await $fetch<Last5News>(source)
+    if (data) {
+      target.value.push(data.item1)
+      target.value.push(data.item2)
+      target.value.push(data.item3)
+      target.value.push(data.item4)
+      target.value.push(data.item5)
+    }
+    target.value.forEach((a: ArticleLink) => {
+      a.external = true
+    })
   }
 
   // Getters
@@ -73,6 +105,9 @@ export const useArticleLinkStore = defineStore('article-links', () => {
   return {
     // State
     articles,
+    articlesNuxt,
+    articlesJava,
+    articlesCoda,
 
     // Actions
     fetchArticles,
