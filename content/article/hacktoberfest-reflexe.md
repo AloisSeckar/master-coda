@@ -5,7 +5,7 @@ title: 'Reflexe Hacktoberfestu'
 dscr: 'Jak jsem prožil letošní Hacktoberfest jako správce vlastního projektu'
 tags: ['java', 'opensource', 'hacktoberfest']
 date: '2025-11-03'
-created: '11.03.2025'
+created: '03.11.2025'
 english: 'https://dev.to/aloisseckar/reflections-of-hacktoberfest-3ef2'
 unchecked: true
 ---
