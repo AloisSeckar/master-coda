@@ -17,7 +17,9 @@ Všechny Vue.js aplikace (Nuxt jako takový běží nad Vue.js) se staví pomoc�
 - `<script>` - prostor pro JavaScript (TypeScript) definici obslužné funkcionality komponenty
 - `<style>` - možnost definice grafických CSS stylů
 
-Poměrně často chybí sekce `<style>`, protože komponenta buď žádné „svoje“ styly nepotřebuje definovat, nebo se stylování řeší klasickým centralizovaným způsobem pomocí importu `.css` (nebo `.scss`, aj.) souborů. Setkáváme se také s komponentami bez sekce `<script>`, které definují pouze statický vzhled, nebo jednoduché JS výrazy používají inline přímo v `<template>`. Komponenta bez `<template>` je validní (musí však v takovém případě obsahovat `<script>` sekci) a říká se jí též „funkční“ komponenta, ale zatím jsem se vlastně nesetkal s praktickým použitím. Pro obslužný kód bez grafického výstupu je lépe použít jiné metody, o kterých si něco řekneme v dalších částech tutoriálu.
+Poměrně často chybí sekce `<style>`, protože komponenta buď žádné „svoje“ styly nepotřebuje definovat, nebo se stylování řeší klasickým centralizovaným způsobem pomocí importu `.css` (nebo `.scss`, aj.) souborů. Případně používáte TailwindCSS, o kterém je řeč v [pozdějším tutorialu](/article/nuxt-gui#tailwind-css).
+
+Setkáváme se také s komponentami bez sekce `<script>`, které definují pouze statický vzhled, nebo jednoduché JS výrazy používají inline přímo v `<template>`. Také komponenta bez `<template>` je validní (musí však v takovém případě obsahovat `<script>` sekci) a říká se jí též „funkční“ komponenta, ale zatím jsem se vlastně nesetkal s praktickým použitím. Pro obslužný kód bez grafického výstupu je spíše vhodnější použít jiné metody, o kterých si něco řekneme v [dalším díle tutoriálu](/article/nuxt-utils).
 
 Komponenty jsou způsob jak vytvářet znovupoužitelnou logiku, proto mohou zvenku přijímat pro každou instanci unikátní vlastnosti (props) a do okolí vysílat (emits) události. Tomuto se však budeme blíže věnovat [až později](/article/nuxt-vue).
 
@@ -80,7 +82,7 @@ Tento blog se vám zobrazuje díky souboru [`/app/pages/article/[article].vue`](
 Zdrojový kód ukázkové implementace ilustrující princip komponent a stránek v Nuxtu naleznete zde:
 [nuxt-pages @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-pages)
 
-V základním „vstupním“ souboru [`/app/app.vue`](https://github.com/AloisSeckar/master-coda/blob/master/app/app.vue) je vidět princip, jak vytvořit layout společný pro všechny stránky a v rámci něj uvnitř `<NuxtPage />` vykreslit obsah aktuální stránky podle URL.
+V základním „vstupním“ souboru [`/app/app.vue`](https://github.com/AloisSeckar/demos-nuxt/blob/main/nuxt-pages/app/app.vue) je vidět princip, jak vytvořit layout společný pro všechny stránky a v rámci něj uvnitř `<NuxtPage />` vykreslit obsah aktuální stránky podle URL.
 
 Pro zobrazení jsou zde dvě pomocné komponenty v adresáři `/app/components`
 - `TheMenu.vue` - definuje odkazy na jednotlivé stránky a je vložena do společného layoutu v `/app/app.vue`
