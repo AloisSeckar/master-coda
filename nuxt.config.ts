@@ -35,7 +35,6 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { static: false },
     '/article/**': { static: true },
     '/category/**': { static: true },
     '/tag/**': { static: true },

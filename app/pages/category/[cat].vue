@@ -10,11 +10,8 @@
 <script setup lang="ts">
 const cat = computed(() => useRoute().params.cat?.toString() || '_x')
 
-const { data: articles } = await useAsyncData(
-  'articles',
-  () => queryCollection('articles').where('cat', '=', cat.value).order('date', 'DESC').all(),
-  { watch: [cat] },
-)
+const store = useArticleLinkStore()
+const articles = computed(() => store.getByCategory(cat.value))
 
 const catName = computed(() => {
   let catName = cat.value

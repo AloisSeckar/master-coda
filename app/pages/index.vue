@@ -13,7 +13,7 @@
     <NavigationArticleListContent
       title="Co nového na master-coda.cz?"
       dscr="Moje články vydané na tomto blogu:"
-      :articles="codaNews"
+      :articles="recentArticles"
     />
     <NavigationArticleListExternal
       title="Co nového v&nbsp;Nuxt/Vue.js světě?"
@@ -39,5 +39,7 @@
 <script setup lang="ts">
 usePageMeta(CODA_PAGE_META)
 
-const { data: codaNews } = await useAsyncData(() => queryCollection('articles').order('date', 'DESC').limit(5).all())
+const store = useArticleLinkStore()
+await store.fetchArticles()
+const recentArticles = computed(() => store.getRecent())
 </script>

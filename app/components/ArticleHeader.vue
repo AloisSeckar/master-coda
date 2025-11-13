@@ -22,7 +22,7 @@
     <div class="flex flex-wrap items-center text-coda-yellow!">
       <strong v-if="article && article.tags?.length > 0">Tagy:&nbsp;</strong>
       <span v-for="tag in article?.tags" :key="tag" class="actionButton px-2 pb-1 pt-0.5">
-        <NuxtLink :to="{ path: '/tag/' + tag }">
+        <NuxtLink :to="`/tag/${tag}`">
           <span class="actionButtonText text-sm font-mono" style="text-decoration-line: none !important;">{{ tag }}</span>
         </NuxtLink>
       </span>

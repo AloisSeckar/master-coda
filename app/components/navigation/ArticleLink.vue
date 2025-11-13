@@ -2,10 +2,10 @@
   <div>
     <span class="mr-2 text-coda-purple">{{ article?.date }}</span>
     <div v-if="active" class="inline">
-      <NuxtLink :to="article?.link" :external="true" :noprefetch="true">
-        <strong>{{ article?.title }}</strong>
+      <NuxtLink :to="article.link" :external="true" :noprefetch="article.external">
+        <strong>{{ article.title }}</strong>
       </NuxtLink>
-      - {{ pslo(article?.dscr) }}
+      - {{ pslo(article.dscr) }}
     </div>
     <div v-else class="inline text-coda-purple! font-bold">
       <span title="Aktuální článek">&#9654;</span> {{ article.title }}

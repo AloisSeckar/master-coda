@@ -10,3 +10,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+await useArticleLinkStore().fetchArticles()
+</script>

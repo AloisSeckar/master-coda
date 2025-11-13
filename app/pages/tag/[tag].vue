@@ -10,11 +10,8 @@
 <script setup lang="ts">
 const tag = computed(() => useRoute().params.tag?.toString() || '_x')
 
-const { data: articles } = await useAsyncData(
-  'articles',
-  () => queryCollection('articles').where('tags', 'LIKE', '%' + tag.value + '%').order('date', 'DESC').all(),
-  { watch: [tag] },
-)
+const store = useArticleLinkStore()
+const articles = computed(() => store.getByTag(tag.value))
 
 usePageMeta({
   type: 'website',
