@@ -4,8 +4,8 @@ cat: 'web'
 title: 'Nuxt Tutorial 2 - Components & Pages'
 dscr: 'Nuxt - jak fungují složky /components a /pages'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
-date: '2025-11-13'
-created: '13.11.2025'
+date: '2025-11-14'
+created: '14.11.2025'
 ---
 
 V tomto díle se podíváme na základy tvorby prezentační vrstvy naší budoucí [Nuxt](https://nuxt.com/) aplikace.
