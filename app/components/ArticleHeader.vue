@@ -1,34 +1,34 @@
 <template>
   <div class="p-2">
-    <h1>
-      <span v-if="article?.english" class="inline-block text-xs text-coda-yellow!">
-        <NuxtLink :to="article.english" class="inline" target="_blank">
-          <NuxtImg
-            src="/img/en-flag.webp" alt="Link to English version"
-            title="You can read this article in English @ dev.to"
-            :width="50" :height="30" class="rounded"
-          />
-        </NuxtLink>
-      </span>
+    <h1 class="mb-4">
       {{ article?.title || path }}
     </h1>
-    <div class="text-xs text-coda-yellow! mb-1">
-      {{ article?.created }}
-      <span v-if="edited">(aktualizováno {{ article?.edited }})</span>
-    </div>
-    <div class="mb-2">
-      {{ article?.dscr }}
-    </div>
-    <div class="flex flex-wrap items-center text-coda-yellow!">
-      <strong v-if="article && article.tags?.length > 0">Tagy:&nbsp;</strong>
-      <span v-for="tag in article?.tags" :key="tag" class="actionButton px-2 pb-1 pt-0.5">
-        <NuxtLink :to="`/tag/${tag}`">
-          <span class="actionButtonText text-sm font-mono" style="text-decoration-line: none !important;">{{ tag }}</span>
-        </NuxtLink>
-      </span>
-    </div>
-    <div class="my-1 text-xs text-coda-yellow">
-      ----------------------------------------
+    <div class="px-4 py-2 border border-coda-yellow bg-slate-800">
+      <div class="text-sm text-coda-yellow! mb-1">
+        {{ article?.created }}
+        <span v-if="edited">(aktualizováno {{ article?.edited }})</span>
+      </div>
+      <div class="mb-2">
+        {{ article?.dscr }}
+      </div>
+      <div v-if="article?.english" class="flex flex-row items-center gap-2 mb-2">
+        <NuxtImg
+          src="/img/en-flag.webp" alt="English version available"
+          title="English version available"
+          :width="25" :height="15" class="rounded inline-block"
+        />
+        <a class="block text-sm" :href="article.english">
+          You can read this article in English at <span class="font-mono">dev.to</span>
+        </a>
+      </div>
+      <div class="flex flex-wrap items-center text-coda-purple!">
+        <strong v-if="article && article.tags?.length > 0">Tagy:&nbsp;</strong>
+        <span v-for="tag in article?.tags" :key="tag" class="actionButton px-2 pb-1 pt-0.5">
+          <NuxtLink :to="`/tag/${tag}`">
+            <span class="actionButtonText text-sm font-mono" style="text-decoration-line: none !important;">{{ tag }}</span>
+          </NuxtLink>
+        </span>
+      </div>
     </div>
   </div>
 </template>
