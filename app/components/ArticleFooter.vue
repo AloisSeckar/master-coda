@@ -17,7 +17,7 @@
       <div class="font-bold">
         {{ article.title }} @ Master Coda
       </div>
-      <a class="block" :href="link.replace('##', 'blob')">Zobrazit zdrojový kód článku</a>
+      <a class="block" :href="link.replace('##', 'blob').concat('?plain=1')">Zobrazit zdrojový kód článku</a>
       <a class="block" :href="link.replace('##', 'edit')">Navrhnout úpravu</a>
     </div>
     <div v-else>
