@@ -6,6 +6,7 @@ dscr: 'Jak málo dnes stačí na funkční web'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2025-11-13'
 created: '13.11.2025'
+english: 'https://dev.to/aloisseckar/nuxt-tutorial-1-first-steps-2jp5'
 ---
 
 V prvním z chystané série výukových článků o [JS frameworku Nuxt](https://nuxt.com/) vám chci ukázat, jak snadno v něm jde rozběhnout funkční projekt.

@@ -6,6 +6,7 @@ dscr: 'Nuxt - jak fungují složky /components a /pages'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2025-11-14'
 created: '14.11.2025'
+english: 'https://dev.to/aloisseckar/nuxt-tutorial-2-components-pages-432g'
 ---
 
 V tomto díle se podíváme na základy tvorby prezentační vrstvy naší budoucí [Nuxt](https://nuxt.com/) aplikace.

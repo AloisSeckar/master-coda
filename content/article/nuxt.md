@@ -6,6 +6,7 @@ dscr: 'Představení nástroje, který je pro mě aktuálně nejlepší volbou p
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tipy']
 date: '2025-11-11'
 created: '11.11.2025'
+english: 'https://dev.to/aloisseckar/nuxt-tutorial-0-introduction-4mli'
 ---
 
 Dovolte mi, abych vám představil [Nuxt](https://nuxt.com/). Nástroj, díky němuž je tvorba webů hračka. Stačí jen velmi málo a máte připravenou aplikaci, kterou několika dalšími kliknutími zvládnete i nasadit. Zejména menší projekty, co nepotřebují příliš mnoho dodatečné funkcionality, se v něm píšou úplně hladce. Zároveň ale nabízí spoustu možností, jak jít hlouběji a vytvářet i sofistikované webové aplikace.
