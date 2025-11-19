@@ -6,6 +6,7 @@ dscr: 'Nuxt - jak pracuje middleware'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2025-11-19'
 created: '19.11.2025'
+english: 'https://dev.to/aloisseckar/nuxt-tutorial-5-middleware-3e5a'
 ---
 
 Tento díl Nuxt tutoriálu je věnován middleware, což jsou obslužné metody, které je možné automaticky volat před každým vykreslením určité stránky na [frontendu](/article/nuxt-pages) nebo před zpracováním dat v [serverové části](/article/nuxt-api).
@@ -14,7 +15,7 @@ Tento díl Nuxt tutoriálu je věnován middleware, což jsou obslužné metody,
 
 Soubory middleware na straně klienta se umisťují do složky `/app/middleware`, odkud si je Nuxt automaticky načítá. 
 
-Middleware se spouští v okamžiku, kdy probíhá přesměrování (routing). Aby byl soubor detekován jako middleware, musí obsahovat `default export` metody `defineNuxtRouteMiddleware`. Metoda jako parametr přijímá callback s parametry `to` (kam) a `from` (odkud) probíhá přesměrování. Syntaxe vypadá takto:
+Middleware se spouští v okamžiku, kdy probíhá přesměrování (routing). Aby byl soubor detekován jako middleware, musí obsahovat `export default` metody `defineNuxtRouteMiddleware`. Metoda jako parametr přijímá callback s parametry `to` (kam) a `from` (odkud) probíhá přesměrování. Syntaxe vypadá takto:
 
 ```ts
 export default defineNuxtRouteMiddleware((to, from) => {
@@ -71,6 +72,8 @@ function userCanView(page: string): boolean {
     // logika rizeni pristupu
 }
 ```
+
+Pokud přesměrovat nechcete, nevracejte z funkce nic a nechte ji doběhnout. Nuxt pak bude pokračovat navigací na původně požadovanou stránku.
 
 Další variantou aplikace mohou být například nějaké auditní logy nebo nezbytná inicializace zdrojů používaných cílovou stránkou.
 
