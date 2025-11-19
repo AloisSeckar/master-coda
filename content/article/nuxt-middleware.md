@@ -4,17 +4,15 @@ cat: 'web'
 title: 'Nuxt Tutorial 5 - Middleware'
 dscr: 'Nuxt - jak pracuje middleware'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
-date: '2024-05-05'
-created: '05.05.2024'
-edited: '05.05.2024'
-hidden: true
+date: '2025-11-19'
+created: '19.11.2025'
 ---
 
 Tento díl Nuxt tutoriálu je věnován middleware, což jsou obslužné metody, které je možné automaticky volat před každým vykreslením určité stránky na [frontendu](/article/nuxt-pages) nebo před zpracováním dat v [serverové části](/article/nuxt-api).
 
-## /middleware
+## /app/middleware
 
-Soubory middleware na straně klienta se umisťují do složky `/middleware`, odkud si je Nuxt automaticky načítá. 
+Soubory middleware na straně klienta se umisťují do složky `/app/middleware`, odkud si je Nuxt automaticky načítá. 
 
 Middleware se spouští v okamžiku, kdy probíhá přesměrování (routing). Aby byl soubor detekován jako middleware, musí obsahovat `default export` metody `defineNuxtRouteMiddleware`. Metoda jako parametr přijímá callback s parametry `to` (kam) a `from` (odkud) probíhá přesměrování. Syntaxe vypadá takto:
 
@@ -24,31 +22,39 @@ export default defineNuxtRouteMiddleware((to, from) => {
 })
 ```
 
-Datový typ (resp. interface) parametrů `from` a `to` je převzatý z [Vue Routeru](https://router.vuejs.org/) a jmenuje se [`RouteLocation`](https://router.vuejs.org/api/interfaces/RouteLocation.html). Skrz tyto objekty máte přístup ke všem podstatným informacím o navigaci - URL, get parametry (za `?` v url), hash (za `#` v url), aj. Dále je možné uvnitř funkce volat libovolné [composables a util funkce](/article/nuxt-utils).
+Datový typ (resp. interface) parametrů `from` a `to` je převzatý z [Vue Routeru](https://router.vuejs.org/) a jmenuje se [`RouteLocationNormalizedGeneric`](https://router.vuejs.org/api/interfaces/RouteLocationNormalizedGeneric.html). Skrz tyto objekty máte přístup ke všem podstatným informacím o navigaci - URL, get parametry (za `?` v url), hash (za `#` v url), aj. Dále je možné uvnitř funkce volat libovolné [composables a util funkce](/article/nuxt-utils).
 
 ### Spouštění middleware
 
-Když máme obslužnou funkci, musíme ještě frameworku říct, pro kterou stránku se má metoda spustit. To se dělá nejčastěji v sekci `<setup>` příslušného souboru stránky ve struktuře `/pages` pomocí funkce `definePageMeta`:
+Když máme obslužnou funkci, musíme ještě frameworku říct, pro kterou stránku se má metoda spustit. To se dělá nejčastěji v sekci `<script setup>` příslušného souboru stránky ve struktuře `/pages` pomocí makra `definePageMeta`. Odbočka k tomu, co to je „makro“ - konstrukce, která se z pohledu programátora tváří jako běžná funkce, ale ve skutečnosti jde o speciálně ohraničený kus zdrojového kódu, ve své podstatě _klíčové slovo_, kterému Nuxt kompilátor rozumí, vezme ho a nahradí adekvátně připraveným skutečným JS kódem. Konec vsuvky.
 
-```ts
+Definice middleware pro konkrétní stránku může vypadat například takto:
+
+```html
+<script setup lang="ts">
 definePageMeta({
   middleware: 'foo'
 })
+</script>
 ```
+
+To zajistí, aby se před vykreslením dané stránky spustila middleware funkce definovaná v souboru `/app/middleware/foo.ts`.
 
 Toto byl případ, kdy přesměrování na stránku vyvolá pouze jednu middleware funkci. Lze jich mít i více, pokud se místo jednoduchého řetězce použije pole:
 
-```ts
+```html
+<script setup lang="ts">
 definePageMeta({
   middleware: ['foo1','foo2']
 })
+</script>
 ```
 
-Dokonce je možné místo odkazu na název souboru ve složce `/middleware` definovat „inline“ middleware přímo uvnitř definice v `definePageMeta`, ale to mi připadá zbytečně zamlžující, protože si budete muset pamatovat, že ho tam máte.
+Dokonce je možné místo odkazu na název souboru ve složce `/app/middleware` definovat „inline“ middleware přímo [uvnitř definice](https://nuxt.com/docs/4.x/api/utils/define-page-meta#defining-middleware) v `definePageMeta`, ale to mi připadá zbytečně zamlžující, protože si budete muset pamatovat, že ho tam máte.
 
-Často se stává, že nepotřebujeme metodu pouštět pouze na jedné či n stránkách, ale úplně na všech, takže by nutnost neustálého vypisování `definePageMeta` začala být brzy otravná. Proto existuje také jednoduchý způsob, jak Nuxtu říct, že jde o „globální“ middleware, který má spouštět pokaždé. Na to stačí specifická „přípona“ názvu souboru - zatímco spuštění `/middleware/foo.ts` musíme na stránce explicitně vyžádat, handler `/middleware/foo.global.ts` se sám od sebe vykoná vždy, když nastane událost přesměrování (routing) na **libovolnou** stránku.
+Často se stává, že nepotřebujeme metodu spouštět pouze na jedné či n stránkách, ale úplně na všech, takže by nutnost neustálého vypisování `definePageMeta` začala být brzy otravná. Proto existuje také jednoduchý způsob, jak Nuxtu říct, že jde o „globální“ middleware, který má spouštět pokaždé. Na to stačí specifická „přípona“ názvu souboru fungující na podobném principu jako určení HTTP metody v API endpointech. Zatímco spuštění `/app/middleware/foo.ts` musíme na stránce explicitně vyžádat, handler `/app/middleware/foo.global.ts` se sám od sebe vykoná vždy, když nastane událost přesměrování (routing) na **libovolnou** stránku.
 
-Od Nuxt verze **3.11** přibyla ještě možnost definovat middleware centrálně v souboru `nuxt.config.ts` v sekci `routeRules`.
+Od Nuxt verze **3.11** přibyla ještě možnost definovat middleware centrálně v souboru `nuxt.config.ts` v sekci `routeRules` (platí pouze pro klientskou část aplikace, nikoliv pro Nitro backend!).
 
 ### Příklad použití
 
@@ -70,7 +76,7 @@ Další variantou aplikace mohou být například nějaké auditní logy nebo ne
 
 **Na závěr poznámka k pořadí:** Nejprve se spouští globální middleware (v abecedním pořadí), potom teprve soubory specifické pro konkrétní stránky (v pořadí, v jakém jsou pro stránku definovány). To je potřeba mít na paměti, pokud na pořadí operací záleží.
 
-[Oficiální dokumentace](https://nuxt.com/docs/guide/directory-structure/middleware)
+📗[Oficiální dokumentace](hhttps://nuxt.com/docs/4.x/directory-structure/app/middleware)
 
 ## /server/middleware
 
@@ -88,7 +94,7 @@ Parametr `event` obsahuje veškeré informace o běhovém prostředí JS serveru
 
 Na rozdíl od middleware na straně klienta, tyto soubory se spouští před **všemi** API požadavky. Vykonají se vždy předtím, než s příchozím requestem začnou manipulovat API endpointy. Neměly by vracet hodnotu a příchozí request by měly maximálně rozšiřovat, nikoliv měnit původní data.
 
-[Oficiální dokumentace](https://nuxt.com/docs/guide/directory-structure/server#server-middleware)
+📗[Oficiální dokumentace](https://nuxt.com/docs/4.x/directory-structure/server#server-middleware)
 
 ## Případová studie
 
@@ -102,15 +108,15 @@ Zdrojový kód ukázkové implementace naleznete zde:
 [nuxt-middleware @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-middleware)
 
 Definovány jsou 4 middleware funkce:
-- `/middleware/allRoutes.global.ts` - vykoná se před každým přesměrováním, vypíše do konzole odkud a kam se přepíná
-- `/middleware/onlySecond.ts` - vykoná se pouze před načtením stránky `/second`, vypíše do konzole vysvětlení funkčnosti
-- `/middleware/onlyThird.ts` - vykoná se pouze před načtením stránky `/third`, vypíše do konzole vysvětlení funkčnosti, je nastaveno prostřednictvím konfigurace v `nuxt.config.ts` (možné až od verze 3.11)
-- `/server/middleware/server.ts` - vykoná se před zpracováním každého API požadavku, vypíše do konzole URL
+- `/app/middleware/allRoutes.global.ts` - vykoná se před každým přesměrováním, vypíše do konzole odkud a kam se přepíná
+- `/app/middleware/onlySecond.ts` - vykoná se pouze před načtením stránky `/second`, vypíše do konzole vysvětlení funkčnosti
+- `/app/middleware/onlyThird.ts` - vykoná se pouze před načtením stránky `/third`, vypíše do konzole vysvětlení funkčnosti, je nastaveno prostřednictvím konfigurace v `nuxt.config.ts`
+- `/server/middleware/server.ts` - vykoná se před zpracováním každého API požadavku, vypíše do konzole URL (na serveru, nikoliv v prohlížeči)
 
-Jednoduchá implementace klienta umožňuje přepínat mezi odkazy a pozorovat, co se přitom děje v konzoli. Volání API se realizuje kliknutím na tlačítka na stránce `/first` nebo `/second`.
+Jednoduchá implementace klienta umožňuje přepínat mezi odkazy a pozorovat, co se přitom děje v konzoli. Volání API endpointu se realizuje kliknutím na tlačítka na stránce `/first` nebo `/second`.
 
 ## Shrnutí
 
 Middleware se hodí pro snadnou implementaci funkcí, které chceme volat **PŘEDTÍM**, než je zahájeno zpracování API požadavku na serveru nebo vykreslování stránky klienta. Klientské middleware metody mohou být vázány na konkrétní stránky nebo být spouštěné globálně před načtením libovolné z nich. Middleware na serveru se vykoná před každým API voláním.
 
-V tuto chvíli jsme už pokryli značnou část základní Nuxt funkcionality. Prozatím jsem se ale - úmyslně - příliš nevěnoval tomu, jak vlastně funguje javascriptový framework [Vue.js](https://vuejs.org/), nad kterým je to celé postaveno. Mluvili jsme už trochu o [komponentách](/article/nuxt-pages#komponenty-obecně) a [composables](/article/nuxt-utils#composables), ale bez hlubšího přesahu. Přestože ani zdaleka nedosáhneme úrovně detailu, který nabízí [oficiální Vue.js dokumentace](https://vuejs.org/guide/introduction.html), alespoň částečně to v [následujícím Vue.js intermezzu napravíme](/article/nuxt-vue).
+V tuto chvíli jsme už pokryli značnou část základní Nuxt funkcionality. Prozatím jsem se ale - úmyslně - příliš nevěnoval tomu, jak vlastně funguje javascriptový framework [Vue.js](https://vuejs.org/), nad kterým je to celé postaveno. Mluvili jsme už trochu o [komponentách](/article/nuxt-pages#komponenty-obecně) a [composables](/article/nuxt-utils#composables), ale bez hlubšího přesahu. Přestože ani zdaleka nedosáhneme úrovně detailu, který nabízí [oficiální Vue.js dokumentace](https://cs.vuejs.org/guide/introduction.html), alespoň částečně to v [následujícím Vue.js intermezzu napravíme](/article/nuxt-vue).
