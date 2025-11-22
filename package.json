@@ -8,8 +8,8 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "better-sqlite3": "12.2.0",
-    "nuxt-ignis": "0.5.0"
+    "better-sqlite3": "12.4.1",
+    "nuxt-ignis": "0.5.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
