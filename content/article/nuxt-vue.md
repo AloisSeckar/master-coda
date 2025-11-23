@@ -6,6 +6,7 @@ dscr: 'Nuxt - alespoň stručný pohled na základní principy Vue.js, nad kter�
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2025-11-23'
 created: '23.11.2025'
+english: 'https://dev.to/aloisseckar/nuxt-tutorial-6-vuejs-intermezzo-45aa'
 ---
 
 V tomto vloženém článku se podíváme trochu blíž na vybrané základní koncepty frameworku Vue.js, nad kterým Nuxt pracuje. Nemyslím totiž, že je vhodné používat jakýkoliv nástroj, aniž by měl člověk alespoň hrubou představu, jak to funguje. Než budeme pokračovat v objevování dalších skvělých funkcí Nuxtu, vrátíme se ke kořenům, aniž bychom v tomto díle něco konkrétního naprogramovali. Budete však mít lepší průpravu, až se o to později sami pokusíte.
@@ -27,6 +28,8 @@ SFC komponenta je složena ze tří hlavních částí:
 - **Style** – oddíl pro definici CSS stylů
 
 Není nezbytně nutné uvést všechny tři oddíly. Validní komponenta může například obsahovat pouze `<script>` (tzv. _„renderless“_ či _„funkční“_ komponenta), nebo naopak pouze `<template>`, pokud nepotřebujeme větší přípravu či manipulaci s daty pomocí JavaScriptu. Pouze samotné `<style>` není povoleno, protože by nebylo zřejmé, k čemu styly patří a jak s takovým kusem kódu pracovat.
+
+Trochu tím plavu proti proudu, ale více mi vyhovuje mít na prvním místě `<template>`, potom `<script>` a nakonec `<style>` (pokud je přítomen). Patrně častěji uvidíte jako první `<script>`, ale mě to nedává tak velký smysl. Nejprve chci vidět, jak bude komponenta vypadat, a teprve potom řešit, jaká přesně data v ní budou zobrazena. Každopádně je to vaše věc. Doporučení je pouze jedno - nemíchejte pořadí bloků v jednom projektu. Vyberte si jednu variantu a držte se jí všude.
 
 _Kromě toho je teoreticky možné nadefinovat si libovolné další [vlastní bloky]( https://cs.vuejs.org/api/sfc-spec.html#custom-blocks). Vue vám je umožní zadat, ale jejich obsluhu si pak musíte zařídit sami. Neříkám, že to užitečné není, ale sám jsem je v praxi zatím nepoužil. Příkladem takového použití je ovšem [`<i18n>` blok](https://vue-i18n.intlify.dev/guide/advanced/sfc.html) ve stejnojmenné knihovně pro usnadnění jazykových mutací._
 
@@ -50,7 +53,7 @@ Uvnitř tagu `<template>` se nachází definice obsahu budoucí vykreslené (č�
   - kompletní přehled [ZDE](https://cs.vuejs.org/api/built-in-directives.html)
   - _je možné nadefinovat i [svoje vlastní](https://cs.vuejs.org/guide/reusability/custom-directives.html)_
 
-Druhým specifikem Vue šablon je možnost odkazovat další komponenty. Jako identifikátor v šabloně použijte název `.vue` souboru v _PascalCase_ notaci. V čistém Vue je třeba komponenty před použitím ručně [registrovat](https://cs.vuejs.org/guide/components/registration.html). Nuxt toto řeší automaticky za předpokladu, že jsou `.vue` soubory umístěny ve složce `/components` _(nebo je [nakonfigurováno](https://nuxt.com/docs/guide/directory-structure/components#custom-directories), odkud se má auto-import provádět)_.
+Druhým specifikem Vue šablon je možnost odkazovat další komponenty. Jako identifikátor v šabloně použijte název `.vue` souboru v _PascalCase_ notaci. V čistém Vue je třeba komponenty před použitím ručně [registrovat](https://cs.vuejs.org/guide/components/registration.html). Nuxt toto řeší automaticky za předpokladu, že jsou `.vue` soubory umístěny ve složce `/app/components` _(nebo je [nakonfigurováno](https://nuxt.com/docs/4.x/directory-structure/app/components), odkud se má auto-import provádět)_.
 
 Díky tomu je možné větší funkční celky krásně skládat z jednotlivých dílčích SFC komponent, které spolu díky Vue mohou navzájem obousměrně komunikovat. Jak na to si ukážeme za chvíli.
 
@@ -64,21 +67,21 @@ Jelikož si Vue zakládá na flexibilitě, tak níže uvedené není jediná mo�
 </script>
 ```
 
-Název tagu je asi zřejmý. Atribut [`setup`](https://cs.vuejs.org/api/sfc-script-setup.html) říká kompilátoru, že budeme používat Vue ve variantě tzv. [Composition API](https://cs.vuejs.org/guide/extras/composition-api-faq.html). Až dosud jsem vám zamlčel, že vůbec existuje i jiná varianta, ale ono _Options API_ je z mého pohledu už pouze legacy záležitost, kterou vůbec nemá smysl se učit. Časem možná narazíte na návody či knihovny, které ho stále používají, ale než to budete skutečně potřebovat, není třeba si zbytečně zatěžovat hlavu. Jsem přesvědčen, že se `<script setup>` neprohloupíte. Prvky Vue zmiňované dále v textu ostatně implicitně předpokládají, že ho používat budete.
+Název tagu je asi zřejmý. Atribut [`setup`](https://cs.vuejs.org/api/sfc-script-setup.html) říká kompilátoru, že budeme používat Vue ve variantě tzv. [Composition API](https://cs.vuejs.org/guide/extras/composition-api-faq.html). Až dosud jsem vám zamlčel, že vůbec existuje i jiná varianta, ale ono _Options API_ je z mého pohledu už pouze legacy záležitost, kterou vůbec nemá smysl se učit. Časem možná narazíte na návody, knihovny či legacy projekty, které ho stále používají, ale než to budete skutečně potřebovat, není třeba si zbytečně zatěžovat hlavu. Jsem přesvědčen, že se `<script setup>` neprohloupíte. Prvky Vue zmiňované dále v textu ostatně implicitně předpokládají, že ho používat budete.
 
 Atribut `lang="ts"` v kontextu Vue označuje _pre-procesor_, který v tomto konkrétním případě zapíná podporu TypeScriptu. Není to přímo povinnost, ale jak už jsem psal v dřívějších dílech tutoriálu, bez TypeScriptu a jeho statické analýzy kódu si vývoj nedovedu představit. Správně nakonfigurovaný TypeScript v IDE vás obratem upozorní, že hrozí přístup k nedefinované proměnné, že předáváte jako argument špatný datový typ nebo dokonce voláte funkci, která není definována. To, a ještě mnohem víc. Vážně se vyplatí investovat zpočátku trochu úsilí k pochopení jeho principů.
 
-Jakékoliv JS proměnné a funkce, které nadefinujete uvnitř `<script setup>`, jsou automaticky k dispozici pro použití v šabloně komponenty. Zároveň jsou ale bezpečně uzavřeny před okolím, pokud je explicitně nevystavíte pomocí makra [`defineExpose`](https://cs.vuejs.org/api/sfc-script-setup.html#defineexpose). Doporučuji snažit se obsah bloku spíše krátit – deklarovat zde výlučně prvky pevně spjaté s aktuální komponentou a delší sekvence kódu refaktorovat do samostatných `/utils` nebo `/composables` (viz [starší díl tutoriálu](/article/nuxt-utils)). Jen co si představíme poslední sekci, dojde na konkrétnější příklady využití.
+Jakékoliv JS proměnné a funkce, které nadefinujete uvnitř `<script setup>`, jsou automaticky k dispozici pro použití v šabloně komponenty. Zároveň jsou ale bezpečně uzavřeny před okolím, pokud je explicitně nevystavíte pomocí makra [`defineExpose`](https://cs.vuejs.org/api/sfc-script-setup.html#defineexpose). Doporučuji snažit se obsah bloku spíše krátit – deklarovat zde výlučně prvky pevně spjaté s aktuální komponentou a delší sekvence kódu refaktorovat do samostatných `utils` nebo `composables` (viz [starší díl tutoriálu](/article/nuxt-utils)). Jen co si představíme poslední sekci, dojde na konkrétnější příklady využití.
 
 ### Style
 
-Blok pro definici CSS stylů obaluje tag `<style>`. Pokud chcete něco víc než (výchozí) čisté CSS, je i zde možné využít atribut `lang` k definici pre-procesoru. Například lze použít [Sass](https://sass-lang.com/), které ale musíte ve svém projektu napřed správně [nakonfigurovat](https://nuxt.com/docs/getting-started/styling#using-preprocessors).
+Blok pro definici CSS stylů obaluje tag `<style>`. Pokud chcete něco víc než (výchozí) čisté CSS, je i zde možné využít atribut `lang` k definici pre-procesoru. Například lze použít [Sass](https://sass-lang.com/), které ale musíte ve svém projektu napřed správně [nakonfigurovat](https://nuxt.com/docs/4.x/getting-started/styling#using-preprocessors).
 
-Je dobré držet se pravidla, že styly uvnitř SFC komponenty patří pouze k této komponentě, a nenechat je „prosakovat“ do zbytku aplikace. Mívá to nečekané následky [úplně někde jinde](https://github.com/vuejs-translations/docs-cs/issues/267) a zdroj problémů se špatně hledá. Vue zapouzdření na úrovni souboru umožňuje velice snadno – přidejte do tagu atribut _„scoped“_: `<style scoped>` – a máte vyřešeno. Styly, které se globálně aplikovat mají, bych definoval pouze na nejvyšší úrovni v `app.vue`, nebo pokud je jich víc, tak v samostatném CSS souboru, který se pak [načte v konfiguraci Nuxtu](https://nuxt.com/docs/getting-started/styling#the-css-property).
+Je dobré držet se pravidla, že styly uvnitř SFC komponenty patří pouze k této komponentě, a nenechat je „prosakovat“ do zbytku aplikace. Mívá to nečekané následky [úplně někde jinde](https://github.com/vuejs-translations/docs-cs/issues/267) a zdroj problémů se špatně hledá. Vue zapouzdření na úrovni souboru umožňuje velice snadno – přidejte do tagu atribut _„scoped“_: `<style scoped>` – a máte vyřešeno. Styly, které se globálně aplikovat mají, bych definoval pouze na nejvyšší úrovni v `app.vue`, nebo pokud je jich víc, tak v samostatném CSS souboru, který se pak [načte v konfiguraci Nuxtu](https://nuxt.com/docs/4.x/getting-started/styling#the-css-property).
 
 Platí, že `<style>` bloků může být v jedné komponentě definováno více, ale nepřipadá mi to příliš praktické. Stejně tak jsem zatím nevyužil podporu [CSS modulů](https://cs.vuejs.org/api/sfc-css-features.html#css-modules).
 
-Obecně bych řekl, že v praxi budete tento blok používat spíš méně, pouze pro řešení nějakých speciálních požadavků. Vzhled často už řeší různé UI knihovny a není většinou třeba vynalézat znovu kolo. Nebo pokud sáhnete třeba po populární knihovně **Tailwind CSS** (viz [pozdější díl tutoriálu](/article/nuxt-gui#tailwind-css)), klasické CSS pro vás takřka přestane existovat...
+Obecně bych řekl, že zpočátku budete mít tendenci na tento blok dost spoléhat, ale později v praxi ho začnete používat spíš méně, pouze pro řešení nějakých speciálních požadavků. Vzhled často už řeší různé UI knihovny a není většinou třeba vynalézat znovu kolo. Nebo pokud sáhnete třeba po populární knihovně **Tailwind CSS** (viz [pozdější díl tutoriálu](/article/nuxt-gui#tailwind-css)), klasické CSS pro vás takřka přestane existovat...
 
 ## Předávání dat mezi komponentami
 
@@ -88,13 +91,33 @@ Možnost zapouzdření částí aplikace do samostatných komponent je fajn, ale
 
 Pomocí speciální funkce `defineProps()` je možné definovat sadu proměnných, které je možné komponentě předat zvenčí. Konceptuálně to odpovídá veřejným atributům třídy v objektově orientovaných jazycích. Abych byl úplně přesný, nejde zde o skutečnou funkci, ale o další tzv. _makro prohlížeče_, jehož obsah se při překladu `.vue` souboru na skutečný kód patřičným způsobem nahradí.
 
-Argumentem tohoto makra je pole definovaných vlastností, kterým Vue říká **props**. Existuje několik variant zápisu, já mám nejradši tzv. _objektovou_ syntaxi:
+Argumentem tohoto makra je pole definovaných vlastností, kterým Vue říká **props**. Existuje několik variant zápisu. Dlouho se mi líbila tzv. _objektová_ syntaxe, protože působí přirozeně:
 
 ```ts
 const props = defineProps({
   foo: { type: String, required: true },
   bar: { type: Number },
 })
+```
+
+Potíž je, že pro složitější typy je potřeba použít přetypování na generickou Vue utilitu `PropType`:
+
+```ts
+const props = defineProps({
+  foo: { type: String, required: true },
+  bar: { type: Number },
+  ext: { type: Object as PropType<CustomType>},
+})
+```
+
+Což není moc intuitivní a je to zbytečně složité. Proto jsem nakonec vzal na milost novější _type based_ syntaxi, která sice na můj vkus vypadá zvláštně, ale je vhodnější a kratší:
+
+```ts
+const props = defineProps<{
+  foo: string,
+  bar?: number,
+  ext?: CustomType,
+}>()
 ```
 
 Takto zadefinované hodnoty poté můžeme uvnitř `<script>` komponenty volat jako `props.foo` a `props.bar`. Ve výrazech uvnitř `<template>` stačí odkazovat pouze `foo` nebo `bar`, jelikož kompilátor je dost chytrý na to, aby uměl dohledat, že se jedná o **props**.
@@ -113,7 +136,7 @@ Pamatujte si i další zásadu, že **props** byste měli v rámci komponenty po
 
 ### Emits
 
-To bylo předávání dat dovnitř komponent a nyní ještě potřebujeme opačný směr. K tomu máme makro `defineEmits()`, kde nadefinujeme soubor vlastních událostí (events), které může komponenta produkovat. V nejjednodušším případě stačí názvy událostí předat jako pole řetězců. Událost pak můžeme vyvolat v šabloně předáním jejího názvu do vestavěné metody `$emit`:
+To bylo předávání dat dovnitř komponent a nyní ještě potřebujeme opačný směr. K tomu máme makro `defineEmits()`, kde nadefinujeme soubor vlastních událostí (events), které může komponenta produkovat (**emit**). V nejjednodušším případě stačí názvy událostí předat jako pole řetězců. Událost pak můžeme vyvolat v šabloně předáním jejího názvu do vestavěné metody `$emit`:
 
 ```html
 <button @click="$emit('event')">
@@ -193,7 +216,7 @@ Vue automaticky zajistí, že se uživatelský vstup v hodnotě `foo` projeví, 
 
 Výše uvedené mechanismy fungují uspokojivě pro jednodušší aplikace. Jak roste počet komponent a interakcí mezi nimi, začíná být otravné neustále přemýšlet, odkud kam vést propojení. V takovém případě lze problematiku pozvednout o úroveň výš a stav udržovat na jednom místě napříč celou aplikací.
 
-Nuxt má k dispozici composable [`useState`](https://nuxt.com/docs/api/composables/use-state), která pro méně složitá data postačí sama o sobě. De facto standard pro řešení správy stavu ve Vue je však aktuálně knihovna **Pinia**, se kterou je hračka globální stav vytvořit, udržovat a bezpečně použít kdekoliv ve Vue aplikaci. O jejím použití však více až později v [samostatném článku](/article/nuxt-pinia).
+Nuxt má k dispozici composable [`useState`](https://nuxt.com/docs/4.x/api/composables/use-state), která pro méně složitá data postačí sama o sobě. De facto standard pro řešení správy stavu ve Vue je však aktuálně knihovna **Pinia**, se kterou je hračka globální stav vytvořit, udržovat a bezpečně použít kdekoliv ve Vue (Nuxt) aplikaci. O jejím použití však více až později v [samostatném článku](/article/nuxt-pinia).
 
 ## Reaktivita
 
@@ -203,15 +226,15 @@ Reaktivita ve Vue světě znamená, že je možné zavést speciální objekty o
 
 Technickým pozadím se zde hlouběji zabývat nebudeme, pokud vás to zajímá, pokračujte na kapitolu [Reaktivita podrobně](https://cs.vuejs.org/guide/extras/reactivity-in-depth.html) v dokumentaci. V tuto chvíli bude stačit znát následující tři funkce:
 
-- `ref()` – jako svůj argument přijme obyčejnou proměnnou (primitivní typ, objekt nebo pole) a obalí ji tak, aby návratová hodnota byla _reaktivní_. To znamená, že kdekoliv ji použijete, dojde k její aktualizaci v budoucnu kdykoliv, když se změní. Takto získané objekty – **_refs_**, je možné předávat jako argumenty funkcí nebo i jako **_props_** do komponent v šablonách, a svou reaktivitu si přitom všude nesou s sebou. Malou cenou za to je nutnost psát `nazev.value` při použití ve skriptech, aby se funkcionalita uměla vyvolat. Uvnitř `<template>` stačí pouze `nazev`, protože tam si `.value` doplní překladač.
+- `ref()` – jako svůj argument přijme obyčejnou proměnnou (primitivní typ, objekt nebo pole) a obalí ji tak, aby návratová hodnota byla _reaktivní_. To znamená, že kdekoliv ji použijete, dojde k její aktualizaci v budoucnu kdykoliv, když se změní. Takto získané objekty – **_refs_**, je možné používat v šablonách, předávat jako argumenty funkcí nebo i jako **_props_** do komponent, a svou reaktivitu si přitom všude nesou s sebou. Malou cenou za to je nutnost psát `nazev.value` při použití ve skriptech, aby se funkcionalita uměla vyvolat. Uvnitř `<template>` stačí pouze `nazev`, protože tam si `.value` doplní překladač.
 - `computed()` – zde je argumentem callback funkce, která se umí automaticky zavolat, pokud je uvnitř těla detekována reaktivní změna – tj. u některé z proměnných došlo ke změně, kterou systém reaktivity propaguje napříč aplikací. Toto slouží k definici dynamických výpočtů. Například pro jednoduchou sčítací kalkulačku můžete nadefinovat dvě `ref()` hodnoty propojené s uživatelským vstupem a součet jejich hodnot bude výsledek `computed(() => a.value + b.value)`. Kdykoliv uživatel změní jeden ze vstupů, výsledek se ihned sám přepočítá.
 - `watch()` – nabízí možnost sledování změny reaktivní hodnoty a automatické provedení _vedlejšího efektu_. Jako první argument určíte hodnotu, která se má sledovat, druhým je callback, který se spustí při detekci změny. Například by tím šlo sledovat počet špatných pokusů o přihlášení a po překročení limitu nastavit proměnnou, která zablokuje další stisknutí tlačítka _"Přihlásit"_.
 
 To bylo představení letem světem. Systém reaktivity je samozřejmě mnohem komplexnější, dostupných funkcí je více a navíc mají různé možnosti nastavení. To si ale můžete postupně načíst v dokumentaci, až to budete potřebovat. Už s těmito třemi základními prvky lze obsáhnout celou řadu scénářů.
 
-Zároveň je vhodné už teď upozornit na určité úskalí. Dle mých zkušeností má totiž jednoduchost použití tendenci svádět k přílišnému používání i tam, kde to vůbec není potřeba. Jak aplikace roste, pak zejména u `computed()` a `watch()` začíná docházet ke stále častějšímu převolávání a brzy dokáže jedna zdánlivě malá změna hodnoty vyvolat kaskádovitý efekt desítek volání funkcí, o následných manipulacích s DOM výsledné HTML stránky ani nemluvě. Vue sice reaktivní úpravy dávkuje a úpravy DOM maximálně optimalizuje, zátěž na pozadí však přesto bobtná. Nehledě na to, že je pak obtížné tok aktualizací sledovat, pokud je potřeba ladit, že se kdesi skrytě změní něco, co se vlastně vůbec měnit nemá.
+Je vhodnější už teď upozornit na určité úskalí. Dle mých zkušeností má totiž jednoduchost použití tendenci svádět k přílišnému používání i tam, kde to vůbec není potřeba. Jak aplikace roste, pak zejména u `computed()` a `watch()` začíná docházet ke stále častějšímu převolávání a brzy dokáže jedna zdánlivě malá změna hodnoty vyvolat kaskádovitý efekt desítek volání funkcí, o následných manipulacích s DOM výsledné HTML stránky ani nemluvě. Vue sice reaktivní úpravy dávkuje a úpravy DOM maximálně optimalizuje, zátěž na pozadí však přesto bobtná. Nehledě na to, že je pak obtížné tok aktualizací sledovat, pokud je potřeba ladit, že se kdesi skrytě změní něco, co se vlastně vůbec měnit nemá.
 
-Problém je, že z počátku nejspíš ani nebudete tušit, že problém máte. Veškeré operace systému reaktivity probíhají tiše na pozadí a jelikož je Vue optimalizované na brutální výkon, na jednoduchých aplikacích zpočátku nepoznáte, že se děje něco nekalého. Když vás to začne dobíhat, může být už poměrně složité kód předělávat a optimalizovat. Lepší je hned od počátku k reaktivitě přistupovat spíše skepticky – _neptejte se, co všechno můžete udělat reaktivní, přemýšlejte, co reaktivní být nepotřebuje_, protože se vlastně nebude měnit, popř. to lze řešit jinak než přidáním `computed() / watch()`.
+Aby to bylo ještě horší, z počátku nejspíš ani nebudete tušit, že problém máte. Veškeré operace systému reaktivity probíhají tiše na pozadí a jelikož je Vue optimalizované na brutální výkon, na jednoduchých aplikacích zpočátku nepoznáte, že se děje něco nekalého. Když vás to začne dobíhat, může být už poměrně složité kód předělávat a optimalizovat. Lepší je hned od počátku k reaktivitě přistupovat spíše skepticky – _neptejte se, co všechno můžete udělat reaktivní, přemýšlejte, co reaktivní být nepotřebuje_, protože se vlastně nebude měnit, popř. to lze řešit jinak než přidáním `computed() / watch()`.
 
 Zároveň platí, že to je nesmírně silný nástroj a nedílná součást arsenálu Vue vývojáře. Jen pozor na syndrom kladiva a hřebíku.
 
