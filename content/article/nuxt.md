@@ -6,7 +6,7 @@ dscr: 'Představení nástroje, který je pro mě aktuálně nejlepší volbou p
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tipy']
 date: '2025-11-11'
 created: '11.11.2025'
-edited: '17.11.2025'
+edited: '23.11.2025'
 english: 'https://dev.to/aloisseckar/nuxt-tutorial-0-introduction-4mli'
 ---
 
@@ -24,13 +24,13 @@ Je v něm napsaný například i tento web.
 
 ## Co je potřeba?
 
-Potřeba je pouze nejnovější LTS verze [Node.js](https://nodejs.org/) v počítači, na kterém chcete vyvíjet. Výsledná aplikace může rovněž běžet v Node.js prostředí, ale není to nezbytně nutné. Nuxt umožňuje vytvořit výstup i jako statický JavaScript, který lze spustit v jakémkoliv modernějším prohlížeči. Sice tím přijdete o některé funkce, ale na provoz pak stačí úplně obyčejný statický webhosting. Na druhou stranu v dnešní době cloudových služeb a kontejnerů už není velkým problémem ani „dynamická“ varianta.
+Pro lokální spuštění JavaScriptových aplikací potřebujete JS runtime. Pro účely tohoto tutoriálu budu předstírat, že existuje pouze **Node.js**, přestože v praxi je to složitější. Do počítače, na kterém chcete vyvíjet, si tedy pořiďte nejnovější LTS verzi [Node.js](https://nodejs.org/en/download). Pokud máte raději alternativy, Nuxt by s nimi měl být kompatibilní. Výsledná aplikace může rovněž běžet v Node.js prostředí, ale není to nezbytně nutné. Nuxt umožňuje vytvořit výstup i jako statický JavaScript, který lze spustit v jakémkoliv modernějším prohlížeči. Sice tím přijdete o některé funkce, ale na provoz pak stačí úplně obyčejný statický webhosting. Na druhou stranu v dnešní době cloudových služeb a kontejnerů už není velkým problémem ani „dynamická“ varianta.
 
 Mezi další prerekvizity patří nějaké povědomí o HTML, CSS a JavaScriptu. Ideální je též alespoň letmá znalost TypeScriptu. Sami vývojáři Vue.js a Nuxtu sice všude opakují, že do TS nikoho nenutí, ale z vlastní zkušenosti říkám, že to je velký posun kupředu a vyplatí se obětovat nějaký čas učení a prošlapávání slepých uliček. Typová kontrola vám pomůže najít spoustu triviálních chyb ještě předtím, než je omylem pustíte do produkce a pak si s nimi budete muset lámat hlavu.
 
 Aby se člověku příjemně programovalo, je dobré mít nějaké IDE. Pro vývoj JavaScriptu je zřejmě nejlepší volbou [VS Code](https://code.visualstudio.com/) - je na to určené, je dobré, je zdarma, má hodně pluginů, včetně [oficiálního rozšíření pro Vue](https://marketplace.visualstudio.com/items?itemName=Vue.volar), a lidé z Vue.js světa také pracují nejčastěji v něm.
 
-Pro instalaci a správu JavaScriptových závislostí v Node.js prostředí je nutný nějaký package manager. Tak jako JS frameworky, existuje i zde více možností. Moje demo aplikace budou přizpůsobeny použití `pnpm`, které rovněž doporučuji. Dlouho jsem si vystačil s `npm`, který přišel první a současný JavaScript svět je do značné míry postaven kolem něj. Nicméně pokročilejší `pnpm` má jednu velkou výhodu - pomocí symlinků na jeden centrální adresář deduplikuje závislosti z různých projektů, které se jinak do lokálních `node_modules` stahují pokaždé znovu a znovu a zabírají pak celé gigabyty na disku. Další drobnou výhodou je, že skripty definované v `package.json` lze pouštět přímo jako `pnpm script` (v npm je to `npm run script`). Nikdy jsem nezkusil `yarn`, ačkoliv vím, že ho také někteří preferují. Volba je ve finále na vás, obecné principy mají všechny stejné a v jádru jde jen o to, jaká bude syntaxe příkazu.
+Pro instalaci a správu JavaScriptových závislostí v Node.js prostředí je nutný nějaký package manager. Tak jako JS frameworky, existuje i zde více možností. Moje demo aplikace budou přizpůsobeny použití `pnpm`, které rovněž doporučuji. Dlouho jsem si vystačil s `npm`, který přišel první a současný JavaScript svět je do značné míry postaven kolem něj. Nicméně pokročilejší `pnpm` má jednu velkou výhodu - pomocí symlinků na jeden centrální adresář deduplikuje závislosti z různých projektů, které se jinak do lokálních `node_modules` stahují pokaždé znovu a znovu a zabírají pak celé gigabyty na disku. Další drobnou výhodou je, že skripty definované v `package.json` lze pouštět přímo jako `pnpm script` (v npm je to `npm run script`). Nikdy jsem nezkusil `yarn`, ačkoliv vím, že ho také někteří preferují. Pokud se nedržíte Node.js, máte dost možná ještě jinou variantu (zdravím `bun` a `deno`). Volba je ve finále na vás, obecné principy mají všechny stejné a v jádru jde jen o to, jaká bude syntaxe příkazu.
 
 _„Last but not least“_ to chce `Git` na správu a verzování zdrojového kódu. Pro menší testovací projekty si možná vystačíte i bez něj, ale pro vývoj čehokoliv většího je to takřka nutnost. Pokud máte raději jiné verzovací systémy, musíte si nějak poradit. Já kdysi v práci začínal v SVN, ale už bych se k němu nechtěl vracet.
 
