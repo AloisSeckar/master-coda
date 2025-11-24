@@ -29,6 +29,9 @@
           </NuxtLink>
         </span>
       </div>
+      <div v-if="!article" class="mb-2">
+        These are not the articles you are looking for.<br>Keep browsing. Keep browsing...
+      </div>
     </div>
   </div>
 </template>

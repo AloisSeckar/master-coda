@@ -22,7 +22,7 @@
     </div>
     <div v-else>
       <div class="font-bold">
-        Články @ Master Coda
+        Články @ <NuxtLink to="/">Master Coda</NuxtLink>
       </div>
     </div>
   </div>

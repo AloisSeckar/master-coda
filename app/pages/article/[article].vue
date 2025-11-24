@@ -5,10 +5,7 @@
       <ArticleStub v-if="article?.wip" />
       <ArticleUnchecked v-if="article?.unchecked" />
       <ContentRenderer v-if="article" :value="article" />
-      <div v-else class="mb-6">
-        <div class="mb-4">
-          These are not the articles you are looking for. Keep browsing. Keep browsing...
-        </div>
+      <div v-else class="mt-2 mb-6">
         <NuxtImg
           src="/img/no-article.webp" alt="Article doesn't exist"
           title="Please, check the article URL or report a bug"
