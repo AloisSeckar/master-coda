@@ -13,7 +13,7 @@ V tomto vloženém článku se podíváme trochu blíž na vybrané základní k
 
 Na úvod si zapište nejlepší dostupný zdroj informací o Vue – [oficiální dokumentaci](https://vuejs.org/). „Náhodou“ mám na svědomí její kompletní, průběžně aktualizovaný [překlad do češtiny](https://cs.vuejs.org/), takže na rozdíl od mnoha jiných technologií není třeba vládnout angličtinou. O  všech tématech, která zde zmíním, se mnohem víc dozvíte tam a budete se k ní moct vždycky vrátit a zkonzultovat své dotazy a problémy.
 
-A teď už slíbený přehled základních konceptů. Jako první se vrátíme ke komponentám, které jsme si už [stručně popsali](/article/nuxt-pages), nyní však půjdeme o něco více do hloubky.
+A teď už slíbený přehled základních konceptů. Jako první se vrátíme ke komponentám, které jsme si už [stručně popsali](/article/nuxt-pages){external}, nyní však půjdeme o něco více do hloubky.
 
 ## Komponenty
 
@@ -71,7 +71,7 @@ Název tagu je asi zřejmý. Atribut [`setup`](https://cs.vuejs.org/api/sfc-scri
 
 Atribut `lang="ts"` v kontextu Vue označuje _pre-procesor_, který v tomto konkrétním případě zapíná podporu TypeScriptu. Není to přímo povinnost, ale jak už jsem psal v dřívějších dílech tutoriálu, bez TypeScriptu a jeho statické analýzy kódu si vývoj nedovedu představit. Správně nakonfigurovaný TypeScript v IDE vás obratem upozorní, že hrozí přístup k nedefinované proměnné, že předáváte jako argument špatný datový typ nebo dokonce voláte funkci, která není definována. To, a ještě mnohem víc. Vážně se vyplatí investovat zpočátku trochu úsilí k pochopení jeho principů.
 
-Jakékoliv JS proměnné a funkce, které nadefinujete uvnitř `<script setup>`, jsou automaticky k dispozici pro použití v šabloně komponenty. Zároveň jsou ale bezpečně uzavřeny před okolím, pokud je explicitně nevystavíte pomocí makra [`defineExpose`](https://cs.vuejs.org/api/sfc-script-setup.html#defineexpose). Doporučuji snažit se obsah bloku spíše krátit – deklarovat zde výlučně prvky pevně spjaté s aktuální komponentou a delší sekvence kódu refaktorovat do samostatných `utils` nebo `composables` (viz [starší díl tutoriálu](/article/nuxt-utils)). Jen co si představíme poslední sekci, dojde na konkrétnější příklady využití.
+Jakékoliv JS proměnné a funkce, které nadefinujete uvnitř `<script setup>`, jsou automaticky k dispozici pro použití v šabloně komponenty. Zároveň jsou ale bezpečně uzavřeny před okolím, pokud je explicitně nevystavíte pomocí makra [`defineExpose`](https://cs.vuejs.org/api/sfc-script-setup.html#defineexpose). Doporučuji snažit se obsah bloku spíše krátit – deklarovat zde výlučně prvky pevně spjaté s aktuální komponentou a delší sekvence kódu refaktorovat do samostatných `utils` nebo `composables` (viz [starší díl tutoriálu](/article/nuxt-utils){external}). Jen co si představíme poslední sekci, dojde na konkrétnější příklady využití.
 
 ### Style
 
@@ -81,7 +81,7 @@ Je dobré držet se pravidla, že styly uvnitř SFC komponenty patří pouze k t
 
 Platí, že `<style>` bloků může být v jedné komponentě definováno více, ale nepřipadá mi to příliš praktické. Stejně tak jsem zatím nevyužil podporu [CSS modulů](https://cs.vuejs.org/api/sfc-css-features.html#css-modules).
 
-Obecně bych řekl, že zpočátku budete mít tendenci na tento blok dost spoléhat, ale později v praxi ho začnete používat spíš méně, pouze pro řešení nějakých speciálních požadavků. Vzhled často už řeší různé UI knihovny a není většinou třeba vynalézat znovu kolo. Nebo pokud sáhnete třeba po populární knihovně **Tailwind CSS** (viz [pozdější díl tutoriálu](/article/nuxt-gui#tailwind-css)), klasické CSS pro vás takřka přestane existovat...
+Obecně bych řekl, že zpočátku budete mít tendenci na tento blok dost spoléhat, ale později v praxi ho začnete používat spíš méně, pouze pro řešení nějakých speciálních požadavků. Vzhled často už řeší různé UI knihovny a není většinou třeba vynalézat znovu kolo. Nebo pokud sáhnete třeba po populární knihovně **Tailwind CSS** (viz [pozdější díl tutoriálu](/article/nuxt-gui#tailwind-css){external}), klasické CSS pro vás takřka přestane existovat...
 
 ## Předávání dat mezi komponentami
 
@@ -216,7 +216,7 @@ Vue automaticky zajistí, že se uživatelský vstup v hodnotě `foo` projeví, 
 
 Výše uvedené mechanismy fungují uspokojivě pro jednodušší aplikace. Jak roste počet komponent a interakcí mezi nimi, začíná být otravné neustále přemýšlet, odkud kam vést propojení. V takovém případě lze problematiku pozvednout o úroveň výš a stav udržovat na jednom místě napříč celou aplikací.
 
-Nuxt má k dispozici composable [`useState`](https://nuxt.com/docs/4.x/api/composables/use-state), která pro méně složitá data postačí sama o sobě. De facto standard pro řešení správy stavu ve Vue je však aktuálně knihovna **Pinia**, se kterou je hračka globální stav vytvořit, udržovat a bezpečně použít kdekoliv ve Vue (Nuxt) aplikaci. O jejím použití však více až později v [samostatném článku](/article/nuxt-pinia).
+Nuxt má k dispozici composable [`useState`](https://nuxt.com/docs/4.x/api/composables/use-state), která pro méně složitá data postačí sama o sobě. De facto standard pro řešení správy stavu ve Vue je však aktuálně knihovna **Pinia**, se kterou je hračka globální stav vytvořit, udržovat a bezpečně použít kdekoliv ve Vue (Nuxt) aplikaci. O jejím použití však více až později v [samostatném článku](/article/nuxt-pinia){external}.
 
 ## Reaktivita
 
@@ -261,4 +261,4 @@ Více informací vč. přehledného diagramu naleznete [ZDE](https://cs.vuejs.or
 
 Článek je už opravdu dlouhý, ačkoliv jsme u většiny témat pouze lehce sklouzli po povrchu a řadu z nich ani nezačali. Připomínám svůj tip z úvodu – čtěte [Vue dokumentaci](https://cs.vuejs.org/), tam najdete mnohem víc. Samozřejmě je tu také obsáhlá [dokumentace pro Nuxt](https://nuxt.com/), zatím bohužel nepřeložená.
 
-V tuto chvíli byste už ovšem měli být vyzbrojeni dostatečnou porcí znalostí o možnostech Vue a frameworku Nuxt, abyste mohli pomalu zkoušet tvořit větší a reálnější aplikace sami. Dělat si však všechno od nuly by mohlo být zbytečně zdlouhavé. Proto si v dalším díle tutoriálu ukážeme, jak je možné bez větší námahy [integrovat prvky vybraných UI knihoven](/article/nuxt-gui) a rovnou je začít používat.
+V tuto chvíli byste už ovšem měli být vyzbrojeni dostatečnou porcí znalostí o možnostech Vue a frameworku Nuxt, abyste mohli pomalu zkoušet tvořit větší a reálnější aplikace sami. Dělat si však všechno od nuly by mohlo být zbytečně zdlouhavé. Proto si v dalším díle tutoriálu ukážeme, jak je možné bez větší námahy [integrovat prvky vybraných UI knihoven](/article/nuxt-gui){external} a rovnou je začít používat.

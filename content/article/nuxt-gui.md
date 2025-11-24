@@ -174,4 +174,4 @@ Zdrojový kód ukázkové implementace naleznete zde:
 
 Toto rozhodně nebyl žádný vyčerpávající seznam možností, které máte, když si chcete usnadnit tvorbu uživatelského rozhraní. Pro inspiraci však myslím solidní začátek. Pokud máte nějaký svůj oblíbený CSS framework či UI knihovnu a chybí vám návod na zprovoznění v Nuxtu, [napište mi](mailto:alois.seckar@gmail.com), zkusíme tento článek rozšířit.
 
-Mezitím se dalším díle podíváme blíž na ještě jednu možnost, kterou jsem rychle přijal za svou - modul [Nuxt UI](/article/nuxt-ui) přímo od Nuxt týmu.
+Mezitím se dalším díle podíváme blíž na ještě jednu možnost, kterou jsem rychle přijal za svou - modul [Nuxt UI](/article/nuxt-ui){external} přímo od Nuxt týmu.

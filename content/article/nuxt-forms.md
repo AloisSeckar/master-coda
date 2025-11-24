@@ -11,7 +11,7 @@ hidden: true
 
 Dalším krokem na cestě k funkční a užitečné aplikaci jsou formuláře použitelné jak na strukturovanou prezentaci dat, tak hlavně na obsluhu uživatelských vstupů. Abychom si je nemuseli psát pomocí nativních HTML elementů úplně sami, existují různé nástroje, které můžeme využít.
 
-Hezky stylované formulářové prvky nabízí například [Nuxt UI](/article/nuxt-ui), jehož integraci jsme si ukázali v minulém díle tutoriálu. Nyní se podíváme na ještě trochu jiný nástroj, který kromě UI prvků nabízí i pohodlnou abstrakci celého formuláře.
+Hezky stylované formulářové prvky nabízí například [Nuxt UI](/article/nuxt-ui){external}, jehož integraci jsme si ukázali v minulém díle tutoriálu. Nyní se podíváme na ještě trochu jiný nástroj, který kromě UI prvků nabízí i pohodlnou abstrakci celého formuláře.
 
 ## FormKit
 
@@ -60,4 +60,4 @@ Ukázkový formulář obsahuje několik polí nejběžnějších datových typů
 
 FormKit možná není tak robustní jako jiné starší a propracovanější formulářové frameworky, ale do ekosystému Vue.js a Nuxtu se podle mě perfektně hodí, pročež je pro mě aktuálně jasná volba číslo jedna do mých aplikací.
 
-V příštím již [10. díle Nuxt tutoriálu](/article/nuxt-content) posuneme o krok dál tvorbu obsahu -  ukážeme si modul **Nuxt Content**, který nám umožní psát v Markdown syntaxi, což je mnohem jednodušší než stylovat vše v HTML.
+V příštím již [10. díle Nuxt tutoriálu](/article/nuxt-content){external} posuneme o krok dál tvorbu obsahu -  ukážeme si modul **Nuxt Content**, který nám umožní psát v Markdown syntaxi, což je mnohem jednodušší než stylovat vše v HTML.

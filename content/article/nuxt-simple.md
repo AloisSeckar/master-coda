@@ -61,4 +61,4 @@ Zbylé dva soubory v úložišti - `README.md` a `pnpm-lock.yaml` - už byly pop
 
 **UPOZORNĚNÍ:** Berte však toto pouze jako legrácku k demonstračním účelům. Absence běžně očekávaných součástí systému by se mohla ukázat problematická při pokusu o jakékoliv větší využití. Držte se raději varianty `nuxt-simple`.
 
-V druhém díle tutoriálu si ukážeme základní stavební prvky Nuxt aplikací - [komponenty a stránky](/article/nuxt-pages).
+V druhém díle tutoriálu si ukážeme základní stavební prvky Nuxt aplikací - [komponenty a stránky](/article/nuxt-pages){external}.

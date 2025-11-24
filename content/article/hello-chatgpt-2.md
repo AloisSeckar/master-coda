@@ -9,7 +9,7 @@ created: '27.05.2023'
 edited: '27.05.2023'
 ---
 
-Před týdnem jsem psal o své [první zkušenosti s ChatGPT](/article/hello-chatgpt-1). Co je u mě nového?
+Před týdnem jsem psal o své [první zkušenosti s ChatGPT](/article/hello-chatgpt-1){external}. Co je u mě nového?
 
 ## Proč používat ChatGPT?
 

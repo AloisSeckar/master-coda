@@ -46,4 +46,4 @@ Pak jsou tu samozřejmě oficiální zdroje:
 
 V češtině jsem zatím nic moc nenašel, i proto jsem se někdy v roce 2023 pustil do psaní těchto článků, které budu nyní jeden po druhém pouštět ven. Nuxt se postupně vyvíjí a spolu s ním se (snad) bude vyvíjet i obsah mých článků. Pokud byste narazili na něco, co už zrovna neplatí, nebo co jsem se já sám naučil špatně, dejte mi vědět.
 
-A teď už vzhůru na [první minimální projekt vytvořený pomoci Nuxt frameworku](/article/nuxt-simple).
+A teď už vzhůru na [první minimální projekt vytvořený pomoci Nuxt frameworku](/article/nuxt-simple){external}.
