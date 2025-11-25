@@ -4,6 +4,10 @@ export default defineNuxtConfig({
     'nuxt-ignis',
   ],
 
+  modules: [
+    '@stefanobartoletti/nuxt-social-share',
+  ],
+
   $development: {
     // there is some issue with "ipx" provider in my dev setup
     image: {
@@ -42,6 +46,10 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'netlify',
+  },
+
+  socialShare: {
+    baseUrl: 'https://master-coda.cz/',
   },
 
 })

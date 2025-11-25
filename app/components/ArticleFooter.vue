@@ -19,6 +19,21 @@
       </div>
       <a class="block" :href="link.replace('##', 'blob').concat('?plain=1')">Zobrazit zdrojový kód článku</a>
       <a class="block" :href="link.replace('##', 'edit')">Navrhnout úpravu</a>
+      <div class="flex flex-row gap-2 mt-4">
+        <SocialShare
+          v-for="network in ['facebook', 'x', 'linkedin', 'bluesky']"
+          :key="network"
+          :network="network"
+          :styled="true"
+          class="text-white! text-sm px-3 py-1.5 border border-coda-purple hover:bg-coda-green hover:text-black! hover:border-coda-yellow"
+          :aria-label="`Sdílet na ${network}`"
+          :title="`Sdílet na ${network}`"
+        >
+          <template #label>
+            Sdílet
+          </template>
+        </SocialShare>
+      </div>
     </div>
     <div v-else>
       <div class="font-bold">
