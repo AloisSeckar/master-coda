@@ -9,8 +9,8 @@
   },
   "devDependencies": {
     "@stefanobartoletti/nuxt-social-share": "^2.2.1",
-    "better-sqlite3": "12.2.0",
-    "nuxt-ignis": "0.5.0"
+    "better-sqlite3": "12.5.0",
+    "nuxt-ignis": "0.5.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
