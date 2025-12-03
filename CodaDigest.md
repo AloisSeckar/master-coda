@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2025-11-11`** | [Programming principles for self taught front-end developers](https://piccalil.li/blog/programming-principles-for-self-taught-front-end-developers/) - defining the "ultimate" rules to follow when developing apps |
 | **`2025-10-16`** | [Improving the trustworthiness of Javascript on the Web](https://blog.cloudflare.com/improving-the-trustworthiness-of-javascript-on-the-web/) - proposal of a new standard that would improve security of web resources by providing a consistent way of checking their integrity |
 | **`2025-09-17`** | [Is it Time to Un-Sass?](https://css-tricks.com/is-it-time-to-un-sass/) - vanilla CSS is now nearly as good as SASS pre-processing |
 | **`2025-08-28`** | [You no longer need JavaScript](https://lyra.horse/blog/2025/08/you-dont-need-js/) - the fascinating overview of modern CSS features and tricks |
