@@ -303,6 +303,12 @@ const fun = [
     title: 'Stav dokumentace',
     added: '2025-11-12',
   },
+  {
+    id: 'rust',
+    title: 'Kompilace Rust programu',
+    explain: 'Rust je velice přísný jazyk, jehož kompilátor stanovuje mnoho omezení, aby zajistil bezpečnost a spolehlivost kódu',
+    added: '2025-12-20',
+  },
 ]
 
 export { fun }
