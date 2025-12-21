@@ -6,6 +6,7 @@ dscr: 'Nuxt - jak oživit vzhled aplikace pomocí externího CSS'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS', 'Tailwind']
 date: '2025-12-21'
 created: '21.12.2025'
+english: 'https://dev.to/aloisseckar/nuxt-tutorial-7-adopting-css-1m2a'
 ---
 
 Už umíme Nuxt aplikaci rozhýbat a používat různé stavební prvky, ze kterých ji lze poskládat. Teď je na čase dát našim stránkám trochu důstojný vzhled. To už si teoreticky můžeme zařídit sami - s pomocí CSS stylů definovaných v rámci sekcí `<style>` jednotlivých komponent. Kdo si na to věří a umí to, může mít zanedlouho krásný web.
@@ -16,7 +17,7 @@ Většinou ale spíše nechceme sami dělat vše znovu od začátku. V tomto čl
 
 Pokud migrujete nějaký svůj starší projekt, možná už `.css` soubory stylů máte hotové. Nebo jste využili nějakou ze služeb, které své styly jako samostatný `.css` poskytují (třeba při [použití Bootstrap z CDN](https://getbootstrap.com/docs/5.3/getting-started/download/#cdn-via-jsdelivr)). Nuxt pro tyto případy nabízí velmi jednoduchou integraci.
 
-Svoje soubory stylů nahrajte do složky `/app/assets`. Poté je možné se na ně odkázat pomocí volby `css` v `nuxt.config.ts` konfiguračním souboru:
+Svoje soubory stylů nahrajte do složky `/app/assets` (obvykle do podadresáře `/css` kvůli přehlednosti). Poté je možné se na ně odkázat pomocí volby `css` v `nuxt.config.ts` konfiguračním souboru:
 
 ```ts
 export default defineNuxtConfig({
@@ -31,7 +32,7 @@ Pokud by to bylo třeba, je možné je načítat rovněž individuálně pro ka�
 
 ```vue
 <script setup lang="ts">
-import '~/assets/css/moje.css'
+import '~/assets/css/main.css'
 </script>
 ```
 
@@ -39,7 +40,7 @@ nebo uvnitř `<style>`:
 
 ```vue
 <style>
-@import url("~/assets/css/moje.css");
+@import url("~/assets/css/main.css");
 </style>
 ```
 
@@ -47,7 +48,7 @@ Jen s tím se už dá leccos vytvořit. Pro příklady integrací s pokročilej�
 
 ## Tailwind CSS
 
-[Tailwind CSS](https://tailwindcss.com/) je UI framework pro stylování obsahu webových stránek a aplikací. Na rozdíl od klasického přístupu k CSS nepíšete vlastní třídy, ale skládáte vzhled z rozsáhlé sady předdefinovaných CSS tříd, což umožňuje rychlé a flexibilní vytváření stylů a layoutů. Tailwind je navíc hodně flexibilní a konfigurovatelný, například co se týká barevného schématu. 
+[Tailwind CSS](https://tailwindcss.com/) je CSS framework pro stylování obsahu webových stránek a aplikací. Na rozdíl od klasického přístupu k CSS nepíšete vlastní třídy, ale skládáte vzhled z rozsáhlé sady předdefinovaných CSS tříd, což umožňuje rychlé a flexibilní vytváření stylů a layoutů. Tailwind je navíc sám o sobě hodně přizpůsobivý a konfigurovatelný, například co se týká barevného schématu. 
 
 Jeho popis by vydal na samostatný článek (což jsem měl původně v plánu a možná na to dojde časem). Pro mě je to nyní jasná volba č. 1 co se tvorby vzhledu webových stránek týká. Vyžaduje trochu jinou filosofii, ale zvykal jsem si den a už to nechci dělat jinak. Tailwind CSS používá třeba právě tento web - původní design jsem ještě nahodil "ručně", převést jej do odpovídající Tailwind struktury trvalo jeden večer.
 
@@ -94,7 +95,7 @@ Výše uvedený postup si můžete vyzkoušet v praxi. Zdrojový kód ukázkové
 
 Demo se zaměřuje jak na samotnou integraci, tak na ukázku použití. Veškerý vizuální projev je v souboru `/app/app.vue`. Obsahuje několik příkladů, jakým způsobem lze Tailwind CSS aplikovat. Je ukázáno, že definované třídy lze volně kombinovat s klasickým čistým CSS. V souboru `/app/assets/css/tailwind.css` se můžete podívat, jak snadno rozšířit výchozí nabídku Tailwind CSS `@theme` o vlastní barvy nebo fonty, pokud by vám [základní nabídka](https://tailwindcss.com/docs/colors) nestačila.
 
-Na základě osobní špatné zkušenosti jsem se navíc rozhodl do dema netradičně přidat kromě pozitivních také jeden odstrašující příklad. Riskuju sice, že to někoho inspiruje k použití a vleze do stejné pasti jako kdysi já, ale mnohé z vás to snad uchrání od zbytečných problémů. O co jde? Tvůrci Tailwind CSS nabádají, aby se utility třídy používaly pokud možno přímo v HTML šablonách jako atributy jednotlivých elementů. To se samozřejmě nemusí každému (ahoj, já) líbit, protože:
+Na základě osobní špatné zkušenosti jsem se navíc rozhodl do dema netradičně přidat kromě pozitivních také jeden odstrašující příklad. Riskuju sice, že to někoho inspiruje k použití a vleze do stejné pasti jako kdysi já, ale mnohé z vás to snad uchrání od zbytečných problémů. O co jde? Tvůrci Tailwind CSS nabádají, aby se utility třídy používaly pokud možno přímo v HTML šablonách jako atributy jednotlivých elementů. To se samozřejmě nemusí každému (ahoj, mé starší já) líbit, protože:
 
 1. Definice tříd mohou být opravdu dlouhé
 2. Definice se opakují
@@ -113,7 +114,7 @@ Open Props jsou tedy o level níže. Neabstrahují od veškerého psaní CSS, po
 
 ### Nuxt integrace
 
-Jelikož Nuxt (Vue) sám o sobě neumí při kompilaci nahrazovat CSS proměnné skutečnými hodnotami, je potřeba doplnit CSS procesor (v demu `postcss`) spolu s pluginem, který po nakrmení definicemi z `OpenProps` nahrazení hodnot provede. To je asi jediný zádrhel, jinak je prostě naimportován NPM balíček `open-props` a v demo ukázce nadefinováno pár stylů.
+Jelikož Nuxt (Vue) sám o sobě neumí při kompilaci nahrazovat CSS proměnné skutečnými hodnotami, je potřeba doplnit CSS procesor (v demu `postcss`) spolu s pluginem, který po nakrmení definicemi z `OpenProps` nahrazení hodnot provede. To je asi jediný zádrhel, jinak je prostě naimportován NPM balíček `open-props` a v demo ukázce nadefinováno ukázkové použití několika stylů.
 
 Asi nejvíc se mi na Open Props líbí připravené [gradienty](https://open-props.style/#gradients), tedy plynulé přechody mezi barvami. Sice teoreticky není až takový problém psát si je sám pomocí čistého CSS, dokonce jsem nedávno sledoval demo na programování "editoru gradientů", ale pokud nejste duší webový designér a grafik, komu by se s tím chtělo mořit?
 
@@ -124,4 +125,4 @@ Zdrojový kód ukázkové implementace naleznete zde:
 
 Ukázali jsme si, jakým způsobem do Nuxt aplikací načítat interní i externí CSS soubory a příklad dvou CSS knihoven a jejich integrace. Nepochybně existuje celá řada dalších možností. Pokud nějakou oblíbenou grafickou knihovnu máte, podívejte se, zda už pro ni existuje Nuxt integrace (nejčastěji ve formě [modulu](https://nuxt.com/modules)). Pokud ne, možná stačí jen v úvodu popsaným způsobem načítat výsledné CSS soubory a používat je přímo. A kdybyste si nevěděli rady, napište a zkusíme spolu něco vymyslet.
 
-V [příštím díle](/article/nuxt-gui) se od obecného stylování posuneme dále k pokročilejším **UI knihovnám**, které kromě stylů nabízejí i předpřipravené komponenty uživatelského rozhraní. Ukážeme si jich několik spolu s příkaldy jejich integrace do Nuxtu.
+V [příštím díle](/article/nuxt-gui){external} se od obecného stylování posuneme dále k pokročilejším **UI knihovnám**, které kromě stylů nabízejí i předpřipravené komponenty uživatelského rozhraní. Ukážeme si jich několik spolu s příkaldy jejich integrace do Nuxtu.

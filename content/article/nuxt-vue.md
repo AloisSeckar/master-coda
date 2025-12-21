@@ -262,4 +262,4 @@ Více informací vč. přehledného diagramu naleznete [ZDE](https://cs.vuejs.or
 
 Článek je už opravdu dlouhý, ačkoliv jsme u většiny témat pouze lehce sklouzli po povrchu a řadu z nich ani nezačali. Připomínám svůj tip z úvodu – čtěte [Vue dokumentaci](https://cs.vuejs.org/), tam najdete mnohem víc. Samozřejmě je tu také obsáhlá [dokumentace pro Nuxt](https://nuxt.com/), zatím bohužel nepřeložená.
 
-V tuto chvíli byste už ovšem měli být vyzbrojeni dostatečnou porcí znalostí o možnostech Vue a frameworku Nuxt, abyste mohli pomalu zkoušet tvořit větší a reálnější aplikace sami. Dělat si však všechno od nuly by mohlo být zbytečně zdlouhavé. Proto si v dalším díle tutoriálu ukážeme, jak je možné bez větší námahy [integrovat externí CSS styly](/article/nuxt-css){external}.
+V tuto chvíli byste už ovšem měli být vyzbrojeni dostatečnou porcí znalostí o možnostech Vue a frameworku Nuxt, abyste mohli pomalu zkoušet tvořit větší a reálnější aplikace sami. Aby vypadal dobře, v dalším díle tutoriálu ukážeme, jak je možné bez větší námahy [integrovat externí CSS styly](/article/nuxt-css){external}.
