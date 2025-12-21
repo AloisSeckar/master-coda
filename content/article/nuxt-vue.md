@@ -6,6 +6,7 @@ dscr: 'Nuxt - alespoň stručný pohled na základní principy Vue.js, nad kter�
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2025-11-23'
 created: '23.11.2025'
+edited: '21.12.2025'
 english: 'https://dev.to/aloisseckar/nuxt-tutorial-6-vuejs-intermezzo-45aa'
 ---
 
@@ -81,7 +82,7 @@ Je dobré držet se pravidla, že styly uvnitř SFC komponenty patří pouze k t
 
 Platí, že `<style>` bloků může být v jedné komponentě definováno více, ale nepřipadá mi to příliš praktické. Stejně tak jsem zatím nevyužil podporu [CSS modulů](https://cs.vuejs.org/api/sfc-css-features.html#css-modules).
 
-Obecně bych řekl, že zpočátku budete mít tendenci na tento blok dost spoléhat, ale později v praxi ho začnete používat spíš méně, pouze pro řešení nějakých speciálních požadavků. Vzhled často už řeší různé UI knihovny a není většinou třeba vynalézat znovu kolo. Nebo pokud sáhnete třeba po populární knihovně **Tailwind CSS** (viz [pozdější díl tutoriálu](/article/nuxt-gui#tailwind-css){external}), klasické CSS pro vás takřka přestane existovat...
+Obecně bych řekl, že zpočátku budete mít tendenci na tento blok dost spoléhat, ale později v praxi ho začnete používat spíš méně, pouze pro řešení nějakých speciálních požadavků. Vzhled často už řeší různé UI knihovny a není většinou třeba vynalézat znovu kolo. Nebo pokud sáhnete třeba po populární knihovně **Tailwind CSS** (viz [následující díl tutoriálu](/article/nuxt-css#tailwind-css){external}), klasické CSS pro vás takřka přestane existovat...
 
 ## Předávání dat mezi komponentami
 
@@ -261,4 +262,4 @@ Více informací vč. přehledného diagramu naleznete [ZDE](https://cs.vuejs.or
 
 Článek je už opravdu dlouhý, ačkoliv jsme u většiny témat pouze lehce sklouzli po povrchu a řadu z nich ani nezačali. Připomínám svůj tip z úvodu – čtěte [Vue dokumentaci](https://cs.vuejs.org/), tam najdete mnohem víc. Samozřejmě je tu také obsáhlá [dokumentace pro Nuxt](https://nuxt.com/), zatím bohužel nepřeložená.
 
-V tuto chvíli byste už ovšem měli být vyzbrojeni dostatečnou porcí znalostí o možnostech Vue a frameworku Nuxt, abyste mohli pomalu zkoušet tvořit větší a reálnější aplikace sami. Dělat si však všechno od nuly by mohlo být zbytečně zdlouhavé. Proto si v dalším díle tutoriálu ukážeme, jak je možné bez větší námahy [integrovat prvky vybraných UI knihoven](/article/nuxt-gui){external} a rovnou je začít používat.
+V tuto chvíli byste už ovšem měli být vyzbrojeni dostatečnou porcí znalostí o možnostech Vue a frameworku Nuxt, abyste mohli pomalu zkoušet tvořit větší a reálnější aplikace sami. Dělat si však všechno od nuly by mohlo být zbytečně zdlouhavé. Proto si v dalším díle tutoriálu ukážeme, jak je možné bez větší námahy [integrovat externí CSS styly](/article/nuxt-css){external}.

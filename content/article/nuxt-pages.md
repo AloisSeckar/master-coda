@@ -6,6 +6,7 @@ dscr: 'Nuxt - jak fungují složky /components a /pages'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2025-11-14'
 created: '14.11.2025'
+edited: '21.12.2025'
 english: 'https://dev.to/aloisseckar/nuxt-tutorial-2-components-pages-432g'
 ---
 
@@ -18,7 +19,7 @@ Všechny Vue.js aplikace (Nuxt jako takový běží nad Vue.js) se staví pomoc�
 - `<script>` - prostor pro JavaScript (TypeScript) definici obslužné funkcionality komponenty
 - `<style>` - možnost definice grafických CSS stylů
 
-Poměrně často chybí sekce `<style>`, protože komponenta buď žádné „svoje“ styly nepotřebuje definovat, nebo se stylování řeší klasickým centralizovaným způsobem pomocí importu `.css` (nebo `.scss`, aj.) souborů. Případně používáte TailwindCSS, o kterém je řeč v [pozdějším tutorialu](/article/nuxt-gui#tailwind-css){external}.
+Poměrně často chybí sekce `<style>`, protože komponenta buď žádné „svoje“ styly nepotřebuje definovat, nebo se stylování řeší klasickým centralizovaným způsobem pomocí importu `.css` (nebo `.scss`, aj.) souborů. Případně používáte TailwindCSS, o kterém je řeč v [pozdějším tutorialu](/article/nuxt-css#tailwind-css){external}.
 
 Setkáváme se také s komponentami bez sekce `<script>`, které definují pouze statický vzhled, nebo jednoduché JS výrazy používají inline přímo v `<template>`. Také komponenta bez `<template>` je validní (musí však v takovém případě obsahovat `<script>` sekci) a říká se jí též „funkční“ komponenta, ale zatím jsem se vlastně nesetkal s praktickým použitím. Pro obslužný kód bez grafického výstupu je spíše vhodnější použít jiné metody, o kterých si něco řekneme v [dalším díle tutoriálu](/article/nuxt-utils){external}.
 

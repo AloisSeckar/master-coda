@@ -1,7 +1,7 @@
 ---
 file: 'nuxt-gui'
 cat: 'web'
-title: 'Nuxt Tutorial 7 - UI integrace'
+title: 'Nuxt Tutorial 8 - UI integrace'
 dscr: 'Nuxt - jak snadno integrovat UI prvky'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS']
 date: '2024-08-24'
@@ -10,64 +10,9 @@ edited: '20.09.2024'
 hidden: true
 ---
 
-Už umíme Nuxt aplikaci rozhýbat a používat různé stavební prvky, ze kterých ji lze poskládat. Teď je na čase dát našim stránkám trochu důstojný vzhled. To už si teoreticky můžeme zařídit sami - s pomocí CSS stylů definovaných v rámci sekcí `<style>` jednotlivých komponent. Kdo si na to věří a umí to, může mít zanedlouho krásný web.
+V minulém díle jsme řešili CSS, nyní přejdeme k pokročilejším UI integracím.
 
-Většinou ale spíše nechceme dělat vše od začátku sami znovu. V tomto článku si proto ukážeme nejprve, jak snadno importovat celé připravené CSS soubory, a poté i několik integrací s projekty, které tvorbu uživatelského rozhraní výrazně usnadňují. Konkrétně budu zmiňovat `Tailwind CSS`, `Open Props`, `Vuetify`, `Bootstrap`, `DevExtreme`, `Icônes` a `FontAwesome`.
-
-## Import CSS
-
-Pokud migrujete nějaký svůj starší projekt, možná už `css` soubory stylů máte hotové. Nebo jste využili nějakou ze služeb, které své styly jako samostatný `css` poskytují (třeba při [použití Bootstrap z CDN](https://getbootstrap.com/docs/3.4/getting-started/#download-cdn)). Nuxt pro tyto případy nabízí velmi jednoduchou integraci.
-
-Svoje soubory stylů nahrajte do složky `/assets`. Poté je možné se na ně odkázat pomocí volby `css` v `nuxt.config.ts` konfiguračním souboru:
-
-```ts
-export default defineNuxtConfig({
-  css: ['~/assets/css/main.css']
-  // ...
-})
-```
-
-Importované styly jsou následně automaticky dostupné napříč celou aplikací.
-
-Pokud by to bylo třeba, je možné je načítat rovněž individuálně pro každou vaši komponentu. Buďto ve `<script setup>` sekci:
-```vue
-<script setup lang="ts">
-import '~/assets/css/moje.css'
-</script>
-```
-
-nebo uvnitř `<style>`:
-```vue
-<style>
-@import url("~/assets/css/moje.css");
-</style>
-```
-
-Jen s tím se už dá leccos vytvořit. Pro příklady integrací s pokročilejšími CSS/UI knihovnami však čtěte dále.
-
-## Tailwind CSS
-
-[Tailwind CSS](https://tailwindcss.com/) je UI framework pro stylování obsahu webových stránek a aplikací. Na rozdíl od klasického přístupu k CSS nepíšete vlastní třídy, ale skládáte vzhled z rozsáhlé sady předdefinovaných CSS tříd, což umožňuje rychlé a flexibilní vytváření stylů a layoutů. Tailwind je navíc hodně flexibilní a konfigurovatelný, například co se týká barevného schématu. 
-
-Jeho popis by vydal na samostatný článek. Pro mě je to nyní jasná volba č. 1 co se tvorby vzhledu webových stránek týká. Vyžaduje trochu jinou filosofii, ale zvykal jsem si den a už to nechci dělat jinak. Tailwind CSS používá třeba právě tento web - původní design jsem ještě nahodil "ručně", převést jej do odpovídající Tailwind struktury trvalo jeden večer.
-
-### Nuxt integrace
-
-Začít používat Tailwind CSS je úplná hračka, protože na to existuje [modul](https://tailwindcss.nuxtjs.org/), který vše podstatné udělá za vás.
-
-Zdrojový kód ukázkové implementace naleznete zde:
-[nuxt-tailwind @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-tailwind)
-
-## Open Props
-
-[Open Props](https://open-props.style/) staví na podobném principu jako Tailwind CSS - nabízí set předpřipravených stylů, jejichž použití vás sice bude trochu svazovat, ale na druhou stranu nemusíte všude znovu vynalézat kolo. Namísto celých předpřipravených CSS tříd jsou v tomto případě nositelem informace o výsledném stylu [CSS proměnné](https://www.jakpsatweb.cz/css/css-promenne.html#promenne), které můžete využít a skládat ve svých třídách. Open Props tedy neabstrahují od veškerého psaní CSS, pouze nabízejí již připravené a vyzkoušené hodnoty. Hlavní výhodou je odlehčenost a škálovatelnost - Tailwind je proti komprimovaným Open Props css souborům i po [veškerých možných optimalizacích](https://v1.tailwindcss.com/docs/controlling-file-size) "velký" a stahujete ho vždy celý. Naproti tomu Open Props umožňují použít jen menší část, která je zrovna potřeba.
-
-### Nuxt integrace
-
-Jelikož Nuxt (Vue) sám o sobě neumí při kompilaci nahrazovat CSS proměnné skutečnými hodnotami, je potřeba doplnit CSS procesor (v demu `postcss`) spolu s pluginem, který po nakrmení definicemi z `OpenProps` nahrazení hodnot provede. To je asi jediný zádrhel, jinak je prostě naimportován NPM balíček `open-props` a v demu nadefinováno pár stylů.
-
-Zdrojový kód ukázkové implementace naleznete zde:
-[nuxt-openprops @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-openprops)
+TODO úvod...
 
 ## Vuetify
 
