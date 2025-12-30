@@ -64,12 +64,12 @@
         <div :class="headerH2">
           Nepravidelný blog o&nbsp;programování
         </div>
-        <div class="absolute top-4 right-4 md:right-[10%] mr-1">
-          <button id="menuBtn" class="block hamburger focus:outline-none" @click="menu = !menu">
+        <div class="absolute top-14 min-[450px]:top-4 right-4 md:right-[10%] mr-1">
+          <button id="menuBtn" class="block hamburger focus:outline-none cursor-pointer" @click="menu = !menu">
             <div class="space-y-2">
-              <span class="block w-8 h-0.5 bg-coda-green" />
-              <span class="block w-8 h-0.5 bg-coda-green" />
-              <span class="block w-8 h-0.5 bg-coda-green" />
+              <span class="block w-8 h-[3px] bg-coda-green" />
+              <span class="block w-8 h-[3px] bg-coda-green" />
+              <span class="block w-8 h-[3px] bg-coda-green" />
             </div>
           </button>
         </div>
@@ -120,7 +120,7 @@
 <script setup lang="ts">
 const header = 'ml-32 h-32 pt-2 border-b-2 border-coda-green'
 const headerH1 = 'ml-1 font-header text-coda-yellow! text-xl'
-const headerH2 = 'ml-1 font-header text-coda-yellow! text-lg max-[395px]:hidden'
+const headerH2 = 'ml-1 font-header text-coda-yellow! text-sm min-[450px]:text-lg max-[386px]:hidden'
 const menuButton = 'actionButton p-1 w-1/5'
 const menuButtonFloat = 'actionButton p-1 w-36 text-center'
 const menuFont = 'actionButtonText font-bold'
