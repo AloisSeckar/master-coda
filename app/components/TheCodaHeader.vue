@@ -73,7 +73,7 @@
             </div>
           </button>
         </div>
-        <div v-if="menu" class="absolute top-12 right-4 md:right-[10%] mr-1 border-2 border-coda-green bg-slate-400">
+        <div v-show="menu" class="absolute top-12 right-4 md:right-[10%] mr-1 border-2 border-coda-green bg-slate-400" @click="menu = !menu">
           <ul>
             <li :class="menuButtonFloat">
               <NuxtLink :to="{ path: '/category/java' }">
@@ -125,5 +125,15 @@ const menuButton = 'actionButton p-1 w-1/5'
 const menuButtonFloat = 'actionButton p-1 w-36 text-center'
 const menuFont = 'actionButtonText font-bold'
 
+// hamburger menu state (mobile screens)
 const menu = ref(false)
+
+// hide hamburger menu on click
+useMousePressed({
+  onReleased: () => {
+    if (menu.value) {
+      setTimeout(() => menu.value = false)
+    }
+  },
+})
 </script>
