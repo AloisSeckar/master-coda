@@ -19,11 +19,11 @@ Všechny Vue.js aplikace (Nuxt jako takový běží nad Vue.js) se staví pomoc�
 - `<script>` - prostor pro JavaScript (TypeScript) definici obslužné funkcionality komponenty
 - `<style>` - možnost definice grafických CSS stylů
 
-Poměrně často chybí sekce `<style>`, protože komponenta buď žádné „svoje“ styly nepotřebuje definovat, nebo se stylování řeší klasickým centralizovaným způsobem pomocí importu `.css` (nebo `.scss`, aj.) souborů. Případně používáte TailwindCSS, o kterém je řeč v [pozdějším tutorialu](/article/nuxt-css#tailwind-css){external}.
+Poměrně často chybí sekce `<style>`, protože komponenta buď žádné „svoje“ styly nepotřebuje definovat, nebo se stylování řeší klasickým centralizovaným způsobem pomocí importu `.css` (nebo `.scss`, aj.) souborů. Případně používáte TailwindCSS, o kterém je řeč v [pozdějším tutorialu](/article/nuxt-css#tailwind-css).
 
-Setkáváme se také s komponentami bez sekce `<script>`, které definují pouze statický vzhled, nebo jednoduché JS výrazy používají inline přímo v `<template>`. Také komponenta bez `<template>` je validní (musí však v takovém případě obsahovat `<script>` sekci) a říká se jí též „funkční“ komponenta, ale zatím jsem se vlastně nesetkal s praktickým použitím. Pro obslužný kód bez grafického výstupu je spíše vhodnější použít jiné metody, o kterých si něco řekneme v [dalším díle tutoriálu](/article/nuxt-utils){external}.
+Setkáváme se také s komponentami bez sekce `<script>`, které definují pouze statický vzhled, nebo jednoduché JS výrazy používají inline přímo v `<template>`. Také komponenta bez `<template>` je validní (musí však v takovém případě obsahovat `<script>` sekci) a říká se jí též „funkční“ komponenta, ale zatím jsem se vlastně nesetkal s praktickým použitím. Pro obslužný kód bez grafického výstupu je spíše vhodnější použít jiné metody, o kterých si něco řekneme v [dalším díle tutoriálu](/article/nuxt-utils).
 
-Komponenty jsou způsob jak vytvářet znovupoužitelnou logiku, proto mohou zvenku přijímat pro každou instanci unikátní vlastnosti (props) a do okolí vysílat (emits) události. Tomuto se však budeme blíže věnovat [až později](/article/nuxt-vue){external}.
+Komponenty jsou způsob jak vytvářet znovupoužitelnou logiku, proto mohou zvenku přijímat pro každou instanci unikátní vlastnosti (props) a do okolí vysílat (emits) události. Tomuto se však budeme blíže věnovat [až později](/article/nuxt-vue).
 
 Aby bylo možné komponenty používat na jiných místech Vue.js aplikace, je třeba je **_registrovat_** - buďto v jiné komponentě, kde je chceme použít, nebo to lze i globálně pro celou aplikaci. Ve vanilla Vue.js se to však každopádně musí dělat ručně.
 
@@ -77,7 +77,7 @@ Tam, kde to dává smysl, se budu snažit to, o čem si zrovna povídáme, demon
 
 Tento blog se vám zobrazuje díky souboru [`/app/pages/article/[article].vue`](https://github.com/AloisSeckar/master-coda/blob/master/app/pages/article/%5Barticle%5D.vue). Základ (hlavička s názvem, daty a tagy + patička s odkazy na GitHub) je společný pro všechny články a je realizován pomocí dvou komponent - [`/app/components/ArticleHeader.vue`](https://github.com/AloisSeckar/master-coda/blob/master/app/components/ArticleHeader.vue) a [`/app/components/ArticleFooter.vue`](https://github.com/AloisSeckar/master-coda/blob/master/app/components/ArticleFooter.vue). Podle konkrétní URL (zde `/article/nuxt-pages`) se vybere potřebný obsah článku, který odpovídá unikátnímu výrazu na konci URL (zde `nuxt-pages`). Navigační box na ostatní díly tutoriálu je vykreslen díky komponentě [`/app/components/ArticleNavigation.vue`](https://github.com/AloisSeckar/master-coda/blob/master/app/components/ArticleNavigation.vue), která sama v sobě obsahuje další komponenty a podmíněně je vykresluje na základě hodnoty `article`.
 
-**Pozn.:** Základní princip platí, ale způsob práce se získanou hodnotou `article` v praxi je přeci jen trochu složitější - vykreslení článku je ve skutečnosti realizováno pomocí modulu Nuxt Content, o němž se více dozvíte až v budoucím [Nuxt tutoriálu číslo 9](/article/nuxt-content){external}.
+**Pozn.:** Základní princip platí, ale způsob práce se získanou hodnotou `article` v praxi je přeci jen trochu složitější - vykreslení článku je ve skutečnosti realizováno pomocí modulu Nuxt Content, o němž se více dozvíte až v budoucím [Nuxt tutoriálu číslo 9](/article/nuxt-content).
 
 ## Demo projekt
 
@@ -102,4 +102,4 @@ V rámci projektu je jako bonus demonstrováno využití speciální komponenty 
 
 Nuxt usnadňuje práci s Vue.js komponentami tím, že automaticky skenuje dedikované adresáře `/app/components` a `/app/pages` a provádí automatickou globální registraci komponent do aplikace. Nad adresářovou a souborovou strukturou v rámci `/app/pages` navíc automaticky vytvoří routing pro navigaci pomocí URL odkazů.
 
-V [dalším dílu tutoriálu](/article/nuxt-utils){external} budeme pokračovat vysvětlením dalších velmi užitečných adresářů `/app/composables` a `/utils`.
+V [dalším dílu tutoriálu](/article/nuxt-utils) budeme pokračovat vysvětlením dalších velmi užitečných adresářů `/app/composables` a `/utils`.

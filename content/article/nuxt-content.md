@@ -112,4 +112,4 @@ Zdrojový kód ukázkové implementace naleznete zde:
 
 Pomocí modulu Nuxt Content si můžete velmi usnadnit práci s tvorbou obsahu vašeho webu. Může vás odstínit od těžké a zbytečné práce s HTML a CSS a umožní vám více se soustředit na věcnou kvalitu vámi tvořeného obsahu. Neukázali jsme si ani zdaleka vše, co modul umí. Ale i s tímto málem už můžete tvořit velké věci.
 
-Možnosti našeho webu se nám pomalu rozrůstají. Abychom odemkli další level, ukážeme si v příštím díle tutoriálu [správu stavu](/article/nuxt-pinia){external}, díky níž budeme moci efektivně distribuovat a udržovat data napříč celou aplikací.
+Možnosti našeho webu se nám pomalu rozrůstají. Abychom odemkli další level, ukážeme si v příštím díle tutoriálu [správu stavu](/article/nuxt-pinia), díky níž budeme moci efektivně distribuovat a udržovat data napříč celou aplikací.

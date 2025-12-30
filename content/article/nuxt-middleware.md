@@ -9,7 +9,7 @@ created: '19.11.2025'
 english: 'https://dev.to/aloisseckar/nuxt-tutorial-5-middleware-3e5a'
 ---
 
-Tento díl Nuxt tutoriálu je věnován middleware, což jsou obslužné metody, které je možné automaticky volat před každým vykreslením určité stránky na [frontendu](/article/nuxt-pages){external} nebo před zpracováním dat v [serverové části](/article/nuxt-api){external}.
+Tento díl Nuxt tutoriálu je věnován middleware, což jsou obslužné metody, které je možné automaticky volat před každým vykreslením určité stránky na [frontendu](/article/nuxt-pages) nebo před zpracováním dat v [serverové části](/article/nuxt-api).
 
 ## /app/middleware
 
@@ -23,7 +23,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
 })
 ```
 
-Datový typ (resp. interface) parametrů `from` a `to` je převzatý z [Vue Routeru](https://router.vuejs.org/) a jmenuje se [`RouteLocationNormalizedGeneric`](https://router.vuejs.org/api/interfaces/RouteLocationNormalizedGeneric.html). Skrz tyto objekty máte přístup ke všem podstatným informacím o navigaci - URL, get parametry (za `?` v url), hash (za `#` v url), aj. Dále je možné uvnitř funkce volat libovolné [composables a util funkce](/article/nuxt-utils){external}.
+Datový typ (resp. interface) parametrů `from` a `to` je převzatý z [Vue Routeru](https://router.vuejs.org/) a jmenuje se [`RouteLocationNormalizedGeneric`](https://router.vuejs.org/api/interfaces/RouteLocationNormalizedGeneric.html). Skrz tyto objekty máte přístup ke všem podstatným informacím o navigaci - URL, get parametry (za `?` v url), hash (za `#` v url), aj. Dále je možné uvnitř funkce volat libovolné [composables a util funkce](/article/nuxt-utils).
 
 ### Spouštění middleware
 
@@ -83,7 +83,7 @@ Další variantou aplikace mohou být například nějaké auditní logy nebo ne
 
 ## /server/middleware
 
-Na straně Nuxt [serveru](/article/nuxt-api){external} existuje obdobný mechanismus. Zde se soubory umisťují do složky `/server/middleware` a opět jsou automaticky registrovány a spouštěny.
+Na straně Nuxt [serveru](/article/nuxt-api) existuje obdobný mechanismus. Zde se soubory umisťují do složky `/server/middleware` a opět jsou automaticky registrovány a spouštěny.
 
 Jelikož zde nedávají smysl parametry `from` a `to`, je definice serverového middleware trochu odlišná:
 
@@ -122,4 +122,4 @@ Jednoduchá implementace klienta umožňuje přepínat mezi odkazy a pozorovat, 
 
 Middleware se hodí pro snadnou implementaci funkcí, které chceme volat **PŘEDTÍM**, než je zahájeno zpracování API požadavku na serveru nebo vykreslování stránky klienta. Klientské middleware metody mohou být vázány na konkrétní stránky nebo být spouštěné globálně před načtením libovolné z nich. Middleware na serveru se vykoná před každým API voláním.
 
-V tuto chvíli jsme už pokryli značnou část základní Nuxt funkcionality. Prozatím jsem se ale - úmyslně - příliš nevěnoval tomu, jak vlastně funguje javascriptový framework [Vue.js](https://vuejs.org/), nad kterým je to celé postaveno. Mluvili jsme už trochu o [komponentách](/article/nuxt-pages#komponenty-obecně){external} a [composables](/article/nuxt-utils#composables){external}, ale bez hlubšího přesahu. Přestože ani zdaleka nedosáhneme úrovně detailu, který nabízí [oficiální Vue.js dokumentace](https://cs.vuejs.org/guide/introduction.html), alespoň částečně to v [následujícím Vue.js intermezzu napravíme](/article/nuxt-vue){external}.
+V tuto chvíli jsme už pokryli značnou část základní Nuxt funkcionality. Prozatím jsem se ale - úmyslně - příliš nevěnoval tomu, jak vlastně funguje javascriptový framework [Vue.js](https://vuejs.org/), nad kterým je to celé postaveno. Mluvili jsme už trochu o [komponentách](/article/nuxt-pages#komponenty-obecně) a [composables](/article/nuxt-utils#composables), ale bez hlubšího přesahu. Přestože ani zdaleka nedosáhneme úrovně detailu, který nabízí [oficiální Vue.js dokumentace](https://cs.vuejs.org/guide/introduction.html), alespoň částečně to v [následujícím Vue.js intermezzu napravíme](/article/nuxt-vue).

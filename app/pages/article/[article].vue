@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <div v-if="status === 'pending'">
+    Načítání článku...
+  </div>
+  <div v-else>
     <ArticleHeader :article />
     <div class="article">
       <ArticleStub v-if="article?.wip" />
@@ -20,7 +23,7 @@
 
 <script setup lang="ts">
 // nuxt-content v3 content loading
-const { data: article } = await useAsyncData(
+const { data: article, status } = useAsyncData(
   async () => {
     const path = useRoute().path
     const item = await queryCollection('articles').path(path).first()

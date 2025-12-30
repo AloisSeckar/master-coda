@@ -125,4 +125,4 @@ Zdrojový kód ukázkové implementace naleznete zde:
 
 Ukázali jsme si, jakým způsobem do Nuxt aplikací načítat interní i externí CSS soubory a příklad dvou CSS knihoven a jejich integrace. Nepochybně existuje celá řada dalších možností. Pokud nějakou oblíbenou grafickou knihovnu máte, podívejte se, zda už pro ni existuje Nuxt integrace (nejčastěji ve formě [modulu](https://nuxt.com/modules)). Pokud ne, možná stačí jen v úvodu popsaným způsobem načítat výsledné CSS soubory a používat je přímo. A kdybyste si nevěděli rady, napište a zkusíme spolu něco vymyslet.
 
-V [příštím díle](/article/nuxt-gui){external} se od obecného stylování posuneme dále k pokročilejším **UI knihovnám**, které kromě stylů nabízejí i předpřipravené komponenty uživatelského rozhraní. Ukážeme si jich několik spolu s příkaldy jejich integrace do Nuxtu.
+V [příštím díle](/article/nuxt-gui) se od obecného stylování posuneme dále k pokročilejším **UI knihovnám**, které kromě stylů nabízejí i předpřipravené komponenty uživatelského rozhraní. Ukážeme si jich několik spolu s příkaldy jejich integrace do Nuxtu.

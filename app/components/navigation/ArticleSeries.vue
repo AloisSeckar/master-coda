@@ -5,7 +5,7 @@
     </div>
     <div>
       {{ config.dscr }}
-      <NuxtLink :to="config.linkURL" :external="true">
+      <NuxtLink :to="config.linkURL">
         {{ config.linkTitle }}
       </NuxtLink>
     </div>

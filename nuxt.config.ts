@@ -39,9 +39,36 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/article/**': { static: true },
-    '/category/**': { static: true },
-    '/tag/**': { static: true },
+    '/article/**': {
+      static: true,
+      security: {
+        headers: {
+          contentSecurityPolicy: {
+            'script-src': ['\'self\'', '\'unsafe-inline\'', '\'unsafe-eval\''],
+          },
+        },
+      },
+    },
+    '/category/**': {
+      static: true,
+      security: {
+        headers: {
+          contentSecurityPolicy: {
+            'script-src': ['\'self\'', '\'unsafe-inline\'', '\'unsafe-eval\''],
+          },
+        },
+      },
+    },
+    '/tag/**': {
+      static: true,
+      security: {
+        headers: {
+          contentSecurityPolicy: {
+            'script-src': ['\'self\'', '\'unsafe-inline\'', '\'unsafe-eval\''],
+          },
+        },
+      },
+    },
   },
 
   nitro: {

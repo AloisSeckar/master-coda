@@ -9,7 +9,7 @@ created: '26.08.2024'
 hidden: true
 ---
 
-V [minulém díle tutoriálu](/article/nuxt-gui){external} jsme si představili různé možnosti integrace CSS a UI knihoven třetích stran do Nuxt projektu. Když jsem s tvorbou webů v Nuxtu začínal, byl to skvělý způsob, jak pracovat s vzhledem aplikace. Vývojový tým však mezitím postoupil ještě o něco dál a přišel s [oficiálním modulem Nuxt UI](https://ui.nuxt.com/).
+V [minulém díle tutoriálu](/article/nuxt-gui) jsme si představili různé možnosti integrace CSS a UI knihoven třetích stran do Nuxt projektu. Když jsem s tvorbou webů v Nuxtu začínal, byl to skvělý způsob, jak pracovat s vzhledem aplikace. Vývojový tým však mezitím postoupil ještě o něco dál a přišel s [oficiálním modulem Nuxt UI](https://ui.nuxt.com/).
 
 ## Popis modulu
 
@@ -42,4 +42,4 @@ V souboru `app.vue` je vytvovřen přehled se základními ukázkami použití.
 
 Ekosystém frameworku Nuxt se neustále rozvíjí a obohacuje s cílem maximálně odlehčit vývojářům práci a odstínit je od opakující se rutiny. Nuxt UI patří mezi výsledky této snahy a nabízí připravenou knihovnu UI a formulářových prvků, které můžete začít používat jednoduchou instalací jediné závislosti. Pro menší projekty bez speciálních požadavků je to skvělá volba s minimem úsilí.
 
-Samozřejmě mohou přijít i složitější scénáře. Například když je potřeba sestavit větší a složitější formulář a nějak elegantně řešit jeho validaci a odesílání. V příštím díle si proto povíme o [knihovně FormKit](/article/nuxt-forms){external}, která toto umí a také se do Nuxtu velmi snadno zavádí.
+Samozřejmě mohou přijít i složitější scénáře. Například když je potřeba sestavit větší a složitější formulář a nějak elegantně řešit jeho validaci a odesílání. V příštím díle si proto povíme o [knihovně FormKit](/article/nuxt-forms), která toto umí a také se do Nuxtu velmi snadno zavádí.

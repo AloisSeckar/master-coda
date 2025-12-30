@@ -9,7 +9,7 @@ created: '15.11.2025'
 english: 'https://dev.to/aloisseckar/nuxt-tutorial-3-utils-composables-3o51'
 ---
 
-V [předchozím díle](/article/nuxt-pages){external} jsme se učili pracovat s komponentami a stránkami. Pokud se opakuje nějaká část šablony, je v souladu s programátorským [DRY principem](https://zdrojak.cz/clanky/navrhove-principy-dry/) horkým kandidátem na extrakci do samostatné nové komponenty. Co když se však opakují metody pro práci s daty v sekci `<script>`? Nebo chceme aplikaci lépe členit a vyhnout se hrozivě dlouhým souborům komponent, ve kterých se pak špatně orientuje?
+V [předchozím díle](/article/nuxt-pages) jsme se učili pracovat s komponentami a stránkami. Pokud se opakuje nějaká část šablony, je v souladu s programátorským [DRY principem](https://zdrojak.cz/clanky/navrhove-principy-dry/) horkým kandidátem na extrakci do samostatné nové komponenty. Co když se však opakují metody pro práci s daty v sekci `<script>`? Nebo chceme aplikaci lépe členit a vyhnout se hrozivě dlouhým souborům komponent, ve kterých se pak špatně orientuje?
 
 Logiku z JavaScript (TypeScript) kódu můžeme samozřejmě dát stranou také. Nuxt zařídí automatický import napříč aplikací, pokud příslušné soubory umístíme do dalších dvou speciálních složek - `/app/utils` a `/app/composables`.
 
@@ -70,7 +70,7 @@ Používám však několik `/app/composables`:
 Zdrojový kód ukázkové implementace naleznete zde:
 [nuxt-utils @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-utils)
 
-Projekt rozšiřuje [nuxt-pages @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-pages) z [předchozího tutoriálu](/article/nuxt-pages){external}.
+Projekt rozšiřuje [nuxt-pages @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-pages) z [předchozího tutoriálu](/article/nuxt-pages).
 
 Ukázku použití `/app/utils` reprezentuje funkce `isPrime()`, která určí, zda je zadané číslo prvočíslo. Implementace je na úvodní stránce `/app/pages/index.vue`. A aby to bylo zajímavější, zdrojová data (čísla 1-9) poskytuje [JS generátor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator) `generateSequence()`. Ten je stejně jako funkce `isPrime()` definován v `/app/utils/utils.ts`. Ve starších verzích Nuxt 3 auto-import pro generátorovou `function*` nefungoval, ale nyní už je to vyřešeno.
 
@@ -82,4 +82,4 @@ Ukázkou použití `/app/composables` je `useCounter` - je zadefinován jako fun
 
 Nuxt má dva dedikované adresáře `/app/utils` a `/app/composables`, nad kterými automaticky skenuje všechna klíčová slova `export` a zpřístupňuje je napříč celou aplikací bez nutnosti provádět explicitní `import` tam, kde je chceme použít. Adresář `/app/utils` by se měl používat pro bezstavové funkce, adresář `/app/composables` slouží pro stavovou logiku a práci s ostatními composables z Vue.js, Nuxtu a jiných knihoven.
 
-Další díl tutoriálu popíše [serverovou část Nuxt frameworku](/article/nuxt-api){external}.
+Další díl tutoriálu popíše [serverovou část Nuxt frameworku](/article/nuxt-api).

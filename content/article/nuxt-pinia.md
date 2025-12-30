@@ -26,7 +26,7 @@ Toto samozřejmě nelze brát jako univerzální pravidlo. Pokud máte službu p
 
 Řekněme ale, že potřeba pamatovat si stejné hodnoty na více než jednom místě nastala. Například pracujete s opravdu složitým formulářem, který jste zcela logicky a správně rozdělili do většího množství do sebe zanořených komponent. To byl například use-case v aplikaci na správu žádostí o důchody, kde jsem poprvé použil Nuxt ve skutečně velkém projektu.
 
-Pokud si v takovém případě zkusíte vystačit se [základními prostředky Vue](/article/nuxt-vue#p%C5%99ed%C3%A1v%C3%A1n%C3%AD-dat-mezi-komponentami){external}, brzy se při předávání vlastností setkáte s jevem známým jako _prop drilling_ - v komponentách vyšší úrovně deklarujete proměnné pro vlastnosti jenom proto, abyste je mohli předat dále do potomků. Částečně si ještě můžete pomoct s technikou `provide/inject` a práci s _emitováním_ událostí v opačném směru nahradit správnou kombinací `ref` a `watch`. Patrně si však spíše začnete říkat, jestli už není ta pravá chvíle, kdy dává smysl sdílený stav napřed více částmi aplikace začít nějak organizovaně udržovat.
+Pokud si v takovém případě zkusíte vystačit se [základními prostředky Vue](/article/nuxt-vue#p%C5%99ed%C3%A1v%C3%A1n%C3%AD-dat-mezi-komponentami), brzy se při předávání vlastností setkáte s jevem známým jako _prop drilling_ - v komponentách vyšší úrovně deklarujete proměnné pro vlastnosti jenom proto, abyste je mohli předat dále do potomků. Částečně si ještě můžete pomoct s technikou `provide/inject` a práci s _emitováním_ událostí v opačném směru nahradit správnou kombinací `ref` a `watch`. Patrně si však spíše začnete říkat, jestli už není ta pravá chvíle, kdy dává smysl sdílený stav napřed více částmi aplikace začít nějak organizovaně udržovat.
 
 ## useState
 
@@ -74,4 +74,4 @@ Projekt ukazuje, že k plné integraci Pinia v Nuxtu stačí aktivovat příslu�
 
 Se správou stavu by se to ve frontendových aplikacích nemělo zbytečně přehánět. Pokud na ni ale dojde, má Nuxt skvělé nástroje, jak si se sdíleným stavem elegantně poradit. Pro jednodušší případy vlastní `useState`, pro pokročilejší scénáře lze velice snadno integrovat dedikovanou Vue knihovnu [Pinia](https://pinia.vuejs.org/).
 
-V tomto článku jsem se zmínil, že na Master Coda není použita žádná databáze. Není to však v žádném případě proto, že by databáze byly pro Nuxt tabu! A aby nezůstalo jen u slov a slibů, další díl si na [Nuxt a databáze](/article/nuxt-database){external} posvítí.
+V tomto článku jsem se zmínil, že na Master Coda není použita žádná databáze. Není to však v žádném případě proto, že by databáze byly pro Nuxt tabu! A aby nezůstalo jen u slov a slibů, další díl si na [Nuxt a databáze](/article/nuxt-database) posvítí.

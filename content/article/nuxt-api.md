@@ -76,4 +76,4 @@ Serverová část Nuxt frameworku je určena k backendovým operacím. Umožňuj
 
 Stejně jako složka `/app/pages` umožňuje routing na straně klienta, složky `/server/api` a `/server/routes` abstrahují vývojáře od nutnosti definovat vlastní cesty. Staráte se pouze o svůj vlastní aplikační kód.
 
-[Další část tutoriálu](/article/nuxt-middleware){external} představí koncept <strong>middleware</strong>, což jsou obslužné metody, které je možné automaticky volat před vykreslením frontendu nebo před zpracováním dat v serverové části.
+[Další část tutoriálu](/article/nuxt-middleware) představí koncept <strong>middleware</strong>, což jsou obslužné metody, které je možné automaticky volat před vykreslením frontendu nebo před zpracováním dat v serverové části.
