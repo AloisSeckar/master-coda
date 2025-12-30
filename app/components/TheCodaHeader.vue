@@ -65,7 +65,7 @@
           Nepravidelný blog o&nbsp;programování
         </div>
         <div class="absolute top-14 min-[450px]:top-4 right-4 md:right-[10%] mr-1">
-          <button id="menuBtn" class="block hamburger focus:outline-none cursor-pointer" @click="menu = !menu">
+          <button id="menuBtn" class="block hamburger focus:outline-none cursor-pointer" @click="menu = true">
             <div class="space-y-2">
               <span class="block w-8 h-[3px] bg-coda-green" />
               <span class="block w-8 h-[3px] bg-coda-green" />
@@ -73,7 +73,7 @@
             </div>
           </button>
         </div>
-        <div v-show="menu" class="absolute top-12 right-4 md:right-[10%] mr-1 border-2 border-coda-green bg-slate-400" @click="menu = !menu">
+        <div v-show="menu" ref="el" class="absolute top-12 right-4 md:right-[10%] mr-1 border-2 border-coda-green bg-slate-400" @click="menu = false">
           <ul>
             <li :class="menuButtonFloat">
               <NuxtLink :to="{ path: '/category/java' }">
@@ -129,10 +129,12 @@ const menuFont = 'actionButtonText font-bold'
 const menu = ref(false)
 
 // hide hamburger menu on click
+const el = useTemplateRef<HTMLDivElement>('el')
 useMousePressed({
+  target: el,
   onReleased: () => {
     if (menu.value) {
-      setTimeout(() => menu.value = false)
+      menu.value = false
     }
   },
 })
