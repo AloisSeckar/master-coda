@@ -6,6 +6,7 @@ dscr: 'Nuxt - jak oživit vzhled aplikace pomocí externího CSS'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial', 'UI', 'CSS', 'Tailwind']
 date: '2025-12-21'
 created: '21.12.2025'
+edited: '14.01.2026'
 english: 'https://dev.to/aloisseckar/nuxt-tutorial-7-adopting-css-1m2a'
 ---
 
@@ -39,10 +40,12 @@ import '~/assets/css/main.css'
 nebo uvnitř `<style>`:
 
 ```vue
-<style>
+<style scoped>
 @import url("~/assets/css/main.css");
 </style>
 ```
+
+Malá poznámka: V příkladu výše jsem uvedl atribut `scoped`, abych zajistil, že styly budou aplikovány pouze na danou komponentu. Bez toho by se styly rozšířily do celé aplikace globálně. To může být špatně, ale můžete to udělat i úmyslně (ideálně v `app.vue`). Běžnější je ovšem použití volby `css` v konfiguraci Nuxtu.
 
 Jen s tím se už dá leccos vytvořit. Pro příklady integrací s pokročilejšími CSS/UI knihovnami však čtěte dále.
 
