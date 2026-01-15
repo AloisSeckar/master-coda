@@ -2,7 +2,7 @@
 file: 'faster-vitest'
 cat: 'web'
 title: '10x rychlejší Vitest testy v mé Nuxt aplikaci'
-dscr: 'Úkol zněl jasně - zrychlit běh mé tesotvací sady. Jak jsem to dokázal a jak mi na cestě (ne)pomohla AI.'
+dscr: 'Úkol zněl jasně - zrychlit běh mé testovací sady. Jak jsem to dokázal a jak mi na cestě (ne)pomohla AI.'
 tags: ['web', 'JavaScript', 'Vitest', 'Nuxt', 'Vue.js',  'tests', 'optimization', 'AI']
 date: '2025-12-20'
 created: '20.12.2025'
