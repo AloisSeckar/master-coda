@@ -2,7 +2,7 @@
   <div>
     <span class="mr-2 text-coda-purple">{{ article?.date }}</span>
     <div v-if="active" class="inline">
-      <NuxtLink :to="article.link" :noprefetch="article.external">
+      <NuxtLink :to="article.link" :noprefetch="article.external" external>
         <strong>{{ article.title }}</strong>
       </NuxtLink>
       - {{ pslo(article.dscr) }}
