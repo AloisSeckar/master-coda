@@ -3,7 +3,7 @@ file: 'refactoring-with-copilot'
 cat: 'web'
 title: 'AI jako lék na prokrastinaci'
 dscr: 'Jak se mnou Copilot vyřešil dlouho odkládaný refaktoring na mém webu'
-tags: ['refactoring','Nuxt','AI','Copilot']
+tags: ['refactoring', 'Nuxt', 'AI', 'Copilot']
 date: '2026-01-17'
 created: '17.01.2026'
 english: 'https://dev.to/aloisseckar/ai-the-way-out-of-doubt-2fbg'

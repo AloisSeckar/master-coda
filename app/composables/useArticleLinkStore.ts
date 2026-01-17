@@ -87,6 +87,13 @@ export const useArticleLinkStore = defineStore('article-links', () => {
   }
 
   function getBySeries(series: string): ArticleLink[] {
+    if (series.includes('copilot')) {
+      // extra case - filtering is based on a tag value
+      return toArticleLinks(allVisibleArticles.value.filter(article =>
+        article.tags?.includes('Copilot')),
+      )
+    }
+    // filtering is based on file prefix
     return toArticleLinks(allVisibleArticles.value.filter(article =>
       article.file?.startsWith(series)),
     )

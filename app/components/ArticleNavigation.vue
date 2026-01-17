@@ -3,6 +3,7 @@
     <NavigationArticleSeries v-if="isVueNews" :config="vueNewsConfig" />
     <NavigationArticleSeries v-if="isNuxtTutorial" :config="nuxtTutorialConfig" />
     <NavigationArticleSeries v-if="isChatGPTArticle" :config="chatGPTConfig" />
+    <NavigationArticleSeries v-if="isCopilotArticle" :config="copilotConfig" />
   </div>
 </template>
 
@@ -36,5 +37,14 @@ const chatGPTConfig: ArticleSeries = {
   linkTitle: 'ChatGPT',
   linkURL: 'https://chat.openai.com/',
   match: 'hello-chatgpt-',
+}
+
+const isCopilotArticle = props.articleId.includes('refactoring-with-copilot')
+const copilotConfig: ArticleSeries = {
+  title: 'How to pilot with Copilot?',
+  dscr: 'Série článků o mých interakcích s',
+  linkTitle: 'GitHub Copilot',
+  linkURL: 'https://github.com/features/copilot',
+  match: 'copilot',
 }
 </script>

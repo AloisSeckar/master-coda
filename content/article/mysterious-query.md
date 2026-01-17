@@ -3,7 +3,7 @@ file: 'mysterious-query'
 cat: 'debugging'
 title: 'Tajemný případ SQL query, které se nechtělo spustit'
 dscr: 'Jak mě Copilot nasměroval, když už jsem nevěděl, kudy kam'
-tags: ['debugging', 'Nuxt', 'Neon', 'SQL', 'bezpečnost','AI']
+tags: ['debugging', 'Nuxt', 'Neon', 'SQL', 'bezpečnost', 'AI', 'Copilot']
 date: '2025-12-13'
 created: '13.12.2025'
 edited: '13.12.2025'
