@@ -24,6 +24,7 @@
 <script setup lang="ts">
 // nuxt-content v3 content loading
 const { data: article, status } = useAsyncData(
+  `article-${useRoute().params.article}`, // unique cache key per article
   async () => {
     const path = useRoute().path
     const item = await queryCollection('articles').path(path).first()
