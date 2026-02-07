@@ -16,7 +16,7 @@
         />
       </div>
     </div>
-    <ArticleNavigation :article-id="article?.file || ''" />
+    <ArticleNavigation :article />
     <ArticleFooter :article />
   </div>
 </template>

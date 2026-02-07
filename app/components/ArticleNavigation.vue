@@ -8,11 +8,13 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  articleId: { type: String, required: true },
-})
+import type { ArticlesCollectionItem } from '@nuxt/content'
 
-const isVueNews = props.articleId.startsWith('new-in-vue')
+const props = defineProps<{
+  article: ArticlesCollectionItem | undefined
+}>()
+
+const isVueNews = props.article?.file.startsWith('new-in-vue')
 const vueNewsConfig: ArticleSeries = {
   title: 'New in Vue',
   dscr: 'Přehled novinek ze světa',
@@ -21,7 +23,7 @@ const vueNewsConfig: ArticleSeries = {
   match: 'new-in-vue-',
 }
 
-const isNuxtTutorial = props.articleId.startsWith('nuxt')
+const isNuxtTutorial = props.article?.file.startsWith('nuxt')
 const nuxtTutorialConfig: ArticleSeries = {
   title: 'Nuxt Tutorial',
   dscr: 'Série výukových článků o JS frameworku',
@@ -30,7 +32,7 @@ const nuxtTutorialConfig: ArticleSeries = {
   match: 'nuxt-',
 }
 
-const isChatGPTArticle = props.articleId.includes('hello-chatgpt')
+const isChatGPTArticle = props.article?.file.includes('hello-chatgpt')
 const chatGPTConfig: ArticleSeries = {
   title: 'ChatGPT',
   dscr: 'Série článků o mých interakcích s',
@@ -39,7 +41,7 @@ const chatGPTConfig: ArticleSeries = {
   match: 'hello-chatgpt-',
 }
 
-const isCopilotArticle = props.articleId.includes('refactoring-with-copilot')
+const isCopilotArticle = props.article?.tags.includes('Copilot')
 const copilotConfig: ArticleSeries = {
   title: 'How to pilot with Copilot?',
   dscr: 'Série článků o mých interakcích s',
