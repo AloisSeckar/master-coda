@@ -11,7 +11,7 @@
 import type { ArticlesCollectionItem } from '@nuxt/content'
 
 const props = defineProps<{
-  article: ArticlesCollectionItem | undefined
+  article?: ArticlesCollectionItem
 }>()
 
 const isVueNews = props.article?.file.startsWith('new-in-vue')
