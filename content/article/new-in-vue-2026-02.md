@@ -4,8 +4,8 @@ cat: 'web'
 title: 'New in Vue - Únor 2026'
 dscr: 'Novinky ze světa Vue.js, Nuxt a Vite za únor 2026'
 tags: ['Vue.js', 'Nuxt', 'Vite', 'newsletter', 'web', 'JavaScript', 'novinka']
-date: '2026-02-27'
-created: '27.02.2026'
+date: '2026-02-07'
+created: '07.02.2026'
 english: 'https://dev.to/aloisseckar/new-in-vue-february-2025-2kac'
 ---
 
