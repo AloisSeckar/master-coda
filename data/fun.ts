@@ -309,6 +309,11 @@ const fun = [
     explain: 'Rust je velice přísný jazyk, jehož kompilátor stanovuje mnoho omezení, aby zajistil bezpečnost a spolehlivost kódu',
     added: '2025-12-20',
   },
+  {
+    id: 'side-quest',
+    title: 'Side Quest',
+    added: '2026-03-02',
+  },
 ]
 
 export { fun }
