@@ -45,10 +45,10 @@
         </div>
       </div>
     </div>
-    <div class="my-2 flex flex-row justify-center border-2 border-gray-300 dark:border-gray-600 rounded">
+    <div class="relative mx-auto my-2 border-2 border-gray-300 dark:border-gray-600 rounded min-h-[350px]">
       <div
         v-if="imageLoading"
-        class="w-[350px] h-[350px] inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded animate-pulse"
+        class="absolute inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded animate-pulse"
       >
         <Icon name="material-symbols:image-outline" class="w-16 h-16 text-gray-400 dark:text-gray-500" />
       </div>
