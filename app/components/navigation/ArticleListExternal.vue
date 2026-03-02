@@ -11,11 +11,11 @@
     {{ dscr }}
   </p>
   <NavigationArticleList :articles="externalArticles" />
-  <div v-if="moreArticles" class="mb-4">
+  <p v-if="moreArticles" class="mb-4">
     <NuxtLink :to="moreArticles" noprefetch>
       Zobrazit vše
     </NuxtLink>
-  </div>
+  </p>
 </template>
 
 <script setup lang="ts">

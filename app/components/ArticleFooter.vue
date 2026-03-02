@@ -1,9 +1,9 @@
 <template>
-  <div class="pt-1 text-xs">
+  <footer class="pt-1 text-xs">
     <div class="my-1 text-coda-yellow">
       ----------------------------------------
     </div>
-    <div v-if="article">
+    <section v-if="article">
       <div v-if="article.english" class="flex flex-row items-center gap-2 mb-2">
         <NuxtImg
           src="/img/en-flag.webp" alt="English version available"
@@ -14,9 +14,9 @@
           You can read this article in English at <span class="font-mono">dev.to</span>
         </a>
       </div>
-      <div class="font-bold">
+      <p class="font-bold">
         {{ article.title }} @ Master Coda
-      </div>
+      </p>
       <a class="block" :href="link.replace('##', 'blob').concat('?plain=1')">Zobrazit zdrojový kód článku</a>
       <a class="block" :href="link.replace('##', 'edit')">Navrhnout úpravu</a>
       <div class="flex flex-row gap-2 mt-4">
@@ -34,13 +34,13 @@
           </template>
         </SocialShare>
       </div>
-    </div>
+    </section>
     <div v-else>
-      <div class="font-bold">
+      <p class="font-bold">
         Články @ <NuxtLink to="/">Master Coda</NuxtLink>
-      </div>
+      </p>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script setup lang="ts">

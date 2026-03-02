@@ -1,5 +1,5 @@
 <template>
-  <div v-bind="$attrs">
+  <figure v-bind="$attrs">
     <a v-if="link" :href="link" :title="alt">
       <NuxtImg
         :src="`/img/articles/${src}`"
@@ -12,7 +12,7 @@
       :alt="alt" :title="alt"
       :class="width + ' h-auto'"
     />
-  </div>
+  </figure>
 </template>
 
 <script setup lang="ts">

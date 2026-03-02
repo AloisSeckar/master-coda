@@ -1,16 +1,16 @@
 <template>
-  <div class="mx-2 my-6 px-4 py-2 border border-coda-yellow bg-slate-800">
-    <div class="text-coda-yellow! text-2xl font-header font-bold">
+  <aside class="mx-2 my-6 px-4 py-2 border border-coda-yellow bg-slate-800">
+    <h3 class="text-coda-yellow! text-2xl font-header font-bold">
       {{ config.title }}
-    </div>
-    <div>
+    </h3>
+    <p>
       {{ config.dscr }}
       <NuxtLink :to="config.linkURL">
         {{ config.linkTitle }}
       </NuxtLink>
-    </div>
+    </p>
     <NavigationArticleListContent :articles :current="'/article/' + currentArticle" />
-  </div>
+  </aside>
 </template>
 
 <script setup lang="ts">

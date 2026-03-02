@@ -1,16 +1,16 @@
 <template>
-  <div class="p-2">
+  <header class="p-2">
     <h1 class="mb-4">
       {{ article?.title || path }}
     </h1>
     <div class="px-4 py-2 border border-coda-yellow bg-slate-800">
-      <div class="text-sm text-coda-yellow! mb-1">
+      <p class="text-sm text-coda-yellow! mb-1">
         {{ article?.created }}
         <span v-if="edited">(aktualizováno {{ article?.edited }})</span>
-      </div>
-      <div class="mb-2">
+      </p>
+      <p class="mb-2">
         {{ article?.dscr }}
-      </div>
+      </p>
       <div v-if="article?.english" class="flex flex-row items-center gap-2 mb-2">
         <NuxtImg
           src="/img/en-flag.webp" alt="English version available"
@@ -33,7 +33,7 @@
         These are not the articles you are looking for.<br>Keep browsing. Keep browsing...
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script setup lang="ts">

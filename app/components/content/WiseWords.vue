@@ -3,8 +3,8 @@
     <h2 id="poučení">
       <a href="#poučení">Poučení</a>
     </h2>
-    <div class="wise-words">
+    <blockquote class="wise-words">
       <slot />
-    </div>
+    </blockquote>
   </div>
 </template>

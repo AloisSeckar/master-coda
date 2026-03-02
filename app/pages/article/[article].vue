@@ -2,9 +2,9 @@
   <div v-if="status === 'pending'">
     Načítání článku...
   </div>
-  <div v-else>
+  <article v-else>
     <ArticleHeader :article />
-    <div class="article">
+    <section class="article">
       <ArticleStub v-if="article?.wip" />
       <ArticleUnchecked v-if="article?.unchecked" />
       <ContentRenderer v-if="article" :value="article" />
@@ -15,10 +15,10 @@
           :width="350" :height="200" class="rounded"
         />
       </div>
-    </div>
+    </section>
     <ArticleNavigation :article />
     <ArticleFooter :article />
-  </div>
+  </article>
 </template>
 
 <script setup lang="ts">

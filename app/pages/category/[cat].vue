@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <div class="mb-2">
+  <section>
+    <p class="mb-2">
       Všechny články v kategorii:
-    </div>
+    </p>
     <NavigationArticleListContent :title="catName" :articles />
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">

@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <nav>
     <NavigationArticleSeries v-if="isVueNews" :config="vueNewsConfig" />
     <NavigationArticleSeries v-if="isNuxtTutorial" :config="nuxtTutorialConfig" />
     <NavigationArticleSeries v-if="isChatGPTArticle" :config="chatGPTConfig" />
     <NavigationArticleSeries v-if="isCopilotArticle" :config="copilotConfig" />
-  </div>
+  </nav>
 </template>
 
 <script setup lang="ts">

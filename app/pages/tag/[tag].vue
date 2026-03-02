@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <div class="mb-2">
+  <section>
+    <p class="mb-2">
       Všechny články podle tagu:
-    </div>
+    </p>
     <NavigationArticleListContent :title="tag" :articles />
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">

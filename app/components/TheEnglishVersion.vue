@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-2 justify-center items-center border border-coda-purple bg-coda-green px-2 py-1 mb-4">
+  <aside class="flex gap-2 justify-center items-center border border-coda-purple bg-coda-green px-2 py-1 mb-4">
     <NuxtImg
       src="/img/en-flag.webp" alt="English flag"
       title="English version" aria-hidden="true"
@@ -13,5 +13,5 @@
       title="English version" aria-hidden="true"
       :width="25" :height="15"
     />
-  </div>
+  </aside>
 </template>

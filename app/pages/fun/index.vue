@@ -11,11 +11,11 @@
         Celkem {{ total }} obrázků
       </div>
       <div class="w-[260px] mx-auto text-center">
-        <div :class="buttonClass" @click="init">
+        <button :class="buttonClass" @click="init">
           <div class="actionButtonText">
             Prohlédnout si galerii
           </div>
-        </div>
+        </button>
       </div>
     </div>
     <div v-else>
@@ -24,28 +24,28 @@
       </div>
       <div class="w-[546px] mx-auto text-center">
         <div v-if="nextAvailable" :class="buttonClass" @click="next">
-          <div class="actionButtonText">
+          <button class="actionButtonText">
             Novější
-          </div>
+          </button>
         </div>
         <div v-else :class="buttonClass" @click="first">
-          <div class="actionButtonText">
+          <button class="actionButtonText">
             Nejstarší
-          </div>
+          </button>
         </div>
         <div v-if="prevAvailable" :class="buttonClass" @click="prev">
-          <div class="actionButtonText">
+          <button class="actionButtonText">
             Starší
-          </div>
+          </button>
         </div>
         <div v-else :class="buttonClass" @click="last">
-          <div class="actionButtonText">
+          <button class="actionButtonText">
             Nejnovější
-          </div>
+          </button>
         </div>
       </div>
     </div>
-    <div class="relative mx-auto my-2 border-2 border-gray-300 dark:border-gray-600 rounded min-h-[350px]">
+    <figure class="relative mx-auto my-2 border-2 border-gray-300 dark:border-gray-600 rounded min-h-[350px]">
       <div
         v-if="imageLoading"
         class="absolute inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded animate-pulse"
@@ -64,14 +64,14 @@
           @load="imageLoading = false"
         />
       </a>
-    </div>
+    </figure>
     <div v-if="!initial">
       <div class="w-[260px] mx-auto text-center">
-        <div :class="buttonClass" @click="reset">
+        <button :class="buttonClass" @click="reset">
           <div class="actionButtonText">
             Zpět
           </div>
-        </div>
+        </button>
       </div>
     </div>
   </div>

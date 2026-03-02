@@ -1,5 +1,5 @@
 <template>
-  <div class="m-1 h-36">
+  <header class="m-1 h-36">
     <NuxtLink :to="{ path: '/' }">
       <NuxtImg
         class="mt-2 w-[119px] h-auto float-left border-2 border-coda-green hover:border-coda-yellow"
@@ -16,43 +16,45 @@
         <div :class="headerH2">
           Nepravidelný blog o programování
         </div>
-        <ul class="flex">
-          <li :class="menuButton">
-            <NuxtLink to="/category/java">
-              <div :class="menuFont">
-                JAVA
-              </div>
-            </NuxtLink>
-          </li>
-          <li :class="menuButton">
-            <NuxtLink to="/category/web">
-              <div :class="menuFont">
-                WEB
-              </div>
-            </NuxtLink>
-          </li>
-          <li :class="menuButton">
-            <NuxtLink to="/category/debugging">
-              <div :class="menuFont">
-                DEBUGGING
-              </div>
-            </NuxtLink>
-          </li>
-          <li :class="menuButton">
-            <NuxtLink to="/category/misc">
-              <div :class="menuFont">
-                OSTATNÍ
-              </div>
-            </NuxtLink>
-          </li>
-          <li :class="menuButton">
-            <NuxtLink to="/fun">
-              <div :class="menuFont">
-                HUMOR
-              </div>
-            </NuxtLink>
-          </li>
-        </ul>
+        <nav>
+          <ul class="flex">
+            <li :class="menuButton">
+              <NuxtLink to="/category/java">
+                <div :class="menuFont">
+                  JAVA
+                </div>
+              </NuxtLink>
+            </li>
+            <li :class="menuButton">
+              <NuxtLink to="/category/web">
+                <div :class="menuFont">
+                  WEB
+                </div>
+              </NuxtLink>
+            </li>
+            <li :class="menuButton">
+              <NuxtLink to="/category/debugging">
+                <div :class="menuFont">
+                  DEBUGGING
+                </div>
+              </NuxtLink>
+            </li>
+            <li :class="menuButton">
+              <NuxtLink to="/category/misc">
+                <div :class="menuFont">
+                  OSTATNÍ
+                </div>
+              </NuxtLink>
+            </li>
+            <li :class="menuButton">
+              <NuxtLink to="/fun">
+                <div :class="menuFont">
+                  HUMOR
+                </div>
+              </NuxtLink>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
 
@@ -73,7 +75,7 @@
             </div>
           </button>
         </div>
-        <div v-show="menu" ref="el" class="absolute top-12 right-4 md:right-[10%] mr-1 border-2 border-coda-green bg-slate-400" @click="menu = false">
+        <nav v-show="menu" ref="el" class="absolute top-12 right-4 md:right-[10%] mr-1 border-2 border-coda-green bg-slate-400" @click="menu = false">
           <ul>
             <li :class="menuButtonFloat">
               <NuxtLink :to="{ path: '/category/java' }">
@@ -111,10 +113,10 @@
               </NuxtLink>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script setup lang="ts">
@@ -129,7 +131,7 @@ const menuFont = 'actionButtonText font-bold'
 const menu = ref(false)
 
 // hide hamburger menu on click
-const el = useTemplateRef<HTMLDivElement>('el')
+const el = useTemplateRef<HTMLElement>('el')
 useMousePressed({
   target: el,
   onReleased: () => {
