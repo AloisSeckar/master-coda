@@ -45,15 +45,26 @@
         </div>
       </div>
     </div>
-    <a :href="imagePath" target="_blank">
-      <NuxtImg
-        class="mx-auto my-4 h-[350px] w-auto cursor-zoom-in"
-        :src="imagePath"
-        :alt="imageData.title"
-        title="Kliknutím zobrazíte plnou velikost"
-        :placeholder="[25, 25]"
-      />
-    </a>
+    <div class="my-2 flex flex-row justify-center border-2 border-gray-300 dark:border-gray-600 rounded">
+      <div
+        v-if="imageLoading"
+        class="w-[350px] h-[350px] inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded animate-pulse"
+      >
+        <Icon name="material-symbols:image-outline" class="w-16 h-16 text-gray-400 dark:text-gray-500" />
+      </div>
+      <a :href="imagePath" target="_blank">
+        <NuxtImg
+          :key="imagePath"
+          class="mx-auto my-4 h-auto w-[500px] cursor-zoom-in transition-opacity duration-300"
+          :class="imageLoading ? 'opacity-0' : 'opacity-100'"
+          :src="imagePath"
+          :alt="imageData.title"
+          title="Kliknutím zobrazíte plnou velikost"
+          :placeholder="[25, 25]"
+          @load="imageLoading = false"
+        />
+      </a>
+    </div>
     <div v-if="!initial">
       <div class="w-[260px] mx-auto text-center">
         <div :class="buttonClass" @click="reset">
@@ -70,6 +81,7 @@
 const buttonClass = 'actionButton w-48 hover:cursor-pointer inline-block'
 
 const initial = ref(true)
+const imageLoading = ref(false)
 
 const funStore = useFunStore()
 if (!funStore.loaded) {
@@ -111,6 +123,7 @@ const prevAvailable = computed(() => funStore.index > 0)
 watch(() => funStore.index, () => reloadImge())
 
 function reloadImge() {
+  imageLoading.value = true
   const newImage = funStore.items[funStore.index]
   imageData.value.id = newImage?.id || '_zoidberg'
   imageData.value.title = newImage?.title || 'Haha?'
