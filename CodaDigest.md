@@ -8,6 +8,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
 | **`2026-02-26`** | [AI will not save developer productivity](https://www.infoworld.com/article/4125409/ai-will-not-save-developer-productivity.html) - why the AI tools are not guaranted to bring you an instant success |
+| **`2026-02-23`** | [Dissecting the CPU-Memory Relationship in Garbage Collection](https://norlinder.nu/posts/GC-Cost-CPU-vs-Memory/) - breaking down Java GC costs and introducing new proposed metrics for **JDK 26** |
 | **`2026-01-16`** | [Choosing the Right GC for Every Workload](https://foojay.io/today/the-ultimate-10-years-java-garbage-collection-guide-2016-2026-choosing-the-right-gc-for-every-workload/) - different garbage collectors exist in modern Java, they are not equal and each is suitable for different use-cases |
 
 ## 2025
