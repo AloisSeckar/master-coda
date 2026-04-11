@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2026-04-02`** | [Email address obfuscation: What works in 2026?](https://spencermortensen.com/articles/email-obfuscation/) - a fascinating overview of techniques to display email addresses on websites but to protect them from spam bots abuse |
 | **`2026-03-12`** | [The 49MB Web Page](https://thatshubham.com/blog/news-audit) - you've probably noticed visiting many newspaper sites nowadays is not really a pleasant experience, this article sums up how bad it actually is |
 | **`2026-02-26`** | [AI will not save developer productivity](https://www.infoworld.com/article/4125409/ai-will-not-save-developer-productivity.html) - why the AI tools are not guaranted to bring you an instant success |
 | **`2026-02-23`** | [Dissecting the CPU-Memory Relationship in Garbage Collection](https://norlinder.nu/posts/GC-Cost-CPU-vs-Memory/) - breaking down Java GC costs and introducing new proposed metrics for **JDK 26** |
