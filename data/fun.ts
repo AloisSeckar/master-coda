@@ -314,6 +314,12 @@ const fun = [
     title: 'Side Quest',
     added: '2026-03-02',
   },
+  {
+    id: 'files',
+    title: 'Soubory známých osobností',
+    explain: 'Kombinace přípon souborů se jmény známých osobností',
+    added: '2026-04-14',
+  },
 ]
 
 export { fun }
