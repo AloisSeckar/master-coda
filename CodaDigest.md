@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2026-05-02`** | [AI Isn't Stupid. Your Setup Is.](https://dev.to/anchildress1/ai-isnt-stupid-your-setup-is-16cn) - 10 highly practical tips for setting up agentic AI setups |
 | **`2026-04-02`** | [Email address obfuscation: What works in 2026?](https://spencermortensen.com/articles/email-obfuscation/) - a fascinating overview of techniques to display email addresses on websites but to protect them from spam bots abuse |
 | **`2026-03-18`** | [How to Make Sense of AI](https://commoncog.com/how-to-make-sense-of-ai/) - do not get trapped by articles about AI, focus only on relevant parts |
 | **`2026-03-12`** | [The 49MB Web Page](https://thatshubham.com/blog/news-audit) - you've probably noticed visiting many newspaper sites nowadays is not really a pleasant experience, this article sums up how bad it actually is |
