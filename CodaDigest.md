@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2026-05-17`** | [GitHub Actions Cache Poisoning is eating open source](https://neciudan.dev/github-actions-poisoning) - detailed explanation of another possible software attack vector |
 | **`2026-05-13`** | [The Mini Shai-Hulud supply chain backlash will create worse software](https://www.linkedin.com/pulse/mini-shai-hulud-supply-chain-backlash-create-worse-software-benniks-yzewf/) - reminder that being dependant on thrid party libraries is not just the pure evil and you shouldn't fall back to custom solutions blindly |
 | **`2026-05-02`** | [AI Isn't Stupid. Your Setup Is.](https://dev.to/anchildress1/ai-isnt-stupid-your-setup-is-16cn) - 10 highly practical tips for setting up agentic AI setups |
 | **`2026-04-02`** | [Email address obfuscation: What works in 2026?](https://spencermortensen.com/articles/email-obfuscation/) - a fascinating overview of techniques to display email addresses on websites but to protect them from spam bots abuse |
