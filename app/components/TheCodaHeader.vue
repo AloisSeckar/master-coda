@@ -69,9 +69,9 @@
         <div class="absolute top-14 min-[450px]:top-4 right-4 md:right-[10%] mr-1">
           <button id="menuBtn" class="block hamburger focus:outline-none cursor-pointer" @click="menu = true">
             <div class="space-y-2">
-              <span class="block w-8 h-[3px] bg-coda-green" />
-              <span class="block w-8 h-[3px] bg-coda-green" />
-              <span class="block w-8 h-[3px] bg-coda-green" />
+              <span class="block w-8 h-0.75 bg-coda-green" />
+              <span class="block w-8 h-0.75 bg-coda-green" />
+              <span class="block w-8 h-0.75 bg-coda-green" />
             </div>
           </button>
         </div>

@@ -54,16 +54,39 @@ export default defineNuxtConfig({
     preset: 'netlify',
   },
 
+  ignis: {
+    config: {
+      html: {
+        lang: 'cs',
+      },
+    },
+    default: {
+      css: false,
+    },
+    preset: {
+      ui: 'nuxt-ui',
+    },
+    content: {
+      content: {
+        enabled: true,
+      },
+      pslo: {
+        enabled: true,
+        content: true,
+      },
+      social: {
+        enabled: true,
+        url: 'https://master-coda.cz/',
+      },
+    },
+  },
+
   security: {
     headers: {
       contentSecurityPolicy: {
         'script-src': ['\'self\'', '\'unsafe-inline\'', '\'unsafe-eval\''],
       },
     },
-  },
-
-  socialShare: {
-    baseUrl: 'https://master-coda.cz/',
   },
 
 })

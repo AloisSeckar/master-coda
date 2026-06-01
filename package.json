@@ -8,21 +8,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@stefanobartoletti/nuxt-social-share": "^2.2.1",
-    "better-sqlite3": "12.2.0",
-    "nuxt-ignis": "0.5.0"
+    "nuxt-ignis": "0.6.0-rc.2"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "@tailwindcss/oxide",
-      "better-sqlite3",
-      "esbuild",
-      "maplibre-gl",
-      "sharp",
-      "unrs-resolver",
-      "vue-demi"
-    ]
-  },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@11.5.0"
 }
