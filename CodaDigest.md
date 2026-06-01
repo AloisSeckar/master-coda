@@ -7,10 +7,15 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2026-05-17`** | [GitHub Actions Cache Poisoning is eating open source](https://neciudan.dev/github-actions-poisoning) - detailed explanation of another possible software attack vector |
+| **`2026-05-13`** | [The Mini Shai-Hulud supply chain backlash will create worse software](https://www.linkedin.com/pulse/mini-shai-hulud-supply-chain-backlash-create-worse-software-benniks-yzewf/) - reminder that being dependant on thrid party libraries is not just the pure evil and you shouldn't fall back to custom solutions blindly |
+| **`2026-05-02`** | [AI Isn't Stupid. Your Setup Is.](https://dev.to/anchildress1/ai-isnt-stupid-your-setup-is-16cn) - 10 highly practical tips for setting up agentic AI setups |
 | **`2026-04-02`** | [Email address obfuscation: What works in 2026?](https://spencermortensen.com/articles/email-obfuscation/) - a fascinating overview of techniques to display email addresses on websites but to protect them from spam bots abuse |
+| **`2026-03-18`** | [How to Make Sense of AI](https://commoncog.com/how-to-make-sense-of-ai/) - do not get trapped by articles about AI, focus only on relevant parts |
 | **`2026-03-12`** | [The 49MB Web Page](https://thatshubham.com/blog/news-audit) - you've probably noticed visiting many newspaper sites nowadays is not really a pleasant experience, this article sums up how bad it actually is |
 | **`2026-02-26`** | [AI will not save developer productivity](https://www.infoworld.com/article/4125409/ai-will-not-save-developer-productivity.html) - why the AI tools are not guaranted to bring you an instant success |
 | **`2026-02-23`** | [Dissecting the CPU-Memory Relationship in Garbage Collection](https://norlinder.nu/posts/GC-Cost-CPU-vs-Memory/) - breaking down Java GC costs and introducing new proposed metrics for **JDK 26** |
+| **`2026-02-18`** | [Skills Aren’t Magic. They’re Scoped Context.](https://dev.to/anchildress1/skills-arent-magic-theyre-scoped-context-d07) - simple explanation of **skills** for AI agents |
 | **`2026-01-16`** | [Choosing the Right GC for Every Workload](https://foojay.io/today/the-ultimate-10-years-java-garbage-collection-guide-2016-2026-choosing-the-right-gc-for-every-workload/) - different garbage collectors exist in modern Java, they are not equal and each is suitable for different use-cases |
 
 ## 2025
