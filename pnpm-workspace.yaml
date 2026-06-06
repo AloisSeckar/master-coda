@@ -10,3 +10,13 @@ allowBuilds:
   # post-install scripts that can be ignored
   maplibre-gl: false
   puppeteer: false
+
+minimumReleaseAgeExclude:
+  - '@nuxt-ignis/content@0.1.0'
+  - '@nuxt-ignis/db@0.1.0'
+  - '@nuxt-ignis/default@0.1.0'
+  - '@nuxt-ignis/forms@0.1.0'
+  - '@nuxt-ignis/ui@0.1.0'
+  - '@nuxt-ignis/utils@0.1.0'
+  - '@nuxt-ignis/validation@0.1.0'
+  - nuxt-ignis@0.6.0
