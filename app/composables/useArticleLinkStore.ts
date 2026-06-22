@@ -45,7 +45,6 @@ export const useArticleLinkStore = defineStore('article-links', () => {
     catch (e) {
       error.value = e as Error
       console.error('Failed to fetch external articles:', e)
-      throw e
     }
 
     loading.value = false
