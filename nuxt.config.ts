@@ -62,6 +62,7 @@ export default defineNuxtConfig({
     },
     default: {
       css: false,
+      auth: false,
     },
     preset: {
       ui: 'nuxt-ui',
