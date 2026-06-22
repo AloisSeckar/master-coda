@@ -5,7 +5,6 @@ export const useArticleLinkStore = defineStore('article-links', () => {
   // State
   const articles = useState<Article[]>('articles', () => [])
   const loading = useState<boolean>('articles-loading', () => false)
-  const error = useState<Error | null>('articles-error', () => null)
 
   const articlesNuxt = useState<ArticleLink[]>('articles-nuxt', () => [])
   const articlesJava = useState<ArticleLink[]>('articles-java', () => [])
@@ -18,7 +17,6 @@ export const useArticleLinkStore = defineStore('article-links', () => {
     }
 
     loading.value = true
-    error.value = null
 
     // internal
 
@@ -30,7 +28,6 @@ export const useArticleLinkStore = defineStore('article-links', () => {
       articles.value = data
     }
     catch (e) {
-      error.value = e as Error
       console.error('Failed to fetch internal articles:', e)
       throw e
     }
@@ -43,7 +40,6 @@ export const useArticleLinkStore = defineStore('article-links', () => {
       await fetchExternalArticles('https://alois-seckar.cz/coda-digest', articlesCoda)
     }
     catch (e) {
-      error.value = e as Error
       console.error('Failed to fetch external articles:', e)
     }
 
