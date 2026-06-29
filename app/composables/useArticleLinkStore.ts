@@ -35,33 +35,18 @@ export const useArticleLinkStore = defineStore('article-links', () => {
     // external
 
     try {
-      await fetchExternalArticles('https://alois-seckar.cz/nuxt-news', articlesNuxt)
-      await fetchExternalArticles('https://alois-seckar.cz/java-news', articlesJava)
-      await fetchExternalArticles('https://alois-seckar.cz/coda-digest', articlesCoda)
+      const data = await $fetch<Record<string, ArticleLink[]>>('/api/external-articles')
+      if (data) {
+        articlesNuxt.value = data.nuxt || []
+        articlesJava.value = data.java || []
+        articlesCoda.value = data.coda || []
+      }
     }
     catch (e) {
       console.error('Failed to fetch external articles:', e)
     }
 
     loading.value = false
-  }
-
-  async function fetchExternalArticles(source: string, target: Ref<ArticleLink[]>) {
-    const data = await $fetch<Last5News>(source, {
-      headers: {
-        'User-Agent': 'master-coda',
-      },
-    })
-    if (data) {
-      target.value.push(data.item1)
-      target.value.push(data.item2)
-      target.value.push(data.item3)
-      target.value.push(data.item4)
-      target.value.push(data.item5)
-    }
-    target.value.forEach((a: ArticleLink) => {
-      a.external = true
-    })
   }
 
   // Getters
