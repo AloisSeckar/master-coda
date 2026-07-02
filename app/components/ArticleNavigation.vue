@@ -23,7 +23,7 @@ const vueNewsConfig: ArticleSeries = {
   match: 'new-in-vue-',
 }
 
-const isNuxtTutorial = props.article?.file.startsWith('nuxt')
+const isNuxtTutorial = props.article?.file.startsWith('nuxt') && !props.article?.file.includes('nuxt-ignis')
 const nuxtTutorialConfig: ArticleSeries = {
   title: 'Nuxt Tutorial',
   dscr: 'Série výukových článků o JS frameworku',

@@ -2,7 +2,7 @@
 file: 'nuxt-ignis-reforged'
 cat: 'web'
 title: 'Nuxt Ignis Reforged'
-dscr: 'Nuxt - jak snadno integrovat knihovny UI prvků'
+dscr: 'představení konceptu open-source projektu pro snazší správu Nuxt projektů'
 tags: ['web', 'JavaScript', 'Nuxt', 'opensource', 'projekt', 'novinka']
 date: '2026-06-09'
 created: '09.06.2026'

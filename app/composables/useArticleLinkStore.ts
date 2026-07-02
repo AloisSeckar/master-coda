@@ -75,7 +75,7 @@ export const useArticleLinkStore = defineStore('article-links', () => {
     }
     // filtering is based on file prefix
     return toArticleLinks(allVisibleArticles.value.filter(article =>
-      article.file?.startsWith(series)),
+      article.file?.startsWith(series) && !article.file?.includes('nuxt-ignis')),
     )
   }
 
