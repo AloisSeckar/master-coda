@@ -7,22 +7,20 @@
       </span>
     </h1>
     <div v-if="initial">
-      <div class="w-[200px] mx-auto text-center text-lg font-bold">
+      <div class="w-50 mx-auto text-center text-lg font-bold">
         Celkem {{ total }} obrázků
       </div>
-      <div class="w-[260px] mx-auto text-center">
+      <div class="w-50 mx-auto text-center">
         <button :class="buttonClass" @click="init">
-          <div class="actionButtonText">
-            Prohlédnout si galerii
-          </div>
+          Prohlédnout si galerii
         </button>
       </div>
     </div>
     <div v-else>
-      <div class="w-[200px] mx-auto text-center text-lg font-bold">
+      <div class="w-50 mx-auto text-center text-lg font-bold">
         {{ current }} / {{ total }}
       </div>
-      <div class="w-[546px] mx-auto text-center">
+      <div class="max-w-135 mx-auto text-center flex flex-col sm:flex-row gap-1 justify-center items-center">
         <div v-if="nextAvailable" :class="buttonClass" @click="next">
           <button class="actionButtonText">
             Novější
@@ -45,7 +43,7 @@
         </div>
       </div>
     </div>
-    <figure class="relative mx-auto my-2 border-2 border-gray-300 dark:border-gray-600 rounded min-h-[350px]">
+    <figure class="relative mx-auto my-2 border-2 border-gray-300 dark:border-gray-600 rounded min-h-85">
       <div
         v-if="imageLoading"
         class="absolute inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded animate-pulse"
@@ -55,7 +53,7 @@
       <a :href="imagePath" target="_blank">
         <NuxtImg
           :key="imagePath"
-          class="mx-auto my-4 h-auto w-[500px] cursor-zoom-in transition-opacity duration-300"
+          class="mx-auto my-4 h-auto w-125 cursor-zoom-in transition-opacity duration-300"
           :class="imageLoading ? 'opacity-0' : 'opacity-100'"
           :src="imagePath"
           :alt="imageData.title"
@@ -66,11 +64,9 @@
       </a>
     </figure>
     <div v-if="!initial">
-      <div class="w-[260px] mx-auto text-center">
+      <div class="w-65 mx-auto text-center">
         <button :class="buttonClass" @click="reset">
-          <div class="actionButtonText">
-            Zpět
-          </div>
+          Zpět
         </button>
       </div>
     </div>
@@ -78,7 +74,7 @@
 </template>
 
 <script setup lang="ts">
-const buttonClass = 'actionButton w-48 hover:cursor-pointer inline-block'
+const buttonClass = 'actionButton w-48 hover:cursor-pointer inline-block text-coda-yellow hover:text-amber-100'
 
 const initial = ref(true)
 const imageLoading = ref(false)
