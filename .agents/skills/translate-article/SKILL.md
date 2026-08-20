@@ -11,6 +11,7 @@ Translates the body of an English article draft into Czech, following strict Mar
 ## When to Use
 
 - User invokes `/translate <file-name>.md`
+- User invokes `/translate-article <file-name>.md`
 - User asks to translate an article / blog post from English into Czech
 
 ## Procedure
@@ -24,6 +25,7 @@ Translates the body of an English article draft into Czech, following strict Mar
    - Never change the contents of code blocks even if they appear to have a bug.
    - Always preserve the original line breaks. Do not add or remove blank lines.
    - Never change HTML-like tags or Vue component tags (e.g. `<WiseWords>`, `<ArticleImage>`).
+   - Never change Nuxt Content tags (e.g. `::vue-newsletter`).
 4. Save the translation into `content/article/<file-name>.md` (overwrite). Do not preserve the original.
 5. If YAML frontmatter was not present, add it based on translated `content/article/<file-name>.md` content using the following template:
 
@@ -37,7 +39,15 @@ tags: ['<relevant>', '<tags>', <...>]
 date: 'YYYY-MM-DD'
 created: 'DD.MM.YYYY'
 edited: 'DD.MM.YYYY'
+english: 'TBA'
+unchecked: true
 ---
 ```
 
-6. Reply with simple confirmation: `Translated <file-name>.md from English to Czech.`
+6. Reply with following confirmation:
+
+```md
+Translated <file-name>.md from English to Czech.
+
+Do not forget to add the original link and check the metadata.
+```
