@@ -67,7 +67,7 @@
           Nepravidelný blog o&nbsp;programování
         </div>
         <div class="absolute top-14 min-[450px]:top-4 right-4 md:right-[10%] mr-1">
-          <button id="menuBtn" class="block focus:outline-none cursor-pointer" @click="menu = true">
+          <button id="menuBtn" ref="menuBtn" class="block focus:outline-none cursor-pointer" @click="menu = true">
             <svg class="w-8 h-8 fill-coda-green" viewBox="0 0 24 24" aria-hidden="true">
               <rect y="4" width="24" height="3" rx="1" />
               <rect y="11" width="24" height="3" rx="1" />
@@ -130,14 +130,11 @@ const menuFont = 'actionButtonText font-bold'
 // hamburger menu state (mobile screens)
 const menu = ref(false)
 
-// hide hamburger menu on click
+// hide hamburger menu when clicking outside of it
+// (either on expanded menu item or completely outside)
 const el = useTemplateRef<HTMLElement>('el')
-useMousePressed({
-  target: el,
-  onReleased: () => {
-    if (menu.value) {
-      menu.value = false
-    }
-  },
-})
+const menuBtn = useTemplateRef<HTMLElement>('menuBtn')
+onClickOutside(el, () => {
+  menu.value = false
+}, { ignore: [menuBtn] })
 </script>
