@@ -2,7 +2,7 @@
   <header class="m-1 h-36">
     <NuxtLink :to="{ path: '/' }">
       <NuxtImg
-        class="mt-2 w-[119px] h-auto float-left border-2 border-coda-green hover:border-coda-yellow"
+        class="mt-2 w-26.5 h-auto float-left border-2 border-coda-green hover:border-coda-yellow"
         src="/img/master-coda.webp"
         alt="Master Coda - Logo"
       />
@@ -67,12 +67,12 @@
           Nepravidelný blog o&nbsp;programování
         </div>
         <div class="absolute top-14 min-[450px]:top-4 right-4 md:right-[10%] mr-1">
-          <button id="menuBtn" class="block hamburger focus:outline-none cursor-pointer" @click="menu = true">
-            <div class="space-y-2">
-              <span class="block w-8 h-0.75 bg-coda-green" />
-              <span class="block w-8 h-0.75 bg-coda-green" />
-              <span class="block w-8 h-0.75 bg-coda-green" />
-            </div>
+          <button id="menuBtn" class="block focus:outline-none cursor-pointer" @click="menu = true">
+            <svg class="w-8 h-8 fill-coda-green" viewBox="0 0 24 24" aria-hidden="true">
+              <rect y="4" width="24" height="3" rx="1" />
+              <rect y="11" width="24" height="3" rx="1" />
+              <rect y="18" width="24" height="3" rx="1" />
+            </svg>
           </button>
         </div>
         <nav v-show="menu" ref="el" class="absolute top-12 right-4 md:right-[10%] mr-1 border-2 border-coda-green bg-slate-400" @click="menu = false">
