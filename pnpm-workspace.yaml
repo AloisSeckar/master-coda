@@ -1,22 +1,19 @@
 shamefullyHoist: true
 
 allowBuilds:
-  # post-install scripts required for correct behavior
+  'sharp': true
+  'unrs-resolver': true
   '@parcel/watcher': true
-  esbuild: true
-  sharp: true
-  unrs-resolver: true
-  vue-demi: true
-  # post-install scripts that can be ignored
-  maplibre-gl: false
-  puppeteer: false
+  'esbuild': false
+  'vue-demi': false
+  'maplibre-gl': false
 
 minimumReleaseAgeExclude:
-  - '@nuxt-ignis/content@0.1.0'
-  - '@nuxt-ignis/db@0.1.0'
-  - '@nuxt-ignis/default@0.1.0'
-  - '@nuxt-ignis/forms@0.1.0'
-  - '@nuxt-ignis/ui@0.1.0'
-  - '@nuxt-ignis/utils@0.1.0'
-  - '@nuxt-ignis/validation@0.1.0'
-  - nuxt-ignis@0.6.0
+  - '@nuxt-ignis/content'
+  - '@nuxt-ignis/db'
+  - '@nuxt-ignis/default'
+  - '@nuxt-ignis/forms'
+  - '@nuxt-ignis/ui'
+  - '@nuxt-ignis/utils'
+  - '@nuxt-ignis/validation'
+  - 'nuxt-ignis'
