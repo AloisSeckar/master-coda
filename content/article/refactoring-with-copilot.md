@@ -1,6 +1,6 @@
 ---
 file: 'refactoring-with-copilot'
-cat: 'web'
+cat: 'ai'
 title: 'AI jako lék na prokrastinaci'
 dscr: 'Jak se mnou Copilot vyřešil dlouho odkládaný refaktoring na mém webu'
 tags: ['refactoring', 'Nuxt', 'AI', 'Copilot']

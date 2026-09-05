@@ -1,6 +1,6 @@
 ---
 file: 'neni-js-jako-js'
-cat: 'debugging'
+cat: 'debug'
 title: 'Není JavaScript jako JavaScript'
 dscr: 'Když obvyklá JS metoda nechce fungovat...'
 tags: ['debugging', 'JavaScript']

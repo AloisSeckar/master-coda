@@ -1,6 +1,6 @@
 ---
 file: 'novy-ai-standard'
-cat: 'misc'
+cat: 'ai'
 title: 'Úsvit nového AI standardu'
 dscr: 'Představení iniciativy The AI Manifesto'
 tags: ['AI', 'manifest', 'pravidla', 'novinka']

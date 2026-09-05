@@ -1,6 +1,6 @@
 ---
 file: 'hello-chatgpt-2'
-cat: 'misc'
+cat: 'ai'
 title: 'Druhé rande s ChatGPT - texty'
 dscr: 'Proč AI ano a proč ne s překvapením'
 tags: ['ChatGPT', 'AI', 'programování', 'help']

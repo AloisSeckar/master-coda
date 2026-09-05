@@ -1,6 +1,6 @@
 ---
 file: 'hello-chatgpt-1'
-cat: 'misc'
+cat: 'ai'
 title: 'První rande s ChatGPT'
 dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát'
 tags: ['ChatGPT', 'AI', 'programování', 'help']

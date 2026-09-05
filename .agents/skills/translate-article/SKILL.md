@@ -32,7 +32,7 @@ Translates the body of an English article draft into Czech, following strict Mar
 ```yaml
 ---
 file: '<file-name>'
-cat: '<java|web|debugging|misc>'
+cat: '<java|web|ai|debug|misc>'
 title: '<article-title>'
 dscr: '<one-sentence-description>'
 tags: ['<relevant>', '<tags>', <...>]

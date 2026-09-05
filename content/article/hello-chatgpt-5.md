@@ -1,6 +1,6 @@
 ---
 file: 'hello-chatgpt-5'
-cat: 'misc'
+cat: 'ai'
 title: 'Páté rande s ChatGPT - obrázky z Wikipedie'
 dscr: 'Pokus o automatizaci získávání URL na svg obrázky z Wikipedie'
 tags: ['ChatGPT', 'AI', 'programování', 'help']

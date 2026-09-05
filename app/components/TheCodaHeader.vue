@@ -33,9 +33,16 @@
               </NuxtLink>
             </li>
             <li :class="menuButton">
-              <NuxtLink to="/category/debugging">
+              <NuxtLink to="/category/ai">
                 <div :class="menuFont">
-                  DEBUGGING
+                  AI
+                </div>
+              </NuxtLink>
+            </li>
+            <li :class="menuButton">
+              <NuxtLink to="/category/debug">
+                <div :class="menuFont">
+                  DEBUG
                 </div>
               </NuxtLink>
             </li>
@@ -92,9 +99,16 @@
               </NuxtLink>
             </li>
             <li :class="menuButtonFloat">
-              <NuxtLink :to="{ path: '/category/debugging' }">
+              <NuxtLink :to="{ path: '/category/ai' }">
                 <div :class="menuFont">
-                  DEBUGGING
+                  AI
+                </div>
+              </NuxtLink>
+            </li>
+            <li :class="menuButtonFloat">
+              <NuxtLink :to="{ path: '/category/debug' }">
+                <div :class="menuFont">
+                  DEBUG
                 </div>
               </NuxtLink>
             </li>

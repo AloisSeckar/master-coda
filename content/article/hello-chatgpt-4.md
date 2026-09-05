@@ -1,6 +1,6 @@
 ---
 file: 'hello-chatgpt-4'
-cat: 'misc'
+cat: 'ai'
 title: 'Čtvrté rande s ChatGPT - seznam Java features'
 dscr: 'Generování obsáhlého seznamu z konkrétních dat v konkrétním formátování'
 tags: ['ChatGPT', 'AI', 'programování', 'help']

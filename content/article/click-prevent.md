@@ -1,6 +1,6 @@
 ---
 file: 'click-prevent'
-cat: 'debugging'
+cat: 'debug'
 title: 'Nechtěný reload stránky'
 dscr: 'Kliknutí na HTML odkaz dělá víc, než se na první pohled může zdát'
 tags: ['debugging', 'JavaScript', 'HTML']

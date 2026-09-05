@@ -1,6 +1,6 @@
 ---
 file: 'not-done-using-ai'
-cat: 'misc'
+cat: 'ai'
 title: 'Já s AI nekončím'
 dscr: 'Reakce na článek "I''m done using AI" a úvaha nad tím, proč odmítání AI nástrojů není řešení.'
 tags: ['ai', 'názor', 'produktivita']

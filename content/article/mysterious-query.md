@@ -1,6 +1,6 @@
 ---
 file: 'mysterious-query'
-cat: 'debugging'
+cat: 'debug'
 title: 'Tajemný případ SQL query, které se nechtělo spustit'
 dscr: 'Jak mě Copilot nasměroval, když už jsem nevěděl, kudy kam'
 tags: ['debugging', 'Nuxt', 'Neon', 'SQL', 'bezpečnost', 'AI', 'Copilot']

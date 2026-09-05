@@ -1,6 +1,6 @@
 ---
 file: 'speed-of-vibes'
-cat: 'misc'
+cat: 'ai'
 title: 'Speed of Vibes'
 dscr: 'Důkaz, že nápady z koupelny lze dnes proměnit ve výsledek během několika minut'
 tags: ['produktivita', 'Nuxt', 'AI', 'Copilot']

@@ -1,6 +1,6 @@
 ---
 file: 'neni-short-jako-int'
-cat: 'debugging'
+cat: 'debug'
 title: 'Není short jako int'
 dscr: 'Když nesedí datové typy, dějí se zvláštní věci'
 tags: ['debugging', 'Java', 'testy', 'datové typy']

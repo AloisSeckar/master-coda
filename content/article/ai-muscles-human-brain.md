@@ -1,6 +1,6 @@
 ---
 file: 'ai-muscles-human-brain'
-cat: 'misc'
+cat: 'ai'
 title: 'AI jsou svaly, člověk musí myslet'
 dscr: 'Úvaha o tom, jak AI mění práci vývojáře a proč rozhodování a kontrola musí zůstat na člověku'
 tags: ['AI', 'Copilot', 'produktivita', 'programování']

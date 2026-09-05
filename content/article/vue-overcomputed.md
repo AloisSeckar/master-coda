@@ -1,6 +1,6 @@
 ---
 file: 'vue-overcomputed'
-cat: 'debugging'
+cat: 'debug'
 title: 'Overcomputed Vue.js'
 dscr: 'Pozor na Vue.js reaktivní funkci `computed()`, může se spouštět častěji, než byste čekali a chtěli'
 tags: ['debugging', 'JavaScript', 'Vue.js']

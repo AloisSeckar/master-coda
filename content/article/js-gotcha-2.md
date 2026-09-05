@@ -1,6 +1,6 @@
 ---
 file: 'js-gotcha-2'
-cat: 'debugging'
+cat: 'debug'
 title: 'Chytáky v JavaScriptu 2 - Reaktivní Vue.js proměnné'
 dscr: 'Při použití Vue reaktivity je třeba pamatovat na správné referencování hodnot'
 tags: ['debugging', 'JavaScript', 'Vue.js']

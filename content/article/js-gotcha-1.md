@@ -1,6 +1,6 @@
 ---
 file: 'js-gotcha-1'
-cat: 'debugging'
+cat: 'debug'
 title: 'Chytáky v JavaScriptu 1 - Není všechno boolean, co je za if'
 dscr: 'Vyhodnocování logických výrazů nemusí vždy fungovat tak, jak si myslíte'
 tags: ['debugging', 'JavaScript']

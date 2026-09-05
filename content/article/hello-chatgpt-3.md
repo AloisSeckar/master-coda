@@ -1,6 +1,6 @@
 ---
 file: 'hello-chatgpt-3'
-cat: 'misc'
+cat: 'ai'
 title: 'Třetí rande s ChatGPT - barvy'
 dscr: 'AI coby můj osobní designový poradce'
 tags: ['ChatGPT', 'AI', 'programování', 'help']

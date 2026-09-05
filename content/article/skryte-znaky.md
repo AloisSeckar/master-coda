@@ -1,6 +1,6 @@
 ---
 file: 'skryte-znaky'
-cat: 'debugging'
+cat: 'debug'
 title: 'Skryté (pa)znaky'
 dscr: 'Fonty nejsou tím, čím se zdají být'
 tags: ['debugging', 'fonty']
