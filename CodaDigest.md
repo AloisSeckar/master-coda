@@ -7,8 +7,11 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :--  |
+| **`2026-07-28`** | [To Cache or Not to Cache Virtual Threads](https://quarkus.io/blog/to-cache-or-not-to-cache-virtual-threads/) - what really happens with Java virtual threads execution in **Quarkus** and how it is releated to pooling |
+| **`2026-05-29`** | [How to Evaluate an npm Package - 2026 Edition](https://blog.gaborkoos.com/posts/2026-05-29-How-to-Evaluate-an-npm-Package-2026-Edition/) - security guide for JavaScript developers |
 | **`2026-05-17`** | [GitHub Actions Cache Poisoning is eating open source](https://neciudan.dev/github-actions-poisoning) - detailed explanation of another possible software attack vector |
 | **`2026-05-13`** | [The Mini Shai-Hulud supply chain backlash will create worse software](https://www.linkedin.com/pulse/mini-shai-hulud-supply-chain-backlash-create-worse-software-benniks-yzewf/) - reminder that being dependant on thrid party libraries is not just the pure evil and you shouldn't fall back to custom solutions blindly |
+| **`2026-05-06`** | [Symptoms of Bad Software Design](https://newsletter.optimistengineer.com/p/symptoms-of-bad-software-design) - 4 anti-patterns often seen in badly designed SW projects |
 | **`2026-05-02`** | [AI Isn't Stupid. Your Setup Is.](https://dev.to/anchildress1/ai-isnt-stupid-your-setup-is-16cn) - 10 highly practical tips for setting up agentic AI setups |
 | **`2026-04-12`** | [My blog got popular, and my bandwidth exploded to ~300GB in just 10 days](https://neciudan.dev/how-i-cut-250gb-of-bandwidth-from-my-website) - a case-study of optimizing too large assets and cache control to reduce website traffic |
 | **`2026-04-02`** | [Email address obfuscation: What works in 2026?](https://spencermortensen.com/articles/email-obfuscation/) - a fascinating overview of techniques to display email addresses on websites but to protect them from spam bots abuse |
