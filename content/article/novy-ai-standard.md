@@ -6,10 +6,17 @@ dscr: 'Představení iniciativy The AI Manifesto'
 tags: ['AI', 'manifest', 'pravidla', 'novinka']
 date: '2025-08-13'
 created: '13.08.2025'
+updated: '27.09.2026'
 english: 'https://dev.to/aloisseckar/the-brink-of-new-ai-standard-1a1i'
 ---
 
-Byl jsem poctěn možností být mezi prvními, kdo podepsali [The AI Manifesto](https://ai-manifesto.dev/). Název tohoto článku je zatím jen mou vlastní odvážnou předpovědí, ale vraťte se sem za rok nebo tak a uvidíme.
+**UPDATE 2026:**
+
+**Web byl vypnut a má predikce se nenaplnila. Přesto si myslím, že níže uvedených pět pravidel interakce s AI je dobré znát a článek nechávám online.**
+
+**Srpen 2025:**
+
+Byl jsem poctěn možností být mezi prvními, kdo podepsali [The AI Manifesto](https://web.archive.org/web/20260717094206/https://ai-manifesto.dev/). Název tohoto článku je zatím jen mou vlastní odvážnou předpovědí, ale vraťte se sem za rok nebo tak a uvidíme.
 
 Autorem výzvy je německý vývojář [Christopher H. Stappert](https://chriso.dev/), který dal dohromady pět krátkých, nepřekvapivých, a přesto hluboce inspirativních principů:
 
@@ -25,6 +32,6 @@ Někteří z nás dychtivě adoptují všechno nové. Někteří (jako já) jen 
 
 Jsem techno-optimista. Věřím, že AI může nakonec změnit naše životy k lepšímu. Ale jen pokud si zachováme kontrolu a naši přirozenou chuť zkoumat a zlepšovat se. Nesmíme odevzdat svou mysl strojům a zdegenerovat do mentální prázdnoty. A nikdy bychom neměli zapomenout sdílet plody své moudrosti s ostatními - **to je poslední a možná nejdůležitější princip**.
 
-Příběh na pozadí a (stručné) vysvětlení každého pravidla si můžete přečíst na [https://ai-manifesto.dev/](https://ai-manifesto.dev/).
+Příběh na pozadí a (stručné) vysvětlení každého pravidla si můžete přečíst na [https://ai-manifesto.dev/](https://web.archive.org/web/20260717094206/https://ai-manifesto.dev/).
 
 A pokud vámi těchto pět zásad rezonuje stejně jako ve mně, můžete je také snadno digitálně podepsat prostřednictvím svého účtu na GitHubu nebo LinkedInu. Nebo je šiřte dál - tohle si prostě zaslouží, aby o tom vědělo co nejvíce lidí.
