@@ -27,26 +27,26 @@ Pokud budete chtít Nuxt zprovoznit lokálně, budete potřebovat:
 - Zadat v terminálu příkaz `pnpm install`
 - Spustit aplikaci pomocí příkazu `pnpm dev`
 - Zobrazit v prohlížeči URL `http://localhost:3000`
- 
+
  Uvidíte jednoduchou stránku, která toho sama o sobě moc neumí, ale je to důkaz, že Nuxt běží. Na tom můžeme začít stavět dál. Pojďme si ještě předtím projít jednotlivé součásti:
- 
- - **`app/app.vue`** - základní vstupní bod s jednoduchou šablonou uvnitř `<template>` (od Nuxt v4 je ve složce `/app` a nikoliv přímo v hlavním adresáři projektu). Oproti oficiálnímu **nuxt-starter** jsem nahradil jejich uvítací komponentu `<NuxtWelcome>` vlastním HTML kódem. Ten uvidíte vykreslený na stránce poté, co projekt úspěšně spustíte.
- - **`public/favicon.ico`** - ve skutečnosti nepovinný soubor obrázku, který přidá ikonu do tabu v internetovém prohlížeči. Aplikace by fungovala i bez toho, ale vypadá to lépe. Navíc to demonstruje, jak málo v tomto případě stačí, aby to fungovalo - prostě jen nakopírujete do této cesty váš obrázek a bez jakékoliv další úpravy máte hotovo.
- - **`README.md`** - je popisný soubor Gitu, který vám při pohledu do [GitHub](https://github.com/) úložiště předloží základní informace o projektu. Není povinný, ale je obvyklou praxí ho v projektech mít a informovat skrze něj návštěvníky a potenciální uživatele vašeho kódu.
+
+- **`app/app.vue`** - základní vstupní bod s jednoduchou šablonou uvnitř `<template>` (od Nuxt v4 je ve složce `/app` a nikoliv přímo v hlavním adresáři projektu). Oproti oficiálnímu **nuxt-starter** jsem nahradil jejich uvítací komponentu `<NuxtWelcome>` vlastním HTML kódem. Ten uvidíte vykreslený na stránce poté, co projekt úspěšně spustíte.
+- **`public/favicon.ico`** - ve skutečnosti nepovinný soubor obrázku, který přidá ikonu do tabu v internetovém prohlížeči. Aplikace by fungovala i bez toho, ale vypadá to lépe. Navíc to demonstruje, jak málo v tomto případě stačí, aby to fungovalo - prostě jen nakopírujete do této cesty váš obrázek a bez jakékoliv další úpravy máte hotovo.
+- **`README.md`** - je popisný soubor Gitu, který vám při pohledu do [GitHub](https://github.com/) úložiště předloží základní informace o projektu. Není povinný, ale je obvyklou praxí ho v projektech mít a informovat skrze něj návštěvníky a potenciální uživatele vašeho kódu.
 - **`.npmrc`** - konfigurační soubor pro package manager, který říká `pnpm`, aby používal režim `shamefully-hoist` - to zajistí, že se automaticky nainstalují i všechny tranzitivní závislosti, jinak byste mohli narazit na problémy (jak viditelné, tak i tiché a těžko dohledatelné) s neexistujícími soubory ve vašich `node_modules`
- - **`eslint.config.mjs`** - tento konfigurační soubor pro modul [@nuxt/eslint](https://eslint.nuxt.com/) řídí chování nástroje [ESLint](https://eslint.org/), který jsem se rozhodl do projektu přidat (ačkoliv v oficiálním **nuxt-starter** není), protože za vás hlídá pravidla syntaxe a pomáhá vám tak udržovat váš zdrojový kód hezčí. Vyžaduje drobné nastavení prostředí, o kterém více v (budoucím) samostatném článku. Dokud nastaveno nemáte, ničemu to nevadí, pouze zatím nevyužijete pomoc při údržbě kvality vašeho kódu.
- - **`nuxt.config.ts`** - konfigurační soubor pro Nuxt. Ve výchozím nastavení může být třeba i úplně „prázdný“, veškerá budoucí nastavení se provádí dovnitř těla objektu, který je parametrem vestavěné (a tudíž zde rovnou automaticky importované) metody `defineNuxtConfig`. V tuto chvíli je v něm vložená konfigurace modulu [@nuxt/eslint](https://eslint.nuxt.com/), který ve spolupráci se souborem `eslint.config.mjs` zajišťuje jednoduchou implementaci ESLint pravidel.
- - **`pnpm-lock.yaml`** - soubor, který automaticky generuje manažer balíčků `pnpm` během příkazu `pnpm install`, ve kterém si drží vyčerpávající definici všech projektových závislostí. Občas se setkáte s názory, že tyto „lock“ soubory je možné z Gitu vynechat, protože se často mění a stejně si ho každý vývojář projektu generuje sám lokálně. Držím se ovšem [doporučení](https://stackoverflow.com/a/44210813/3204544), že do repozitáře také patří. Pomáhá totiž lépe predikovat výsledek sestavení projektu ze všech závislostí. Jinak můžete nerazit na chyby pramenící z toho, že má u sebe každý trochu jiné verze balíčků.
- - **`package.json`** - klíčový soubor, který obsahuje zejména definice závislostí na externích projektech. V našem případě jde o balíček `nuxt`, modul pro ESLint `@nuxt/eslint` a kvůli tomu potřebný `typescript`. Dále jsou zde meta-informace o projektu a ještě definice základních příkazů v sekci `script` - definované aliasy se pak volají jako `pnpm *`. <span style="color: gray">Tyto definice nejsou povinné, ale díky ním je ovládaní pohodlnější.</span>
- - **`tsconfig.json`** - možnost customizace pro jinak generovaný soubor nastavení chování TypeScriptu. Více o tématu v (budoucím) samostatném článku.
+- **`eslint.config.mjs`** - tento konfigurační soubor pro modul [@nuxt/eslint](https://eslint.nuxt.com/) řídí chování nástroje [ESLint](https://eslint.org/), který jsem se rozhodl do projektu přidat (ačkoliv v oficiálním **nuxt-starter** není), protože za vás hlídá pravidla syntaxe a pomáhá vám tak udržovat váš zdrojový kód hezčí. Vyžaduje drobné nastavení prostředí, o kterém více v (budoucím) samostatném článku. Dokud nastaveno nemáte, ničemu to nevadí, pouze zatím nevyužijete pomoc při údržbě kvality vašeho kódu.
+- **`nuxt.config.ts`** - konfigurační soubor pro Nuxt. Ve výchozím nastavení může být třeba i úplně „prázdný“, veškerá budoucí nastavení se provádí dovnitř těla objektu, který je parametrem vestavěné (a tudíž zde rovnou automaticky importované) metody `defineNuxtConfig`. V tuto chvíli je v něm vložená konfigurace modulu [@nuxt/eslint](https://eslint.nuxt.com/), který ve spolupráci se souborem `eslint.config.mjs` zajišťuje jednoduchou implementaci ESLint pravidel.
+- **`pnpm-lock.yaml`** - soubor, který automaticky generuje manažer balíčků `pnpm` během příkazu `pnpm install`, ve kterém si drží vyčerpávající definici všech projektových závislostí. Občas se setkáte s názory, že tyto „lock“ soubory je možné z Gitu vynechat, protože se často mění a stejně si ho každý vývojář projektu generuje sám lokálně. Držím se ovšem [doporučení](https://stackoverflow.com/a/44210813/3204544), že do repozitáře také patří. Pomáhá totiž lépe predikovat výsledek sestavení projektu ze všech závislostí. Jinak můžete nerazit na chyby pramenící z toho, že má u sebe každý trochu jiné verze balíčků.
+- **`package.json`** - klíčový soubor, který obsahuje zejména definice závislostí na externích projektech. V našem případě jde o balíček `nuxt`, modul pro ESLint `@nuxt/eslint` a kvůli tomu potřebný `typescript`. Dále jsou zde meta-informace o projektu a ještě definice základních příkazů v sekci `script` - definované aliasy se pak volají jako `pnpm *`. <span style="color: gray">Tyto definice nejsou povinné, ale díky ním je ovládaní pohodlnější.</span>
+- **`tsconfig.json`** - možnost customizace pro jinak generovaný soubor nastavení chování TypeScriptu. Více o tématu v (budoucím) samostatném článku.
 
 ## Nuxt Starter
 
  Pokud budete někdy v budoucnu chtít začít se svým vlastním malým Nuxt projektem, naleznete výše uvedené také ve variantě samostatného GitHub repozitáře, odkud se vám bude zdrojový kód o něco lépe kopírovat:
 
  [nuxt-v4-starter @ GitHub](https://github.com/AloisSeckar/nuxt-v4-starter)
- 
- ## Nuxt Minimal
+
+## Nuxt Minimal
 
 [nuxt-minimal @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-minimal)
 

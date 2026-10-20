@@ -41,6 +41,7 @@ Návody, tipy a triky zde budou přibývat. Na jednotlivé kapitoly se dostanete
 Zatím se můžete podívat na mé postupně se rozrůstající úložiště s demo projekty (v angličtině): [demos-nuxt @ GitHub](https://github.com/AloisSeckar/demos-nuxt). Předpokládá použití `Git` a `pnpm`.
 
 Pak jsou tu samozřejmě oficiální zdroje:
+
 - [Nuxt dokumentace](https://nuxt.com/docs)
 - [Nuxt fórum](https://github.com/nuxt/nuxt/discussions)
 

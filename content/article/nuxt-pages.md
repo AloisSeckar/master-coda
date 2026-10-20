@@ -15,6 +15,7 @@ V tomto díle se podíváme na základy tvorby prezentační vrstvy naší budou
 ## Komponenty obecně
 
 Všechny Vue.js aplikace (Nuxt jako takový běží nad Vue.js) se staví pomocí **_komponent_**. Komponenta Vue.js je obvykle textový soubor s příponou `.vue`, jenž se skládá ze tří možných části:
+
 - `<template>` - šablona definující předpis pro vykreslení (rendering), která za běhu se převádí (kompiluje) na skutečné HTML+CSS+JS
 - `<script>` - prostor pro JavaScript (TypeScript) definici obslužné funkcionality komponenty
 - `<style>` - možnost definice grafických CSS stylů
@@ -39,7 +40,7 @@ Nuxt předpokládá, že v projektovém podadresáři `/app/components` nalezne 
 
 Kromě toho dokáže Nuxt sám cestovat i do vnořených podadresářů, přičemž název výsledné komponenty složí z celé relativní cesty + názvu souboru `.vue`. Komponenta `/app/components/moje/komponenta.vue` bude rovněž k dispozici jako `<MojeKomponenta>`. Ani v tomto případě se nemusíme o nic starat.
 
-Dovolím si ovšem hned připojit menší varování. Tato funkce dohromady s Vue.js konvencí, že se názvy komponent mají skládat _„od nejobecnějšího ke konkrétnímu“_, svádí k tomu vyrobit hodně podadresářů s mnoha jednoslovně pojmenovanými `.vue` soubory na nejnižší úrovni (toto není v rozporu s konvencí o víceslovných názvech Vue.js komponent, protože výsledný název je složený z cesty + názvu souboru). Zní to zprvu jako dobrý nápad, ale ve větších aplikacích to později může znamenat problémy s orientací v hromadě různě zanořených souborů. Soubory v různých cestách se navíc mohou jmenovat stejně a navzájem se plést. Proto někteří vývojáři spíše doporučují, aby se spíše všechny komponenty pojmenovávaly plným názvem a umisťovaly přímo do kořenového adresáře `/app/components`. 
+Dovolím si ovšem hned připojit menší varování. Tato funkce dohromady s Vue.js konvencí, že se názvy komponent mají skládat _„od nejobecnějšího ke konkrétnímu“_, svádí k tomu vyrobit hodně podadresářů s mnoha jednoslovně pojmenovanými `.vue` soubory na nejnižší úrovni (toto není v rozporu s konvencí o víceslovných názvech Vue.js komponent, protože výsledný název je složený z cesty + názvu souboru). Zní to zprvu jako dobrý nápad, ale ve větších aplikacích to později může znamenat problémy s orientací v hromadě různě zanořených souborů. Soubory v různých cestách se navíc mohou jmenovat stejně a navzájem se plést. Proto někteří vývojáři spíše doporučují, aby se spíše všechny komponenty pojmenovávaly plným názvem a umisťovaly přímo do kořenového adresáře `/app/components`.
 Nemám na to zatím zcela vyhraněný názor. Je pravda, že ve větším projektu, kde jsem jemné členění zavedl, jsem na problémy s orientací narazil. Na druhou stranu od určitého počtu souborů zřejmě není ani jeden adresář až tak přehledný. Variantou je ještě využít nastavení `pathPrefix: false`, potom Nuxt přestane názvy adresářů před název souboru doplňovat. To ovšem vyžaduje pokročilejší zásah do [konfigurace](https://nuxt.com/docs/4.x/directory-structure/app/components#component-names).
 
 Důležité každopádně je, že Nuxt podporuje různé možnosti a od nás k tomu krom samotných souborů nic moc dalšího nepotřebuje. Dokonce se můžeme rozhodnout po čase strukturu komponent změnit a nemusíme pak nikde nic upravovat. Protože jsou registrace automatické, není třeba nikde ve skriptech definovat cesty, a tudíž je pak ani nemusíme měnit. Nuxt si svoje linkovací `.d.ts` soubory generuje sám, takže si je i sám přepracuje. V nejhorším nás čeká krátký restart vývojového serveru.
@@ -58,13 +59,14 @@ Abych byl úplně přesný, stránka se nezobrazí jen tak, musíme mít někde 
 
 Aby toho nebylo málo, Nuxt kromě předem definovaných URL zvládá i tzv. „dynamické“ stránky. Pokud název souboru či adresáře obalíme do hranatých závorek, začne Nuxt zachytávat „cokoliv“, co nebylo možné namapovat na více specifickou cestu. Tzn. pokud založíme `/app/pages/[page].vue` a nic dalšího, bude nám do této komponenty padat úplně vše (tedy neplatí tak docela, že _vždy_ potřebujeme `/app/pages/index.vue`). Pokud k tomu založíme `/app/pages/first.vue`, tak `http://localhost:3000/first` povede na obsah stránky `first` a cokoliv jiného na obsah stránky `[page]`.
 
-Část v hranatých závorkách většinou slouží k identifikaci unikátního datového obsahu, který se ale v obecné rovině zobrazuje stejně. Typicky můžeme mít například stránku pro detail produktu v obchodě `/app/pages/product/[id].vue`, která bude v rámci společné šablony zobrazovat konkrétní data na základě zachyceného `id`. 
+Část v hranatých závorkách většinou slouží k identifikaci unikátního datového obsahu, který se ale v obecné rovině zobrazuje stejně. Typicky můžeme mít například stránku pro detail produktu v obchodě `/app/pages/product/[id].vue`, která bude v rámci společné šablony zobrazovat konkrétní data na základě zachyceného `id`.
 
 Parametry získané z URL cesty jsou k dispozici ve `<script>` části komponenty stránky pomocí `useRoute().params` - například tedy `useRoute().params.id` nebo `useRoute().params.page` podle toho, jak jsme pojmenovali náš dynamický parametr. S tím pak můžeme ve skriptu pracovat a získat správná data pro zobrazení.
 
 Druhou variantou použití jsou tzv. „catch-all“ cesty, kterými zobrazíme defaultní stránku pro _„cokoliv jiného, než pro co máme dedikovanou stránku“_, a vyhneme se nutnosti ošetřovat chybu **404**.
 
 Chtěl bych ještě zmínit tři vychytávky:
+
 - lze kombinovat statickou a dynamickou část - tj. například mít soubory `/app/pages/product-[id].vue` a `/app/pages/cagtegory-[id].vue`
 - nebo je možné mít více dynamických parametrů v jedné cestě - `/app/pages/[category]/[product].vue`
 - od verze **3.13** existují také ještě tzv. „route groups“ - adresáře v kulatých závorkých (např.: `/(dir)/`) jsou v rámci cesty ignorovány - `/app/pages/(extra)/page.vue` bude v prohlížeči dostupné pod `/page`. Je to možnost, jak lépe organizovat obsah z pohledu vývojáře, aniž by to ovlivnilo výsledek z pohledu uživatele.
@@ -87,10 +89,12 @@ Zdrojový kód ukázkové implementace ilustrující princip komponent a stráne
 V základním „vstupním“ souboru [`/app/app.vue`](https://github.com/AloisSeckar/demos-nuxt/blob/main/nuxt-pages/app/app.vue) je vidět princip, jak vytvořit layout společný pro všechny stránky a v rámci něj uvnitř `<NuxtPage />` vykreslit obsah aktuální stránky podle URL.
 
 Pro zobrazení jsou zde dvě pomocné komponenty v adresáři `/app/components`
+
 - `TheMenu.vue` - definuje odkazy na jednotlivé stránky a je vložena do společného layoutu v `/app/app.vue`
 - `TextBox.vue` - obsahuje `<div>`, který uvnitř zobrazí text převzatý z vlastnosti (prop), použita na každé stránce s jiným textem
 
 Projekt následně definuje celkem 4 stránky v adresáři `/app/pages`
+
 - `index.vue` - výchozí dostupná v cestě `/` nebo `/index`
 - `first.vue` - zobrazí se po zadání `/first`
 - `second.vue` - zobrazí se po zadání `/second`

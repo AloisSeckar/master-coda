@@ -141,7 +141,7 @@ To bylo předávání dat dovnitř komponent a nyní ještě potřebujeme opačn
 
 ```html
 <button @click="$emit('event')">
-``` 
+```
 
 Při použití uvnitř bloku `<script>` se podobně jako u **props** musíme odkazovat na výsledek `defineEmits`, např. takto:
 
@@ -251,7 +251,7 @@ Reaktivní či nikoliv, instance Vue komponenty není statická entita. Postupn�
 
 Před a po každé fázi **mount**, **update**, **unmount** je možné si zaregistrovat callback, který Vue automaticky provede pokaždé, když se do daného bodu dospěje. Slouží k tomu speciální funkce (_lifecycle hooks_) `onBeforeMount()`, `onMounted()`, atd. Může to být užitečné, když byste např. chtěli zobrazit hlášku, že inicializace stránky byla kompletně dokončena, nebo po skončení práce s komponentou provést nějaké uvolnění zdrojů.
 
-Pozor přitom na dvě věci: 
+Pozor přitom na dvě věci:
 
 - Na doběhnutí asynchronní funkce se zde **nečeká**. Pokud je to potřeba, dejte `await` přímo do `<script setup>`. Asynchronní funkce uvnitř `onBeforeMount()` **nezaručí**, že proces připojování do DOM začne až po jejím ukončení.
 - A už vůbec nechtějte definici callbacku umístit někam do asynchronního bloku (např. dovnitř funkce `setTimeout`). Vue totiž ihned po ukončení synchronního běhu `<script setup>` ztratí kontext aktuální instance komponenty, takže nebude k čemu se připojit.

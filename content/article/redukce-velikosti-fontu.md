@@ -28,7 +28,7 @@ font-family: "nazevFontu";
 
 Tak jsem to například s fontem `KaushanScript` udělal já, abych mohl mít netradiční font ve jméně na mém osobním webu:
 
-:article-image{src="redukce-velikosti-fontu/homepage.jpg" alt="www.alois-seckar.cz" link="http://www.alois-seckar.cz"}
+:article-image{src="redukce-velikosti-fontu/homepage.jpg" alt="www.alois-seckar.cz" link="<http://www.alois-seckar.cz"}>
 
 Nelíbila se mi na tom jen jedna věc. Font chci mít jen tady v nadpisu v podobě mého jména, takže reálně potřebuju pouze 11 znaků. Ale soubor `KaushanScript-Regular.ttf` jich samozřejmě definuje mnohem víc. Velikost má **183 972 bytů**. Tolik dat by se muselo tahat při každém zobrazení stránky kvůli 11 písmenům.
 
@@ -44,17 +44,17 @@ Způsob, který zde ukážu, vyžaduje [nainstalovat Python](https://www.python.
 
 Jakmile `Python` máme, jednoduše nainstalujeme přes jeho integrovaného správce balíčků `pip` nástroj [fontTools](https://github.com/fonttools/fonttools):
 
-```
+```sh
 pip install fonttools
 ```
 
 Ten nabízí daleko víc funkcí, které jsem ještě ani nezkoumal, ale pro náš účel využijeme příkaz `pyftsubset`, který dělá právě to, co potřebujeme – ze zadaného souboru písma vybere požadovaný soubor znaků a uloží do nového redukovaného souboru. Tím pak nahradíme svou definici `@font-face` a máme hotovo.
 
 Vstupní soubor je první argument, znaky specifikujeme uvnitř volby `--unicodes=""`, kde může být buďto výčet `Unicode` znaků oddělený čárkami, nebo rozsah daný _spojovníkem_ (např. `U+0020-007F` jsou velké a malé znaky anglické abecedy).
- 
+
  Unicode kódy znaků lze zjistit například z [tabulky na Wikipedii](https://en.wikipedia.org/wiki/List_of_Unicode_characters) (jak vidíte, jsou případy, kdy je Wikipedia vhodný zdroj). Na zápis mého jména a příjmení je potřeba:
 
-```
+```text
 A = U+0041
 l = U+006C
 o = U+006F
@@ -73,7 +73,7 @@ Ve výchozím nastavení `pyftsubset` vezme původní název souboru písma a p�
 
 Celý příkaz tedy bude v mém případě vypadat:
 
-```
+```sh
 pyftsubset KaushanScript-Regular.ttf
  --unicodes="U+0041,U+006C,U+006F,U+0069,U+0073,U+0053,U+0065,U+010D,U+006B,U+00E1,U+0072"
  --output-file="KaushanScript-AS.ttf"
@@ -87,13 +87,13 @@ Všem úsporám ještě nemusí být konec. Velikost jde dále redukovat převod
 
 Dobrá zpráva je, že i to umí `pyftsubset`. Jen k tomu potřebuje zapnout volbu `--flavor="woff2"` a doinstalovat Python modul kompresního Google nástroje `brotli`, což je ale s pomocí `pip` také hračka – jednoduše:
 
-```
+```sh
 pip install brotli
 ```
 
 Potom je možné zadat:
 
-```
+```sh
 pyftsubset KaushanScript-Regular.ttf
  --unicodes="U+0041,U+006C,U+006F,U+0069,U+0073,U+0053,U+0065,U+010D,U+006B,U+00E1,U+0072"
  --flavor="woff2" --output-file="KaushanScript-AS.woff2"

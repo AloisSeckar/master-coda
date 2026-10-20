@@ -15,7 +15,7 @@ Přímotal jsem se k [projektu](https://github.com/ByMykel/spanish-cities), kter
 
 Projekt jsem potkal ve fázi, kdy už byla hotová základní logika, připraveny datové objekty a implementováno vyhledávání, ale chyběly odkazy na obrázky. Metodika byla využít Španělskou Wikipedii, kde jsou potřebné obrázky ve formátu `.svg` většinou k dispozici. Co JSON záznam, to jedna URL pro `flag` a jedna pro `coat_of_arms`. Trochu problém je, že se vlastní URL obrázku na Mediawiki standardně schovává až za stránkou s metadaty. Pokud to člověk chce dělat "hloupě", musí napřed kliknout na obrázek vložený do samotné stránky pro přechod na metadata a pak ještě jednou, než se konečně dostane k tomu, co potřebuje.
   
-Pro jednotlivé Španělské provincie (51) jsem to ještě [zvládl ručně](https://github.com/ByMykel/spanish-cities/pull/77) (abych měl svůj první Hacktoberfest pull request ^_^). Pro více než 8 tisíc Španělských měst by to už ale byla docela fuška. Taková repetetivní práce bez velké přidané hodnoty se jeví jako typický úkol, který by AI mohla usnadnit a zrychlit. 
+Pro jednotlivé Španělské provincie (51) jsem to ještě [zvládl ručně](https://github.com/ByMykel/spanish-cities/pull/77) (abych měl svůj první Hacktoberfest pull request ^_^). Pro více než 8 tisíc Španělských měst by to už ale byla docela fuška. Taková repetetivní práce bez velké přidané hodnoty se jeví jako typický úkol, který by AI mohla usnadnit a zrychlit.
   
 Tedy jsem se začal s mým **ChatGPT 4.0 Pro** dohadovat kudy do toho. Zapnul jsem k tomu i [BrowserOp plugin](https://www.whatplugin.ai/plugins/browserop), abych měl jistotu, že se bude pracovat s aktuálními daty a ne několik let starou verzí Wikipedie.
 

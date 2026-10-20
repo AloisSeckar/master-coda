@@ -17,8 +17,9 @@ Každopádně uběhlo docela dost času a já se nikam moc nepohnul. Pak mě na�
 
 Záhadou to ovšem zůstalo už jen chviličku. Došlo mi vzápětí, že v tabulce s hodnotami používáme klikatelné odkazy jako `<a href="#" @click="funkceOnClick()">`. Hash jako cíl odkazu způsobí, že nedojde k (viditelnému) překreslení stránky a `funkceOnClick` se odchycením události kliknutí myší vykoná správně. Jenže nativní chování `onClick` na odkaz je takové, že se vystřelí událost navigace. A ta spustí ansámbl funkcí Nuxtu a Vue.js, jejímž výsledkem je _routing_, ačkoliv se jde ze stejné stránky na stejnou. Stačí to ale k tomu, aby se provedlo middleware relevantní pro aktuální stránku (tj. všechny globální + ty, co jsou asociované pomocí [definePageMeta](https://nuxt.com/docs/api/utils/define-page-meta)). A odtud pramenila naše chyba.
 
-## Řešení:
-Bylo v tomto případě vcelku jednoduché. Vue.js nabízí [modifikátory událostí](https://vuejs.org/guide/essentials/event-handling.html#event-modifiers), kterými lze chování nativních DOM eventů různě ovlivňovat. Pro nás je relevantní modifikátor `.prevent`, který výchozí chování `onClick` potlačí, a provede se tak pouze JS kód v metodě `funkceOnClick`. 
+## Řešení
+
+Bylo v tomto případě vcelku jednoduché. Vue.js nabízí [modifikátory událostí](https://vuejs.org/guide/essentials/event-handling.html#event-modifiers), kterými lze chování nativních DOM eventů různě ovlivňovat. Pro nás je relevantní modifikátor `.prevent`, který výchozí chování `onClick` potlačí, a provede se tak pouze JS kód v metodě `funkceOnClick`.
 
 Opraveno za minutu, hledání příčiny zabralo přes hodinu.
 

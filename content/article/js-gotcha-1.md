@@ -35,7 +35,7 @@ console.log(!!text1 && !!text2)
 console.log(!!text1 || !!text2)
 ```
 
-Funguje to! Ale proč? :eyes: 
+Funguje to! Ale proč? :eyes:
 
 Nebojte, u mě taky nastal „WTF?“ moment, když jsem to poprvé viděl. Ale na dvojité negaci není nic magického. JavaScript opět začne tím, že si vyhodnotí _truthiness_ proměnné `text1`, a jelikož tam je `'text1'`, tak má interně hodnotu `true`. Tu mu prvním `!` znegujeme a pak dalším `!` znegujeme podruhé. Možná si pamatuje ze školních hodin matematiky průpovídku, že _**„minus a minus je plus“**_. A sláva, zase jednou se vám něco ze školy hodí v běžném životě!
 

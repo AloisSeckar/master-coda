@@ -13,7 +13,7 @@ Tento díl Nuxt tutoriálu je věnován middleware, což jsou obslužné metody,
 
 ## /app/middleware
 
-Soubory middleware na straně klienta se umisťují do složky `/app/middleware`, odkud si je Nuxt automaticky načítá. 
+Soubory middleware na straně klienta se umisťují do složky `/app/middleware`, odkud si je Nuxt automaticky načítá.
 
 Middleware se spouští v okamžiku, kdy probíhá přesměrování (routing). Aby byl soubor detekován jako middleware, musí obsahovat `export default` metody `defineNuxtRouteMiddleware`. Metoda jako parametr přijímá callback s parametry `to` (kam) a `from` (odkud) probíhá přesměrování. Syntaxe vypadá takto:
 
@@ -102,6 +102,7 @@ Na rozdíl od middleware na straně klienta, tyto soubory se spouští před **v
 ## Případová studie
 
 Na projektu, který programujeme v práci, je klientské middleware použito například následujícím způsobem:
+
 - kontroluje se přihlášení, pokud není uživatel přihlášen, je přesměrován na login stránku
 - dle aktuální URL se vybírá titulek okna (šlo by to řešit i jinak, ale je to jedna z možností)
 
@@ -111,6 +112,7 @@ Zdrojový kód ukázkové implementace naleznete zde:
 [nuxt-middleware @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-middleware)
 
 Definovány jsou 4 middleware funkce:
+
 - `/app/middleware/allRoutes.global.ts` - vykoná se před každým přesměrováním, vypíše do konzole odkud a kam se přepíná
 - `/app/middleware/onlySecond.ts` - vykoná se pouze před načtením stránky `/second`, vypíše do konzole vysvětlení funkčnosti
 - `/app/middleware/onlyThird.ts` - vykoná se pouze před načtením stránky `/third`, vypíše do konzole vysvětlení funkčnosti, je nastaveno prostřednictvím konfigurace v `nuxt.config.ts`

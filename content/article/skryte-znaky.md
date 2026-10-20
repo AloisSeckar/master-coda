@@ -13,7 +13,7 @@ Hlavní databáze našeho projektu je IBM Informix. Kódování má nastavené I
 
 Naposledy to byl zdánlivě nevinný text:
 
-_„Anamnéza rihinitidy 22 let, v histologii s kulatobuněčnými inﬁltráty s příměsí eozinoﬁlních granulocytů, pro které cca 10x PES +PE (5x).“_
+> _„Anamnéza rihinitidy 22 let, v histologii s kulatobuněčnými inﬁltráty s příměsí eozinoﬁlních granulocytů, pro které cca 10x PES +PE (5x).“_
 
 (Klient je zdravotní pojišťovna, nechtěje vědět, co to znamená, sám to nevím.)
 
@@ -21,7 +21,7 @@ Zmíněný problém s nepovolenými znaky je obvykle na první pohled vidět. Ta
 
 Nebudu vás napínat - zakopaný pes je ve slovech **„inﬁltráty“** a **„eozinoﬁlních“**. Když si je totiž vypíšete monspaced fontem (např. `Courier New`), uvidíte následující:
 
-```
+```text
 inﬁltráty … eozinoﬁlních
 ```
 

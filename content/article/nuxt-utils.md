@@ -61,6 +61,7 @@ Jak už jsem stihl zjistit - z technického hlediska je to jedno. Nuxt nijak nev
 Na tomto webu zatím nemám žádné větší využití pro `/app/utils`. Umístil jsem do něj pouze soubor `types.ts` s definicemi datových typů.
 
 Používám však několik `/app/composables`:
+
 - [useArticleLinkStore](https://github.com/AloisSeckar/master-coda/blob/master/app/composables/useArticleLinkStore.ts) - načítá metadata k článkům z interní databáze, kterou si vytváří modul **Nuxt Content**. Umožňuje zbytku aplikace získat jejich seznam + je umí různě filtrovat. Je to implementace data-store z knihovny **Pinia**. Oběma technologiím se budu podrobněji věnovat v pozdějších dílech tutoriálu.
 - [useFunStore](https://github.com/AloisSeckar/master-coda/blob/master/app/composables/useFunStore.ts) - ze souboru `/data/fun.ts` načítá a poskytuje metadata k obrázkům, které se zobrazují v [sekci `Humor`](/fun). Není to zrovna typické použití, ale nechtělo se mi pro tento jednoduchý případ zavádět složitější databázové řešení.
 - [usePageMeta](https://github.com/AloisSeckar/master-coda/blob/master/app/composables/usePageMeta.ts) - sem jsem vytáhl funkci, která vloží do každé stránky [SEO meta tagy](https://www.w3schools.com/tags/tag_meta.asp), abych je nemusel na každé stránce opakovat (je to composable, protože volá jinou composable - `useSeoMeta`).

@@ -25,9 +25,9 @@ Jeden z mých menších projektů je "Kalkučka TQB". Hodnota TQB se používá 
 
 Technicky to není nic složitého. Prostě jen dosadit body a počty odehraných směn z jednotlivých zápasů do předepsaného vzorce. Nejdůležitější grafická část jsou vstupní pole pro zadání hodnot. A přesně tam se skvěle uplatnil modul Nuxt UI - předstylovaná textová pole a tlačítka v kombinaci s dostupnými Tailwind CSS styly pro poskládání do jednoduchého responzivního layoutu plně dostačují. Proč dělat věci složitě, když to jde jednoduše?
 
-Výsledek si můžete prohlédnout zde: https://wbsc-tqb.netlify.app/
+Výsledek si můžete prohlédnout zde: <https://wbsc-tqb.netlify.app/>
 
-A zdrojové kódy zde: https://github.com/AloisSeckar/WBSC-TQB-Calculator
+A zdrojové kódy zde: <https://github.com/AloisSeckar/WBSC-TQB-Calculator>
 
 ## Demo projekt
 

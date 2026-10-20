@@ -36,7 +36,7 @@ Můžete namítnout, že je to mnohem složitější - a nejspíš byste i měli
 
 Žádná data. Jen zlý, nepěkný HTTP chyba při pokusu získat data z Nuxt serverového endpointu:
 
-```
+```text
 NuxtNeonClientError in fetchFromNeonBackend: 
 [POST] "/api/_neon/select": 400 Bad Request (status: 500). 
 ```
@@ -62,7 +62,7 @@ To znamená: Zavolej endpoint přímo surovým HTTP požadavkem. Odizoluj ho od 
 
 Ukázalo se, že můj požadavek odmítá [Nuxt Security modul](https://nuxt.com/modules/security) kvůli ochraně proti XSS útokům:
 
-```
+```text
 ...\node_modules\.pnpm\nuxt-security@2.4.0_magicast@
 0.3.5_rollup@4.52.5\node_modules\nuxt-security\dist\
 runtime\server\middleware\xssValidator.js:38:18

@@ -24,7 +24,7 @@ A konečně **Nuxt** - release cyklus v posledních týdnech poněkud zpomalil. 
 
 Kromě samotného frameworku nabízí Nuxt spoustu skvělých modulů pro rozšíření základní funkcionality. Jedním z nejvýraznějších oficiálních je **Nuxt UI**, UI toolkit. Knihovna se dál vyvíjí - nejnovější verze [4.3](https://github.com/nuxt/ui/releases/tag/v4.3.0) vyšla 17. prosince. Pokud si ji vyberete pro další projekt, může se hodit tento [praktický návod](https://vueschool.io/articles/vuejs-tutorials/setting-up-your-ide-for-nuxt-ui-a-complete-guide/) na nastavení IDE. A mezi námi, článek stojí za přečtení i tak, protože spousta tipů se hodí pro Vue/Nuxt vývoj obecně. Přičemž můžu potvrdit, že většinu zmíněných rozšíření už sám používám. Jsou užitečná a praxí ověřená.
 
-Jestli chcete dostávat novinky z ekosystému častěji než jednou měsíčně, existuje [Weekly Vue News](https://weekly-vue.news/, což je emailový newsletter, který chodí každé pondělí. Určitě doporučuju se přihlásit, čerpám z něj spoustu inspirace.
+Jestli chcete dostávat novinky z ekosystému častěji než jednou měsíčně, existuje [Weekly Vue News](https://weekly-vue.news/), což je emailový newsletter, který chodí každé pondělí. Určitě doporučuju se přihlásit, čerpám z něj spoustu inspirace.
 
 Na závěr bych ještě rád vypíchl [přehled bezpečnostních praktik pro NPM](https://snyk.io/articles/npm-security-best-practices-shai-hulud-attack/) od experta na cybersecurity Lirana Tala. V návaznosti na nedávnou vlnu vážných supply-chain útoků je vždycky dobré si připomenout a zrevidovat strategie, které pomáhají držet projekty bezpečnější.
 

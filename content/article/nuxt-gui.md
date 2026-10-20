@@ -9,7 +9,7 @@ created: '11.01.2026'
 english: 'https://dev.to/aloisseckar/nuxt-tutorial-7-ui-integrations-4mjm'
 ---
 
-V minulém díle jsme řešili CSS, nyní přejdeme k pokročilejším UI integracím. Stejně jako v případě stylů platí, že není nutně třeba vynalézat kolo a místo tvoření všech funkčních prvků na zelené louce bude patrně snazší sáhnout po některé z dedikovaných knihoven. 
+V minulém díle jsme řešili CSS, nyní přejdeme k pokročilejším UI integracím. Stejně jako v případě stylů platí, že není nutně třeba vynalézat kolo a místo tvoření všech funkčních prvků na zelené louce bude patrně snazší sáhnout po některé z dedikovaných knihoven.
 
 Ukážeme si čtyři praktické příklady integrací. Výběr není motivován žádnou hlubší logikou, jde zkrátka o technologie, s nimiž jsem se setkal a měl potřebu je ve svých Nuxt projektech použít. Nicméně na nich dobře uvidíte obecné principy, jak si poradit, pokud byste jednou chtěli řešit něco podobného. V závěru článku na vás pak čekají odkazy na již hotové integrace pro další známé UI knihovny z Vue světa. Pojďme na to.
 
@@ -19,7 +19,7 @@ Ukážeme si čtyři praktické příklady integrací. Výběr není motivován 
 
 Mě osobně k srdci moc nepřirostl. Pokud dnes začínáte, doporučil bych spíš kombinaci Tailwind CSS a nějaké knihovny specializované na formulářové prvky (o těch bude jeden z příštích článků). Ale mnoho vývojářů je na Bootstrap zvyklých z dřívějška a Nuxt samozřejmě nebrání, aby ho mohli nadále používat.
 
-### Nuxt integrace
+### Nuxt integrace Bootstrap
 
 V adresáři Nuxt modulů se pro Bootstrap dají najít nějaká řešení, mám však pochybnosti o jejich aktuálnosti, proto jsem zvolil raději DYI přístup prostřednictvím [Nuxt pluginu](https://nuxt.com/docs/guide/directory-structure/plugins). O pluginech jsme zatím ještě nemluvili, ale je to efektivní způsob, jak do základní Nuxt aplikace doplňovat novou funkcionalitu.
 
@@ -62,7 +62,7 @@ UI knihovnu [DevExtreme](https://js.devexpress.com/) mi prvně představil koleg
 
 Drobná vada na kráse je, že z nějakého důvodu `Dx` komponenty nefungují při _Server-Side Renderingu_, nebo jsem aspoň ani po několika letech nepřišel na to, co je třeba udělat. Je tedy nutné nastavit `ssr: false` a počítat s tím, že aplikace se bude vykreslovat pomocí JavaScriptu až v prohlížeči klienta. Hodí se tedy spíše pro tzv. SPA (Single Page Aplikace), kdy uživatel používá web spíše jako běžnou desktopovou aplikaci a je ochotent třeba i chvíli čekat na načtení obsahu - což byl i náš případ. Pro projekty, kde rozhoduje rychlost načítání a SEO (typicky e-shopy), asi právě nejvhodnější není.
 
-### Nuxt integrace
+### Nuxt integrace DevExtreme
 
 Přes `package.json` je třeba referencovat základní NPM balíček `devextreme` a jeho Vue port `devextreme-vue`. To už by samo o sobě stačilo pro lokální vývoj, problém je, že mechanismus _"tree-shakingu"_ (odstraňování nepoužitých závislostí z produkčního buildu) sám nepozná, že část komponent používáte, a úspěšně očeše všechny definice z finálního balíčku.
 
@@ -94,7 +94,7 @@ Po obecných UI knihovnách se přesuneme k [FontAwesome](https://fontawesome.co
 
 Nevýhodou je, že podobně jako DevExtreme, ani FontAwesome si netyká s Nuxt SSR, takže je třeba nastavit `ssr: false`.
 
-### Nuxt integrace
+### Nuxt integrace FontAwesome
 
 Dotažení FA do Nuxt projektu jsem vyřešil opět pluginem, tentokrát trochu méně intuitivním, protože je potřeba nejprve rozšířit objekt `library` o definice ikon, které chcete používat, a poté vzít druhý objekt `FontAwesomeIcon` (z druhého FA balíčku) a ten zaregistrovat jako Vue komponentu uvnitř vaší aplikace:
 
@@ -132,7 +132,7 @@ Protože výše uvedené řešení nepokládám za přílíš dobré, rád bych 
 
 Pokud se mě zeptáte, jak na ikony, jednoznačně doporučím Icônes. Snadný způsob definice z SVG, který je volně přenositelný do různých prostředí, žádná potřeba nových závislostí a obrovský výběr definic ikon **zdarma**. V Nuxtu, resp. přímo v samotném Vue lze každou ikonu zavést jako samostatnou komponentu. Pokud nepoužíváte UI knihovnu, která si ikony řeší sama jinak (viz např. budoucí článek o Nuxt UI), je to výborná light-weight volba, která vám umožní použít jen to, co skutečně potřebujete.
 
-### Nuxt integrace
+### Nuxt integrace Icônes
 
 Funguje to skutečně bez jakékoliv externí závislosti. Prostě si na webu [Icônes](https://icones.js.org/) najdete ikonu, kterou chcete použít, a přímo odtamtud vyexportujete zdrojový kód ve formě Vue komponenty. V mé demo ukázce jsou takto převzaty tři vybrané ikony ve složce `/components`.
 
@@ -150,6 +150,7 @@ V jiném projektu mám proto [komponentu](https://github.com/AloisSeckar/ELRHist
 V tomto článku jsme si ukázali čtyři příklady, jak do Nuxt aplikace integrovat externí UI knihovny. Rozhodně to nebyl žádný vyčerpávající seznam možností, které máte, pro inspiraci však myslím solidní začátek.
 
 Rozhodně platí, že pro celou řadu populárních technologí už existuje hotový Nuxt modul, který integraci řeší za vás. Namátkou mohu jmenovat řešení pro:
+
 - [Vuetify](https://nuxt.com/modules/vuetify-nuxt-module)
 - [PrimeVue](https://nuxt.com/modules/primevue)
 - [Quasar](https://nuxt.com/modules/quasar)

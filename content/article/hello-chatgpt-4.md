@@ -19,7 +19,7 @@ Jak se ukázalo, umělé inteligenci stačí celkem málo. Už prvotní prompt:
 
 vrátil v podstatě to, co jsem od toho očekával a potřeboval:
 
-```
+```text
 # Java JDK 17 New Features
 
 ## [JEP 356: Enhanced Pseudo-Random Number Generators](https://openjdk.java.net/jeps/356)
@@ -28,7 +28,7 @@ vrátil v podstatě to, co jsem od toho očekával a potřeboval:
 ## [JEP 382: New macOS Rendering Pipeline](https://openjdk.java.net/jeps/382)
 - Introduces a new rendering pipeline based on Apple's Metal framework as an alternative to the existing pipeline based on the deprecated OpenGL framework, providing improved performance and platform integration on macOS.
 
-...atd
+...atd.
 ```
 
 Požádal jsem jen o malou formátovací změnu, aby to byl opravdu "list" a ne seznam nadpisů druhé úrovně:

@@ -20,6 +20,7 @@ Jenomže to nefungovalo.
 Metoda `.includes()`{lang="js"} totiž přišla až s [ES6](https://www.w3schools.com/js/js_es6.asp) v roce 2015. Takže ačkoliv s ní už dávno nemá problém žádný z dnešních prohlížečů (obvyklý problém při tvorbě webů), náš speciální v aplikačním klientovi uvězněný starý IE nic takového nezná. Musel jsem se vrátit ke starému dobrému `if (…) then {`{lang="js"} s kombinací `||`{lang="js"} řetězení podmínek.
 
 ## Web Can I use…
+
 Užitečným pomocníkem pro plánování kompatibility vašeho kódu může být například webová stránka [https://caniuse.com/](https://caniuse.com/), která je zaměřena přesně na tuto problematiku. V přehledné grafice ihned uvidíte, zda a od které verze prohlížeče tu kterou funkcionalitu podporují. Různých prohlížečů je v nabídce hned **sedmnáct**! S tím už vás jen tak něco nepřekvapí.
 
 Například pro mnou zmiňovanou metodu `.includes()`{lang="js"} to s podporou v prohlížečích vypadá [TAKTO](https://caniuse.com/?search=includes).

@@ -27,7 +27,7 @@ Než jsem se umyl, navečeřel a chvíli pobavil s rodiči, bylo už poměrně p
 
 Tady je prompt pro můj (placený) Copilot, který jsem rychle sestavil. Ponechávám jej v originále (angličtina se jako ve všem v IT hodí, protože jí pochopitelně AI rozumí lépe):
 
-```
+```text
 I want a new feature in this Nuxt 4 project. I need a new client page 
 "/report" with a Nuxt UI form entitled "Report problem" that will include 
 text field for "gameLink", radio switching between "report false positive" 

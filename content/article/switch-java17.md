@@ -13,7 +13,6 @@ Nedávno jsem to psal do jedné FB diskuse a několika uživatelům se to líbil
 
 Java se postupně mění a podle mě se většinou mění k lepšímu. Jedním z příkladů vývoje v nejnovější LTS verzi Java 17 ze září 2021 evoluce příkazu `switch`{lang="java"}. Jako ukázkový příklad mám jednoduchý úkol - vezmi náhodné číslo 1-7 a vypiš počet písmen v anglickém názvu příslušného dne v týdnu.
 
-
 Ve "staré" verzi `switch`{lang="java"} by to hlavní vypadalo třeba takto:
 
 ```java

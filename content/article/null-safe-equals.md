@@ -43,7 +43,7 @@ if (HODNOTA.equals(variable)) { … }
 
 I kdybyste ji potřebovali pouze jednou, toto vám pomůže držet definice na jednom místě a v případě potřeby snadno najít, kde provést úpravu. Já často používám napříč aplikací `final`{lang="java"} třídu `XYZConstants`{lang="java"}, která obsahuje pouze `public static final`{lang="java"} definice konstant (a `private`{lang="java"} konstruktor, aby nikoho nenapadlo plevelit aplikaci jejími instancemi) použitelných podle potřeby kdekoliv jinde.
 
-V případě, že se řetězec (String literal) používá v aplikaci vícekrát, má tento návyk přínos pro budoucí údržbu kódu - protože změny bude stačit dělat pouze na jednom místě. 
+V případě, že se řetězec (String literal) používá v aplikaci vícekrát, má tento návyk přínos pro budoucí údržbu kódu - protože změny bude stačit dělat pouze na jednom místě.
 
 ## Optional?
 

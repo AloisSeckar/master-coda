@@ -44,6 +44,7 @@ Toto už je snadné – kus textu, který jsme nalezli, a který obsahuje `news_
 Pak už stačí jen potvrdit příkaz „Nahradit“ a během okamžiku je hotovo, co bychom jinak dělali ručně několik minut.
 
 Výsledkem je:
+
 ```sql
 … VALUES ('2012-11-29', 'Přesun na nový hosting firmy WEDOS Internet, a.s.', '1');
 ```
@@ -63,6 +64,7 @@ Toto už je pořádná „obluda“, ale pojďme si ji rozebrat, aby přestala b
 Zde je klíčová sekvence `\1` – to je totiž odkaz na _matchnutý výraz_ ve formátu `DDDD-YY-MM`, který vytvořil regex pro vyhledávání. Tímto ho zopakujeme 2x za sebou, ostatní znaky jsou už jenom pro doplnění správné SQL struktury (kulatá závorka musí být zase escapovaná, aby se vložila doslovně, bez toho by ji parser prostě vyignoroval).
 
 Ani jsme nemrkli a už máme, co jsme potřebovali:
+
 ```sql
 … VALUES ('2012-11-29', '2012-11-29', 'Přesun na nový hosting firmy WEDOS Internet, a.s.', '1');
 ```
@@ -74,7 +76,8 @@ Ani jsme nemrkli a už máme, co jsme potřebovali:
 Možná namítnete, že v dnešní době stačí zadat problém [ChatGPT](/tag/ChatGPT) nebo jinému nástroji umělé inteligence, ať se s konstrukcí správného regexu moří samy. Při práci s generativní AI však platí dvě pravidla - musíte tušit, co je možné udělat, abyste na to mohli napsali prompt, a také byste měli danou problematiku sami trochu ovládat, abyste zvládli verifikovat výstup a potvrdit, že není výplodem ["halucinací"](https://www.ibm.com/topics/ai-hallucinations).
 
 Pokud jsem vás přesvědčil, že to s regulárními výrazy stojí za to zkusit, zde je materiál na další samostudium:
-- V češtině existuje povedená stránka https://www.regularnivyrazy.info/, z níž jsem se sám kdysi učil
-- Dále je tu ultimátní web https://regex101.com/, kde si můžete výrazy psát interaktivně a web rovnou automaticky ověřuje, zda fungují, a poskytuje detailní rozbor, co bylo vlastně zadáno. V praxi neocenitelný pomocník, ke kterému se můžete vždy vrátit.
+
+- V češtině existuje povedená stránka <https://www.regularnivyrazy.info/>, z níž jsem se sám kdysi učil
+- Dále je tu ultimátní web <https://regex101.com/>, kde si můžete výrazy psát interaktivně a web rovnou automaticky ověřuje, zda fungují, a poskytuje detailní rozbor, co bylo vlastně zadáno. V praxi neocenitelný pomocník, ke kterému se můžete vždy vrátit.
 
 :article-image{src="regex-neni-nepritel/regex101.jpg" alt="Analýza regulárního výrazu na regex101.com" width="w-full"}

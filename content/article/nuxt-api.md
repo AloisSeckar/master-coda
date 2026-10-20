@@ -9,7 +9,7 @@ created: '16.11.2025'
 english: 'https://dev.to/aloisseckar/nuxt-tutorial-4-server-side-2dal'
 ---
 
-Dosud jsme se pohybovali v tzv. klientské části Nuxt aplikace. Stránky (`/app/pages`) tvořené komponentami (`/app/components`) a poháněné logikou umístěnou ve složkách `/app/composables` a `/app/utils` jsou základní stavební prvky toho, co nakonec vidí uživatel - frontend. Pro řadu aplikací, zejména těch menších, to úplně stačí. 
+Dosud jsme se pohybovali v tzv. klientské části Nuxt aplikace. Stránky (`/app/pages`) tvořené komponentami (`/app/components`) a poháněné logikou umístěnou ve složkách `/app/composables` a `/app/utils` jsou základní stavební prvky toho, co nakonec vidí uživatel - frontend. Pro řadu aplikací, zejména těch menších, to úplně stačí.
 
 Nuxt ale nabízí funkcionalitu i pro backendové operace. Umožňuje vystavit API endpointy, přijímat a zpracovávat na ně přijímané požadavky, a sloužit tak i jako plnohodnotný server - a to vše dohromady v jedné kódové bázi.
 
@@ -58,17 +58,20 @@ Zdrojový kód ukázkové implementace naleznete zde:
 [nuxt-api @ GitHub](https://github.com/AloisSeckar/demos-nuxt/tree/main/nuxt-api)
 
 Serverová část projektu vystavuje dva API endpointy:
+
 - `sample.get.ts` - vrátí text _„Hello from Nuxt Server!“_ + aktuální datum a čas (aby bylo vidět, že se požadavek pokaždé znovu procesuje)
 - `error.get.ts` - úmyslně vrací náhodnou [HTTP chybu](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses) 400-410
 
 Jednoduchý frontend po stisknutí tlačítka provolává a čte výsledek `sample.get.ts`. Dále můžete přímým odkazem navštívit oba vystavené endpointy. Pokud to zkusíte pro "chybovou" službu, uvidíte zároveň, jak nejnovější Nuxt (`v4.2`) v dev módu zachycuje a zobrazuje chyby, které ve vašich aplikacích nevyhnutelně budou vznikat.
 
 ## Další odkazy
-* [Web scraper in Nuxt 3 (Alois Sečkár)](https://dev.to/aloisseckar/web-scraper-in-nuxt-3-part-i-introduction-and-setting-up-4bb5) (EN) - můj podrobnější čtyřdílný _step-by-step_ návod jak pracovat s Nuxt backendem
-* [Server Routes in Nuxt 3 (Michael Thiessen)](https://masteringnuxt.com/blog/server-routes-in-nuxt-3) (EN)
-* [Dokumentace - Nuxt `/server`](https://nuxt.com/docs/4.x/directory-structure/server) (EN)
-* [Dokumentace - Nitro](https://nitro.build/guide) (EN)
-* [Dokumentace - h3](https://h3.dev/guide) (EN)
+
+- [Web scraper in Nuxt 3 (Alois Sečkár)](https://dev.to/aloisseckar/web-scraper-in-nuxt-3-part-i-introduction-and-setting-up-4bb5) (EN) - můj podrobnější čtyřdílný _step-by-step_ návod jak pracovat s Nuxt backendem
+
+- [Server Routes in Nuxt 3 (Michael Thiessen)](https://masteringnuxt.com/blog/server-routes-in-nuxt-3) (EN)
+- [Dokumentace - Nuxt `/server`](https://nuxt.com/docs/4.x/directory-structure/server) (EN)
+- [Dokumentace - Nitro](https://nitro.build/guide) (EN)
+- [Dokumentace - h3](https://h3.dev/guide) (EN)
 
 ## Shrnutí
 
@@ -76,4 +79,4 @@ Serverová část Nuxt frameworku je určena k backendovým operacím. Umožňuj
 
 Stejně jako složka `/app/pages` umožňuje routing na straně klienta, složky `/server/api` a `/server/routes` abstrahují vývojáře od nutnosti definovat vlastní cesty. Staráte se pouze o svůj vlastní aplikační kód.
 
-[Další část tutoriálu](/article/nuxt-middleware) představí koncept <strong>middleware</strong>, což jsou obslužné metody, které je možné automaticky volat před vykreslením frontendu nebo před zpracováním dat v serverové části.
+[Další část tutoriálu](/article/nuxt-middleware) představí koncept **middleware**, což jsou obslužné metody, které je možné automaticky volat před vykreslením frontendu nebo před zpracováním dat v serverové části.

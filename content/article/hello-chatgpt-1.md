@@ -83,6 +83,6 @@ To infinity and beyond!
 
 Zatím jsem sotva nakoukl klíčovou dírkou do nového světa. Vlastně ještě vůbec nevím, co všechno teď můžu. Ale rád to budu zkoumat. Zatím myslím, že nejdůležitější je mít v hlavě cíl a správně zformulovat úkol pro ChatGPT (ev. jiný nástroj umělé inteligence). Postupně identifikovat věci, se kterými se zatím zbytečně trápím sám a delegovat jejich řešení/tvorbu na AI.
 
-**Fakt:** _Vývoj vždycky probíhá pomaleji, než si mnozí myslí._ ChatGPT není "živý" a v nejbližší době neovládne svět a nevyhladí lidstvo. 
+**Fakt:** _Vývoj vždycky probíhá pomaleji, než si mnozí myslí._ ChatGPT není "živý" a v nejbližší době neovládne svět a nevyhladí lidstvo.
 
 **Fakt č. 2:** _Vývoj vždycky probíhá rychleji, než si mnozí myslí._ Když si vzpomenu, že pár let zpátky jsem ještě neměl chytrý telefon a v něm internetový vyhledávač čehokoliv, online mapu, aplikaci na jízdní řády a nákup jízdenek, atd. Těším se na to, co bude za dalších pár let.

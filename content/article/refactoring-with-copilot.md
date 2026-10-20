@@ -37,7 +37,7 @@ Vzápětí jsem téměř spadl do pasti _Jak napsat dost dobrý prompt?_, ale te
 
 Můj první prompt byl tedy dost přímočarý (ponechávám jej v originálním anglickém znění):
 
-```
+```text
 Refactor "getTracks" and "getRuns" methods by moving them to Nuxt 
 server and expose as API routes under /server/routes/tracks.get.ts 
 and /server/routes/runs.post.ts. Preserve the 'filter' as POST input
@@ -55,7 +55,7 @@ Výsledek nakonec předčil očekávání. Dodaný kód byl v pořádku. Jediný
 
 To jsem opravil ručně. Měl jsem tak k Copilotovi jen jednu malou připomínku:
 
-```
+```text
 Do we need "useAsyncData"? Shouldn't we be fine with "useFetch"?
 ```
 
@@ -63,7 +63,7 @@ Byla to spíš kosmetická záležitost, jednodušší způsob dosažení stejn�
 
 Čtení dat tedy bylo zabezpečeno na backendu. Dál jsem potřeboval udělat totéž pro přidávání nových běhů. Můj třetí prompt proto byl:
 
-```
+```text
 Going further. Lets also move "submitRun" method from client side 
 Form.vue to new server side /server/routes/runs-add.post.ts and 
 redirect client Vueform component to it.
@@ -73,7 +73,7 @@ Bylo to rychlé a AI zachytilo i změnu na `useNeonServer` a správně ji napodo
 
 Poslední částí byla migrace funkce pro mazání chybných záznamů:
 
-```
+```text
 Last refactor. Move "deleteRun" from Table.vue to backend to 
 /server/run-delete.delete.ts
 ```

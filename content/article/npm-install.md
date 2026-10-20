@@ -64,7 +64,7 @@ Příkaz je jednoduchý. Stačí použít `npm install --ignore-scripts` místo 
 
 Je to však dvousečná zbraň, protože mohou existovat legitimní balíčky, které se spoléhají na automatický _postinstall_ skript, a skončíte v rozbitém stavu, pokud nepodniknete další manuální akce (jako `npm rebuild <package>`).
 
-Nebo můžete tento problém vyřešit mnohem elegantnějším způsobem přechodem na [`pnpm`](https://pnpm.io/) (což byste rozhodně měli udělat i z řady dalších důvodů). Když `pnpm` spustí příkaz `install`, ve výchozím nastavení nikdy nepovolí žádné skripty a pouze whitelistuje ty, které povolíte přes [`pnpm approve-builds`](https://pnpm.io/cli/approve-builds) ručně nebo specifikujete přes nastavení [`allowBuilds `](https://pnpm.io/settings#allowbuilds).
+Nebo můžete tento problém vyřešit mnohem elegantnějším způsobem přechodem na [`pnpm`](https://pnpm.io/) (což byste rozhodně měli udělat i z řady dalších důvodů). Když `pnpm` spustí příkaz `install`, ve výchozím nastavení nikdy nepovolí žádné skripty a pouze whitelistuje ty, které povolíte přes [`pnpm approve-builds`](https://pnpm.io/cli/approve-builds) ručně nebo specifikujete přes nastavení [`allowBuilds`](https://pnpm.io/settings#allowbuilds).
 
 Ať tak či onak, rozhodně byste měli omezit, co se spouští, a nevydávat se na milost tvůrcům balíčků třetích stran.
 

@@ -61,7 +61,8 @@ Tento příklad je nyní nedílnou součástí toho, jak tento web funguje. Zár
 Druhá zajímavostí příkladu je, že je stále napsán v _Options_ stylu. Ten mi totiž zpočátku přišel z nějakého důvodu srozumitelnější, ačkoliv je to v rozporu s _Composition API_ přístupem, jenž jsem si osvojil všude jinde. I z tohoto pohledu bych už dnes tento kód napsal jinak. Ale zase to můžete brát jako důkaz, že i druhý přístup funguje, což je vždy to hlavní.
 
 Na konkrétní implementaci se můžete podívat zde:
-- https://github.com/AloisSeckar/master-coda/blob/master/composables/useFunStore.ts
+
+- <https://github.com/AloisSeckar/master-coda/blob/master/composables/useFunStore.ts>
 
 ## Demo projekt
 

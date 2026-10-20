@@ -19,7 +19,7 @@ ChatGPT je důležitým nástrojem pro komunikaci a získávání informací, kt
 
 Přestože ChatGPT nabízí několik výhod, existují také situace, ve kterých jeho použití může být problematické nebo nevhodné. Jako strojový model závislý na datech, ChatGPT nemá schopnost rozpoznat neověřené nebo nepravdivé informace, což může vést k šíření dezinformací. Navíc, přestože se snaží generovat lidský jazyk, může se občas dopustit gramatických chyb nebo poskytnout nesprávné odpovědi. Je také důležité brát v úvahu etické aspekty, jako je respektování soukromí a správné využití osobních údajů při používání ChatGPT. Je třeba mít na paměti, že ChatGPT je jen nástroj a nemůže nahradit lidskou interakci, empatii a kritické myšlení, které jsou nezbytné pro komplexní problémy a situace.
 
-## Aj, aj, aj, AI!
+## Aj, aj, aj, AI
 
 **Plot twist** - oba přechozí odstavce jsem nenapsal já, ale vytvořil je na mou žádost ChatGPT - a dokonce na to stačil starší model `3.5`. Poznali jste to? Neudělal jsem v generovaném textu jedinou změnu...
 

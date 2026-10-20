@@ -51,13 +51,13 @@ Jen s tím se už dá leccos vytvořit. Pro příklady integrací s pokročilej�
 
 ## Tailwind CSS
 
-[Tailwind CSS](https://tailwindcss.com/) je CSS framework pro stylování obsahu webových stránek a aplikací. Na rozdíl od klasického přístupu k CSS nepíšete vlastní třídy, ale skládáte vzhled z rozsáhlé sady předdefinovaných CSS tříd, což umožňuje rychlé a flexibilní vytváření stylů a layoutů. Tailwind je navíc sám o sobě hodně přizpůsobivý a konfigurovatelný, například co se týká barevného schématu. 
+[Tailwind CSS](https://tailwindcss.com/) je CSS framework pro stylování obsahu webových stránek a aplikací. Na rozdíl od klasického přístupu k CSS nepíšete vlastní třídy, ale skládáte vzhled z rozsáhlé sady předdefinovaných CSS tříd, což umožňuje rychlé a flexibilní vytváření stylů a layoutů. Tailwind je navíc sám o sobě hodně přizpůsobivý a konfigurovatelný, například co se týká barevného schématu.
 
 Jeho popis by vydal na samostatný článek (což jsem měl původně v plánu a možná na to dojde časem). Pro mě je to nyní jasná volba č. 1 co se tvorby vzhledu webových stránek týká. Vyžaduje trochu jinou filosofii, ale zvykal jsem si den a už to nechci dělat jinak. Tailwind CSS používá třeba právě tento web - původní design jsem ještě nahodil "ručně", převést jej do odpovídající Tailwind struktury trvalo jeden večer.
 
 Sluší se podotknout, že to není CSS framework "pro náročné", protože vás samozřejmě různě omezuje. Jiní mu zase vyčítají, že vytváří přílišnou abstrakci a dává uživatelům iluzi, že rozumí tomu, co dělají - do chvíle, než se chytnou do nějaké pasti, kterou pak neumí vyřešit, protože neznají pořádně CSS, které je pod tím. Jenže moje zkušenost je, že vám v 90+ % případů stačit bude a na řešení zbytku budete mít díky jeho efektivitě více času.
 
-### Nuxt integrace
+### Nuxt integrace Tailwind CSS
 
 Začít používat Tailwind CSS je nyní úplná hračka. Jeho tvůrci distribuují plugin pro Vite (build nástroj, který Nuxt sestavuje), který stačí spolu s hlavní knihovnou v projektu nainstalovat:
 
@@ -115,7 +115,7 @@ P.S.: Dříve jsem integraci řešil pomocí dedikovaného [Nuxt modulu](https:/
 
 Open Props jsou tedy o level níže. Neabstrahují od veškerého psaní CSS, pouze nabízejí již připravené a vyzkoušené hodnoty. To vám dává větší svobodu, ale zase je to trochu pracnější. Hlavní výhodou je odlehčenost a škálovatelnost. Knihovna umožňuje [použít jen menší část](https://open-props.style/#overview), která je zrovna potřeba.
 
-### Nuxt integrace
+### Nuxt integrace Open Props
 
 Jelikož Nuxt (Vue) sám o sobě neumí při kompilaci nahrazovat CSS proměnné skutečnými hodnotami, je potřeba doplnit CSS procesor (v demu `postcss`) spolu s pluginem, který po nakrmení definicemi z `OpenProps` nahrazení hodnot provede. To je asi jediný zádrhel, jinak je prostě naimportován NPM balíček `open-props` a v demo ukázce nadefinováno ukázkové použití několika stylů.
 

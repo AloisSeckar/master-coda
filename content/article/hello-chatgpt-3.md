@@ -59,7 +59,6 @@ Výsledná kombinace byla:
 
 Nynější stav pokládám za mnohem lepší. Nechám si klidně dále poradit od živého grafika, ale svému ChatGPT tímto děkuji, protože mě opět posunul kupředu.
 
-
 (1) **P.S.:** Díky ChatGPT, že mi obratem ukázal, jak v MarkDown syntaxi zapsat blok kódu s "backtickem" uvnitř ;)
 
 (2) **P.P.S.:** Po několika dnech jsem přeci jen provedl ještě menší korekci odstínů žluté a fialové. Nyní tu je:
