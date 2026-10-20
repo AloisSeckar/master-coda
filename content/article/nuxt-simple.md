@@ -57,7 +57,9 @@ Tento sub-projekt ukazuje, že ve skutečnosti jde Nuxt rozběhnout ještě mnoh
 
 Místo `pnpm dev` (který by vyžadoval dodatečnou konfiguraci v souboru `package.json`) se v tomto případě aplikace spouští pomocí externího příkazu `npx nuxi dev` (`npx` je nadstavba nad `npm`, která umožňuje spouštět npm balíčky „on the fly“ bez jejich lokální instalace, a `nuxi` CLI nástroj od tvůrců frameworku Nuxt).
 
-> Když u sebe spustíte instalaci, objeví se vám složka `node_modules` s tzv. lockfile soubor (v závislosti na použitím package manageru). Novější verze `pnpm` kromě toho vytvoří také soubor `pnpm-workspace.yaml`, kde se řeší, kterým balíčkům povolit spuštění jejich interních skriptů (tomu lze předejít instalací pomocí `pnpm install --ignore-scripts`, což nepovolí žádné).
+```text
+TIP: Když u sebe spustíte instalaci, objeví se vám složka `node_modules` s tzv. lockfile soubor (v závislosti na použitím package manageru). Novější verze `pnpm` kromě toho vytvoří také soubor `pnpm-workspace.yaml`, kde se řeší, kterým balíčkům povolit spuštění jejich interních skriptů (tomu lze předejít instalací pomocí `pnpm install --ignore-scripts`, což nepovolí žádné).
+```
 
 Poslední soubor v úložišti - `README.md` - už byl popsán výše a je v úložišti technicky vzato navíc.
 
