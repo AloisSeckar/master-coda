@@ -6,7 +6,7 @@ dscr: 'Jak málo dnes stačí na funkční web'
 tags: ['web', 'JavaScript', 'Vue.js', 'Nuxt', 'tutorial']
 date: '2025-11-13'
 created: '13.11.2025'
-edited: '17.11.2025'
+edited: '20.10.2026'
 english: 'https://dev.to/aloisseckar/nuxt-tutorial-1-first-steps-2jp5'
 ---
 
@@ -57,7 +57,9 @@ Tento sub-projekt ukazuje, že ve skutečnosti jde Nuxt rozběhnout ještě mnoh
 
 Místo `pnpm dev` (který by vyžadoval dodatečnou konfiguraci v souboru `package.json`) se v tomto případě aplikace spouští pomocí externího příkazu `npx nuxi dev` (`npx` je nadstavba nad `npm`, která umožňuje spouštět npm balíčky „on the fly“ bez jejich lokální instalace, a `nuxi` CLI nástroj od tvůrců frameworku Nuxt).
 
-Zbylé dva soubory v úložišti - `README.md` a `pnpm-lock.yaml` - už byly popsány výše a jsou v úložišti technicky vzato navíc.
+> Když u sebe spustíte instalaci, objeví se vám složka `node_modules` s tzv. lockfile soubor (v závislosti na použitím package manageru). Novější verze `pnpm` kromě toho vytvoří také soubor `pnpm-workspace.yaml`, kde se řeší, kterým balíčkům povolit spuštění jejich interních skriptů (tomu lze předejít instalací pomocí `pnpm install --ignore-scripts`, což nepovolí žádné).
+
+Poslední soubor v úložišti - `README.md` - už byl popsán výše a je v úložišti technicky vzato navíc.
 
 **UPOZORNĚNÍ:** Berte však toto pouze jako legrácku k demonstračním účelům. Absence běžně očekávaných součástí systému by se mohla ukázat problematická při pokusu o jakékoliv větší využití. Držte se raději varianty `nuxt-simple`.
 
