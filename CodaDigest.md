@@ -6,7 +6,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 ## 2026
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
-| --- | :--  |
+| --- | :-- |
 | **`2026-09-17`** | [A Simple Guide to Calm UI](https://maxschmitt.me/posts/calm) - seven things (not) to do for better user experience in your apps |
 | **`2026-07-28`** | [To Cache or Not to Cache Virtual Threads](https://quarkus.io/blog/to-cache-or-not-to-cache-virtual-threads/) - what really happens with Java virtual threads execution in **Quarkus** and how it is releated to pooling |
 | **`2026-05-29`** | [How to Evaluate an npm Package - 2026 Edition](https://blog.gaborkoos.com/posts/2026-05-29-How-to-Evaluate-an-npm-Package-2026-Edition/) - security guide for JavaScript developers |
@@ -26,7 +26,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 ## 2025
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
-| --- | :--  |
+| --- | :-- |
 | **`2025-11-11`** | [Programming principles for self taught front-end developers](https://piccalil.li/blog/programming-principles-for-self-taught-front-end-developers/) - defining the "ultimate" rules to follow when developing apps |
 | **`2025-10-16`** | [Improving the trustworthiness of Javascript on the Web](https://blog.cloudflare.com/improving-the-trustworthiness-of-javascript-on-the-web/) - proposal of a new standard that would improve security of web resources by providing a consistent way of checking their integrity |
 | **`2025-09-17`** | [Is it Time to Un-Sass?](https://css-tricks.com/is-it-time-to-un-sass/) - vanilla CSS is now nearly as good as SASS pre-processing |
@@ -64,7 +64,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 ## 2024
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
-| --- | :--  |
+| --- | :-- |
 | **`2024-12-15`** | [How JVM handles exceptions](https://nataliiadziubenko.com/2024/12/15/how-jvm-handles-exceptions.html) - a deep-dive under the hood of JVM to understand try-catch-finally better |
 | **`2024-12-04`** | [The Build Process of a Vue App: Rollup vs Rolldown](https://www.vuemastery.com/blog/the-build-process-of-a-vue-app-rollup-vs-rolldown/) - discover how building an app works in Vue right now and what is the planned future |
 | **`2024-10-20`** | [Why I’m skeptical of rewriting JavaScript tools in “faster” languages](https://nolanlawson.com/2024/10/20/why-im-skeptical-of-rewriting-javascript-tools-in-faster-languages/) - every tool should be used accordingly and this also applies to "faster JavaScript alternatives" |
@@ -79,7 +79,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2024-08-02`** | [How to Build Your Own Vue-like Reactivity System](https://dev.to/alexanderop/how-to-build-your-own-vue-like-reactivity-system-from-scratch-1d2d) - understand Vue's core concept of reactivity by implementing its alike! |
 | **`2024-07-29`** | [Why Unknown Types Are Useful](https://michaeluloth.com/programming-types-unknown-why-useful/) - how to use **unknown** in TypeScript |
 | **`2024-07-28`** | [Perfectionism - one of the biggest productivity killers](https://newsletter.eng-leadership.com/p/perfectionism-one-of-the-biggest) - do not waste time on over-improving things - lessons learned by two IT professionals |
-| **`2024-07-22`** | [Vue.js and HTML Injection Explained](https://vueschool.io/articles/vuejs-tutorials/vue-js-and-html-injection-explained/) - great VueSchool article talking about (not) using **v-html** directive in **Vue.js** |
+| **`2024-07-22`** | [Vue.js and HTML Injection Explained](https://vueschool.io/articles/vuejs-tutorials/vue-js-and-html-injection-explained/) - great VueSchool article talking about (not) using `v-html` directive in **Vue.js** |
 | **`2024-07-15`** | [JavaScript Event Loop: A Deep Dive](https://dev.to/mdhassanpatwary/javascript-event-loop-a-deep-dive-2289) - how JavaScript performs its operations |
 | **`2024-07-03`** | [CSS One-Liners to Improve (Almost) Every Project](https://dev.to/alvaromontoro/css-one-liners-to-improve-almost-every-project-18m) - did you know those neat CSS tricks? |
 | **`2024-06-30`** | [Dev rejects CVE severity, makes his GitHub repo read-only](https://www.bleepingcomputer.com/news/security/dev-rejects-cve-severity-makes-his-github-repo-read-only/) - recent **ip** package controversy raises concerns about current way of reporting security issues in (JavaScript) open-source world |
@@ -106,7 +106,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 ## < 2024
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
-| --- | :--  |
+| --- | :-- |
 | **`2023-11-02`** | [How to write good alt text for screen readers](https://www.craigabbott.co.uk/blog/how-to-write-good-alt-text-for-screen-readers/) - a lesson from Web Accessibility that is worth taking even without deeper context |
 | **`2023-09-22`** | [So, you want to speak at conferences](https://hollycummins.com/so-you-want-to-speak-at-conferences/) - your guide to become a future star of IT conferences |
 | **`2023-09-15`** | [Optimization in Pom XML file](https://swapnilagarwal2001.medium.com/optimization-in-pom-xml-file-b218469e3800) - how **Maven** dependencies work and what can you do to define them better |
