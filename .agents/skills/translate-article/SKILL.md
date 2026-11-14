@@ -16,7 +16,7 @@ Translates the body of an English article draft into Czech, following strict Mar
 
 ## Procedure
 
-1. Resolve the target file within `content/article/<file-name>.md` folder. Fail if file cannot be found or opened.
+1. Resolve the target file. Accept either `<file-name>.md` or `content/article/<file-name>.md`; the file always lives in `content/article/`. Fail if file cannot be found or opened.
 2. Read the file and split it into:
    - The YAML frontmatter (between the first pair of `---` lines), if present.
    - The Markdown body (everything after the frontmatter, or the whole file if there's no frontmatter).
@@ -26,8 +26,13 @@ Translates the body of an English article draft into Czech, following strict Mar
    - Always preserve the original line breaks. Do not add or remove blank lines.
    - Never change HTML-like tags or Vue component tags (e.g. `<WiseWords>`, `<ArticleImage>`).
    - Never change Nuxt Content tags (e.g. `::vue-newsletter`).
-4. Save the translation into `content/article/<file-name>.md` (overwrite). Do not preserve the original.
-5. If YAML frontmatter was not present, add it based on translated `content/article/<file-name>.md` content using the following template:
+   - Translate link text and image alt text, but never the URLs.
+   - Keep product, library and technical terms (e.g. Vue, Nuxt, composable) in English.
+   - Do not translate code comments (they are part of code blocks).
+   - The blank-line rule applies to the body only, not to the frontmatter.
+4. Save the translation into `content/article/<file-name>.md`. Overwrite the file in place with an edit tool. Never delete and recreate the file. Do not preserve the original.
+5. If YAML frontmatter is present, translate values of `title`, `dscr` and the entries of `tags` into Czech.
+6. If YAML frontmatter was not present, add it based on translated `content/article/<file-name>.md` content using the following template. Set `date`, `created` and `edited` to current date:
 
 ```yaml
 ---
@@ -44,10 +49,12 @@ unchecked: true
 ---
 ```
 
-6. Reply with following confirmation:
+7. Reply with following confirmation:
 
 ```md
 Translated <file-name>.md from English to Czech.
 
 Do not forget to add the original link and check the metadata.
 ```
+
+If you filled in any frontmatter fields yourself (e.g. `cat`, `tags`, dates) or noticed a suspicious URL (e.g. one that looks copy-pasted from another article), append a short list of them after the confirmation.
