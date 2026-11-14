@@ -1,7 +1,7 @@
 ---
 file: 'hacktoberfest-2026'
 cat: 'misc'
-title: '(Smutná) Reflexe Hacktoberfest 2026'
+title: '(Smutná) Reflexe Hacktoberfestu 2026'
 dscr: 'Letošní Hacktoberfest nahradil příspěvky do open-source kódu socializací. Proč mě to netěší a co dobrého to přeci jen přineslo?'
 tags: ['hacktoberfest', 'open-source', 'ai', 'java', 'github-copilot']
 date: '2026-11-03'
