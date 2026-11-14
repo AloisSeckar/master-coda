@@ -7,6 +7,7 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :-- |
+| **`2026-11-09`** | [Maven Practices That Pay Off](https://foojay.io/today/beyond-mvn-install-maven-practices/) - practical tips for **Maven** build settings to make your apps better |
 | **`2026-09-17`** | [A Simple Guide to Calm UI](https://maxschmitt.me/posts/calm) - seven things (not) to do for better user experience in your apps |
 | **`2026-07-28`** | [To Cache or Not to Cache Virtual Threads](https://quarkus.io/blog/to-cache-or-not-to-cache-virtual-threads/) - what really happens with Java virtual threads execution in **Quarkus** and how it is releated to pooling |
 | **`2026-05-29`** | [How to Evaluate an npm Package - 2026 Edition](https://blog.gaborkoos.com/posts/2026-05-29-How-to-Evaluate-an-npm-Package-2026-Edition/) - security guide for JavaScript developers |
