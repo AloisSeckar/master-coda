@@ -1,6 +1,6 @@
 ---
 file: 'hacktoberfest-reflexe'
-cat: 'java'
+cat: 'misc'
 title: 'Reflexe Hacktoberfestu'
 dscr: 'Jak jsem prožil letošní Hacktoberfest jako správce vlastního projektu'
 tags: ['java', 'opensource', 'hacktoberfest']
