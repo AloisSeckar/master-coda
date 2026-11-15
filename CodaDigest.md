@@ -1,7 +1,12 @@
 # CODA'S DIGEST
-Interesting articles, news and tutorials I have come across while browsing the internet.
 
-Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/NuxtNews.md) and [Java News](https://github.com/AloisSeckar/demos-java/blob/master/JavaNews.md).
+**What is the IT world up to?**
+
+This is a non-exhaustive collection of interesting IT articles I have come across while browsing the internet.
+
+For convenient reading experience, visit [IT Digest](https://alois-seckar.cz/digest-it) page on my website.
+
+Check also my [Nuxt News](https://alois-seckar.cz/digest-nuxt), [Java News](https://alois-seckar.cz/digest-java) and [AI News](https://alois-seckar.cz/digest-ai).
 
 ## 2026
 
@@ -122,4 +127,4 @@ Check also my [Nuxt News](https://github.com/AloisSeckar/demos-nuxt/blob/main/Nu
 | **`2003-08-29`** | [Cannot Measure Productivity](https://martinfowler.com/bliki/CannotMeasureProductivity.html) - **Martin Fowler** about evaluating devs' productivity |
 
 ---
-_This list is being maintainted since 04/2024_
+_This list is being actively maintained since 04/2024_
