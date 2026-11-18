@@ -48,6 +48,7 @@ Use the real publication date, in this order of preference:
   `https://api.github.com/repos/<owner>/<repo>/releases/tags/<tag>` and use `published_at`.
 - Mailing-list announcements (mail-archive.com): use the date in the message header.
 - For Anthropic launch pages (e.g. `anthropic.com/claude-...`): use the dated entry on <https://www.anthropic.com/news>. Research posts (`/research/...`) show "Published <date>" in the text.
+- For OpenAI pages (`openai.com/index/...`) that show no date in the text: use the dated card on <https://openai.com/news/>.
 - If the date cannot be determined, ask the user. Do not invent one. If the user supplies it later, add the entry then.
 
 ## Placement
