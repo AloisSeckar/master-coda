@@ -1,5 +1,5 @@
 ---
-name: translate-article
+name: article-translate
 description: 'Translate an English article into Czech for publishing under content/article/. Use when the user runs "/translate <file-name>.md" or asks to translate a blog post from English to Czech.'
 argument-hint: '<file-name>.md'
 ---
@@ -11,7 +11,7 @@ Translates the body of an English article draft into Czech, following strict Mar
 ## When to Use
 
 - User invokes `/translate <file-name>.md`
-- User invokes `/translate-article <file-name>.md`
+- User invokes `/article-translate <file-name>.md`
 - User asks to translate an article / blog post from English into Czech
 
 ## Procedure
