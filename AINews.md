@@ -20,6 +20,7 @@ Stay up-to-date with the following even more dedicated websites:
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Article |
 | --- | :-- |
+| **`2026-11-18`** | [Introducing Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) - **Gemini 4 Neon** fills gap between Carbon and Hydrogen models, bringing frontier-level intelligence with fast end-to-end task completion |
 | **`2026-11-17`** | [Introducing GPT-6.2 Astra and Sol](https://openai.com/index/introducing-gpt-6-2-astra-sol/) - **GPT-6.2 Astra** is a new frontier model for complex professional work and **GPT-6.2 Sol** an efficient model for everyday tasks, both available in ChatGPT Work, Codex and the OpenAI API with fewer output tokens per task |
 | **`2026-11-17`** | [Building modern agentic applications with Microsoft Copilot SDK 2.0](https://commandline.microsoft.com/microsoft-copilot-sdk-2-0-github/) - **Microsoft Copilot SDK 2.0** adds a Rust-based multi-tenant runtime hosting many sessions in one process, per-session identities, host-owned tools and durable resumable sessions, with six architectures for building agents |
 | **`2026-11-13`** | [Introducing ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet/) - **ChatGPT Wallet** lets agents pay on a user's behalf with tokenized card details and a security check for every purchase, initially for ChatGPT Pro users in the US |
